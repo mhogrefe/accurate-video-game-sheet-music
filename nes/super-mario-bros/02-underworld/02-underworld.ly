@@ -14,6 +14,7 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
+\set Timing.beamExceptions = #'()
 
 \tempo 4 = 100
 \time 3/4
@@ -33,6 +34,7 @@ R2.
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
+\set Timing.beamExceptions = #'()
 
 \clef bass
 \key bes \major
