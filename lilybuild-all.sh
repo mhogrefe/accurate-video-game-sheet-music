@@ -7,6 +7,7 @@ bash lilybuild.sh nes/donkey-kong/06-level-cleared/06-level-cleared &&
 bash lilybuild.sh nes/donkey-kong/07-level-theme-2/07-level-theme-2 &&
 bash lilybuild.sh nes/donkey-kong/08-pause/08-pause &&
 bash lilybuild.sh nes/donkey-kong/09-donkey-kong-defeated/09-donkey-kong-defeated &&
+bash lilybuild.sh nes/donkey-kong/10-all-levels-cleared/10-all-levels-cleared &&
 bash lilybuild.sh nes/super-mario-bros/01-overworld/01-overworld &&
 bash lilybuild.sh nes/super-mario-bros/02-underground/02-underground &&
 bash lilybuild.sh nes/super-mario-bros/03-underwater/03-underwater
