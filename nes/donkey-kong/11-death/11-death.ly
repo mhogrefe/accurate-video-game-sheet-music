@@ -19,9 +19,9 @@
 \tempo 4 = 180
 
 \time 2/4
-\tuplet 5/4 { r16 r bes f' des } \tuplet 5/4 { aes'16 c, g' b, ges' } |
+\tuplet 5/4 { r16 r bes-. f'-. des-. } \tuplet 5/4 { aes'16-. c,-. g'-. b,-. ges'-. } |
 \time 4/4
-\tuplet 5/4 { bes,16 f' aes, ees' g, } \tuplet 5/4 { d'16 ges, des' e, b' } \tuplet 5/4 { ees,16 bes' d, a' des, } \tuplet 5/4 { aes'16 c, g' bes, f' } |
+\tuplet 5/4 { bes,16-. f'-. aes,-. ees'-. g,-. } \tuplet 5/4 { d'16-. ges,-. des'-. e,-. b'-. } \tuplet 5/4 { ees,16-. bes'-. d,-. a'-. des,-. } \tuplet 5/4 { aes'16-. c,-. g'-. bes,-. f'-. } |
 \time 1/8
 e,8 |
 \time 4/4
