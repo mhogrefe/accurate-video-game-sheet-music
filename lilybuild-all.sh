@@ -13,4 +13,6 @@ bash lilybuild.sh nes/super-mario-bros/01-overworld/01-overworld &&
 bash lilybuild.sh nes/super-mario-bros/02-underground/02-underground &&
 bash lilybuild.sh nes/super-mario-bros/03-underwater/03-underwater &&
 bash lilybuild.sh nes/super-mario-bros/04-castle/04-castle &&
-bash lilybuild.sh nes/super-mario-bros/05-starman/05-starman
+bash lilybuild.sh nes/super-mario-bros/05-starman/05-starman &&
+bash lilybuild.sh nes/super-mario-bros/06-level-cleared/06-level-cleared &&
+bash lilybuild.sh nes/super-mario-bros/07-castle-cleared/07-castle-cleared
