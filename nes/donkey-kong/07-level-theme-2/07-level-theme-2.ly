@@ -13,7 +13,7 @@
             \new Staff \relative c {
                 \set Staff.instrumentName = "Triangle"
                 \set Staff.shortInstrumentName = "T."
-
+\accidentalStyle modern-cautionary
 \key c \major
 \clef bass
 \time 2/4

@@ -14,6 +14,7 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
+\accidentalStyle modern-cautionary
 \key c \major
 \tempo 4 = 150
                     \repeat volta 2 {
@@ -25,6 +26,7 @@ e8-. e-. e-. c16 e r e r c^\markup{"Loop forever"} e c e8-. |
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
 \key c \major
 c8-. c-. c-. r16 c r c r8 c-. c-. |
 b8-. b-. b-. r16 b r b r8 b-. b-. |
@@ -33,6 +35,7 @@ b8-. b-. b-. r16 b r b r8 b-. b-. |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
+\accidentalStyle modern-cautionary
 \clef bass
 \key c \major
 d4-. a'8 r16 d r4 a8 d |

@@ -14,25 +14,27 @@
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
+\accidentalStyle modern-cautionary
 \tempo 4 = 90
 \time 2/4
 r32 d16 cis bis cis d ees d cis32 ~ |
 cis32 d16 cis bis cis d ees d cis32 ~ |
-cis?32 cis16 bis cis d cis d cis bis32 ~ |
+cis32 cis16 bis cis d cis d cis bis32 ~ |
 bis32 cis16 bis cis d cis d cis bis32 ~ |
-bis?32 f'16 ges f e f e dis e32 ~ |
+bis32 f'16 ges f e f e dis e32 ~ |
 e32 f16 ges f e f e dis e32 |
 r32 d16 cis bis cis d ees d cis32 ~ |
 cis32 d16 cis bis cis d ees d cis32 ~ |
-cis?32 cis16 bis cis d cis d cis bis32 ~ |
+cis32 cis16 bis cis d cis d cis bis32 ~ |
 bis32 cis16 bis cis d cis d cis bis32 ~ |
-bis?32 f'16 ges f e f e dis e32 ~ |
+bis32 f'16 ges f e f e dis e32 ~ |
 e32 f16 ges f e f e dis e32 |
                 }
 
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
 \set subdivideBeams = ##t
 \set baseMoment = #(ly:make-moment 1/8)
 \set beatStructure = 2,2
@@ -54,9 +56,8 @@ bes32 d bes ees bes d bes cis bes d bes cis bes bis bes cis |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-
+\accidentalStyle modern-cautionary
 \clef bass
-
 ees2 |
 d4 ges |
 f2 |

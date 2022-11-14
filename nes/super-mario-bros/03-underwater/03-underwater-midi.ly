@@ -14,11 +14,11 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
+\accidentalStyle modern-cautionary
 \set Timing.beamExceptions = #'()
 \key c \major
 \time 3/4
 \tempo 2. = 75
-
 d4 des c |
 b4 c cis |
 d8 d d4-. e-. |
@@ -89,6 +89,7 @@ e2. |
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
 \set Timing.beamExceptions = #'()
 \key c \major
 
@@ -162,6 +163,7 @@ c2. |
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
+\accidentalStyle modern-cautionary
 \set Timing.beamExceptions = #'()
 \clef bass
 \key c \major
@@ -191,7 +193,7 @@ ais,4-. g'-. cis-. |
 cis,4-. g'-. e'-. |
 d,4-. a'-. f'-. |
 cis,4-. a'-. f'-. |
-c,?4-. a'-. f'-. |
+c,4-. a'-. f'-. |
 b,,4-. g'-. f'-. |
 c,,4-. g''-. e'-. |
 g,,4-. g'-. g-. |
@@ -223,7 +225,7 @@ ais,4-. g'-. cis-. |
 cis,4-. g'-. e'-. |
 d,4-. a'-. f'-. |
 cis,4-. a'-. f'-. |
-c,?4-. a'-. f'-. |
+c,4-. a'-. f'-. |
 b,,4-. g'-. f'-. |
 c,,4-. g''-. e'-. |
 g,,4-. g'-. g-. |
