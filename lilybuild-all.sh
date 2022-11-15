@@ -17,4 +17,6 @@ bash lilybuild.sh nes/super-mario-bros/05-starman/05-starman &&
 bash lilybuild.sh nes/super-mario-bros/06-level-cleared/06-level-cleared &&
 bash lilybuild.sh nes/super-mario-bros/07-castle-cleared/07-castle-cleared &&
 bash lilybuild.sh nes/super-mario-bros/08-death/08-death &&
-bash lilybuild.sh nes/super-mario-bros/09-game-over/09-game-over
+bash lilybuild.sh nes/super-mario-bros/09-game-over/09-game-over &&
+bash lilybuild.sh nes/super-mario-bros/10-hurry/10-hurry &&
+bash lilybuild.sh nes/super-mario-bros/11-princess-rescued/11-princess-rescued
