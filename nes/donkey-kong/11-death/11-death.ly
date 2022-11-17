@@ -53,6 +53,7 @@ c4 g c,2 |
                 \DrumStaff
                 \RemoveEmptyStaves
             }
+            ragged-last = ##t
         }
         \midi {}
     }

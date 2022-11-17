@@ -51,8 +51,10 @@ c2. |
 R2. |
 c,2. |
 f4 g b |
-b8 b b4.^\markup{"Loop forever"} f8 |
+b8 b b4. f8 |
 e2. |
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                     }
                 }
 

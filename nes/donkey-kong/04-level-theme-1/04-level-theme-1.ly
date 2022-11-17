@@ -18,8 +18,10 @@
 \clef bass
 \tempo 4 = 180
                 \repeat volta 2 {
-c8-. r r e-.^\markup{"Loop forever"} r g-. a-. g-.
+c8-. r r e-. r g-. a-. g-.
                 }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
             }
         }
         \layout {

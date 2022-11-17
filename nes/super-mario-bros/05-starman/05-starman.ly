@@ -19,8 +19,10 @@
 \tempo 4 = 150
                     \repeat volta 2 {
 f8-. f-. f-. d16 f r f r d f d f8-. |
-e8-. e-. e-. c16 e r e r c^\markup{"Loop forever"} e c e8-. |
+e8-. e-. e-. c16 e r e r c e c e8-. |
                     }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
                 \new Staff \relative c'' {

@@ -23,8 +23,10 @@ cis32 d16 cis bis cis d ees d cis32 ~ |
 cis32 cis16 bis cis d cis d cis bis32 ~ |
 bis32 cis16 bis cis d cis d cis bis32 ~ |
 bis32 f'16 ges f e f e dis e32 ~ |
-e32 f16 ges f e f e^\markup{"Loop forever"} dis e32 |
+e32 f16 ges f e f e dis e32 |
                     }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
                 \new Staff \relative c'' {

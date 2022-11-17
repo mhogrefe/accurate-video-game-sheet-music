@@ -22,8 +22,7 @@
 fis8 fis r fis r fis fis4-. |
 b4-. r g-. r |
 
-\repeat volta 2 {
-
+                    \repeat volta 2 {
 % A
 e4-. r8 c r4 g4-. |
 r8 c r d r des c4-. |
@@ -131,8 +130,10 @@ c8 a r f e4-. r |
 c'8 a r e r4 e-. |
 f8 c' r c f,4-. r |
 g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r^\markup{"Loop forever"} e c4-. r |
-}
+g8 e r e c4-. r |
+                    }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
 
                 }
 

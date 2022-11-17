@@ -20,9 +20,11 @@
 \partial 4 \tuplet 3/2 { g8 fis g } |
 e2 f4 fis |
 g2 c4 \tuplet 3/2 { e4 e8 } |
-d4 e f b,^\markup{"Loop forever"} |
+d4 e f b, |
 d2 c4
                     }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
                 \new Staff \relative c' {

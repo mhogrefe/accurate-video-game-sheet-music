@@ -19,8 +19,10 @@
 \time 2/4
 \tempo 4 = 112
                 \repeat volta 2 {
-e8-! c16-.^\markup{"Loop forever"} c-. e8-! c16-. c-. |
+e8-! c16-. c-. e8-! c16-. c-. |
                 }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
             }
         }
         \layout {
