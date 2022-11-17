@@ -20,3 +20,4 @@ bash lilybuild.sh nes/super-mario-bros/08-death/08-death &&
 bash lilybuild.sh nes/super-mario-bros/09-game-over/09-game-over &&
 bash lilybuild.sh nes/super-mario-bros/10-hurry/10-hurry &&
 bash lilybuild.sh nes/super-mario-bros/11-princess-rescued/11-princess-rescued
+bash lilybuild.sh nes/super-mario-bros-2/01-introduction/01-introduction

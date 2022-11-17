@@ -20,7 +20,7 @@
 \partial 4 \tuplet 3/2 { g8 fis g } |
 e2 f4 fis |
 g2 c4 \tuplet 3/2 { e4 e8 } |
-d4 e f b, |
+d4 e f b,^\markup{"Loop forever"} |
 d2 c4
                     }
                 }
