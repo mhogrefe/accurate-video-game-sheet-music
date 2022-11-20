@@ -12,6 +12,22 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse 2"
+                    \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
+\set subdivideBeams = ##t
+\set baseMoment = #(ly:make-moment 1/8)
+\set beatStructure = 2,2
+g32 bes g a g gis g a g bes g ces g bes g a |
+g32 bes g a g gis g a g bes g ces g bes g a |
+fis32 a fis gis fis a fis bes fis a fis bes fis a fis gis |
+fis32 a fis gis fis a fis bes fis a fis bes fis a fis gis |
+bes32 d bes ees bes d bes cis bes d bes cis bes bis bes cis |
+bes32 d bes ees bes d bes cis bes d bes cis bes bis bes cis |
+
+                }
+
+                \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
 \accidentalStyle modern-cautionary
@@ -27,22 +43,6 @@ e32 f16 ges f e f e dis e32 |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
-\set subdivideBeams = ##t
-\set baseMoment = #(ly:make-moment 1/8)
-\set beatStructure = 2,2
-g32 bes g a g gis g a g bes g ces g bes g a |
-g32 bes g a g gis g a g bes g ces g bes g a |
-fis32 a fis gis fis a fis bes fis a fis bes fis a fis gis |
-fis32 a fis gis fis a fis bes fis a fis bes fis a fis gis |
-bes32 d bes ees bes d bes cis bes d bes cis bes bis bes cis |
-bes32 d bes ees bes d bes cis bes d bes cis bes bis bes cis |
-
                 }
 
                 \new Staff \relative c {

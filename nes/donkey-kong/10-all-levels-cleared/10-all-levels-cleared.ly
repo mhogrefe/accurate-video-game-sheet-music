@@ -11,6 +11,19 @@
     \score {
         {
             \new StaffGroup <<
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse 2"
+                    \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
+\key c \major
+g8 g f f e e d d |
+c4. c16 d e4 c |
+d4. d16 e f4 d |
+g4. g8 a g f e |
+g2 r |
+
+                }
+
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
@@ -27,19 +40,6 @@ g'4 d g d |
 c,8 ees4. c4-- r |
 
 \bar "|."
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
-\key c \major
-g8 g f f e e d d |
-c4. c16 d e4 c |
-d4. d16 e f4 d |
-g4. g8 a g f e |
-g2 r |
-
                 }
             >>
         }

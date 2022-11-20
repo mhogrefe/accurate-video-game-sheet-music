@@ -11,6 +11,113 @@
     \score {
         {
             \new StaffGroup <<
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse 2"
+                    \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
+\key c \major
+e8 e r e r c e4-. |
+g4-. r r2 |
+
+% A
+c,4-. r8 g r4 e4-. |
+r8 a r b r bes a4-. |
+\tuplet 3/2 { g4 e' g } a4-. f8 g |
+r8 e r c d b r4 |
+
+c4-. r8 g r4 e4-. |
+r8 a r b r bes a4-. |
+\tuplet 3/2 { g4 e' g } a4-. f8 g |
+r8 e r c d b r4 |
+
+% B
+r4 g'8 fis f dis r e |
+r8 gis, a c r a c d |
+r4 g8 fis f dis r e |
+r8 c' r c c4-. r |
+
+r4 g8 fis f dis r e |
+r8 gis, a c r a c d |
+r4 ees-. r8 d r4 |
+c4-. r r2 |
+
+r4 g'8 fis f dis r e |
+r8 gis, a c r a c d |
+r4 g8 fis f dis r e |
+r8 c' r c c4-. r |
+
+r4 g8 fis f dis r e |
+r8 gis, a c r a c d |
+r4 ees-. r8 d r4 |
+c4-. r r2 |
+
+% C
+c8 c r c r c d4-. |
+e8 c r a g4-. r |
+c8 c r c r c d e |
+R1
+
+c8 c r c r c d4-. |
+e8 c r a g4-. r |
+e'8 e r e r c e4-. |
+g4-. r r2 |
+
+% A
+c,4-. r8 g r4 e4-. |
+r8 a r b r bes a4-. |
+\tuplet 3/2 { g4 e' g } a4-. f8 g |
+r8 e r c d b r4 |
+
+c4-. r8 g r4 e4-. |
+r8 a r b r bes a4-. |
+\tuplet 3/2 { g4 e' g } a4-. f8 g |
+r8 e r c d b r4 |
+
+% D
+e8 c r g r4 gis-. |
+a8 f' r f a,4-. r |
+\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
+e8 c r a g4-. r |
+
+e'8 c r g r4 gis-. |
+a8 f' r f a,4-. r |
+b8 f' r f \tuplet 3/2 { f4 e d } |
+c4-. r r2 |
+
+e8 c r g r4 gis-. |
+a8 f' r f a,4-. r |
+\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
+e8 c r a g4-. r |
+
+e'8 c r g r4 gis-. |
+a8 f' r f a,4-. r |
+b8 f' r f \tuplet 3/2 { f4 e d } |
+c4-. r r2 |
+
+% C
+c8 c r c r c d4-. |
+e8 c r a g4-. r |
+c8 c r c r c d e |
+R1
+
+c8 c r c r c d4-. |
+e8 c r a g4-. r |
+e'8 e r e r c e4-. |
+g4-. r r2 |
+
+% D
+e8 c r g r4 gis-. |
+a8 f' r f a,4-. r |
+\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
+e8 c r a g4-. r |
+
+e'8 c r g r4 gis-. |
+a8 f' r f a,4-. r |
+b8 f' r f \tuplet 3/2 { f4 e d } |
+c4-. r r2 |
+
+                }
+
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
@@ -137,113 +244,6 @@ g8 e r e c4-. r |
 
                 }
 
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
-\key c \major
-e8 e r e r c e4-. |
-g4-. r r2 |
-
-% A
-c,4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-% B
-r4 g'8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 g8 fis f dis r e |
-r8 c' r c c4-. r |
-
-r4 g8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 ees-. r8 d r4 |
-c4-. r r2 |
-
-r4 g'8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 g8 fis f dis r e |
-r8 c' r c c4-. r |
-
-r4 g8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 ees-. r8 d r4 |
-c4-. r r2 |
-
-% C
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-c8 c r c r c d e |
-R1
-
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-e'8 e r e r c e4-. |
-g4-. r r2 |
-
-% A
-c,4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-% D
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-% C
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-c8 c r c r c d e |
-R1
-
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-e'8 e r e r c e4-. |
-g4-. r r2 |
-
-% D
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-                }
-
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
@@ -356,32 +356,32 @@ c4-. g-. c,-. r |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-sn4-. hh8 sn r hh sn4-. |
-sn4-. r8 sn r hh hh hh |
+sn4 hh8 sn r hh sn4 |
+sn4 r8 sn r hh hh hh |
 
 % A, B
-\repeat percent 24 { bd4-. \tuplet 3/2 { hh4 hh8 } sn4-. \tuplet 3/2 { hh4 hh8 } }
+\repeat percent 24 { bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } }
 
 % C
 \repeat percent 4 {
-sn4-. hh8 sn r hh sn4-. |
-sn4-. r8 sn r hh hh hh |
+sn4 hh8 sn r hh sn4 |
+sn4 r8 sn r hh hh hh |
 }
 
 % A
-\repeat percent 8 { bd4-. \tuplet 3/2 { hh4 hh8 } sn4-. \tuplet 3/2 { hh4 hh8 } }
+\repeat percent 8 { bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } }
 
 % D
-\repeat percent 16 { hh4-. r8 hh sn4-. hh-. | }
+\repeat percent 16 { hh4 r8 hh sn4 hh | }
 
 % C
 \repeat percent 4 {
-sn4-. hh8 sn r hh sn4-. |
-sn4-. r8 sn r hh hh hh |
+sn4 hh8 sn r hh sn4 |
+sn4 r8 sn r hh hh hh |
 }
 
 % D
-\repeat percent 8 { hh4-. r8 hh sn4-. hh-. | }
+\repeat percent 8 { hh4 r8 hh sn4 hh | }
 
                     }
                 }

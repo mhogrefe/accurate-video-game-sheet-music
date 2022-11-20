@@ -12,6 +12,46 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
+                    \set Staff.instrumentName = "Pulse 2"
+                    \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
+\set Timing.beamExceptions = #'()
+\key c \major
+d4 e fis |
+g4 a ais |
+b8 b b4-. b-. |
+b2 g4 |
+e'2. |
+dis2. |
+e2. |
+r8 g, a b c d |
+e2. |
+dis2 f4 |
+e2. |
+r4 r r8 g, |
+d'2. |
+cis2. |
+d2. |
+r8 g, a b c cis |
+d2. |
+g,2 f'4 |
+e2. |
+r4 r r8 g, |
+g'2. |
+g2. |
+g2. |
+g4 a-. r8 g |
+f2. |
+f2. |
+f2. |
+f4 g-. r8 f |
+e2. |
+a,4 b f' |
+e8 e e4. b8 |
+c2. |
+                }
+
+                \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
 \accidentalStyle modern-cautionary
@@ -56,46 +96,6 @@ e2. |
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
                     }
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
-\set Timing.beamExceptions = #'()
-\key c \major
-d4 e fis |
-g4 a ais |
-b8 b b4-. b-. |
-b2 g4 |
-e'2. |
-dis2. |
-e2. |
-r8 g, a b c d |
-e2. |
-dis2 f4 |
-e2. |
-r4 r r8 g, |
-d'2. |
-cis2. |
-d2. |
-r8 g, a b c cis |
-d2. |
-g,2 f'4 |
-e2. |
-r4 r r8 g, |
-g'2. |
-g2. |
-g2. |
-g4 a-. r8 g |
-f2. |
-f2. |
-f2. |
-f4 g-. r8 f |
-e2. |
-a,4 b f' |
-e8 e e4. b8 |
-c2. |
                 }
 
                 \new Staff \relative c' {
@@ -144,8 +144,8 @@ c2. |
                         \set Staff.shortInstrumentName="N."
 \set Timing.beamExceptions = #'()
                         \repeat percent 16 {
-r4 hhp-. hh-. |
-r4 hhp8-. hhp-. hh4-. |
+r4 hhp hh |
+r4 hhp8 hhp hh4 |
                         }
                     }
                 }

@@ -20,27 +20,7 @@
 \tempo 4 = 82
 
 g16 e g e g e g e g e g e-- r4 |
-R1
 \bar "|."
-                }
-
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
-\key c \major
-r2 r4 f\glissando |
-\grace { \override Stem.stencil = ##f bes,,,4 } R1 |
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Triangle"
-                    \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
-\clef bass
-\key c \major
-R1
-a16\glissando \grace { \override Stem.stencil = ##f bes,4 } r16 r8 r4 r2 |
                 }
             >>
         }
