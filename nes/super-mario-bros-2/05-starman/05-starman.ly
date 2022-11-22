@@ -3,7 +3,7 @@
 \book {
     \header {
         title = "Starman"
-        subtitle = \markup { "from" {\italic "Super Mario Bros."} "for the NES (1985)" }
+        subtitle = \markup { "from" {\italic "Super Mario Bros. 2"} "for the NES (1988)" }
         composer = "Koji Kondo"
         arranger = "arr. Mikhail Hogrefe"
     }
@@ -53,9 +53,9 @@ r2 g4 c |
 
                 \new DrumStaff {
                     \drummode {
-                        \set Staff.instrumentName="Noise"
-                        \set Staff.shortInstrumentName="N."
-\repeat percent 4 { bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } | }
+                        \set Staff.instrumentName="DMC"
+                        \set Staff.shortInstrumentName="DMC"
+\repeat percent 4 { bol8 boh r boh boh boh bol bol | }
                     }
                 }
             >>
