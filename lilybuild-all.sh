@@ -24,4 +24,6 @@ bash lilybuild.sh nes/super-mario-bros-2/01-introduction/01-introduction &&
 bash lilybuild.sh nes/super-mario-bros-2/02-character-selection/02-character-selection &&
 bash lilybuild.sh nes/super-mario-bros-2/03-overworld/03-overworld &&
 bash lilybuild.sh nes/super-mario-bros-2/04-underground/04-underground &&
-bash lilybuild.sh nes/super-mario-bros-2/05-starman/05-starman
+bash lilybuild.sh nes/super-mario-bros-2/05-starman/05-starman &&
+bash lilybuild.sh nes/super-mario-bros-2/06-subspace/06-subspace &&
+bash lilybuild.sh nes/super-mario-bros-2/07-birdo/07-birdo
