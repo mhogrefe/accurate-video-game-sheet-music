@@ -26,4 +26,7 @@ bash lilybuild.sh nes/super-mario-bros-2/03-overworld/03-overworld &&
 bash lilybuild.sh nes/super-mario-bros-2/04-underground/04-underground &&
 bash lilybuild.sh nes/super-mario-bros-2/05-starman/05-starman &&
 bash lilybuild.sh nes/super-mario-bros-2/06-subspace/06-subspace &&
-bash lilybuild.sh nes/super-mario-bros-2/07-birdo/07-birdo
+bash lilybuild.sh nes/super-mario-bros-2/07-birdo/07-birdo &&
+bash lilybuild.sh nes/super-mario-bros-2/08-fanfare/08-fanfare &&
+bash lilybuild.sh nes/super-mario-bros-2/09-bonus-game/09-bonus-game &&
+bash lilybuild.sh nes/super-mario-bros-2/10-no-bonus/10-no-bonus
