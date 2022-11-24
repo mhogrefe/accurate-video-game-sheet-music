@@ -29,5 +29,6 @@ bash lilybuild.sh nes/super-mario-bros-2/06-subspace/06-subspace &&
 bash lilybuild.sh nes/super-mario-bros-2/07-birdo/07-birdo &&
 bash lilybuild.sh nes/super-mario-bros-2/08-fanfare/08-fanfare &&
 bash lilybuild.sh nes/super-mario-bros-2/09-bonus-game/09-bonus-game &&
-bash lilybuild.sh nes/super-mario-bros-2/10-no-bonus/10-no-bonus &&
-bash lilybuild.sh nes/super-mario-bros-2/11-wart/11-wart
+bash lilybuild.sh nes/super-mario-bros-2/10-death/10-death &&
+bash lilybuild.sh nes/super-mario-bros-2/11-wart/11-wart &&
+bash lilybuild.sh nes/super-mario-bros-2/12-boss-victory/12-boss-victory
