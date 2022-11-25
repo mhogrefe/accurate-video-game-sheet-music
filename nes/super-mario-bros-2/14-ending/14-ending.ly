@@ -1,0 +1,162 @@
+\version "2.20.0"
+
+\book {
+    \header {
+        title = "Ending"
+        subtitle = \markup { "from" {\italic "Super Mario Bros. 2"} "for the NES (1988)" }
+        composer = "Koji Kondo"
+        arranger = "arr. Mikhail Hogrefe"
+    }
+
+    \score {
+        {
+            \new StaffGroup <<
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse 2"
+                    \set Staff.shortInstrumentName = "P.2"
+\accidentalStyle modern-cautionary
+\key c \major
+e2 r8 f e c |
+\tuplet 3/2 { d4-. e8 } f2 d4 |
+g2 \tuplet 3/2 { r8 r f } \tuplet 3/2 { f8 e d } |
+e2 r4 d |
+c2 r8 b c d |
+c2 r8 b c d |
+c2 r8 a c d |
+g2 r |
+e2 r8 f e c |
+\tuplet 3/2 { d4-. d8 } g2 g,4 |
+d'2 r8 ees d bes |
+\tuplet 3/2 { c4-. c8 } f2 f,4 |
+c'2 r8 c d f |
+e2 c4 g |
+a2 r8 a b c |
+a2 r8 a b e |
+c2 c |
+c4 g,8[ g] g g4 |
+R1*4
+e'''8 f g d r d r d |
+c8 d e b r b r g |
+a8 b c g r g fis g |
+a8 b c b r c d r |
+\ottava #1
+e8 f g d r d g b |
+c8 d c b r a g f |
+e8 f g d \ottava #0 r d c b |
+c8 r r4 r2 |
+c8 d c d r ees f g |
+R1 |
+c,8 d c d r ees r f |
+g8 r r4 r2 |
+c,8 d c d r ees f g |
+r8 e c g r2 |
+c8 d c d r a b c |
+d8 r r4 r2 |
+                }
+
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse 1"
+                    \set Staff.shortInstrumentName = "P.1"
+\accidentalStyle modern-cautionary
+\key c \major
+g2 r8 a g e |
+\tuplet 3/2 { f4-. g8 } bes2 f4 |
+bes2 \tuplet 3/2 { r8 r bes } \tuplet 3/2 { bes8 g f } |
+g2 r4 f |
+e2 r8 f f f |
+e2 r8 ees ees ees |
+d2 r8 c f f |
+c'2 b |
+c2 r8 c c g |
+\tuplet 3/2 { b4-. b8 } d2 d,4 |
+bes'2 r8 bes bes f |
+\tuplet 3/2 { a4-. a8 } c2 c,4 |
+aes'2 r8 aes aes c |
+c2 g4 e |
+f2 r8 f f a |
+f2 r8 f f f |
+gis4 \tuplet 3/2 { gis8 gis gis } f4 \tuplet 3/2 { f8 f f } |
+e4 \clef bass c,8[ c] c c4 |
+\clef treble
+c''8 g' e g b, g' d g |
+a,8 g' e g b, g' d g |
+c,8 g' e g b, g' d g |
+a,8 g' e g b, g' d g |
+c,8 g' e g b, g' d g |
+a,8 g' e g g, g' d g |
+f,8 f' c f e, e' b e |
+d,8 d' a d g, f' b, f' |
+c8 g' e g b, g' d g |
+bes,8 f' d f a, f' c f |
+g,8 e' c e g, d' b d |
+c8 g' e g c, g' e g |
+aes,8 ees' c ees aes, ees' c ees |
+g,8 e' c e g, e' c e |
+aes,8 ees' c ees aes, ees' c ees |
+g,8 e' c e g, e' c e |
+aes,8 ees' c ees aes, ees' c ees |
+g,8 e' c e g, e' c e |
+fis,8 d' c d fis, d' c d |
+g,8 d' b d g, f' d b' |
+                }
+
+                \new Staff \relative c {
+                    \set Staff.instrumentName = "Triangle"
+                    \set Staff.shortInstrumentName = "T."
+\accidentalStyle modern-cautionary
+\clef bass
+\key c \major
+\tempo 4 = 128
+c4-. \tuplet 3/2 { c8 c c } c8 c c c |
+c4-. \tuplet 3/2 { c8 c c } c8 c c c |
+c4-. \tuplet 3/2 { c8 c c } c8 c c c |
+c4-. \tuplet 3/2 { c8 c c } c8 c b b |
+a4-. \tuplet 3/2 { a8 a a } aes8 aes aes aes |
+g4-. \tuplet 3/2 { g8 g g } ges8 ges ges ges |
+f4-. \tuplet 3/2 { f8 f f } f8 f f f |
+g4-. \tuplet 3/2 { g8 g g } g8 g g g |
+c4-. \tuplet 3/2 { c8 c c } c8 c c c |
+b4-. \tuplet 3/2 { b8 b b } b8 b b b |
+bes4-. \tuplet 3/2 { bes8 bes bes } bes8 bes bes bes |
+a4-. \tuplet 3/2 { a8 a a } a8 a a a |
+aes4-. \tuplet 3/2 { aes8 aes aes } aes8 aes aes aes |
+g4-. \tuplet 3/2 { g8 g g } g8 g g g |
+d'4-. \tuplet 3/2 { d8 d d } d8 d d d |
+g,4-. \tuplet 3/2 { g8 g g } g8 g g g |
+gis4-. \tuplet 3/2 { gis8 gis gis } ais4-. \tuplet 3/2 { ais8 ais ais } |
+\time 7/8
+c4 c8[ c] c c4 |
+\time 4/4
+\bar "||"
+R1*4
+                    \repeat volta 2 {
+R1*16
+                    }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
+                }
+
+                \new DrumStaff {
+                    \drummode {
+                        \set Staff.instrumentName="Noise"
+                        \set Staff.shortInstrumentName="N."
+\repeat percent 16 { sn4 \tuplet 3/2 { sn8 sn sn } sn8 sn sn sn } |
+sn4 \tuplet 3/2 { sn8 sn sn } sn4 \tuplet 3/2 { sn8 sn sn } |
+sn4 sn8[ sn] sn sn4 |
+R1*20
+                    }
+                }
+            >>
+        }
+        \layout {
+            \context {
+                \Staff
+                \RemoveEmptyStaves
+            }
+            \context {
+                \DrumStaff
+                \RemoveEmptyStaves
+            }
+        }
+    }
+}
