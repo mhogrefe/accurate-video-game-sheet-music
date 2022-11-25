@@ -33,8 +33,9 @@ e2 c4 g |
 a2 r8 a b c |
 a2 r8 a b e |
 c2 c |
-c4 g,8[ g] g g4 |
-R1*4
+c4 g,8[ g] g g4 ~ |
+g4 r r2 |
+R1*3
 e'''8 f g d r d r d |
 c8 d e b r b r g |
 a8 b c g r g fis g |
