@@ -33,4 +33,5 @@ bash lilybuild.sh nes/super-mario-bros-2/10-death/10-death &&
 bash lilybuild.sh nes/super-mario-bros-2/11-wart/11-wart &&
 bash lilybuild.sh nes/super-mario-bros-2/12-boss-victory/12-boss-victory &&
 bash lilybuild.sh nes/super-mario-bros-2/13-game-over/13-game-over &&
-bash lilybuild.sh nes/super-mario-bros-2/14-ending/14-ending
+bash lilybuild.sh nes/super-mario-bros-2/14-ending/14-ending &&
+bash lilybuild.sh nes/super-mario-bros-3/01-world-map-1-grass-land/01-world-map-1-grass-land
