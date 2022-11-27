@@ -59,7 +59,7 @@ c4-. c-. d-. d8-. e |
 R1 |
 g,4-. g-. a-. a-. |
 b4-. b8-. a r gis a4-. |
-c8-. c r4 r c8-. c |
+c8 c r4 r c8 c |
 R1
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
@@ -80,7 +80,7 @@ a8-. f a4-. a8-. f a-. a |
 R1 |
 e8-. c e4-. e8-. c e4-. |
 e8-. c e-. e r dis e4-. |
-e8-. e r4 r e8-. e |
+e8 e r4 r e8 e |
 R1 |
                 }
 
@@ -99,7 +99,7 @@ f4-. f-. r8 f d-. f |
 R1 |
 c4-. c-. r8 c a-. c |
 r4 d-. e-. r |
-c8-. c r4 r c8-. c |
+c8 c r4 r c8 c |
 R1 |
                 }
 
@@ -108,11 +108,11 @@ R1 |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 \repeat percent 5 {
-    hh4 hh8 hh hh4 hh8 hh |
-    hh4 hh8 hh hh hho hh hh |
+    ss4 ss8 ss ss4 ss8 ss |
+    ss4 ss8 ss ss hh ss ss |
 }
-r2 r4 hho8 hho |
-hh8 hh hh4 hho r |
+r2 r4 hh8 hh |
+ss8 ss ss4 hh r |
                     }
                 }
 
