@@ -95,7 +95,7 @@ a4-. r8 d, ~ d d d d |
 g4-. r8 c, ~ c c c c |
 f4-. r8 d ~ d d g g |
 c,4-. r8 des ~ des ees c4-. r |
-f4 a'8 f ~ f r r4 |
+f4 c'8 f ~ f r r4 |
 e,4 c'8 e ~ e r r4 |
 d,4 a'8 d ~ d r r4 |
 c,4 g'8 c d,4 e |
