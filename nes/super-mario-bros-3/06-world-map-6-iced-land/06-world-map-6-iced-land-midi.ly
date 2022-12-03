@@ -22,11 +22,11 @@
 \key g \major
 \tempo 4 = 150
 \tuplet 3/2 { g4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { b4 b8 } |
-\tuplet 3/2 { g'4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { eis4 eis8 } |
+\tuplet 3/2 { g'4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { f4 f8 } |
 \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { c4 c8 } |
 \tuplet 3/2 { gis'4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { fis4 fis8 } |
 \tuplet 3/2 { g4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { b4 b8 } |
-\tuplet 3/2 { g'4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { eis4 eis8 } |
+\tuplet 3/2 { g'4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { f4 f8 } |
 \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { c4 c8 } |
 \tuplet 3/2 { gis'4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { fis4 fis8 } |
                 }
