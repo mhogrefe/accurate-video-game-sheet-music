@@ -66,7 +66,7 @@ f,8 c' f c r aes' f c |
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-\repeat percent 6 { bol8. boh32 boh boh8 boh8 r bol bol bol | }
+\repeat percent 6 { cgh8. bol32 bol bol8 bol8 r cgh cgh cgh | }
                     }
                 }
             >>
