@@ -45,4 +45,5 @@ bash lilybuild.sh nes/super-mario-bros-3/08-world-map-8-dark-land/08-world-map-8
 bash lilybuild.sh nes/super-mario-bros-3/09-overworld-1/09-overworld-1 &&
 bash lilybuild.sh nes/super-mario-bros-3/10-overworld-2/10-overworld-2 &&
 bash lilybuild.sh nes/super-mario-bros-3/11-underwater/11-underwater &&
-bash lilybuild.sh nes/super-mario-bros-3/12-underground/12-underground
+bash lilybuild.sh nes/super-mario-bros-3/12-underground/12-underground &&
+bash lilybuild.sh nes/super-mario-bros-3/13-sky/13-sky
