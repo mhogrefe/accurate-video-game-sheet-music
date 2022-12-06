@@ -67,14 +67,14 @@ r2 g4 c |
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-bol8\ppp boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
-bol8 boh r boh boh boh bol bol |
+cgl8\ppp cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
+cgl8 cgh r cgh cgh cgh cgl cgl |
                     }
                 }
             >>
