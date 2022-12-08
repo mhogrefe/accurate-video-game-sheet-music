@@ -18,7 +18,6 @@
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 \key g \major
 \tempo 4 = 150
 g2 a |
@@ -43,7 +42,6 @@ a2 gis |
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
 \key g \major
-\accidentalStyle modern-cautionary
 \clef bass
 c8 c' g, g' c, c' g, g' |
 c,8 c' g, g' c, c' g, g' |

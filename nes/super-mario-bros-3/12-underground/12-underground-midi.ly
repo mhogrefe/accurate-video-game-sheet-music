@@ -18,7 +18,6 @@
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 \tempo 4 = 100
 \key bes \major
 \clef bass
@@ -41,7 +40,6 @@ c8-. ees-. d-. aes-. g-. des'-. \tuplet 6/4 { c16 ges' f e bes' a } |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \key bes \major
 \clef bass
 R1*2
@@ -63,7 +61,6 @@ c8-. ees-. d-. aes-. g-. des'-. \tuplet 6/4 { c16 ges' f e bes' a } |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \key bes \major
 \clef bass
 R1*2

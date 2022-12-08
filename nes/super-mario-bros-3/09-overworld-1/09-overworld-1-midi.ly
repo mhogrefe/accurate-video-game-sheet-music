@@ -18,7 +18,6 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \tempo 4 = 150
 \tuplet 3/2 { g4-. g'8 g'4-. f8 ~ f4 a,8 ais4-. b8 ~ } |
 \tuplet 3/2 { b4 r8 r4 g'8 } g'4 r |
@@ -59,7 +58,6 @@ c4 r r2 |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 \clef bass
 \tuplet 3/2 { b4-. b'8 \clef treble b'4-. a8 ~ a4 c,8 cis4 d8 ~ } |
 \tuplet 3/2 { d4 r8 } r4 r2 |
@@ -100,7 +98,6 @@ e4 r r2 |
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \clef bass
 \tuplet 3/2 { g4-. g8 d'4-. c8 ~ c4 f,8 fis4-. g8 ~ } |
 \tuplet 3/2 { g4 r8 } r4 r g |

@@ -14,7 +14,6 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 \key f \major
 \tempo 4 = 140
 \partial 4 c8 c |
@@ -34,7 +33,6 @@ f4 r r2 |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \clef bass
 \key f \major
 
@@ -55,7 +53,6 @@ r8 f, c'16 bes a g f4 r |
                 \new Staff \relative c, {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \clef bass
 \key f \major
 

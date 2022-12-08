@@ -18,7 +18,6 @@
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \tempo 4 = 112
 g8 g' f d ~ d g, a ais |
 b2 r |
@@ -43,7 +42,6 @@ a2 g |
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 b8 b' a f ~ f b, c cis |
 d2 r |
 e8 g e' dis ~ dis f4 dis8 |
@@ -63,7 +61,6 @@ f'2 b, |
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 R1
 g4 a ais b |
 c,8-. g''-. c-. g-. g,-. g'-. c-. g-. |

@@ -14,7 +14,6 @@
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \key c \major
 b8 f'4-. f8 \tuplet 3/2 { f4 e d } |
 c4-. r r2 |
@@ -23,7 +22,6 @@ c4-. r r2 |
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \clef bass
 \key c \major
 g4-. r8 g \tuplet 3/2 { g4 a b } |

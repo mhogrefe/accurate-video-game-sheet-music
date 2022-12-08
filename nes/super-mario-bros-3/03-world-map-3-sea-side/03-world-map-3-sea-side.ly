@@ -18,7 +18,6 @@
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 \tempo 4 = 150
                     \repeat volta 2 {
 b2 a |
@@ -37,7 +36,6 @@ a2 gis |
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 r4 \acciaccatura dis8 e4-. r8 e4. |
 r4 r8 e r4 \acciaccatura dis8 e4-. |
 r4 \acciaccatura e8 f4-. r8 f4. |
@@ -51,7 +49,6 @@ r4 r8 f r4 \acciaccatura e8 f4-. |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \clef bass
 c4 r8 g g4 r8 c |
 c4 r8 g g4 r8 c |

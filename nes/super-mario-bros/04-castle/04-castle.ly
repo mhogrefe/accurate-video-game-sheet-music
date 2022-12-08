@@ -14,7 +14,6 @@
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \set subdivideBeams = ##t
 \set baseMoment = #(ly:make-moment 1/8)
 \set beatStructure = 2,2
@@ -30,7 +29,6 @@ bes32 d bes ees bes d bes cis bes d bes cis bes bis bes cis |
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 \time 2/4
 \tempo 4 = 90
                     \repeat volta 2 {
@@ -48,7 +46,6 @@ e32 f16 ges f e f e dis e32 |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \clef bass
 ees2 |
 d4 ges |

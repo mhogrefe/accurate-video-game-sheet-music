@@ -45,7 +45,6 @@ swing = \markup {
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\accidentalStyle modern-cautionary
 \time 2/2
 \tempo 2 = 100
                     \repeat volta 2 {
@@ -69,7 +68,6 @@ R1
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\accidentalStyle modern-cautionary
 e8-. c e4-. e8-. c e4-. |
 e8-. c e-. e r dis e4-. |
 e8-. c e4-. e8-. c e-. e |
@@ -87,7 +85,6 @@ R1 |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\accidentalStyle modern-cautionary
 \clef bass
 c4-. c-. r8 c a-. c |
 r4 d-. e-. r |
