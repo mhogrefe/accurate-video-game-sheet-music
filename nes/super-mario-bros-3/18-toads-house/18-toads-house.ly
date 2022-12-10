@@ -6,7 +6,7 @@
 
 \book {
     \header {
-        title = "Starman"
+        title = "Toad’s House"
         subtitle = \markup { "from" {\italic "Super Mario Bros. 3"} "for the NES (1988)" }
         composer = "Koji Kondo"
         arranger = "arr. Mikhail Hogrefe"
@@ -15,59 +15,52 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
+                \new Staff \relative c''' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
-\key c \major
-\time 2/2
-\tempo 2 = 150
+\key ees \major
+\tempo 4 = 112
                     \repeat volta 2 {
-f4-. f-. f-. d8 f |
-r8 f r d f d f4-. |
-e4-. e-. e-. c8 e |
-r8 e r c e c e4-. |
+bes4-. bes-. a16 bes r8 bes4-. |
+c4-. c-. b16 c r8 c4-. |
+bes4-. bes-. a16 bes r8 bes4-. |
+c4-. c-. b16 c r8 c4-. |
+cis4-. cis-. bis16 cis r8 cis4-. |
+ees4-. ees-. d16 ees r8 ees4-. |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
-                \new Staff \relative c'' {
+                \new Staff \relative c''' {
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
-\key c \major
-c4-. c-. c-. r8 c |
-r8 c r4 c-. c-. |
-b4-. b-. b-. r8 b |
-r8 b r4 b-. b-. |
+\key ees \major
+g4-. g-. fis16 g r8 g4-. |
+a4-. a-. gis16 a r8 a4-. |
+g4-. g-. fis16 g r8 g4-. |
+a4-. a-. gis16 a r8 a4-. |
+bes4-. bes-. a16 bes r8 bes4-. |
+c4-. c-. b16 c r8 c4-. |
                 }
 
-                \new Staff \relative c {
+                \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\clef bass
-\key c \major
-d4 r a' r8 d |
-r2 a4 d |
-c,4 r g' r8 c |
-r2 g4 c |
-                }
-
-                \new DrumStaff {
-                    \drummode {
-                        \set Staff.instrumentName="Noise"
-                        \set Staff.shortInstrumentName="N."
-\repeat percent 4 { hh4 hh8 hh hh4 hh8 hh | }
-                    }
+\key ees \major
+ees8-. bes'-. ees-. bes-. ees,-. bes'-. ees-. bes-. |
+f8-. c'-. f-. c-. f,-. c'-. f-. c-. |
+ees,8-. bes'-. ees-. bes-. ees,-. bes'-. ees-. bes-. |
+f8-. c'-. f-. c-. f,-. c'-. f-. c-. |
+fis,8-. cis'-. fis-. cis-. fis,-. cis'-. fis-. cis-. |
+aes-. ees'-. aes-. ees-. aes,-. ees'-. aes-. ees-. |
                 }
 
                 \new DrumStaff {
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-wbh4 r wbh4. wbh8 |
-r2 wbh4 wbh |
-wbh4 r wbh4. wbh8 |
-r2 wbh4 wbh |
+\repeat percent 6 { cb4 cb cb cb | }
                     }
                 }
             >>
