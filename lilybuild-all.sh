@@ -52,4 +52,5 @@ bash lilybuild.sh nes/super-mario-bros-3/15-warp-whistle/15-warp-whistle &&
 bash lilybuild.sh nes/super-mario-bros-3/16-music-box/16-music-box &&
 bash lilybuild.sh nes/super-mario-bros-3/17-minigame/17-minigame &&
 bash lilybuild.sh nes/super-mario-bros-3/18-toads-house/18-toads-house &&
-bash lilybuild.sh nes/super-mario-bros-3/19-fortress/19-fortress
+bash lilybuild.sh nes/super-mario-bros-3/19-fortress/19-fortress &&
+bash lilybuild.sh nes/super-mario-bros-3/20-miniboss-battle/20-miniboss-battle
