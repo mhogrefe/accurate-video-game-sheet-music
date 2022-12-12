@@ -20,28 +20,28 @@
                     \set Staff.shortInstrumentName = "P.2"
 \key g \major
 \tempo 4 = 150
-\tuplet 3/2 { g4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { b4 b8 } |
-\tuplet 3/2 { g'4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { f4 f8 } |
-\tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { c4 c8 } |
-\tuplet 3/2 { gis'4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { fis4 fis8 } |
-\tuplet 3/2 { g4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { b4 b8 } |
-\tuplet 3/2 { g'4 g8 } \tuplet 3/2 { b,4 b8 } \tuplet 3/2 { dis4 dis8 } \tuplet 3/2 { f4 f8 } |
-\tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { c4 c8 } |
-\tuplet 3/2 { gis'4 gis8 } \tuplet 3/2 { c,4 c8 } \tuplet 3/2 { e4 e8 } \tuplet 3/2 { fis4 fis8 } |
+g4 b, dis b |
+g'4 b, dis f |
+gis4 c, e c |
+gis'4 c, e fis |
+g4 b, dis b |
+g'4 b, dis f |
+gis4 c, e c |
+gis'4 c, e fis |
                 }
 
                 \new Staff \relative c''' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
 \key g \major
-r8 \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 }
-\tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 }
-\tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 }
-\tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } r8 |
-r8 \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 }
-\tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 } \tuplet 3/2 { g4 g8 }
-\tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 }
-\tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } \tuplet 3/2 { gis4 gis8 } r8 |
+r8 g4 g g g8 ~ |
+g8 g4 g g g8 ~ |
+g8 gis4 gis gis gis8 ~ |
+gis8 gis4 gis gis r8 |
+r8 g4 g g g8 ~ |
+g8 g4 g g g8 ~ |
+g8 gis4 gis gis gis8 ~ |
+gis8 gis4 gis gis r8 |
                 }
 
 
