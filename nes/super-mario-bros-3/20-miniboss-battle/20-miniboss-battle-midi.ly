@@ -153,16 +153,6 @@ R1*18
                 >>
             >>
         }
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
         \midi {}
     }
 }
