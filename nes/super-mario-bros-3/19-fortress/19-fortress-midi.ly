@@ -104,23 +104,23 @@ f'2. |
 R1 |
                 }
 
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "DMC"
-                    \set Staff.shortInstrumentName = "DMC"
-                    \set Staff.midiInstrument = "timpani"
-\clef bass
+                \new DrumStaff {
+                    \drummode {
+                        \set Staff.instrumentName="DMC"
+                        \set Staff.shortInstrumentName="DMC"
 R2.*2
-e8 b r4 r |
+tomml8 toml r4 r |
 R2.*2
-e8 b r4 r |
+tomml8 toml r4 r |
 R2.*4
-e8 b r4 r2 |
+tomml8 toml r4 r2 |
 R2.*2
-e8 b r4 r |
+tomml8 toml r4 r |
 R2.*2
-e8 b r4 r |
+tomml8 toml r4 r |
 R2.*4
-e8 b r4 r2 |
+tomml8 toml r4 r2 |
+                    }
                 }
             >>
         }

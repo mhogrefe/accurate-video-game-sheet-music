@@ -117,40 +117,32 @@ hhp8 hhp hhp hhp hhp hhp hhp hhp |
                     }
                 }
 
-                \new GrandStaff <<
-                    \set GrandStaff.instrumentName="DMC"
-                    \set GrandStaff.shortInstrumentName="DMC"
-                    \new DrumStaff {
-                        \drummode {
-R1*2
-bd4\ppp sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd wbh wbl4 |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd4 sn8 bd |
-bd4 sn8 bd bd wbh wbl4 |
-                        }
-                    }
-                    \new Staff \relative c {
-                        \set Staff.midiInstrument = "timpani"
-\clef bass
+                \new DrumStaff {
+                    \set DrumStaff.instrumentName="DMC"
+                    \set DrumStaff.shortInstrumentName="DMC"
+                    \drummode {
 R1
-e16 b e b e b e b e b e b e b e b |
-R1*18
+tomml16\ppp toml tomml toml tomml toml tomml toml tomml toml tomml toml tomml toml tomml toml |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd wbh wbl4 |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd4 sn8 bd |
+bd4 sn8 bd bd wbh wbl4 |
                     }
-                >>
+                }
             >>
         }
         \midi {}
