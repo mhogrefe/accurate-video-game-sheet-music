@@ -87,16 +87,6 @@ r2 wbh4 wbh |
                 }
             >>
         }
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
         \midi {}
     }
 }
