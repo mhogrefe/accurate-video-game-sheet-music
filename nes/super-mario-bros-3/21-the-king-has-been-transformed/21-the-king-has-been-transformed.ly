@@ -15,6 +15,7 @@
                     \set Staff.instrumentName = "Pulse 2"
                     \set Staff.shortInstrumentName = "P.2"
 \time 3/4
+\set Timing.beamExceptions = #'()
 \tempo 4 = 75
                     \repeat volta 2 {
 e8 c c a e d |
@@ -28,6 +29,7 @@ e'8 c c a e d |
                 \new Staff \relative c''' {
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
+\set Timing.beamExceptions = #'()
 r16 d8 b g g c, e16 ~ |
 e16 d'8 b g g c, e16 ~ |
 e16 d'8 b g g c, e16 |
@@ -36,6 +38,7 @@ e16 d'8 b g g c, e16 |
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
+\set Timing.beamExceptions = #'()
 \clef bass
 c2 g'4 |
 f2 a,8 b |
