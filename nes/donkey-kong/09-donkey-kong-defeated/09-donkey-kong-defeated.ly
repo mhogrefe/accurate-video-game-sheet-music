@@ -3,7 +3,7 @@
 \book {
     \header {
         title = "Donkey Kong Defeated"
-        subtitle = \markup { "from" {\italic "Donkey Kong"} "for the NES (1981)" }
+        subtitle = \markup { "from" {\italic "Donkey Kong"} "for the NES (1983)" }
         composer = "Yukio Kaneoka"
         arranger = "arr. Mikhail Hogrefe"
     }
