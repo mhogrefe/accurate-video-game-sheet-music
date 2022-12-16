@@ -109,30 +109,30 @@ R1 |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-ss4\ppp \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
+hhp4\ppp \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
 r2 r4 \tuplet 3/2 { hh4 hh8 } |
-\tuplet 3/2 { ss4 ss8 } ss4 hh r |
-ss4\ppp \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 } ss4 \tuplet 3/2 { ss4 ss8 } |
-ss4 \tuplet 3/2 { ss4 ss8 ss4 hh8 ss4 ss8 } |
+\tuplet 3/2 { hhp4 hhp8 } hhp4 hh r |
+hhp4\ppp \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 } hhp4 \tuplet 3/2 { hhp4 hhp8 } |
+hhp4 \tuplet 3/2 { hhp4 hhp8 hhp4 hh8 hhp4 hhp8 } |
 r2 r4 \tuplet 3/2 { hh4 hh8 } |
-\tuplet 3/2 { ss4 ss8 } ss4 hh r |
+\tuplet 3/2 { hhp4 hhp8 } hhp4 hh r |
                     }
                 }
 

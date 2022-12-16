@@ -105,11 +105,11 @@ R1 |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 \repeat percent 5 {
-    ss4 ss8 ss ss4 ss8 ss |
-    ss4 ss8 ss ss hh ss ss |
+    hhp4 hhp8 hhp hhp4 hhp8 hhp |
+    hhp4 hhp8 hhp hhp hh hhp hhp |
 }
 r2 r4 hh8 hh |
-ss8 ss ss4 hh r |
+hhp8 hhp hhp4 hh r |
                     }
                 }
 

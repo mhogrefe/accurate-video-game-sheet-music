@@ -60,7 +60,7 @@ r8 b'-. b-. b-. c-. c-. d-. d-. |
 \clef bass
 r4 g bes c |
 fis1 |
-c8 c dis e f f gis a |
+c8\p c dis e f f gis a |
 c,8 c dis e f f gis a |
 c,8 c dis e f f gis a |
 c,8 c dis e f f a c |
