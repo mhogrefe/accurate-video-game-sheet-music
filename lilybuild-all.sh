@@ -56,4 +56,6 @@ bash lilybuild.sh nes/super-mario-bros-3/19-fortress/19-fortress &&
 bash lilybuild.sh nes/super-mario-bros-3/20-miniboss-battle/20-miniboss-battle &&
 bash lilybuild.sh nes/super-mario-bros-3/21-the-king-has-been-transformed/21-the-king-has-been-transformed &&
 bash lilybuild.sh nes/super-mario-bros-3/22-airship/22-airship &&
-bash lilybuild.sh nes/super-mario-bros-3/23-boss-battle/23-boss-battle
+bash lilybuild.sh nes/super-mario-bros-3/23-boss-battle/23-boss-battle &&
+bash lilybuild.sh nes/super-mario-bros-3/24-battle-victory/24-battle-victory &&
+bash lilybuild.sh nes/super-mario-bros-3/25-king-restored/25-king-restored

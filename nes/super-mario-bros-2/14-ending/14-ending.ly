@@ -39,10 +39,10 @@ e'''8 f g d r d r d |
 c8 d e b r b r g |
 a8 b c g r g fis g |
 a8 b c b r c d r |
-\ottava #1
-e8 f g d r d g b |
+e8 f g d r \ottava #1 d g b |
 c8 d c b r a g f |
-e8 f g d \ottava #0 r d c b |
+\ottava #0
+e8 f g d r d c b |
 c8 r r4 r2 |
 c8 d c d r ees f g |
 R1 |
