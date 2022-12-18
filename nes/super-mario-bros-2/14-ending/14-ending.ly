@@ -35,23 +35,23 @@ c2 c |
 c4 g,8[ g] g g4 ~ |
 g4 r r2 |
 R1*3
-e'''8 f g d r d r d |
-c8 d e b r b r g |
-a8 b c g r g fis g |
-a8 b c b r c d r |
-e8 f g d r \ottava #1 d g b |
-c8 d c b r a g f |
+e'''8-. f-. g-. d-. r d-. r d-. |
+c8-. d-. e-. b-. r b-. r g-. |
+a8-. b-. c-. g-. r g-. fis-. g-. |
+a8-. b-. c-. b-. r c-. d-. r |
+e8-. f-. g-. d-. r \ottava #1 d-. g-. b-. |
+c8-. d-. c-. b-. r a-. g-. f-. |
 \ottava #0
-e8 f g d r d c b |
-c8 r r4 r2 |
-c8 d c d r ees f g |
+e8-. f-. g-. d-. r d-. c-. b-. |
+c8-. r r4 r2 |
+c8-. d-. c-. d-. r ees-. f-. g-. |
 R1 |
-c,8 d c d r ees r f |
-g8 r r4 r2 |
-c,8 d c d r ees f g |
-r8 e c g r2 |
-c8 d c d r a b c |
-d8 r r4 r2 |
+c,8-. d-. c-. d-. r ees-. r f-. |
+g8-. r r4 r2 |
+c,8-. d-. c-. d-. r ees-. f-. g-. |
+r8 e-. c-. g-. r2 |
+c8-. d-. c-. d-. r a-. b-. c-. |
+d8-. r r4 r2 |
                 }
 
                 \new Staff \relative c'' {
@@ -77,26 +77,26 @@ f2 r8 f f f |
 gis4 \tuplet 3/2 { gis8 gis gis } f4 \tuplet 3/2 { f8 f f } |
 e4 \clef bass c,8[ c] c c4 |
 \clef treble
-c''8 g' e g b, g' d g |
-a,8 g' e g b, g' d g |
-c,8 g' e g b, g' d g |
-a,8 g' e g b, g' d g |
-c,8 g' e g b, g' d g |
-a,8 g' e g g, g' d g |
-f,8 f' c f e, e' b e |
-d,8 d' a d g, f' b, f' |
-c8 g' e g b, g' d g |
-bes,8 f' d f a, f' c f |
-g,8 e' c e g, d' b d |
-c8 g' e g c, g' e g |
-aes,8 ees' c ees aes, ees' c ees |
-g,8 e' c e g, e' c e |
-aes,8 ees' c ees aes, ees' c ees |
-g,8 e' c e g, e' c e |
-aes,8 ees' c ees aes, ees' c ees |
-g,8 e' c e g, e' c e |
-fis,8 d' c d fis, d' c d |
-g,8 d' b d g, f' d b' |
+c''8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+a,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+c,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+a,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+c,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+a,8-. g'-. e-. g-. g,-. g'-. d-. g-. |
+f,8-. f'-. c-. f-. e,-. e'-. b-. e-. |
+d,8-. d'-. a-. d-. g,-. f'-. b,-. f'-. |
+c8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+bes,8-. f'-. d-. f-. a,-. f'-. c-. f-. |
+g,8-. e'-. c-. e-. g,-. d'-. b-. d-. |
+c8-. g'-. e-. g-. c,-. g'-. e-. g-. |
+aes,8-. ees'-. c-. ees-. aes,-. ees'-. c-. ees-. |
+g,8-. e'-. c-. e-. g,-. e'-. c-. e-. |
+aes,8-. ees'-. c-. ees-. aes,-. ees'-. c-. ees-. |
+g,8-. e'-. c-. e-. g,-. e'-. c-. e-. |
+aes,8-. ees'-. c-. ees-. aes,-. ees'-. c-. ees-. |
+g,8-. e'-. c-. e-. g,-. e'-. c-. e-. |
+fis,8-. d'-. c-. d-. fis,-. d'-. c-. d-. |
+g,8-. d'-. b-. d-. g,-. f'-. d-. b'-. |
                 }
 
                 \new Staff \relative c {
