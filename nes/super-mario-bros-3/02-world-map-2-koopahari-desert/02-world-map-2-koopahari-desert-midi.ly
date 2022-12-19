@@ -64,10 +64,10 @@ wbh8 wbl wbh wbl wbh wbl wbh wbl |
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-tomh8\ppp tomml ss ss tomh tomml ss ss |
-tomh8 tomml ss ss tomh tomml ss ss |
-tomh8 tomml ss ss tomh tomml ss ss |
-tomh8 tomml ss ss tomh tomml ss ss |
+tomh8\ppp tomml cgl cgl tomh tomml cgl cgl |
+tomh8 tomml cgl cgl tomh tomml cgl cgl |
+tomh8 tomml cgl cgl tomh tomml cgl cgl |
+tomh8 tomml cgl cgl tomh tomml cgl cgl |
                     }
                 }
             >>
