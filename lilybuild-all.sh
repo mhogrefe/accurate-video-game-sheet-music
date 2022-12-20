@@ -60,4 +60,5 @@ bash lilybuild.sh nes/super-mario-bros-3/23-boss-battle/23-boss-battle &&
 bash lilybuild.sh nes/super-mario-bros-3/24-battle-victory/24-battle-victory &&
 bash lilybuild.sh nes/super-mario-bros-3/25-king-restored/25-king-restored &&
 bash lilybuild.sh nes/super-mario-bros-3/26-level-cleared/26-level-cleared &&
-bash lilybuild.sh nes/super-mario-bros-3/27-death/27-death
+bash lilybuild.sh nes/super-mario-bros-3/27-death/27-death &&
+bash lilybuild.sh nes/super-mario-bros-3/28-game-over/28-game-over
