@@ -65,11 +65,11 @@ b4-. b r r8 b |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
                         \repeat percent 3 {
-ss8 ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
                         }
-ss8 ss hh ss ss hh ss ss |
-hh4 hh r8 \tuplet 3/2 { ss16 ss ss } hh4 |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh4 hh r8 \tuplet 3/2 { hhp16 hhp hhp } hh4 |
                     }
                 }
 
@@ -78,11 +78,11 @@ hh4 hh r8 \tuplet 3/2 { ss16 ss ss } hh4 |
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
                         \repeat percent 3 {
-bd4 wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
+bd4 ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
                         }
-bd4 wbl8 bd bd wbl r bd |
-bd4 r r8 bd wbl4 |
+bd4 ss8 bd bd ss r bd |
+bd4 r r8 bd sn4 |
                     }
                 }
             >>

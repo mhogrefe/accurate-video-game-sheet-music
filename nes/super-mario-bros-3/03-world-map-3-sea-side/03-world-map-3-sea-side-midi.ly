@@ -84,22 +84,22 @@ b4-. b r r8 b |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-ss8\ppp ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
-ss8 ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
-ss8 ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
-ss8 ss hh ss ss hh ss ss |
-hh4 hh r8 \tuplet 3/2 { ss16 ss ss } hh4 |
-ss8\ppp ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
-ss8 ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
-ss8 ss hh ss ss hh ss ss |
-hh8 ss ss hh ss ss hh ss |
-ss8 ss hh ss ss hh ss ss |
-hh4 hh r8 \tuplet 3/2 { ss16 ss ss } hh4 |
+hhp8\ppp hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh4 hh r8 \tuplet 3/2 { hhp16 hhp hhp } hh4 |
+hhp8\ppp hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh8 hhp hhp hh hhp hhp hh hhp |
+hhp8 hhp hh hhp hhp hh hhp hhp |
+hh4 hh r8 \tuplet 3/2 { hhp16 hhp hhp } hh4 |
                     }
                 }
 
@@ -107,22 +107,22 @@ hh4 hh r8 \tuplet 3/2 { ss16 ss ss } hh4 |
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-bd4\ppp wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
-bd4 wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
-bd4 wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
-bd4 wbl8 bd bd wbl r bd |
-bd4 r r8 bd wbl4 |
-bd4\ppp wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
-bd4 wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
-bd4 wbl8 bd bd wbl r bd |
-wbl4 r8 wbl bd4 wbl8 bd |
-bd4 wbl8 bd bd wbl r bd |
-bd4 r r8 bd wbl4 |
+bd4\ppp ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
+bd4 ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
+bd4 ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
+bd4 ss8 bd bd ss r bd |
+bd4 r r8 bd ss4 |
+bd4 ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
+bd4 ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
+bd4 ss8 bd bd ss r bd |
+ss4 r8 ss bd4 ss8 bd |
+bd4 ss8 bd bd ss r bd |
+bd4 r r8 bd sn4 |
                     }
                 }
             >>
