@@ -63,4 +63,5 @@ bash lilybuild.sh nes/super-mario-bros-3/26-level-cleared/26-level-cleared &&
 bash lilybuild.sh nes/super-mario-bros-3/27-death/27-death &&
 bash lilybuild.sh nes/super-mario-bros-3/28-game-over/28-game-over &&
 bash lilybuild.sh nes/super-mario-bros-3/29-bowser-battle/29-bowser-battle &&
-bash lilybuild.sh nes/super-mario-bros-3/30-ending/30-ending
+bash lilybuild.sh nes/super-mario-bros-3/30-ending/30-ending &&
+bash lilybuild.sh nes/super-mario-bros-3/31-credits/31-credits
