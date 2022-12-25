@@ -66,4 +66,5 @@ bash lilybuild.sh nes/super-mario-bros-3/29-bowser-battle/29-bowser-battle &&
 bash lilybuild.sh nes/super-mario-bros-3/30-ending/30-ending &&
 bash lilybuild.sh nes/super-mario-bros-3/31-credits/31-credits &&
 bash lilybuild.sh nes/the-legend-of-zelda/01-introduction/01-introduction &&
-bash lilybuild.sh nes/the-legend-of-zelda/02-overworld/02-overworld
+bash lilybuild.sh nes/the-legend-of-zelda/02-overworld/02-overworld &&
+bash lilybuild.sh nes/the-legend-of-zelda/03-got-item/03-got-item
