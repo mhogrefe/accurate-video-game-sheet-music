@@ -90,7 +90,7 @@ aes4-. \tuplet 3/2 { aes8 aes ges } aes4-. aes-. |
 ges4-. \tuplet 3/2 { ges8 ges fes } ges4-. ges-. |
 des'4-. \tuplet 3/2 { des8 des c } des4-. des-. |
 ces4-. \tuplet 3/2 { ces8 ces bes } ces4-. \tuplet 3/2 { ces8 ces ces } |
-bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. \tuplet 3/2 { bes8 bes bes } |
+bes4-. \tuplet 3/2 { bes8 bes \tweak NoteColumn.X-offset #.5 aes } bes4-. \tuplet 3/2 { bes8 bes bes } |
 c4-. \tuplet 3/2 { c8 c b } c4-. \tuplet 3/2 { c8 c c } |
 f,4-. f-. f-. g8 a |
 bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. bes-. |
