@@ -12,27 +12,24 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 3/4
 \set Timing.beamExceptions = #'()
 \tempo 4 = 75
                     \repeat volta 2 {
+<<{
 e8 c c a e d |
 e'8 c c a e d |
 e'8 c c a e d |
+}\\{
+r16 d'8 b g g c, e16 ~ |
+e16 d'8 b g g c, e16 ~ |
+e16 d'8 b g g c, e16 |
+}>>
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\set Timing.beamExceptions = #'()
-r16 d8 b g g c, e16 ~ |
-e16 d'8 b g g c, e16 ~ |
-e16 d'8 b g g c, e16 |
                 }
 
                 \new Staff \relative c {

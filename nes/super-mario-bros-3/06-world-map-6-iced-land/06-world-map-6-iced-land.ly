@@ -16,30 +16,26 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c'''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key g \major
 \tempo 4 = 150
                     \repeat volta 2 {
+<<{
 g4 b, dis b |
 g'4 b, dis f |
 gis4 c, e c |
 gis'4 c, e fis |
+}\\{
+r8 g,4 g g g8 ~ |
+g8 g4 g g g8 ~ |
+g8 gis4 gis gis gis8 ~ |
+gis8 gis4 gis gis r8 |
+}>>
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
                 }
-
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key g \major
-r8 g4 g g g8 ~ |
-g8 g4 g g g8 ~ |
-g8 gis4 gis gis gis8 ~ |
-gis8 gis4 gis gis r8 |
-                }
-
 
                 \new DrumStaff {
                     \drummode {

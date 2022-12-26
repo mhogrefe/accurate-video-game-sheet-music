@@ -17,26 +17,24 @@
 \time 3/4
 \tempo 4 = 75
                     \repeat volta 2 {
+<<{
 e8 c c a e d |
 e'8 c c a e d |
 e'8 c c a e d |
 e'8 c c a e d |
 e'8 c c a e d |
 e'8 c c a e d |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-r16 d8 b g g c, e16 ~ |
+}\\{
+r16 d'8 b g g c, e16 ~ |
 e16 d'8 b g g c, e16 ~ |
 e16 d'8 b g g c, e16 |
 r16 d'8 b g g c, e16 ~ |
 e16 d'8 b g g c, e16 ~ |
 e16 d'8 b g g c, e16 |
+}>>
+                    }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
                 \new Staff \relative c {

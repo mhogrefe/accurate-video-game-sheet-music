@@ -12,35 +12,32 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key bes \major
 \tempo 4 = 90
                     \repeat volta 2 {
-g8 d' g, d' g, d' g, d' |
-fis, d' fis, d' fis, d' fis, d' |
-f,8 d' f, d' f, d' f, d' |
-e,8 d' e, d' e, d' e, d' |
-ees,8 c' ees, c' ees, c' ees, c' |
-d,8 c' d, c' d, c' d, c' |
-\time 5/4
-c,8 a' fis c' a ees' ees ees a a |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key bes \major
+<<{
 r16 bes8 ees bes ees bes ees bes ees16 ~ |
 ees16 a,8 ees' a, ees' a, ees' a, ees'16 ~ |
 ees16 aes,8 ees' aes, ees' aes, ees' aes, ees'16 ~ |
 ees16 g,8 ees' g, ees' g, ees' g, ees'16 |
 r16 g,8 d' g, d' g, d' g, d'16 ~ |
 d16 g,8 d' g, d' g, d' g, d'16 ~ |
+\time 5/4
 d16 fis,8 c' a ees' c c fis fis fis c'16 |
+}\\{
+g,8 d' g, d' g, d' g, d' |
+fis, d' fis, d' fis, d' fis, d' |
+f,8 d' f, d' f, d' f, d' |
+e,8 d' e, d' e, d' e, d' |
+ees,8 c' ees, c' ees, c' ees, c' |
+d,8 c' d, c' d, c' d, c' |
+c,8 a' fis c' a ees' ees ees a a |
+}>>
+                    }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
                 \new Staff \relative c' {
