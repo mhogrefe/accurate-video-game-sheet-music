@@ -42,7 +42,7 @@ b4\fermata r r2 |
                     \set Staff.shortInstrumentName = "T."
 \key g \major
 \clef bass
-des4 |
+d4 |
 g1 |
 f1 |
 ees1 |
