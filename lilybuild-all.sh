@@ -72,4 +72,5 @@ bash lilybuild.sh nes/the-legend-of-zelda/04-dungeon/04-dungeon &&
 bash lilybuild.sh nes/the-legend-of-zelda/05-found-secret/05-found-secret &&
 bash lilybuild.sh nes/the-legend-of-zelda/06-got-triforce-shard/06-got-triforce-shard &&
 bash lilybuild.sh nes/the-legend-of-zelda/07-death/07-death &&
-bash lilybuild.sh nes/the-legend-of-zelda/08-continue/08-continue
+bash lilybuild.sh nes/the-legend-of-zelda/08-continue/08-continue &&
+bash lilybuild.sh nes/the-legend-of-zelda/09-warp-whistle/09-warp-whistle
