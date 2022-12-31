@@ -133,9 +133,9 @@ bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. bes-. |
 aes4-. \tuplet 3/2 { aes8 aes ges } aes4-. aes-. |
 ges4-. \tuplet 3/2 { ges8 ges fes } ges4-. ges-. |
 f4-. \tuplet 3/2 { f8 f ees } f4-. f-. |
-\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } ges4-. r |
+\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } e4-. r |
 f4-. \tuplet 3/2 { f,,8 f f } f4-. r |
-\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } ges4-. r |
+\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } e4-. r |
 f4-. \tuplet 3/2 { f,,8 f f } f4-. r |
 ces'4-. \tuplet 3/2 { ces8 ces bes } ces4-. \tuplet 3/2 { ces8 ces ces } |
 bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. \tuplet 3/2 { bes8 bes bes } |
@@ -153,9 +153,9 @@ bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. bes-. |
 aes4-. \tuplet 3/2 { aes8 aes ges } aes4-. aes-. |
 ges4-. \tuplet 3/2 { ges8 ges fes } ges4-. ges-. |
 f4-. \tuplet 3/2 { f8 f ees } f4-. f-. |
-\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } ges4-. r |
+\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } e4-. r |
 f4-. \tuplet 3/2 { f,,8 f f } f4-. r |
-\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } ges4-. r |
+\tuplet 3/2 { e8 bes' des } \tuplet 3/2 { e8 bes' des } e4-. r |
 f4-. \tuplet 3/2 { f,,8 f f } f4-. r |
 ces'4-. \tuplet 3/2 { ces8 ces bes } ces4-. \tuplet 3/2 { ces8 ces ces } |
 bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. \tuplet 3/2 { bes8 bes bes } |
