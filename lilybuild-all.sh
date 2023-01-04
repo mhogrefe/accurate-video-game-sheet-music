@@ -75,5 +75,6 @@ bash lilybuild.sh nes/the-legend-of-zelda/07-death/07-death &&
 bash lilybuild.sh nes/the-legend-of-zelda/08-continue/08-continue &&
 bash lilybuild.sh nes/the-legend-of-zelda/09-warp-whistle/09-warp-whistle &&
 bash lilybuild.sh nes/the-legend-of-zelda/10-death-mountain/10-death-mountain &&
-bash lilybuild.sh nes/the-legend-of-zelda/11-zelda-rescued/11-zelda-rescued
-bash lilybuild.sh nes/the-legend-of-zelda/12-credits/12-credits
+bash lilybuild.sh nes/the-legend-of-zelda/11-zelda-rescued/11-zelda-rescued &&
+bash lilybuild.sh nes/the-legend-of-zelda/12-credits/12-credits &&
+bash lilybuild.sh nes/zelda-ii-the-adventure-of-link/01-introduction/01-introduction
