@@ -12,8 +12,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 
 \clef bass
 \key a \minor

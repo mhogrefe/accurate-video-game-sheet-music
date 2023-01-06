@@ -11,9 +11,10 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c' {
 \key f \major
 \tempo 4 = 140
 \partial 4 c8 c |
@@ -30,9 +31,7 @@ f4 r r2 |
 \bar "|."
                 }
 
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \new Staff \relative c {
 \clef bass
 \key f \major
 
@@ -47,8 +46,8 @@ e8 c a c e c a c |
 f8 d bes d f d bes d |
 c8 f, c'16 bes a bes c4 r |
 r8 f, c'16 bes a g f4 r |
-
-                }
+                    }
+                >>
 
                 \new Staff \relative c, {
                     \set Staff.instrumentName = "Triangle"

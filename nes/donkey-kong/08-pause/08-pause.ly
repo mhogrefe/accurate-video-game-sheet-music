@@ -11,8 +11,8 @@
     \score {
         {
             \new Staff \relative c''' {
-                \set Staff.instrumentName = "Pulse 2"
-                \set Staff.shortInstrumentName = "P.2"
+                \set Staff.instrumentName = "Pulse"
+                \set Staff.shortInstrumentName = "P."
 \key c \major
 \tempo 4 = 180
 r16 c g c g c g c g4 r |
