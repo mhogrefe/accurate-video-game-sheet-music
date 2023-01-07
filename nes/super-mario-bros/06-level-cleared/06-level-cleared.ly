@@ -12,31 +12,18 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 6/8
 \tempo 4. = 150
-g8 c e g c e |
-g4. e |
-aes,,8 c ees aes c ees |
-aes4. ees |
-bes,8 d f bes d f |
-bes4. bes8 bes bes |
-e,4. ~ e8 r r |
+g8 <e c'> <g e'> <c g'> <e c'> <g e'> |
+<c g'>4. <g e'> |
+aes,8 <ees c'> <g ees'> <c aes'> <ees c'> <aes ees'> |
+<c aes'>4. <aes ees'> |
+bes,8 <f d'> <bes f'> <d bes'> <f d'> <bes f'> |
+<d bes'>4. <<{bes'8 bes bes}\\{d,4.}>> |
+<e c'>4. ~ <e c'>8 r r |
 \bar "|."
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-r8 e g c e g |
-c4. g |
-r8 ees, aes c ees aes |
-c4. aes |
-r8 f, bes d f bes |
-d4. d |
-c'4. ~ c8 r r |
-
                 }
 
                 \new Staff \relative c {

@@ -15,17 +15,15 @@
                     \set Staff.instrumentName = "Pulse 1"
                     \set Staff.shortInstrumentName = "P.1"
 \tempo 4 = 150
-                    \repeat volta 2 {
 \partial 4 \tuplet 3/2 { g8 fis g } |
-e2 f4 fis |
-g2 c4 \tuplet 3/2 { e4 e8 } |
-d4 e f b, |
-d2 c4 \tuplet 3/2 { g8 fis g } |
-e2 f4 fis |
-g2 c4 \tuplet 3/2 { e4 e8 } |
-d4 e f b, |
-d2 c4
-                    }
+<g, e'>2 <a f'>4 <ais fis'> |
+<b g'>2 <e c'>4 <<{\tuplet 3/2 { e'4 e8 }}\\{g,4}>> |
+<f d'>4 <g e'> <a f'> <d, b'> |
+<<{d'2}\\{f,4 r}>> <e c'> \tuplet 3/2 { g8 fis g } |
+<g, e'>2 <a f'>4 <ais fis'> |
+<b g'>2 <e c'>4 <<{\tuplet 3/2 { e'4 e8 }}\\{g,4}>> |
+<f d'>4 <g e'> <a f'> <d, b'> |
+<<{d'2}\\{f,4 r}>> <e c'>
                 }
 
                 \new Staff \relative c' {

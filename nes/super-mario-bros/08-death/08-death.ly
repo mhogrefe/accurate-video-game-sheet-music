@@ -12,8 +12,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
 b8 f'4-. f8 \tuplet 3/2 { f4 e d } |
 c4-. r r2 |
@@ -30,8 +30,8 @@ c4-. g-. c,-. r |
 
                 \new DrumStaff {
                     \drummode {
-                        \set Staff.instrumentName="Pulse 1"
-                        \set Staff.shortInstrumentName="P.1"
+                        \set Staff.instrumentName="Pulse"
+                        \set Staff.shortInstrumentName="P."
 \tempo 2 = 100
 \time 2/2
 sn8 sn4-. sn8 \tuplet 3/2 { sn4 sn sn } |

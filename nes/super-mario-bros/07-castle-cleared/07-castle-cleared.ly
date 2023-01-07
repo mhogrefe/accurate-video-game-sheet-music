@@ -11,32 +11,19 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-c8 g e c' g e |
-c'2. |
-des8 aes f des' aes f |
-des'2. |
-ees8 bes g ees' bes g |
-ees'4. f8 f f |
-g2. |
-
-                }
-
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 6/8
 \tempo 4. = 150
-e8 c g e' c g |
-e'8 e16 e e8 e e e |
-f8 des aes f' des aes |
-f'8 f16 f f8 f f f |
-g8 ees bes g' ees bes |
-g'8 g16 g g8 \tempo 4. = 100 a a a |
+<e c'>8 <c g'> <g e'> <e' c'> <c g'> <g e'> |
+<<{c'2.}\\{e,8 e16 e e8 e e e}>> |
+<f des'>8 <des aes'> <aes f'> <f' des'> <des aes'> <aes f'> |
+<<{des'2.}\\{f,8 f16 f f8 f f f}>> |
+<g ees'>8 <ees bes'> <bes g'> <g' ees'> <ees bes'> <bes g'> |
+<<{ees'4.}\\{g,8 g16 g g8}>> \tempo 4. = 100 <a f'>8 8 8 |
 \tempo 4. = 75
-b2. |
+<b g'>2. |
 \bar "|."
                 }
 

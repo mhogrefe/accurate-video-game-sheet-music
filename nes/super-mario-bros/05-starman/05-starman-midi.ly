@@ -12,24 +12,18 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
-\tempo 4 = 150
-f8-. f-. f-. d16 f r f r d f d f8-. |
-e8-. e-. e-. c16 e r e r c e c e8-. |
-f8-. f-. f-. d16 f r f r d f d f8-. |
-e8-. e-. e-. c16 e r e r c e c e8-. |
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\key c \major
-c8-. c-. c-. r16 c r c r8 c-. c-. |
-b8-. b-. b-. r16 b r b r8 b-. b-. |
-c8-. c-. c-. r16 c r c r8 c-. c-. |
-b8-. b-. b-. r16 b r b r8 b-. b-. |
+\tempo 2 = 150
+<f c'>4-. 4-. 4-. d8 <f c'> |
+r8 <f c'> r d <<{c'4-.}\\{f,8[ d]}>> <f c'>4-. |
+<e b'>4-. 4-. 4-. c8 <e b'> |
+r8 <e b'> r c <<{b'4-.}\\{e,8[ c]}>> <e b'>4-. |
+<f c'>4-. 4-. 4-. d8 <f c'> |
+r8 <f c'> r d <<{c'4-.}\\{f,8[ d]}>> <f c'>4-. |
+<e b'>4-. 4-. 4-. c8 <e b'> |
+r8 <e b'> r c <<{b'4-.}\\{e,8[ c]}>> <e b'>4-. |
                 }
 
                 \new Staff \relative c {
@@ -37,20 +31,28 @@ b8-. b-. b-. r16 b r b r8 b-. b-. |
                     \set Staff.shortInstrumentName = "T."
 \clef bass
 \key c \major
-d4-. a'8 r16 d r4 a8 d |
-c,4-. g'8 r16 c r4 g8 c |
-d,4-. a'8 r16 d r4 a8 d |
-c,4-. g'8 r16 c r4 g8 c |
+d4 r a' r8 d |
+r2 a4 d |
+c,4 r g' r8 c |
+r2 g4 c |
+d,4 r a' r8 d |
+r2 a4 d |
+c,4 r g' r8 c |
+r2 g4 c |
                 }
 
                 \new DrumStaff {
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-bd8-.\ppp \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } |
-bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } |
-bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } |
-bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } bd8-. \tuplet 3/2 { hh8-. hh16-. } sn8 \tuplet 3/2 { hh8-. hh16-. } |
+bd4\ppp \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
+bd4 \tuplet 3/2 { hh4 hh8 } sn4 \tuplet 3/2 { hh4 hh8 } |
                     }
                 }
             >>
