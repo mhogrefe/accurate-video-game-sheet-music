@@ -11,96 +11,51 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\partial 8 g8 |
-f4-. d8 b4-. g8 |
-f4-. d8 b4-. g8 |
-fis4-. f8 d b g |
-r4 r8 g'4-. g'8 |
-r4 r8 g, r r |
-\time 3/4
-\set Timing.beamExceptions = #'()
-e'8 g, c e4-. g,8 |
-ees'8 g, b ees4-. g,8 |
-e'4-. r r |
-r4 a,8 b c d |
-e8 g, c e4-. g,8 |
-ees'8 g, b f'4-. g,8 |
-e'4-. r8 g,, a g |
-b4-. a-. g-. |
-d''8 g, b d4-. g,8 |
-cis8 g bes cis4-. g8 |
-d'4-. r r |
-r4 a8 b c cis |
-d8 g, b d4-. g,8 |
-b8 g b f'4-. b,8 |
-e4-. r8 g,, a g |
-b4-. c-. d-. |
-g'8 c,4-. g'-. c,8 |
-g'8 b,4-. g'-. b,8 |
-g'8 bes,4-. g'-. bes,8 |
-g'4-. a-. r8 g |
-f8 a,4-. f'-. a,8 |
-f'8 a,4-. f'-. a,8 |
-f'8 a,4-. f'-. a,8 |
-f'4-. g-. r8 f |
-e8 g, g e'4-. g,8 |
-a4-. b-. f'-. |
-e8 e e4-. r8 b |
-c4-. r8 g e d |
-c4-. r8 \clef bass g e d |
-c4-. r \clef treble g''-. |
-c4-. r r |
-                }
-
                 \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
 \time 6/8
 \tempo 2. = 75
-
-\partial 8 g8 |
-f4-. d8 b4-. g8 |
-f4-. d8 b4-. \clef bass g8 |
-fis4-. f8 d b g |
-r4 r8 \clef treble g'4-. b'8 |
+\partial 8 <g g'>8 |
+<f f'>4-. <d d'>8 <b b'>4-. <g g'>8 |
+<f f'>4-. <d d'>8 <b b'>4-. \clef bass <g g'>8 |
+<fis fis'>4-. <f f'>8 <d d'> <b b'> <g g'> |
+r4 r8 \clef treble <g' g'>4-. <b' g'>8 |
 r4 r8 g r r |
 \time 3/4
 \set Timing.beamExceptions = #'()
-e8 g c e,4-. g8 |
-ees8 g b ees,4-. g8 |
-e4-. r r |
+<e e'>8 g c <e, e'>4-. g8 |
+<ees ees'>8 g b <ees, ees'>4-. g8 |
+<e e'>4-. r r |
 r4 a8 b c d |
-e,8 g c e,4-. g8 |
-ees8 g b f4-. g8 |
-c4-. r8 g, a g |
+<e, e'>8 g c <e, e'>4-. g8 |
+<ees ees'>8 g b <f f'>4-. g8 |
+<c e>4-. r8 g, a g |
 b4-. a-. g-. |
-d'8 g b d,4-. g8 |
-cis,8 g' bes cis,4-. g'8 |
-d4-. r r |
+<d' d'>8 g b <d, d'>4-. g8 |
+<cis, cis'>8 g' bes <cis, cis'>4-. g'8 |
+<d d'>4-. r r |
 r4 a'8 b c cis |
-d,8 g b d,4-. g8 |
-b,8 g' b f4-. b8 |
-c4-. r8 g, a g |
+<d, d'>8 g b <d, d'>4-. g8 |
+<b, b'>8 g' b <f f'>4-. b8 |
+<c e>4-. r8 g, a g |
 b4-. c-. d-. |
-e'8 c4-. e-. c8 |
-d8 b4-. d-. b8 |
-cis8 bes4-. cis-. bes8 |
-cis8 cis cis4-. r8 g' |
-d8 a4-. d-. a8 |
-cis8 a4-. cis-. a8 |
-c8 a4-. c-. a8 |
-b8 b b4-. r8 f' |
-c,8 g' g c,4-. g'8 |
-f4-. g-. b-. |
-b8 b b4-. r8 f |
-c4-. r8 \clef bass g e d |
-c4-. r8 g e d |
-c'4-. r r |
-R2. |
+<e' g>8 c4-. <e g>-. c8 |
+<d g>8 b4-. <d g>-. b8 |
+<cis g'>8 bes4-. <cis g'>-. bes8 |
+<<{g'4-.}\\{cis,8 cis}>> <cis a'>4-. r8 g' |
+<d f>8 a4-. <d f>-. a8 |
+<cis f>8 a4-. <cis f>-. a8 |
+<c f>8 a4-. <c f>-. a8 |
+<<{f'4-.}\\{b,8 b}>> <b g'>4-. r8 f' |
+<c, e'>8 g' g <c, e'>4-. g'8 |
+<f a>4-. <g b>-. <b f'>-. |
+<b e>8 8 4-. r8 <f b> |
+<c c'>4-. r8 \clef bass <g g'> <e e'> <d d'> |
+<c c'>4-. r8 <g g'> <e e'> <d d'> |
+c'4-. r \clef treble g''-. |
+c4-. r r |
 \bar "|."
                 }
 
@@ -170,7 +125,7 @@ bd4 sn r |
 \repeat percent 3 { bd4 sn sn | }
 sn4 r r |
 sn4 r r |
-sn4 r sn_\markup \fontsize #-2 {\override #'(line-width . 15) \wordwrap{Pulse 1 also contributes to these two notes}} |
+sn4 r sn_\markup \fontsize #-2 {\override #'(line-width . 15) \wordwrap{Pulse also contributes to these two notes}} |
 sn4 r r |
                     }
                 }
