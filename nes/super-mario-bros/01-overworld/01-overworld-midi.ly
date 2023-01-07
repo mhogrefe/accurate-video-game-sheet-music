@@ -12,435 +12,232 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
 \time 2/2
 \tempo 2 = 100
-
-fis8 fis r fis r fis fis4-. |
-b4-. r g-. r |
+<fis e'>8 8 r <fis e'> r <fis c'> <fis e'>4-. |
+<b g'>4-. r g-. r |
+\bar "||"
 
 % A
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
 
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
 
 \bar "||"
 
 % B
-r4 e'8 dis d b r c |
-r8 e, f g r c, e f |
-r4 e'8 dis d b r c |
-r8 f r f f4-. r |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <f c'> r <f c'> <f c'>4-. r |
 
-r4 e8 dis d b r c |
-r8 e, f g r c, e f |
-r4 aes4-. r8 f r4 |
-e4-. r r2 |
+r4 <e g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <aes ees'>-. r8 <f d'> r4 |
+<e c'>4-. r r2 |
 
-r4 e'8 dis d b r c |
-r8 e, f g r c, e f |
-r4 e'8 dis d b r c |
-r8 f r f f4-. r |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <f c'> r <f c'> <f c'>4-. r |
 
-r4 e8 dis d b r c |
-r8 e, f g r c, e f |
-r4 aes4-. r8 f r4 |
-e4-. r r2 |
-
-\bar "||"
-
-% C
-aes8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-aes'8 aes r aes r aes bes g |
-R1
-
-aes8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-fis8 fis r fis r fis fis4-. |
-b4-. r g-. r |
-
-\bar "||"
-
-% A
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
-
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
-
-\bar "||"
-
-% D
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-\tuplet 3/2 { g4 f' f } \tuplet 3/2 { f4 e d } |
-c8 a r f e4-. r |
-
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r e c4-. r |
-
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-\tuplet 3/2 { g4 f' f } \tuplet 3/2 { f4 e d } |
-c8 a r f e4-. r |
-
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r e c4-. r |
+r4 <e g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <aes ees'>-. r8 <f d'> r4 |
+<e c'>4-. r r2 |
 
 \bar "||"
 
 % C
-aes'8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-aes'8 aes r aes r aes bes g |
-R1
+<aes c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<aes' c>8 8 r <aes c> r <aes c> <bes d> <g e'> |
+R1 |
 
-aes8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-fis8 fis r fis r fis fis4-. |
-b4-. r g-. r |
+<aes c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<fis e'>8 8 r <fis e'> r <fis c'> <fis e'>4-. |
+<b g'>4-. r g-. r |
+
+\bar "||"
+
+% A
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
+
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
 
 \bar "||"
 
 % D
-c8 a r e r4 e-. |
-f8 c' r c f,4-. r |
-\tuplet 3/2 { g4 f' f } \tuplet 3/2 { f4 e d } |
-c8 a r f e4-. r |
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+\tuplet 3/2 { <g b>4 <f' a> <f a>4 } \tuplet 3/2 { <f a>4 <e g> <d f> } |
+<c e>8 <a c> r <f a> <e g>4-. r |
 
-c'8 a r e r4 e-. |
-f8 c' r c f,4-. r |
-g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r e c4-. r |
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+<g b>8 <d' f> r <d f> \tuplet 3/2 { <d f>4 <c e> <b d> } |
+<<{c4-.}\\{g8[ e]}>> r8 e c4-. r |
+
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+\tuplet 3/2 { <g b>4 <f' a> <f a>4 } \tuplet 3/2 { <f a>4 <e g> <d f> } |
+<c e>8 <a c> r <f a> <e g>4-. r |
+
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+<g b>8 <d' f> r <d f> \tuplet 3/2 { <d f>4 <c e> <b d> } |
+<<{c4-.}\\{g8[ e]}>> r8 e c4-. r |
+
+\bar "||"
+
+% C
+<aes' c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<aes' c>8 8 r <aes c> r <aes c> <bes d> <g e'> |
+R1 |
+
+<aes c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<fis e'>8 8 r <fis e'> r <fis c'> <fis e'>4-. |
+<b g'>4-. r g-. r |
+
+\bar "||"
+
+% D
+<c e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+\tuplet 3/2 { <g b>4 <f' a> <f a>4 } \tuplet 3/2 { <f a>4 <e g> <d f> } |
+<c e>8 <a c> r <f a> <e g>4-. r |
+
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+<g b>8 <d' f> r <d f> \tuplet 3/2 { <d f>4 <c e> <b d> } |
+<<{c4-.}\\{g8[ e]}>> r8 e c4-. r |
 
 % A
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
 
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
 
 \bar "||"
 
 % B
-r4 e'8 dis d b r c |
-r8 e, f g r c, e f |
-r4 e'8 dis d b r c |
-r8 f r f f4-. r |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <f c'> r <f c'> <f c'>4-. r |
 
-r4 e8 dis d b r c |
-r8 e, f g r c, e f |
-r4 aes4-. r8 f r4 |
-e4-. r r2 |
+r4 <e g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <aes ees'>-. r8 <f d'> r4 |
+<e c'>4-. r r2 |
 
-r4 e'8 dis d b r c |
-r8 e, f g r c, e f |
-r4 e'8 dis d b r c |
-r8 f r f f4-. r |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <e' g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <f c'> r <f c'> <f c'>4-. r |
 
-r4 e8 dis d b r c |
-r8 e, f g r c, e f |
-r4 aes4-. r8 f r4 |
-e4-. r r2 |
-
-\bar "||"
-
-% C
-aes8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-aes'8 aes r aes r aes bes g |
-R1
-
-aes8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-fis8 fis r fis r fis fis4-. |
-b4-. r g-. r |
-
-\bar "||"
-
-% A
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
-
-e4-. r8 c r4 g4-. |
-r8 c r d r des c4-. |
-\tuplet 3/2 { c4 g' b } c4-. a8 b |
-r8 a r e f d r4 |
-
-\bar "||"
-
-% D
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-\tuplet 3/2 { g4 f' f } \tuplet 3/2 { f4 e d } |
-c8 a r f e4-. r |
-
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r e c4-. r |
-
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-\tuplet 3/2 { g4 f' f } \tuplet 3/2 { f4 e d } |
-c8 a r f e4-. r |
-
-c'8 a r e r4 e |
-f8 c' r c f,4-. r |
-g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r e c4-. r |
+r4 <e g>8 <dis fis> <d f> <b dis> r <c e> |
+r8 <e, gis> <f a> <g c> r <c, a'> <e c'> <f d'> |
+r4 <aes ees'>-. r8 <f d'> r4 |
+<e c'>4-. r r2 |
 
 \bar "||"
 
 % C
-aes'8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-aes'8 aes r aes r aes bes g |
-R1
+<aes c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<aes' c>8 8 r <aes c> r <aes c> <bes d> <g e'> |
+R1 |
 
-aes8 aes r aes r aes bes4-. |
-g8 e r e c4-. r |
-fis8 fis r fis r fis fis4-. |
-b4-. r g-. r |
+<aes c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<fis e'>8 8 r <fis e'> r <fis c'> <fis e'>4-. |
+<b g'>4-. r g-. r |
+
+\bar "||"
+
+% A
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
+
+<e c'>4-. r8 <c g'> r4 <g e'>-. |
+r8 <c a'> r <d b'> r <des bes'> <c a'>4-. |
+\tuplet 3/2 { <c g'>4 <g' e'> <b g'> } <c a'>4-. <a f'>8 <b g'> |
+r8 <a e'> r <e c'> <f d'> <d b'> r4 |
 
 \bar "||"
 
 % D
-c8 a r e r4 e-. |
-f8 c' r c f,4-. r |
-\tuplet 3/2 { g4 f' f } \tuplet 3/2 { f4 e d } |
-c8 a r f e4-. r |
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+\tuplet 3/2 { <g b>4 <f' a> <f a>4 } \tuplet 3/2 { <f a>4 <e g> <d f> } |
+<c e>8 <a c> r <f a> <e g>4-. r |
 
-c'8 a r e r4 e-. |
-f8 c' r c f,4-. r |
-g8 d' r d \tuplet 3/2 { d4 c b } |
-g8 e r e c4-. r |
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+<g b>8 <d' f> r <d f> \tuplet 3/2 { <d f>4 <c e> <b d> } |
+<<{c4-.}\\{g8[ e]}>> r8 e c4-. r |
 
-                }
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+\tuplet 3/2 { <g b>4 <f' a> <f a>4 } \tuplet 3/2 { <f a>4 <e g> <d f> } |
+<c e>8 <a c> r <f a> <e g>4-. r |
 
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\key c \major
-e8 e r e r c e4-. |
-g4-. r r2 |
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+<g b>8 <d' f> r <d f> \tuplet 3/2 { <d f>4 <c e> <b d> } |
+<<{c4-.}\\{g8[ e]}>> r8 e c4-. r |
 
-% A
-c,4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-% B
-r4 g'8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 g8 fis f dis r e |
-r8 c' r c c4-. r |
-
-r4 g8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 ees-. r8 d r4 |
-c4-. r r2 |
-
-r4 g'8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 g8 fis f dis r e |
-r8 c' r c c4-. r |
-
-r4 g8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 ees-. r8 d r4 |
-c4-. r r2 |
+\bar "||"
 
 % C
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-c8 c r c r c d e |
-R1
+<aes' c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<aes' c>8 8 r <aes c> r <aes c> <bes d> <g e'> |
+R1 |
 
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-e'8 e r e r c e4-. |
-g4-. r r2 |
+<aes c>8 8 r <aes c> r <aes c> <bes d>4-. |
+<g e'>8 <e c'> r <e a> <c g'>4-. r |
+<fis e'>8 8 r <fis e'> r <fis c'> <fis e'>4-. |
+<b g'>4-. r g-. r |
 
-% A
-c,4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
+\bar "||"
 
 % D
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
+<c e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+\tuplet 3/2 { <g b>4 <f' a> <f a>4 } \tuplet 3/2 { <f a>4 <e g> <d f> } |
+<c e>8 <a c> r <f a> <e g>4-. r |
 
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-% C
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-c8 c r c r c d e |
-R1
-
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-e'8 e r e r c e4-. |
-g4-. r r2 |
-
-% D
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-% A
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-% B
-r4 g'8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 g8 fis f dis r e |
-r8 c' r c c4-. r |
-
-r4 g8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 ees-. r8 d r4 |
-c4-. r r2 |
-
-r4 g'8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 g8 fis f dis r e |
-r8 c' r c c4-. r |
-
-r4 g8 fis f dis r e |
-r8 gis, a c r a c d |
-r4 ees-. r8 d r4 |
-c4-. r r2 |
-
-% C
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-c8 c r c r c d e |
-R1
-
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-e'8 e r e r c e4-. |
-g4-. r r2 |
-
-% A
-c,4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-c4-. r8 g r4 e4-. |
-r8 a r b r bes a4-. |
-\tuplet 3/2 { g4 e' g } a4-. f8 g |
-r8 e r c d b r4 |
-
-% D
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-
-% C
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-c8 c r c r c d e |
-R1
-
-c8 c r c r c d4-. |
-e8 c r a g4-. r |
-e'8 e r e r c e4-. |
-g4-. r r2 |
-
-% D
-e8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-\tuplet 3/2 { b4 a' a } \tuplet 3/2 { a4 g f } |
-e8 c r a g4-. r |
-
-e'8 c r g r4 gis-. |
-a8 f' r f a,4-. r |
-b8 f' r f \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
+<c' e>8 <a c> r <e g> r4 <e gis>-. |
+<f a>8 <c' f> r <c f> <f, a>4-. r |
+<g b>8 <d' f> r <d f> \tuplet 3/2 { <d f>4 <c e> <b d> } |
+<<{c4-.}\\{g8[ e]}>> r8 e c4-. r |
 
                 }
 
