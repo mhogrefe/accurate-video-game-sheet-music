@@ -12,150 +12,76 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \set Timing.beamExceptions = #'()
 \key c \major
 \time 3/4
 \tempo 2. = 75
-d4 des c |
-b4 c cis |
-d8 d d4-. e-. |
-f2. |
-g2. |
-fis2. |
-g2. |
-R2. |
-g2. |
-fis2 a4 |
-g2. |
-R2. |
-f2. |
-e2. |
-f2. |
-R2. |
-f2. |
-b,2 a'4 |
-g2. |
-R2. |
-e'2. |
-d2. |
-cis2. |
-R2. |
-d2. |
-cis2. |
-c?2. |
-R2. |
-c,2. |
-f4 g b |
-b8 b b4. f8 |
-e2. |
-
-d4 des c |
-b4 c cis |
-d8 d d4-. e-. |
-f2. |
-g2. |
-fis2. |
-g2. |
-R2. |
-g2. |
-fis2 a4 |
-g2. |
-R2. |
-f2. |
-e2. |
-f2. |
-R2. |
-f2. |
-b,2 a'4 |
-g2. |
-R2. |
-e'2. |
-d2. |
-cis2. |
-R2. |
-d2. |
-cis2. |
-c?2. |
-R2. |
-c,2. |
-f4 g b |
-b8 b b4. f8 |
-e2. |
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\set Timing.beamExceptions = #'()
-\key c \major
-
-d4 e fis |
-g4 a ais |
-b8 b b4-. b-. |
-b2 g4 |
-e'2. |
-dis2. |
-e2. |
-r8 g, a b c d |
-e2. |
-dis2 f4 |
-e2. |
-r4 r r8 g, |
-d'2. |
-cis2. |
-d2. |
-r8 g, a b c cis |
-d2. |
-g,2 f'4 |
-e2. |
-r4 r r8 g, |
-g'2. |
-g2. |
-g2. |
-g4 a-. r8 g |
-f2. |
-f2. |
-f2. |
+d4 <des e> <c fis> |
+<b g'> <c a'> <cis ais'> |
+<d b'>8 8 4-. <e b'>4-. |
+<<{b'2 g4}\\{f2.}>> |
+<g e'>2. |
+<fis dis'>2. |
+<g e'>2. |
+r8 g a b c d |
+<g, e'>2. |
+<fis dis'>2 <a f'>4 |
+<g e'>2. |
+r4 r r8 g |
+<f d'>2. |
+<e cis'>2. |
+<f d'>2. |
+r8 g a b c cis |
+<f, d'>2. |
+<b, g'>2 <a' f'>4 |
+<g e'>2. |
+r4 r r8 g |
+<e' g>2. |
+<d g>2. |
+<cis g'>2. |
+g'4 a-. r8 g |
+<d f>2. |
+<cis f>2. |
+<c f>2. |
 f4 g-. r8 f |
-e2. |
-a,4 b f' |
-e8 e e4. b8 |
-c2. |
-
-d,4 e fis |
-g4 a ais |
-b8 b b4-. b-. |
-b2 g4 |
-e'2. |
-dis2. |
-e2. |
-r8 g, a b c d |
-e2. |
-dis2 f4 |
-e2. |
-r4 r r8 g, |
-d'2. |
-cis2. |
-d2. |
-r8 g, a b c cis |
-d2. |
-g,2 f'4 |
-e2. |
-r4 r r8 g, |
-g'2. |
-g2. |
-g2. |
-g4 a-. r8 g |
-f2. |
-f2. |
-f2. |
+<c, e'>2. |
+<f a>4 <g b> <b f'> |
+<b e>8 8 4. <f b>8 |
+<e c'>2. |
+d4 <des e> <c fis> |
+<b g'> <c a'> <cis ais'> |
+<d b'>8 8 4-. <e b'>4-. |
+<<{b'2 g4}\\{f2.}>> |
+<g e'>2. |
+<fis dis'>2. |
+<g e'>2. |
+r8 g a b c d |
+<g, e'>2. |
+<fis dis'>2 <a f'>4 |
+<g e'>2. |
+r4 r r8 g |
+<f d'>2. |
+<e cis'>2. |
+<f d'>2. |
+r8 g a b c cis |
+<f, d'>2. |
+<b, g'>2 <a' f'>4 |
+<g e'>2. |
+r4 r r8 g |
+<e' g>2. |
+<d g>2. |
+<cis g'>2. |
+g'4 a-. r8 g |
+<d f>2. |
+<cis f>2. |
+<c f>2. |
 f4 g-. r8 f |
-e2. |
-a,4 b f' |
-e8 e e4. b8 |
-c2. |
+<c, e'>2. |
+<f a>4 <g b> <b f'> |
+<b e>8 8 4. <f b>8 |
+<e c'>2. |
                 }
 
                 \new Staff \relative c' {
