@@ -11,114 +11,96 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\tuplet 3/2 { c4 c8 r4 c8 r4 c8 r4 c8 } |
-\tuplet 3/2 { c4 c8 r4 c8 r4 c8 r4 c8 } |
-\tuplet 3/2 { c4 c8 r4 c8 r4 c8 r4 c8 } |
-e4 r d r |
-e4 r e \tuplet 3/2 { r4 8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } g2 |
-c4 r c \tuplet 3/2 { r4 c8 } |
-\tuplet 3/2 { r4 a8 r4 fis8 } e2 |
-e'4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } e'4 e |
-c4-. r r2 |
-R1 |
-e4 r e \tuplet 3/2 { r4 8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } g2 |
-c4 r c \tuplet 3/2 { r4 c8 } |
-\tuplet 3/2 { r4 a8 r4 fis8 } e2 |
-e'4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } e'4 e |
-c4-. r r2 |
-r4 c d dis |
-e4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 d8 } ~ d4 d e |
-d4-. c-. \tuplet 3/2 { c4 b8 } \tuplet 3/2 { r4 c8 } ~ |
-c4 a b c |
-d4 r d \tuplet 3/2 { r4 d8 } |
-\tuplet 3/2 { r4 c8 } ~ c4 b a-. |
-r4 b c cis |
-d4 r \tuplet 3/2 { r4 g,8 } ~ g4 |
-\tuplet 3/2 { e'4 dis8 e4 b'8 gis4 e8 e'4 b8 } |
-\tuplet 3/2 { d4 b8 a4 b8 gis4 f8 e4 d8 } |
-\tuplet 3/2 { c4 b8 c4 d8 e4 dis8 e4 a8 } |
-\tuplet 3/2 { gis4 e8 d4 dis8 a'4 e8 g4 fis8 }  |
-\tuplet 3/2 { f4 e8 f4 a8 e'4 d,8 a'4 gis8 } |
-\tuplet 3/2 { g4 e'8 g,4 fis8 f4 d'8 a4 ais8 } |
-\tuplet 3/2 { b4 ais8 b4 a8 g4 f8 a,4 b8 } |
-\tuplet 3/2 { g'4 f8 b,4 a8 f'4 b,8 a4 g8 } |
-e'4 r e \tuplet 3/2 { r4 8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } g2 |
-c4 r c \tuplet 3/2 { r4 c8 } |
-\tuplet 3/2 { r4 a8 r4 fis8 } e2 |
-e'4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } e'4 e |
-c4-. r r2 |
-R1 |
-e4 r e \tuplet 3/2 { r4 8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } g2 |
-c4 r c \tuplet 3/2 { r4 c8 } |
-\tuplet 3/2 { r4 a8 r4 fis8 } e2 |
-e'4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 c8 r4 a8 } e'4 e |
-c4-. r r2 |
-r4 c d dis |
-e4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 d8 } ~ d4 d e |
-d4-. c-. \tuplet 3/2 { c4 b8 } \tuplet 3/2 { r4 c8 } ~ |
-c4 a b c |
-d4 r d \tuplet 3/2 { r4 d8 } |
-\tuplet 3/2 { r4 c8 } ~ c4 b a-. |
-r4 b c cis |
-d4 r \tuplet 3/2 { r4 g,8 } ~ g4 |
-\tuplet 3/2 { e'4 dis8 e4 b'8 gis4 e8 e'4 b8 } |
-\tuplet 3/2 { d4 b8 a4 b8 gis4 f8 e4 d8 } |
-\tuplet 3/2 { c4 b8 c4 d8 e4 dis8 e4 a8 } |
-\tuplet 3/2 { gis4 e8 d4 dis8 a'4 e8 g4 fis8 }  |
-\tuplet 3/2 { f4 e8 f4 a8 e'4 d,8 a'4 gis8 } |
-\tuplet 3/2 { g4 e'8 g,4 fis8 f4 d'8 a4 ais8 } |
-\tuplet 3/2 { b4 ais8 b4 a8 g4 f8 a,4 b8 } |
-\tuplet 3/2 { g'4 f8 b,4 a8 f'4 b,8 a4 g8 } |
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                \new GrandStaff \relative c'' <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
 \key c \major
 \time 2/2
 \tempo 2 = 150
+\tuplet 3/2 { <g c>4 8 r4 <g c>8 r4 <g c>8 r4 <g c>8 } |
+\tuplet 3/2 { <fis c'>4 8 r4 <fis c'>8 r4 <fis c'>8 r4 <fis c'>8 } |
+\tuplet 3/2 { <f c'>4 8 r4 <f c'>8 r4 <f c'>8 r4 <f c'>8 } |
+<b e>4 r <f d'> r |
 
-\tuplet 3/2 { g4 g8 r4 g8 r4 g8 r4 g8 } |
-\tuplet 3/2 { fis4 fis8 r4 fis8 r4 fis8 r4 fis8 } |
-\tuplet 3/2 { f4 f8 r4 f8 r4 f8 r4 f8 } |
-b4 r f r |
-g4 r g \tuplet 3/2 { r4 g8 } |
-\tuplet 3/2 { r4 e8 r4 e8 } c2 |
-fis4 r fis \tuplet 3/2 { r4 fis8 } |
-\tuplet 3/2 { r4 d8 r4 d8 } c2 |
-f4 r f \tuplet 3/2 { r4 f8 } |
-\tuplet 3/2 { r4 d8 r4 b8 } g'4 g |
-e4-. r r2 |
+<g e'>4 r <g e'> \tuplet 3/2 { r4 <g e'>8 } |
+\tuplet 3/2 { r4 <e c'>8 r4 <e a>8 } <c g'>2 |
+<fis c'>4 r <fis c'> \tuplet 3/2 { r4 <fis c'>8 } |
+\tuplet 3/2 { r4 <d a'>8 r4 <d fis>8 } <c e>2 |
+<f e'>4 r <f e'> \tuplet 3/2 { r4 <f e'>8 } |
+\tuplet 3/2 { r4 <d c'>8 r4 <b a'>8 } <g' e'>4 4 |
+<e c'>4-. r r2 |
 R1 |
-g4 r g \tuplet 3/2 { r4 g8 } |
-\tuplet 3/2 { r4 e8 r4 e8 } c2 |
-fis4 r fis \tuplet 3/2 { r4 fis8 } |
-\tuplet 3/2 { r4 d8 r4 d8 } c2 |
-f4 r f \tuplet 3/2 { r4 f8 } |
-\tuplet 3/2 { r4 d8 r4 b8 } g'4 g |
-e4-. r r2 |
-r4 e f fis |
-gis4 r gis \tuplet 3/2 { r4 gis8 } |
-\tuplet 3/2 { r4 fis8 } ~ fis4 fis gis |
-e4-. e-. \tuplet 3/2 { e4 d8 r4 e8 ~ } |
-e4 c d e |
-fis4 r fis \tuplet 3/2 { r4 fis8 } |
-\tuplet 3/2 { r4 e8 } ~ e4 d c-. |
-r4 d e f |
-fis4 r \tuplet 3/2 { r4 b,8 } ~ b4 |
+<g e'>4 r <g e'> \tuplet 3/2 { r4 <g e'>8 } |
+\tuplet 3/2 { r4 <e c'>8 r4 <e a>8 } <c g'>2 |
+<fis c'>4 r <fis c'> \tuplet 3/2 { r4 <fis c'>8 } |
+\tuplet 3/2 { r4 <d a'>8 r4 <d fis>8 } <c e>2 |
+<f e'>4 r <f e'> \tuplet 3/2 { r4 <f e'>8 } |
+\tuplet 3/2 { r4 <d c'>8 r4 <b a'>8 } <g' e'>4 4 |
+<e c'>4-. r r2 |
+r4 <e c'> <f d'> <fis dis'> |
+<gis e'>4 r <gis e'> \tuplet 3/2 { r4 <gis e'>8 } |
+\tuplet 3/2 { r4 <fis d'>8 } ~ 4 4 <gis e'> |
+<e d'>4-. <e c'>-. \tuplet 3/2 { 4 <d b'>8 r4 <e c'>8 ~ } |
+<e c'>4 <c a'> <d b'> <e c'> |
+<fis d'>4 r <fis d'> \tuplet 3/2 { r4 <fis d'>8 } |
+\tuplet 3/2 { r4 <e c'>8 ~ } 4 <d b'> <c a'>-. |
+r4 <d b'> <e c'> <f cis'> |
+<fis d'> r \tuplet 3/2 { r4 <b, g'>8 ~ } 4 |
+\tuplet 3/2 { e'4 dis8 e4 b'8 gis4 e8 e'4 b8 } |
+\tuplet 3/2 { d4 b8 a4 b8 gis4 f8 e4 d8 } |
+\tuplet 3/2 { c4 b8 c4 d8 e4 dis8 e4 a8 } |
+\tuplet 3/2 { gis4 e8 d4 dis8 a'4 e8 g4 fis8 }  |
+\tuplet 3/2 { f4 e8 f4 a8 e'4 d,8 a'4 gis8 } |
+\tuplet 3/2 { g4 e'8 g,4 fis8 f4 d'8 a4 ais8 } |
+\tuplet 3/2 { b4 ais8 b4 a8 g4 f8 a,4 b8 } |
+\tuplet 3/2 { g'4 f8 b,4 a8 f'4 b,8 a4 g8 } |
+
+<g e'>4 r <g e'> \tuplet 3/2 { r4 <g e'>8 } |
+\tuplet 3/2 { r4 <e c'>8 r4 <e a>8 } <c g'>2 |
+<fis c'>4 r <fis c'> \tuplet 3/2 { r4 <fis c'>8 } |
+\tuplet 3/2 { r4 <d a'>8 r4 <d fis>8 } <c e>2 |
+<f e'>4 r <f e'> \tuplet 3/2 { r4 <f e'>8 } |
+\tuplet 3/2 { r4 <d c'>8 r4 <b a'>8 } <g' e'>4 4 |
+<e c'>4-. r r2 |
+R1 |
+<g e'>4 r <g e'> \tuplet 3/2 { r4 <g e'>8 } |
+\tuplet 3/2 { r4 <e c'>8 r4 <e a>8 } <c g'>2 |
+<fis c'>4 r <fis c'> \tuplet 3/2 { r4 <fis c'>8 } |
+\tuplet 3/2 { r4 <d a'>8 r4 <d fis>8 } <c e>2 |
+<f e'>4 r <f e'> \tuplet 3/2 { r4 <f e'>8 } |
+\tuplet 3/2 { r4 <d c'>8 r4 <b a'>8 } <g' e'>4 4 |
+<e c'>4-. r r2 |
+r4 <e c'> <f d'> <fis dis'> |
+<gis e'>4 r <gis e'> \tuplet 3/2 { r4 <gis e'>8 } |
+\tuplet 3/2 { r4 <fis d'>8 } ~ 4 4 <gis e'> |
+<e d'>4-. <e c'>-. \tuplet 3/2 { 4 <d b'>8 r4 <e c'>8 ~ } |
+<e c'>4 <c a'> <d b'> <e c'> |
+<fis d'>4 r <fis d'> \tuplet 3/2 { r4 <fis d'>8 } |
+\tuplet 3/2 { r4 <e c'>8 ~ } 4 <d b'> <c a'>-. |
+r4 <d b'> <e c'> <f cis'> |
+<fis d'> r \tuplet 3/2 { r4 <b, g'>8 ~ } 4 |
+\tuplet 3/2 { e'4 dis8 e4 b'8 gis4 e8 e'4 b8 } |
+\tuplet 3/2 { d4 b8 a4 b8 gis4 f8 e4 d8 } |
+\tuplet 3/2 { c4 b8 c4 d8 e4 dis8 e4 a8 } |
+\tuplet 3/2 { gis4 e8 d4 dis8 a'4 e8 g4 fis8 }  |
+\tuplet 3/2 { f4 e8 f4 a8 e'4 d,8 a'4 gis8 } |
+\tuplet 3/2 { g4 e'8 g,4 fis8 f4 d'8 a4 ais8 } |
+\tuplet 3/2 { b4 ais8 b4 a8 g4 f8 a,4 b8 } |
+\tuplet 3/2 { g'4 f8 b,4 a8 f'4 b,8 a4 g8 } |
+                    }
+                    \new Staff \relative c'' {
+R1*28
+e4 r e \tuplet 3/2 { r4 e8 } |
+\tuplet 3/2 { r4 d8 } ~ d4 d e |
+d4-. c-. \tuplet 3/2 { c4 b8 } \tuplet 3/2 { r4 c8 } ~ |
+c4 a b c |
+d4 r d \tuplet 3/2 { r4 d8 } |
+\tuplet 3/2 { r4 c8 } ~ c4 b a-. |
+r4 b c cis |
+d4 r \tuplet 3/2 { r4 g,8 } ~ g4 |
+
+R1*24
 e'4 r e \tuplet 3/2 { r4 e8 } |
 \tuplet 3/2 { r4 d8 } ~ d4 d e |
 d4-. c-. \tuplet 3/2 { c4 b8 } \tuplet 3/2 { r4 c8 } ~ |
@@ -127,39 +109,8 @@ d4 r d \tuplet 3/2 { r4 d8 } |
 \tuplet 3/2 { r4 c8 } ~ c4 b a-. |
 r4 b c cis |
 d4 r \tuplet 3/2 { r4 g,8 } ~ g4 |
-g4 r g \tuplet 3/2 { r4 g8 } |
-\tuplet 3/2 { r4 e8 r4 e8 } c2 |
-fis4 r fis \tuplet 3/2 { r4 fis8 } |
-\tuplet 3/2 { r4 d8 r4 d8 } c2 |
-f4 r f \tuplet 3/2 { r4 f8 } |
-\tuplet 3/2 { r4 d8 r4 b8 } g'4 g |
-e4-. r r2 |
-R1 |
-g4 r g \tuplet 3/2 { r4 g8 } |
-\tuplet 3/2 { r4 e8 r4 e8 } c2 |
-fis4 r fis \tuplet 3/2 { r4 fis8 } |
-\tuplet 3/2 { r4 d8 r4 d8 } c2 |
-f4 r f \tuplet 3/2 { r4 f8 } |
-\tuplet 3/2 { r4 d8 r4 b8 } g'4 g |
-e4-. r r2 |
-r4 e f fis |
-gis4 r gis \tuplet 3/2 { r4 gis8 } |
-\tuplet 3/2 { r4 fis8 } ~ fis4 fis gis |
-e4-. e-. \tuplet 3/2 { e4 d8 r4 e8 ~ } |
-e4 c d e |
-fis4 r fis \tuplet 3/2 { r4 fis8 } |
-\tuplet 3/2 { r4 e8 } ~ e4 d c-. |
-r4 d e f |
-fis4 r \tuplet 3/2 { r4 b,8 } ~ b4 |
-e'4 r e \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 d8 } ~ d4 d e |
-d4-. c-. \tuplet 3/2 { c4 b8 } \tuplet 3/2 { r4 c8 } ~ |
-c4 a b c |
-d4 r d \tuplet 3/2 { r4 d8 } |
-\tuplet 3/2 { r4 c8 } ~ c4 b a-. |
-r4 b c cis |
-d4 r \tuplet 3/2 { r4 g,8 } ~ g4 |
-                }
+                    }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"

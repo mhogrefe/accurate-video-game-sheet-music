@@ -38,37 +38,42 @@ swing = \markup {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-c8^\swing c r c r c r c |
-c8 c r c r c r c |
-c8 c r c r c r c |
-e4 r d r |
-e4 r e r8 e |
-r8 c r a g2 |
-c4 r c r8 c |
-r8 a r fis e2 |
-e'4 r e r8 e |
-r8 c r a e'4 e |
-c4-. r r2 |
+                \new GrandStaff \relative c'' <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
+\key c \major
+\time 2/2
+\tempo 2 = 150
+<g c>8^\swing 8 r <g c> r <g c> r <g c> |
+<fis c'>8 8 r <fis c'> r <fis c'> r <fis c'> |
+<f c'>8 8 r <f c'> r <f c'> r <f c'> |
+<b e>4 r <f d'> r |
+                        \repeat volta 2 {
+<g e'>4 r <g e'> r8 <g e'> |
+r8 <e c'> r <e a> <c g'>2 |
+<fis c'>4 r <fis c'> r8 <fis c'> |
+r8 <d a'> r <d fis> <c e>2 |
+<f e'>4 r <f e'> r8 <f e'> |
+r8 <d c'> r <b a'> <g' e'>4 4 |
+<e c'>4-. r r2 |
 R1 |
-e4 r e r8 e |
-r8 c r a g2 |
-c4 r c r8 c |
-r8 a r fis e2 |
-e'4 r e r8 e |
-r8 c r a e'4 e |
-c4-. r r2 |
-r4 c d dis |
-e4 r e r8 e |
-r8 d ~ d4 d e |
-d4-. c-. c8 b r c ~ |
-c4 a b c |
-d4 r d r8 d |
-r8 c ~ c4 b a-. |
-r4 b c cis |
-d4 r r8 g,8 ~ g4 |
+<g e'>4 r <g e'> r8 <g e'> |
+r8 <e c'> r <e a> <c g'>2 |
+<fis c'>4 r <fis c'> r8 <fis c'> |
+r8 <d a'> r <d fis> <c e>2 |
+<f e'>4 r <f e'> r8 <f e'> |
+r8 <d c'> r <b a'> <g' e'>4 4 |
+<e c'>4-. r r2 |
+r4 <e c'> <f d'> <fis dis'> |
+<gis e'>4 r <gis e'> r8 <gis e'> |
+r8 <fis d'> ~ 4 4 <gis e'> |
+<e d'>4-. <e c'>-. 8 <d b'> r <e c'> ~ |
+<e c'>4 <c a'> <d b'> <e c'> |
+<fis d'>4 r <fis d'> r8 <fis d'> |
+r8 <e c'> ~ 4 <d b'> <c a'>-. |
+r4 <d b'> <e c'> <f cis'> |
+<fis d'> r r8 <b, g'> ~ 4 |
 e'8 dis e b' gis e e' b |
 d8 b a b gis f e d |
 c8 b c d e dis e a |
@@ -77,47 +82,13 @@ f8 e f a e' d, a' gis |
 g8 e' g, fis f d' a ais |
 b8 ais b a g f a, b |
 g' f b, a f' b, a g |
+                        }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key c \major
-\time 2/2
-\tempo 2 = 150
-
-g8 g r g r g r g |
-fis8 fis r fis r fis r fis |
-f8 f r f r f r f |
-b4 r f r |
-                    \repeat volta 2 {
-g4 r g r8 g |
-r8 e r e c2 |
-fis4 r fis r8 fis |
-r8 d r d c2 |
-f4 r f r8 f |
-r8 d r b g'4 g |
-e4-. r r2 |
-R1 |
-g4 r g r8 g |
-r8 e r e c2 |
-fis4 r fis r8 fis |
-r8 d r d c2 |
-f4 r f r8 f |
-r8 d r b g'4 g |
-e4-. r r2 |
-r4 e f fis |
-gis4 r gis r8 gis |
-r8 fis ~ fis4 fis gis |
-e4-. e-. e8 d r e ~ |
-e4 c d e |
-fis4 r fis r8 fis |
-r8 e ~ e4 d c-. |
-r4 d e f |
-fis4 r r8 b, ~ b4 |
-e'4 r e r8 e |
+                    }
+                    \new Staff \relative c'' {
+R1*28
+e4 r e r8 e |
 r8 d ~ d4 d e |
 d4-. c-. c8 b r c ~ |
 c4 a b c |
@@ -126,7 +97,7 @@ r8 c ~ c4 b a-. |
 r4 b c cis |
 d4 r r8 g,8 ~ g4 |
                     }
-                }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
