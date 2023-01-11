@@ -38,92 +38,52 @@ swing = \markup {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 2/2
 \tempo 2 = 100
-r8^\swing g ges-. f d-. b a-. aes |
-g4-. g'-. g, r |
+r8 <b g'>^\swing <bes ges'>-. <a f'> <f d'>-. <d b'> <c a'>-. <b aes'> |
+<b g'>4-. <b' g'>-. <f g> r |
                     \repeat volta 2 {
-g'8-. c, e-. g ~ g c, e-. g |
-\tuplet 3/2 { b,8[ ees g] } b8-. a ~ a2 |
-g8-. bes, d-. g ~ g bes, d-. g |
-\tuplet 3/2 { cis,8[ e g] } b8-. a ~ a4. b8 |
-c8-. b c-. a ~ a c b-. a |
-g8-. fis g-. e ~ e cis d-. e |
-f8-. e f-. b, ~ b e d-. c ~ |
-c2 r |
+<c' g'>8-. <e, c'> <g e'>-. <c g'> ~ 8 <e, c'> <g e'>-. <c g'> |
+\tuplet 3/2 { <ees, b'>8[ <g ees'> <b g'>] } <ees b'>8-. <b a'>8 ~ 2 |
+<bes g'>8-. <d, bes'> <g d'>-. <bes g'> ~ 8 <d, bes'> <g d'>-. <bes g'> |
+\tuplet 3/2 { <e, cis'>8[ <a e'> <cis g'>] } <e b'>8-. <cis a'> ~ 4. <e b'>8 |
+<a c>8-. <g b> <a c>-. <f a> ~ 8 <a c> <g b>-. <fis a> |
+<e g>8-. <dis fis> <e g>-. <cis e> ~ 8 <a cis>8 <b d>-. <cis e> |
+<d f>8-. <c e> <d f>-. <g, b> ~ 8 <c e> <b d>-. <g c> ~ |
+<g c>2 r |
 \bar "||"
-r8 e r4 g-. a8-. c |
-r2 a8-. g e-. c |
-d8-. e d-. e d-. a r d |
-r8^\markup \fontsize #-2 {\override #'(line-width . 32) \wordwrap{Play this bar of P. 1 and P. 2 straight. The last note is equivalent to a swung 8th note.}} a16 d a[ d a d] a[ d a d] a d \tuplet 3/2 { r16 d8 } |
-r8 e d-. e d-. e r a |
-r8 g a-. g e-. d c-. e |
-r8 g,16 e' g,[ e' g, e'] g,[ e' g, e'] g, e' r8 |
-\tuplet 3/2 { r4 g---. e---. } \tuplet 3/2 { b4---. a---. g---. } |
-r8 e' r4 g-. a8-. c |
-r2 a8-. g e-. c |
-d8-. e d-. e d-. a r d |
-r8 a16 d a[ d a d] a[ d a d] a d \tuplet 3/2 { r16 d8 } |
-r8 e d-. e d-. e r a |
-r8 g a-. g a-. g e-. c |
-r4 r8 fis, g-. gis a-. c |
-r4 r8 c r4 r8 e |
+r8 <g e'> r4 <c g'>-. <e a>8-. <g c> |
+r2 <e a>8-. <c g'> <a e'>-. <g c> |
+<fis d'>8-. <g e'> <fis d'>-. <g e'> <fis d'> <d a'> r <fis d'> |
+r8^\markup \fontsize #-2 {\override #'(line-width . 32) \wordwrap{Play this bar of Pulse straight. The last note is equivalent to a swung 8th note.}} <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d'>] <fis a> <d d'> \tuplet 3/2 { r16 <f d'>8 } |
+r8 <g e'> <f d'>-. <g e'> <f d'>-. <g e'> r <c a'> |
+r8 <b g'> <c a'>-. <b g'> <g e'>-. <f d'> <e c'>-. <c' e>
+r8 <e, g>16 <c' e> <e, g>[ <c' e> <e, g> <c' e>] <e, g>[ <c' e> <e, g> <c' e>] <e, g> <c' e> r8 |
+\tuplet 3/2 { r4 <b g'>---. <a e'>---. } \tuplet 3/2 { <g b>4---. <f a>---. <ees g>---. } |
+r8 <g e'> r4 <c g'>-. <e a>8-. <g c> |
+r2 <e a>8-. <c g'> <a e'>-. <g c> |
+<fis d'>8-. <g e'> <fis d'>-. <g e'> <fis d'>-. <d a'> r <fis d'> |
+r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d'>] <fis a> <d d'> \tuplet 3/2 { r16 <f d'>8 } |
+r8 <g e'> <f d'>-. <g e'> <f d'>-. <g e'> r <c a'> |
+r8 <b g'> <c a'>-. <b g'> <c a'>-. <b g'> <g e'>-. <e c'> |
+r4 r8 fis g-. gis <fis a>-. <e c'> |
+r4 r8 <e c'> r4 r8 <e e'> |
 \bar "||"
-r8 f dis-. e f-. dis e-. b' |
-r4 gis-. f-. e-. |
+r8 <f f'> <dis dis'>-. <e e'> <f f'>-. <d d'> <e e'>-. <b' b'> |
+r4 <gis gis'>-. <f f'>-. <e e'>-. |
 \override TupletBracket.bracket-visibility = ##t
-\tuplet 3/2 { d8[ \tuplet 3/2 { e d c] } } b8-. c d-. c b-. c |
-r4 r8 c b4-. c-. |
-r8 d r4 cis-. d8-. a' |
-r4 fis-. g-. a-. |
-b4-. r a-. r |
-aes4-. r g8-. d b-. g |
+\tuplet 3/2 { <d d'>8[ \tuplet 3/2 { <e e'> <d d'> <c c'>] } } <b b'>8-. <c c'> <d d'>-. <c c'> <b b'>-. <c c'> |
+r4 r8 <c c'> <b b'>4-. <c c'>-. |
+r8 <d d'> r4 <cis cis'>-. <d d'>8-. <a' a'> |
+r4 <fis fis'>-. <g g'>-. <a a'>-. |
+<<{b'4-. r a-. r | aes-. r }\\{b,8-. ais b-. b' a,-. gis a-. a' | aes,8-. g aes-. aes' }>>
+<g, g'>8-. <d d'> <b b'>-. <g g'> |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-r8 b bes-. a f-. d c-. b |
-b4-. b'-. f r |
-c'8-. e, g-. c ~ c e, g-. c |
-\tuplet 3/2 { ees,8[ g b] } ees8-. b ~ b2 |
-bes8-. d, g-. bes ~ bes d, g-. bes |
-\tuplet 3/2 { e,8[ a cis] } e8-. cis ~ cis4. e8 |
-a8-. g a-. f ~ f a g-. fis |
-e8-. dis e-. c ~ c a b-. cis |
-d8-. c d-. g, ~ g c b-. g ~ |
-g2 r |
-r8 g r4 c4-. e8-. g |
-r2 e8-. c a-. g |
-fis8-. g fis-. g fis-. d r fis |
-r8 d16 fis d[ d fis d] fis[ d fis d] fis d \tuplet 3/2 { r16 f8 } |
-r8 g f-. g f-. g r c |
-r8 b c-. b g-. f e-. c' |
-r8 e,16 c' e,[ c' e, c'] e,[ c' e, c'] e, c' r8 |
-\tuplet 3/2 { r4 b---. a---. } \tuplet 3/2 { g4---. f---. ees---. } |
-r8 g r4 c4-. e8-. g |
-r2 e8-. c a-. g |
-fis8-. g fis-. g fis-. d r fis |
-r8 d16 fis d[ d fis d] fis[ d fis d] fis d \tuplet 3/2 { r16 f8 } |
-r8 g f-. g f-. g r c |
-r8 b c-. b c-. b g-. e |
-r2 r4 f8-. e |
-r4 r8 e r4 r8 e |
-r8 f dis-. e f-. dis e-. b' |
-r4 gis-. f-. e-. |
-\override TupletBracket.bracket-visibility = ##t
-\tuplet 3/2 { d8[ \tuplet 3/2 { e d c] } } b8-. c d-. c b-. c |
-r4 r8 c b4-. c-. |
-r8 d r4 cis-. d8-. a' |
-r4 fis-. g-. a-. |
-b8-. ais b-. b' a,-. gis a-. a' |
-aes,8-. g aes-. aes' g,-. d b-. g |
                 }
 
                 \new Staff \relative c' {

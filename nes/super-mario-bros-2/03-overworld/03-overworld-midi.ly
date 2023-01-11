@@ -7,26 +7,6 @@ smaller = {
     \override Beam #'length-fraction = #0.56
 }
 
-swing = \markup {
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      b'8^[ b']
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-  =
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      \times 2/3 {\stemUp b'4 b'8}
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-}
-
 \book {
     \header {
         title = "Overworld"
@@ -38,156 +18,83 @@ swing = \markup {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 2/2
 \tempo 2 = 100
-\tuplet 3/2 { r4^\swing g8 ges4-. f8 d4-. b8 a4-. aes8 } |
-g4-. g'-. g, r |
-\tuplet 3/2 { g'4-. c,8 e4-. g8 ~ g4 c,8 e4-. g8 } |
-\tuplet 3/2 { b,8[ ees g] b4-. a8 } ~ a2 |
-\tuplet 3/2 { g4-. bes,8 d4-. g8 ~ g4 bes,8 d4-. g8 } |
-\tuplet 3/2 { cis,8[ e g] b4-. a8 ~ a4. ~ a4 b8 } |
-\tuplet 3/2 { c4-. b8 c4-. a8 ~ a4 c8 b4-. a8 } |
-\tuplet 3/2 { g4-. fis8 g4-. e8 ~ e4 cis8 d4-. e8 } |
-\tuplet 3/2 { f4-. e8 f4-. b,8 ~ b4 e8 d4-. c8 ~ } |
-c2 r |
+\tuplet 3/2 { r4 <b g'>8 <bes ges'>4-. <a f'>8 <f d'>4-. <d b'>8 <c a'>4-. <b aes'>8 } |
+<b g'>4-. <b' g'>-. <f g> r |
+\tuplet 3/2 { <c' g'>4-. <e, c'>8 <g e'>4-. <c g'>8 ~ 4 <e, c'>8 <g e'>4-. <c g'>8 } |
+\tuplet 3/2 { <ees, b'>8[ <g ees'> <b g'>] <ees b'>4-. <b a'>8 } ~ 2 |
+\tuplet 3/2 { <bes g'>4-. <d, bes'>8 <g d'>4-. <bes g'>8 ~ 4 <d, bes'>8 <g d'>4-. <bes g'>8 } |
+\tuplet 3/2 { <e, cis'>8[ <a e'> <cis g'>] <e b'>4-. <cis a'>8 } ~ 4 ~ \tuplet 3/2 { 4 <e b'>8 } |
+\tuplet 3/2 { <a c>4-. <g b>8 <a c>4-. <f a>8 ~ 4 <a c>8 <g b>4-. <fis a>8 } |
+\tuplet 3/2 { <e g>4-. <dis fis>8 <e g>4-. <cis e>8 ~ 4 <a cis>8 <b d>4-. <cis e>8 } |
+\tuplet 3/2 { <d f>4-. <c e>8 <d f>4-. <g, b>8 ~ 4 <c e>8 <b d>4-. <g c>8 } ~ |
+<g c>2 r |
 \bar "||"
-\tuplet 3/2 { r4 e8 } r4 g-. \tuplet 3/2 { a4-. c8 } |
-r2 \tuplet 3/2 { a4-. g8 e4-. c8 } |
-\tuplet 3/2 { d4-. e8 d4-. e8 d4-. a8 r4 d8 } |
-r8^\markup \fontsize #-2 {\override #'(line-width . 32) \wordwrap{Play this bar of P. 1 and P. 2 straight. The last note is equivalent to a swung 8th note.}} a16 d a[ d a d] a[ d a d] a d \tuplet 3/2 { r16 d8 } |
-\tuplet 3/2 { r4 e8 d4-. e8 d4-. e8 r4 a8 } |
-\tuplet 3/2 { r4 g8 a4-. g8 e4-. d8 c4-. e8 } |
-r8 g,16 e' g,[ e' g, e'] g,[ e' g, e'] g, e' r8 |
-\tuplet 3/2 { r4 g---. e---. } \tuplet 3/2 { b4---. a---. g---. } |
-\tuplet 3/2 { r4 e'8 } r4 g-. \tuplet 3/2 { a4-. c8 } |
-r2 \tuplet 3/2 { a4-. g8 e4-. c8 } |
-\tuplet 3/2 { d4-. e8 d4-. e8 d4-. a8 r4 d8 } |
-r8 a16 d a[ d a d] a[ d a d] a d \tuplet 3/2 { r16 d8 } |
-\tuplet 3/2 { r4 e8 d4-. e8 d4-. e8 r4 a8 } |
-\tuplet 3/2 { r4 g8 a4-. g8 a4-. g8 e4-. c8 } |
-r4 \tuplet 3/2 { r4 fis,8 g4-. gis8 a4-. c8 } |
-r4 \tuplet 3/2 { r4 c8 } r4 \tuplet 3/2 { r4 e8 } |
+\tuplet 3/2 { r4 <g e'>8 } r4 <c g'>-. \tuplet 3/2 { <e a>4-. <g c>8 } |
+r2 \tuplet 3/2 { <e a>4-. <c g'>8 <a e'>4-. <g c>8 } |
+\tuplet 3/2 { <fis d'>4-. <g e'>8 <fis d'>4-. <g e'>8 <fis d'>4 <d a'>8 r4 <fis d'>8 } |
+r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d'>] <fis a> <d d'> \tuplet 3/2 { r16 <f d'>8 } |
+\tuplet 3/2 { r4 <g e'>8 <f d'>4-. <g e'>8 <f d'>4-. <g e'>8 r4 <c a'>8 } |
+\tuplet 3/2 { r4 <b g'>8 <c a'>4-. <b g'>8 <g e'>4-. <f d'>8 <e c'>4-. <c' e>8 } |
+r8 <e, g>16 <c' e> <e, g>[ <c' e> <e, g> <c' e>] <e, g>[ <c' e> <e, g> <c' e>] <e, g> <c' e> r8 |
+\tuplet 3/2 { r4 <b g'>---. <a e'>---. } \tuplet 3/2 { <g b>4---. <f a>---. <ees g>---. } |
+\tuplet 3/2 { r4 <g e'>8 } r4 <c g'>-. \tuplet 3/2 { <e a>4-. <g c>8 } |
+r2 \tuplet 3/2 { <e a>4-. <c g'>8 <a e'>4-. <g c>8 } |
+\tuplet 3/2 { <fis d'>4-. <g e'>8 <fis d'>4-. <g e'>8 <fis d'>4-. <d a'>8 r4 <fis d'>8 } |
+r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d'>] <fis a> <d d'> \tuplet 3/2 { r16 <f d'>8 } |
+\tuplet 3/2 { r4 <g e'>8 <f d'>4-. <g e'>8 <f d'>4-. <g e'>8 r4 <c a'>8 } |
+\tuplet 3/2 { r4 <b g'>8 <c a'>4-. <b g'>8 <c a'>4-. <b g'>8 <g e'>4-. <e c'>8 } |
+r4 \tuplet 3/2 { r4 fis8 g4-. gis8 <fis a>4-. <e c'>8 } |
+r4 \tuplet 3/2 { r4 <e c'>8 } r4 \tuplet 3/2 { r4 <e e'>8 } |
 \bar "||"
-\tuplet 3/2 { r4 f8 dis4-. e8 f4-. dis8 e4-. b'8 } |
-r4 gis-. f-. e-. |
+\tuplet 3/2 { r4 <f f'>8 <dis dis'>4-. <e e'>8 <f f'>4-. <d d'>8 <e e'>4-. <b' b'>8 } |
+r4 <gis gis'>-. <f f'>-. <e e'>-. |
 \override TupletBracket.bracket-visibility = ##t
-\tuplet 3/2 { d8[ \tuplet 3/2 { e d c] } } \tuplet 3/2 { b4-. c8 d4-. c8 b4-. c8 } |
-r4 \tuplet 3/2 { r4 c8 } b4-. c-. |
-\tuplet 3/2 { r4 d8 } r4 cis-. \tuplet 3/2 { d4-. a'8 } |
-r4 fis-. g-. a-. |
-b4-. r a-. r |
-aes4-. r \tuplet 3/2 { g4-. d8 b4-. g8 } |
-\tuplet 3/2 { g'4-. c,8 e4-. g8 ~ g4 c,8 e4-. g8 } |
-\tuplet 3/2 { b,8[ ees g] b4-. a8 } ~ a2 |
-\tuplet 3/2 { g4-. bes,8 d4-. g8 ~ g4 bes,8 d4-. g8 } |
-\tuplet 3/2 { cis,8[ e g] b4-. a8 ~ a4. ~ a4 b8 } |
-\tuplet 3/2 { c4-. b8 c4-. a8 ~ a4 c8 b4-. a8 } |
-\tuplet 3/2 { g4-. fis8 g4-. e8 ~ e4 cis8 d4-. e8 } |
-\tuplet 3/2 { f4-. e8 f4-. b,8 ~ b4 e8 d4-. c8 ~ } |
-c2 r |
+\tuplet 3/2 { <d d'>8[ \tuplet 3/2 { <e e'> <d d'> <c c'>] } } \tuplet 3/2 { <b b'>4-. <c c'>8 <d d'>4-. <c c'>8 <b b'>4-. <c c'>8 } |
+r4 \tuplet 3/2 { r4 <c c'>8 } <b b'>4-. <c c'>-. |
+\tuplet 3/2 { r4 <d d'>8 } r4 <cis cis'>-. \tuplet 3/2 { <d d'>4-. <a' a'>8 } |
+r4 <fis fis'>-. <g g'>-. <a a'>-. |
+<<{b'4-. r a-. r | aes-. r }\\{\tuplet 3/2 { b,4-. ais8 b4-. b'8 a,4-. gis8 a4-. a'8 } | \tuplet 3/2 { aes,4-. g8 aes4-. aes'8 } }>>
+\tuplet 3/2 { <g, g'>4-. <d d'>8 <b b'>4-. <g g'>8 } |
+\tuplet 3/2 { <c' g'>4-. <e, c'>8 <g e'>4-. <c g'>8 ~ 4 <e, c'>8 <g e'>4-. <c g'>8 } |
+\tuplet 3/2 { <ees, b'>8[ <g ees'> <b g'>] <ees b'>4-. <b a'>8 } ~ 2 |
+\tuplet 3/2 { <bes g'>4-. <d, bes'>8 <g d'>4-. <bes g'>8 ~ 4 <d, bes'>8 <g d'>4-. <bes g'>8 } |
+\tuplet 3/2 { <e, cis'>8[ <a e'> <cis g'>] <e b'>4-. <cis a'>8 } ~ 4 ~ \tuplet 3/2 { 4 <e b'>8 } |
+\tuplet 3/2 { <a c>4-. <g b>8 <a c>4-. <f a>8 ~ 4 <a c>8 <g b>4-. <fis a>8 } |
+\tuplet 3/2 { <e g>4-. <dis fis>8 <e g>4-. <cis e>8 ~ 4 <a cis>8 <b d>4-. <cis e>8 } |
+\tuplet 3/2 { <d f>4-. <c e>8 <d f>4-. <g, b>8 ~ 4 <c e>8 <b d>4-. <g c>8 } ~ |
+<g c>2 r |
 \bar "||"
-\tuplet 3/2 { r4 e8 } r4 g-. \tuplet 3/2 { a4-. c8 } |
-r2 \tuplet 3/2 { a4-. g8 e4-. c8 } |
-\tuplet 3/2 { d4-. e8 d4-. e8 d4-. a8 r4 d8 } |
-r8^\markup \fontsize #-2 {\override #'(line-width . 32) \wordwrap{Play this bar of P. 1 and P. 2 straight. The last note is equivalent to a swung 8th note.}} a16 d a[ d a d] a[ d a d] a d \tuplet 3/2 { r16 d8 } |
-\tuplet 3/2 { r4 e8 d4-. e8 d4-. e8 r4 a8 } |
-\tuplet 3/2 { r4 g8 a4-. g8 e4-. d8 c4-. e8 } |
-r8 g,16 e' g,[ e' g, e'] g,[ e' g, e'] g, e' r8 |
-\tuplet 3/2 { r4 g---. e---. } \tuplet 3/2 { b4---. a---. g---. } |
-\tuplet 3/2 { r4 e'8 } r4 g-. \tuplet 3/2 { a4-. c8 } |
-r2 \tuplet 3/2 { a4-. g8 e4-. c8 } |
-\tuplet 3/2 { d4-. e8 d4-. e8 d4-. a8 r4 d8 } |
-r8 a16 d a[ d a d] a[ d a d] a d \tuplet 3/2 { r16 d8 } |
-\tuplet 3/2 { r4 e8 d4-. e8 d4-. e8 r4 a8 } |
-\tuplet 3/2 { r4 g8 a4-. g8 a4-. g8 e4-. c8 } |
-r4 \tuplet 3/2 { r4 fis,8 g4-. gis8 a4-. c8 } |
-r4 \tuplet 3/2 { r4 c8 } r4 \tuplet 3/2 { r4 e8 } |
+\tuplet 3/2 { r4 <g e'>8 } r4 <c g'>-. \tuplet 3/2 { <e a>4-. <g c>8 } |
+r2 \tuplet 3/2 { <e a>4-. <c g'>8 <a e'>4-. <g c>8 } |
+\tuplet 3/2 { <fis d'>4-. <g e'>8 <fis d'>4-. <g e'>8 <fis d'>4 <d a'>8 r4 <fis d'>8 } |
+r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d'>] <fis a> <d d'> \tuplet 3/2 { r16 <f d'>8 } |
+\tuplet 3/2 { r4 <g e'>8 <f d'>4-. <g e'>8 <f d'>4-. <g e'>8 r4 <c a'>8 } |
+\tuplet 3/2 { r4 <b g'>8 <c a'>4-. <b g'>8 <g e'>4-. <f d'>8 <e c'>4-. <c' e>8 } |
+r8 <e, g>16 <c' e> <e, g>[ <c' e> <e, g> <c' e>] <e, g>[ <c' e> <e, g> <c' e>] <e, g> <c' e> r8 |
+\tuplet 3/2 { r4 <b g'>---. <a e'>---. } \tuplet 3/2 { <g b>4---. <f a>---. <ees g>---. } |
+\tuplet 3/2 { r4 <g e'>8 } r4 <c g'>-. \tuplet 3/2 { <e a>4-. <g c>8 } |
+r2 \tuplet 3/2 { <e a>4-. <c g'>8 <a e'>4-. <g c>8 } |
+\tuplet 3/2 { <fis d'>4-. <g e'>8 <fis d'>4-. <g e'>8 <fis d'>4-. <d a'>8 r4 <fis d'>8 } |
+r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d'>] <fis a> <d d'> \tuplet 3/2 { r16 <f d'>8 } |
+\tuplet 3/2 { r4 <g e'>8 <f d'>4-. <g e'>8 <f d'>4-. <g e'>8 r4 <c a'>8 } |
+\tuplet 3/2 { r4 <b g'>8 <c a'>4-. <b g'>8 <c a'>4-. <b g'>8 <g e'>4-. <e c'>8 } |
+r4 \tuplet 3/2 { r4 fis8 g4-. gis8 <fis a>4-. <e c'>8 } |
+r4 \tuplet 3/2 { r4 <e c'>8 } r4 \tuplet 3/2 { r4 <e e'>8 } |
 \bar "||"
-\tuplet 3/2 { r4 f8 dis4-. e8 f4-. dis8 e4-. b'8 } |
-r4 gis-. f-. e-. |
+\tuplet 3/2 { r4 <f f'>8 <dis dis'>4-. <e e'>8 <f f'>4-. <d d'>8 <e e'>4-. <b' b'>8 } |
+r4 <gis gis'>-. <f f'>-. <e e'>-. |
 \override TupletBracket.bracket-visibility = ##t
-\tuplet 3/2 { d8[ \tuplet 3/2 { e d c] } } \tuplet 3/2 { b4-. c8 d4-. c8 b4-. c8 } |
-r4 \tuplet 3/2 { r4 c8 } b4-. c-. |
-\tuplet 3/2 { r4 d8 } r4 cis-. \tuplet 3/2 { d4-. a'8 } |
-r4 fis-. g-. a-. |
-b4-. r a-. r |
-aes4-. r \tuplet 3/2 { g4-. d8 b4-. g8 } |
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\tuplet 3/2 { r4 b8 bes4-. a8 f4-. d8 c4-. b8 } |
-b4-. b'-. f r |
-\tuplet 3/2 { c'4-. e,8 g4-. c8 ~ c4 e,8 g4-. c8 } |
-\tuplet 3/2 { ees,8[ g b] ees4-. b8 ~ } b2 |
-\tuplet 3/2 { bes4-. d,8 g4-. bes8 ~ bes4 d,8 g4-. bes8 } |
-\tuplet 3/2 { e,8[ a cis] e4-. cis8 ~ cis4. ~ cis4 e8 } |
-\tuplet 3/2 { a4-. g8 a4-. f8 ~ f4 a8 g4-. fis8 } |
-\tuplet 3/2 { e4-. dis8 e4-. c8 ~ c4 a8 b4-. cis8 } |
-\tuplet 3/2 { d4-. c8 d4-. g,8 ~ g4 c8 b4-. g8 ~ } |
-g2 r |
-\tuplet 3/2 { r4 g8 } r4 c4-. \tuplet 3/2 { e4-. g8 } |
-r2 \tuplet 3/2 { e4-. c8 a4-. g8 } |
-\tuplet 3/2 { fis4-. g8 fis4-. g8 fis4-. d8 r4 fis8 } |
-r8 d16 fis d[ d fis d] fis[ d fis d] fis d \tuplet 3/2 { r16 f8 } |
-\tuplet 3/2 { r4 g8 f4-. g8 f4-. g8 r4 c8 } |
-\tuplet 3/2 { r4 b8 c4-. b8 g4-. f8 e4-. c'8 } |
-r8 e,16 c' e,[ c' e, c'] e,[ c' e, c'] e, c' r8 |
-\tuplet 3/2 { r4 b---. a---. } \tuplet 3/2 { g4---. f---. ees---. } |
-\tuplet 3/2 { r4 g8 } r4 c4-. \tuplet 3/2 { e4-. g8 } |
-r2 \tuplet 3/2 { e4-. c8 a4-. g8 } |
-\tuplet 3/2 { fis4-. g8 fis4-. g8 fis4-. d8 r4 fis8 } |
-r8 d16 fis d[ d fis d] fis[ d fis d] fis d \tuplet 3/2 { r16 f8 } |
-\tuplet 3/2 { r4 g8 f4-. g8 f4-. g8 r4 c8 } |
-\tuplet 3/2 { r4 b8 c4-. b8 c4-. b8 g4-. e8 } |
-r2 r4 \tuplet 3/2 { f4-. e8 } |
-r4 \tuplet 3/2 { r4 e8 } r4 \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 f8 dis4-. e8 f4-. dis8 e4-. b'8 } |
-r4 gis-. f-. e-. |
-\override TupletBracket.bracket-visibility = ##t
-\tuplet 3/2 { d8[ \tuplet 3/2 { e d c] } } \tuplet 3/2 { b4-. c8 d4-. c8 b4-. c8 } |
-r4 \tuplet 3/2 { r4 c8 } b4-. c-. |
-\tuplet 3/2 { r4 d8 } r4 cis-. \tuplet 3/2 { d4-. a'8 } |
-r4 fis-. g-. a-. |
-\tuplet 3/2 { b4-. ais8 b4-. b'8 a,4-. gis8 a4-. a'8 } |
-\tuplet 3/2 { aes,4-. g8 aes4-. aes'8 g,4-. d8 b4-. g8 } |
-\tuplet 3/2 { c'4-. e,8 g4-. c8 ~ c4 e,8 g4-. c8 } |
-\tuplet 3/2 { ees,8[ g b] ees4-. b8 ~ } b2 |
-\tuplet 3/2 { bes4-. d,8 g4-. bes8 ~ bes4 d,8 g4-. bes8 } |
-\tuplet 3/2 { e,8[ a cis] e4-. cis8 ~ cis4. ~ cis4 e8 } |
-\tuplet 3/2 { a4-. g8 a4-. f8 ~ f4 a8 g4-. fis8 } |
-\tuplet 3/2 { e4-. dis8 e4-. c8 ~ c4 a8 b4-. cis8 } |
-\tuplet 3/2 { d4-. c8 d4-. g,8 ~ g4 c8 b4-. g8 ~ } |
-g2 r |
-\tuplet 3/2 { r4 g8 } r4 c4-. \tuplet 3/2 { e4-. g8 } |
-r2 \tuplet 3/2 { e4-. c8 a4-. g8 } |
-\tuplet 3/2 { fis4-. g8 fis4-. g8 fis4-. d8 r4 fis8 } |
-r8 d16 fis d[ d fis d] fis[ d fis d] fis d \tuplet 3/2 { r16 f8 } |
-\tuplet 3/2 { r4 g8 f4-. g8 f4-. g8 r4 c8 } |
-\tuplet 3/2 { r4 b8 c4-. b8 g4-. f8 e4-. c'8 } |
-r8 e,16 c' e,[ c' e, c'] e,[ c' e, c'] e, c' r8 |
-\tuplet 3/2 { r4 b---. a---. } \tuplet 3/2 { g4---. f---. ees---. } |
-\tuplet 3/2 { r4 g8 } r4 c4-. \tuplet 3/2 { e4-. g8 } |
-r2 \tuplet 3/2 { e4-. c8 a4-. g8 } |
-\tuplet 3/2 { fis4-. g8 fis4-. g8 fis4-. d8 r4 fis8 } |
-r8 d16 fis d[ d fis d] fis[ d fis d] fis d \tuplet 3/2 { r16 f8 } |
-\tuplet 3/2 { r4 g8 f4-. g8 f4-. g8 r4 c8 } |
-\tuplet 3/2 { r4 b8 c4-. b8 c4-. b8 g4-. e8 } |
-r2 r4 \tuplet 3/2 { f4-. e8 } |
-r4 \tuplet 3/2 { r4 e8 } r4 \tuplet 3/2 { r4 e8 } |
-\tuplet 3/2 { r4 f8 dis4-. e8 f4-. dis8 e4-. b'8 } |
-r4 gis-. f-. e-. |
-\override TupletBracket.bracket-visibility = ##t
-\tuplet 3/2 { d8[ \tuplet 3/2 { e d c] } } \tuplet 3/2 { b4-. c8 d4-. c8 b4-. c8 } |
-r4 \tuplet 3/2 { r4 c8 } b4-. c-. |
-\tuplet 3/2 { r4 d8 } r4 cis-. \tuplet 3/2 { d4-. a'8 } |
-r4 fis-. g-. a-. |
-\tuplet 3/2 { b4-. ais8 b4-. b'8 a,4-. gis8 a4-. a'8 } |
-\tuplet 3/2 { aes,4-. g8 aes4-. aes'8 g,4-. d8 b4-. g8 } |
+\tuplet 3/2 { <d d'>8[ \tuplet 3/2 { <e e'> <d d'> <c c'>] } } \tuplet 3/2 { <b b'>4-. <c c'>8 <d d'>4-. <c c'>8 <b b'>4-. <c c'>8 } |
+r4 \tuplet 3/2 { r4 <c c'>8 } <b b'>4-. <c c'>-. |
+\tuplet 3/2 { r4 <d d'>8 } r4 <cis cis'>-. \tuplet 3/2 { <d d'>4-. <a' a'>8 } |
+r4 <fis fis'>-. <g g'>-. <a a'>-. |
+<<{b'4-. r a-. r | aes-. r }\\{\tuplet 3/2 { b,4-. ais8 b4-. b'8 a,4-. gis8 a4-. a'8 } | \tuplet 3/2 { aes,4-. g8 aes4-. aes'8 } }>>
+\tuplet 3/2 { <g, g'>4-. <d d'>8 <b b'>4-. <g g'>8 } |
                 }
 
                 \new Staff \relative c' {
