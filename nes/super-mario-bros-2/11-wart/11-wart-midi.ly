@@ -11,68 +11,35 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c'' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 2/2
 \tempo 2 = 100
-                    \repeat volta 2 {
-g4. fis8 ~ fis4 d |
-ges4. f8 ~ f4 cis |
-f4. e8 ~ e4 c |
-ees8 d2.. |
-a'4. gis8 ~ gis4 e |
-aes4. g8 ~ g4 dis |
-g4. fis8 ~ fis4 d |
-f8 e2.. |
-ees8 d ees d ees d ees d |
-e8 dis e dis e dis e dis |
-f8 e f e f e f e |
-ges8 f ges f ges f ges f |
-g4. fis8 ~ fis4 d |
-ges4. f8 ~ f4 cis |
-f4. e8 ~ e4 c |
-ees8 d2.. |
-a'4. gis8 ~ gis4 e |
-aes4. g8 ~ g4 dis |
-g4. fis8 ~ fis4 d |
-f8 e2.. |
-ees8 d ees d ees d ees d |
-e8 dis e dis e dis e dis |
-f8 e f e f e f e |
-ges8 f ges f ges f ges f |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-bes4. a8 ~ a4 f |
-a4. gis8 ~ gis4 e |
-aes4. g8 ~ g4 dis |
-ges8 f2.. |
-c'4. b8 ~ b4 g |
-b4. ais8 ~ ais4 fis |
-bes4. a8 ~ a4 f |
-a8 gis2.. |
-a8 gis a gis a gis a gis |
-bes8 a bes a bes a bes a |
-b8 ais b ais b ais b ais |
-c8 b c b c b c b |
-bes4. a8 ~ a4 f |
-a4. gis8 ~ gis4 e |
-aes4. g8 ~ g4 dis |
-ges8 f2.. |
-c'4. b8 ~ b4 g |
-b4. ais8 ~ ais4 fis |
-bes4. a8 ~ a4 f |
-a8 gis2.. |
-a8 gis a gis a gis a gis |
-bes8 a bes a bes a bes a |
-b8 ais b ais b ais b ais |
-c8 b c b c b c b |
+<bes g'>4. <a fis'>8 ~ 4 <f d'> |
+<a ges'>4. <gis f'>8 ~ 4 <e cis'> |
+<aes f'>4. <g e'>8 ~ 4 <dis c'> |
+<ges ees'>8 <f d'>2.. |
+<c' a'>4. <b gis'>8 ~ 4 <g e'> |
+<b aes'>4. <ais g'>8 ~ 4 <fis dis'> |
+<bes g'>4. <a fis'>8 ~ 4 <f d'> |
+<a f'>8 <gis e'>2.. |
+<a ees'>8 <gis d'> <a ees'> <gis d'> <a ees'> <gis d'> <a ees'> <gis d'> |
+<bes e>8 <a dis> <bes e> <a dis> <bes e> <a dis> <bes e> <a dis> |
+<b f'>8 <ais e'> <b f'> <ais e'> <b f'> <ais e'> <b f'> <ais e'> |
+<c ges'>8 <b f'> <c ges'> <b f'> <c ges'> <b f'> <c ges'> <b f'> |
+<bes g'>4. <a fis'>8 ~ 4 <f d'> |
+<a ges'>4. <gis f'>8 ~ 4 <e cis'> |
+<aes f'>4. <g e'>8 ~ 4 <dis c'> |
+<ges ees'>8 <f d'>2.. |
+<c' a'>4. <b gis'>8 ~ 4 <g e'> |
+<b aes'>4. <ais g'>8 ~ 4 <fis dis'> |
+<bes g'>4. <a fis'>8 ~ 4 <f d'> |
+<a f'>8 <gis e'>2.. |
+<a ees'>8 <gis d'> <a ees'> <gis d'> <a ees'> <gis d'> <a ees'> <gis d'> |
+<bes e>8 <a dis> <bes e> <a dis> <bes e> <a dis> <bes e> <a dis> |
+<b f'>8 <ais e'> <b f'> <ais e'> <b f'> <ais e'> <b f'> <ais e'> |
+<c ges'>8 <b f'> <c ges'> <b f'> <c ges'> <b f'> <c ges'> <b f'> |
                 }
 
                 \new Staff \relative c' {

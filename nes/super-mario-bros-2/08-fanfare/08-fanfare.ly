@@ -11,25 +11,16 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 3/4
 \tempo 2. = 100
 \key aes \major
-aes4. aes8 aes4 |
-g'4 g f |
-e2. |
+<ees aes>4. 8 4 |
+<bes' g'>4 4 <aes f'> |
+<g e'>2. |
 \bar "|."
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key aes \major
-ees4. ees8 ees4 |
-bes'4 bes aes |
-g2. |
                 }
 
                 \new Staff \relative c' {

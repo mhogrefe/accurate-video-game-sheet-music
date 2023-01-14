@@ -12,54 +12,27 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\key c \major
-d8 ees ees d ees ees d ees |
-d8 ees ees d ees ees d ees |
-d8 ees ees d ees ees d ees |
-d8 ees ees d ees ees d ees |
-e8 f f e f f e f |
-e8 f f e f f e f |
-e8 f f e f f e f |
-e8 f f e f f e f |
-d8 ees ees d ees ees d ees |
-d8 ees ees d ees ees d ees |
-d8 ees ees d ees ees d ees |
-d8 ees ees d ees ees d ees |
-e8 f f e f f e f |
-e8 f f e f f e f |
-e8 f f e f f e f |
-e8 f f e f f e f |
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
 \time 2/2
 \tempo 2 = 100
-
-                    \repeat volta 2 {
-a8 a r a a4-. a-. |
-a8 a r a a4-. a-. |
-aes8 aes r aes aes4-. aes-. |
-aes8 aes r aes aes4-. aes-. |
-b8 b r b b4-. b-. |
-b8 b r b b4-. b-. |
-bes8 bes r bes bes4-. bes-. |
-bes8 bes r bes bes4-. bes-. |
-a8 a r a a4-. a-. |
-a8 a r a a4-. a-. |
-aes8 aes r aes aes4-. aes-. |
-aes8 aes r aes aes4-. aes-. |
-b8 b r b b4-. b-. |
-b8 b r b b4-. b-. |
-bes8 bes r bes bes4-. bes-. |
-bes8 bes r bes bes4-. bes-. |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
+<d a'>8 <ees a> ees <d a'> <ees a> ees <d a'> ees |
+<d a'>8 <ees a> ees <d a'> <ees a> ees <d a'> ees |
+<d aes'>8 <ees aes> ees <d aes'> <ees aes> ees <d aes'> ees |
+<d aes'>8 <ees aes> ees <d aes'> <ees aes> ees <d aes'> ees |
+<e b'>8 <f b> f <e b'> <f b> f <e b'> f |
+<e b'>8 <f b> f <e b'> <f b> f <e b'> f |
+<e bes'>8 <f bes> f <e bes'> <f bes> f <e bes'> f |
+<e bes'>8 <f bes> f <e bes'> <f bes> f <e bes'> f |
+<d a'>8 <ees a> ees <d a'> <ees a> ees <d a'> ees |
+<d a'>8 <ees a> ees <d a'> <ees a> ees <d a'> ees |
+<d aes'>8 <ees aes> ees <d aes'> <ees aes> ees <d aes'> ees |
+<d aes'>8 <ees aes> ees <d aes'> <ees aes> ees <d aes'> ees |
+<e b'>8 <f b> f <e b'> <f b> f <e b'> f |
+<e b'>8 <f b> f <e b'> <f b> f <e b'> f |
+<e bes'>8 <f bes> f <e bes'> <f bes> f <e bes'> f |
+<e bes'>8 <f bes> f <e bes'> <f bes> f <e bes'> f |
                 }
 
                 \new Staff \relative c' {
