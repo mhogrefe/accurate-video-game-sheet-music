@@ -15,27 +15,18 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 112
 \key f \minor
 \clef bass
                     \repeat volta 2 {
-r4 aes f r |
-e4 e8 f r2 |
+r4 <ees aes> <c f> r |
+<b e>4 8 <c f> r2 |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key f \minor
-\clef bass
-r4 ees c r |
-b4 b8 c r2 |
                 }
 
                 \new Staff \relative c {

@@ -42,12 +42,13 @@ swing = \markup {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
 \time 2/2
 \tempo 2 = 100
-                    \repeat volta 2 {
+                        \repeat volta 2 {
 g4-.^\swing g-. a-. a-. |
 b4-. b8-. a r gis a4-. |
 g4-. g-. a-. a8-. b |
@@ -60,14 +61,12 @@ g,4-. g-. a-. a-. |
 b4-. b8-. a r gis a4-. |
 c8 c r4 r c8 c |
 R1
-                    }
+                        }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
+                    }
 
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \new Staff \relative c' {
 e8-. c e4-. e8-. c e4-. |
 e8-. c e-. e r dis e4-. |
 e8-. c e4-. e8-. c e-. e |
@@ -80,7 +79,8 @@ e8-. c e4-. e8-. c e4-. |
 e8-. c e-. e r dis e4-. |
 e8 e r4 r e8 e |
 R1 |
-                }
+                    }
+                >>
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"

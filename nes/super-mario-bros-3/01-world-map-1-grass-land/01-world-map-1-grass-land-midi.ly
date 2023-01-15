@@ -15,9 +15,10 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
 \time 2/2
 \tempo 2 = 100
 g4-. g-. a-. a-. |
@@ -44,11 +45,9 @@ g,4-. g-. a-. a-. |
 b4-. \tuplet 3/2 { b4-. a8 r4 gis8 } a4-. |
 \tuplet 3/2 { c4 c8 } r4 r \tuplet 3/2 { c4 c8 } |
 R1
-                }
+                    }
 
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \new Staff \relative c' {
 \tuplet 3/2 { e4-. c8 } e4-. \tuplet 3/2 { e4-. c8 } e4-. |
 \tuplet 3/2 { e4-. c8 e4-. e8 r4 dis8 } e4-. |
 \tuplet 3/2 { e4-. c8 } e4-. \tuplet 3/2 { e4-. c8 e4-. e8 } |
@@ -73,7 +72,8 @@ R1 |
 \tuplet 3/2 { e4-. c8 e4-. e8 r4 dis8 } e4-. |
 \tuplet 3/2 { e4 e8 } r4 r \tuplet 3/2 { e4 e8 } |
 R1 |
-                }
+                    }
+                >>
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
