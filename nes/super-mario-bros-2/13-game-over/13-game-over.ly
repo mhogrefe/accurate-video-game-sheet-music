@@ -12,20 +12,13 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 2/4
 \tempo 4 = 148
-g16 a c g, a c g, a |
-c8 g c r |
+g16 a <c,, c''> g' a <c, c'> g a |
+c8 <g f'> <c e> r |
 \bar "|."
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-r8 c16 r r c r8 |
-c8 f e r |
                 }
 
                 \new Staff \relative c'' {

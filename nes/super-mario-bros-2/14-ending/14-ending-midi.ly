@@ -11,30 +11,32 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
 \key c \major
-e2 r8 f e c |
-\tuplet 3/2 { d4-. e8 } f2 d4 |
-g2 \tuplet 3/2 { r8 r f } \tuplet 3/2 { f8 e d } |
-e2 r4 d |
-c2 r8 b c d |
-c2 r8 b c d |
-c2 r8 a c d |
-g2 r |
-e2 r8 f e c |
-\tuplet 3/2 { d4-. d8 } g2 g,4 |
-d'2 r8 ees d bes |
-\tuplet 3/2 { c4-. c8 } f2 f,4 |
-c'2 r8 c d f |
-e2 c4 g |
-a2 r8 a b c |
-a2 r8 a b e |
-c2 c |
-c4 g,8[ g] g g4 ~ |
-g4 r r2 |
+<g e'>2 r8 <a f'> <g e'> <e c'> |
+\tuplet 3/2 { <f d'>4-. <g e'>8 } <bes f'>2 <f d'>4 |
+<bes g'>2 \tuplet 3/2 { r8 r <bes f'> } \tuplet 3/2 { <bes f'>8 <g e'> <f d'> } |
+<g e'>2 r4 <f d'> |
+<e c'>2 r8 <f b> <f c'> <f d'> |
+<e c'>2 r8 <ees b'> <ees c'> <ees d'> |
+<d c'>2 r8 <c a'> <f c'> <f d'> |
+<c' g'>2 b |
+<c e>2 r8 <c f> <c e> <g c> |
+\tuplet 3/2 { <b d>4-. <b d>8 } <d g>2 <d, g>4 |
+<bes' d>2 r8 <bes ees> <bes d> <f bes> |
+\tuplet 3/2 { <a c>4-. <a c>8 } <c f>2 <c, f>4 |
+<aes' c>2 r8 <aes c> <aes d> <c f> |
+<c e>2 <g c>4 <e g> |
+<f a>2 r8 <f a> <f b> <a c> |
+<f a>2 r8 <f a> <f b> <f e'> |
+<<{ c'2 c }\\{ gis4 \tuplet 3/2 { gis8 gis gis } f4 \tuplet 3/2 { f8 f f } }>> |
+<e c'>4 \clef bass <c, g'>8[ 8] 8 4 ~ |
+g'4 r r2 |
 R1*3
+\clef treble
 e'''8-. f-. g-. d-. r d-. r d-. |
 c8-. d-. e-. b-. r b-. r g-. |
 a8-. b-. c-. g-. r g-. fis-. g-. |
@@ -69,32 +71,13 @@ c,8-. d-. c-. d-. r ees-. f-. g-. |
 r8 e-. c-. g-. r2 |
 c8-. d-. c-. d-. r a-. b-. c-. |
 d8-. r r4 r2 |
-                }
+                    }
 
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \new Staff \relative c'' {
 \key c \major
-g2 r8 a g e |
-\tuplet 3/2 { f4-. g8 } bes2 f4 |
-bes2 \tuplet 3/2 { r8 r bes } \tuplet 3/2 { bes8 g f } |
-g2 r4 f |
-e2 r8 f f f |
-e2 r8 ees ees ees |
-d2 r8 c f f |
-c'2 b |
-c2 r8 c c g |
-\tuplet 3/2 { b4-. b8 } d2 d,4 |
-bes'2 r8 bes bes f |
-\tuplet 3/2 { a4-. a8 } c2 c,4 |
-aes'2 r8 aes aes c |
-c2 g4 e |
-f2 r8 f f a |
-f2 r8 f f f |
-gis4 \tuplet 3/2 { gis8 gis gis } f4 \tuplet 3/2 { f8 f f } |
-e4 \clef bass c,8[ c] c c4 |
-\clef treble
-c''8-. g'-. e-. g-. b,-. g'-. d-. g-. |
+R1*17
+R1*7/8
+c8-. g'-. e-. g-. b,-. g'-. d-. g-. |
 a,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
 c,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
 a,8-. g'-. e-. g-. b,-. g'-. d-. g-. |
@@ -130,7 +113,8 @@ aes,8-. ees'-. c-. ees-. aes,-. ees'-. c-. ees-. |
 g,8-. e'-. c-. e-. g,-. e'-. c-. e-. |
 fis,8-. d'-. c-. d-. fis,-. d'-. c-. d-. |
 g,8-. d'-. b-. d-. g,-. f'-. d-. b'-. |
-                }
+                    }
+                >>
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
