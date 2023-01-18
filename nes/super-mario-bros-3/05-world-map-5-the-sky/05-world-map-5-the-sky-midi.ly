@@ -15,36 +15,21 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 150
 \clef bass
 \partial 1*5/8
 r8 r2 |
-r4 \tuplet 3/2 { c4 c8 } \tuplet 3/2 { r8 r c, } c'4 |
-r2 c4 \tuplet 3/2 { c4 c8 } |
-r4 \tuplet 3/2 { f4 f8 } \tuplet 3/2 { r8 r f, } f'4 |
-r2 f4 \tuplet 3/2 { f4 f8 } |
-r4 \tuplet 3/2 { c4 c8 } \tuplet 3/2 { r8 r c, } c'4 |
-r2 c4 \tuplet 3/2 { c4 c8 } |
-r4 \tuplet 3/2 { f4 f8 } \tuplet 3/2 { r8 r f, } f'4 |
-r2 f4 \tuplet 3/2 { f4 f8 } |
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\clef bass
-r8 r2 |
-r4 \tuplet 3/2 { e4 e8 } r4 e |
-r2 r4 \tuplet 3/2 { e4 e8 } |
-r4 \tuplet 3/2 { a4 a8 } r4 a |
-r2 r4 \tuplet 3/2 { a4 a8 } |
-r4 \tuplet 3/2 { e4 e8 } r4 e |
-r2 r4 \tuplet 3/2 { e4 e8 } |
-r4 \tuplet 3/2 { a4 a8 } r4 a |
-r2 r4 \tuplet 3/2 { a4 a8 } |
+r4 \tuplet 3/2 { <e c'>4 8 } \tuplet 3/2 { r8 r c } <e c'>4 |
+r2 c'4 \tuplet 3/2 { <e, c'>4 8 } |
+r4 \tuplet 3/2 { <a f'>4 8 } \tuplet 3/2 { r8 r f } <a f'>4 |
+r2 f'4 \tuplet 3/2 { <a, f'>4 8 } |
+r4 \tuplet 3/2 { <e c'>4 8 } \tuplet 3/2 { r8 r c } <e c'>4 |
+r2 c'4 \tuplet 3/2 { <e, c'>4 8 } |
+r4 \tuplet 3/2 { <a f'>4 8 } \tuplet 3/2 { r8 r f } <a f'>4 |
+r2 f'4 \tuplet 3/2 { <a, f'>4 8 } |
                 }
 
                 \new Staff \relative c {
@@ -82,8 +67,8 @@ ss4 \tuplet 3/2 { hh4 ss8 } ss4 \tuplet 3/2 { hh4 ss8 }
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-\tuplet 3/2 { cgl16 cgl cgl } cgl4 cgl |
-bd4\ppp wbl bd wbl |
+\tuplet 3/2 { timh16\ppp timh timh } timh4 timh |
+bd4 wbl bd wbl |
 bd4 wbl bd wbl |
 bd4 wbl bd wbl |
 bd4 wbl bd wbl |

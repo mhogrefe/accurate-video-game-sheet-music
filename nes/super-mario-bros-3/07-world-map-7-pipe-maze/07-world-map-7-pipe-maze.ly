@@ -43,33 +43,20 @@ swing = \markup {
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 110
 \key f \minor
                     \repeat volta 2 {
 \override Hairpin.to-barline = ##f
-\partial 2 r8^\swing c ees-. f\> ~ |
-f2\! r4 \tuplet 3/2 { r8 r f16 ges } |
-f8-. ees c-. bes r c ees-. f\> ~ |
-f2\! r4 r8 c' |
-\partial 2 d8-. ees4. |
+\partial 2 r8^\swing <g c>\mf <bes ees>-. <c f>\> ~ |
+<c f>2\! r4 \tuplet 3/2 { r8 r <c f>16\mf <des ges> } |
+<c f>8-. <bes ees> <g c>-. <f bes> r <g c> <bes ees>-. <c f>\> ~ |
+<c f>2\! r4 r8 <g' c>\mf |
+\partial 2 <a d>8-. <bes ees>4. |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key f \minor
-\clef bass
-\override Hairpin.to-barline = ##f
-\partial 2 r8 g bes-. c\> ~ |
-c2\! r4 \tuplet 3/2 { r8 r c16 des } |
-c8-. bes g-. f r g bes-. c\> ~ |
-c2\! r4 r8 \clef treble g' |
-\partial 2 a8-. bes4. |
                 }
 
                 \new Staff \relative c {

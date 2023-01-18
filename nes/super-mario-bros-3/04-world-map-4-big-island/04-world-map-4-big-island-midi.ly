@@ -16,8 +16,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key g \major
 \tempo 4 = 150
 g2 a |

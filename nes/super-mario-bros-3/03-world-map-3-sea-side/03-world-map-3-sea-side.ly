@@ -15,11 +15,12 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
 \tempo 4 = 150
-                    \repeat volta 2 {
+                        \repeat volta 2 {
 b2 a |
 gis2 a |
 c2 b |
@@ -28,14 +29,12 @@ d2 c |
 b2 a |
 c2 b |
 a2 gis |
-                    }
+                        }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
+                    }
 
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \new Staff \relative c'' {
 r4 \acciaccatura dis8 e4-. r8 e4. |
 r4 r8 e r4 \acciaccatura dis8 e4-. |
 r4 \acciaccatura e8 f4-. r8 f4. |
@@ -44,7 +43,8 @@ r4 \acciaccatura fis8 g4-. r8 g4. |
 r4 r8 fis r4 \acciaccatura eis8 fis4-. |
 r4 \acciaccatura e8 f4-. r8 f4. |
 r4 r8 f r4 \acciaccatura e8 f4-. |
-                }
+                    }
+                >>
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"

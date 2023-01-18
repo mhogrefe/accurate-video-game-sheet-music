@@ -19,7 +19,6 @@
 \tempo 2 = 100
 <fis e'>8 8 r <fis e'> r <fis c'> <fis e'>4-. |
 <b g'>4-. r g-. r |
-\bar "||"
                     \repeat volta 2 {
 % A
 <e c'>4-. r8 <c g'> r4 <g e'>-. |

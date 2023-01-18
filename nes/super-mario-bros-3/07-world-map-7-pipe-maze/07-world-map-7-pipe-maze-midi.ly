@@ -16,37 +16,19 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 110
 \key f \minor
-\partial 2 \tuplet 3/2 { r4 c8 ees4-. f8 ~ } |
-f2 r4 \tuplet 3/2 { r8 r f16 ges } |
-\tuplet 3/2 { f4-. ees8 c4-. bes8 r4 c8 ees4-. f8 ~ } |
-f2 r4 \tuplet 3/2 { r4 c'8 } |
-\partial 2 \tuplet 3/2 { d4-. ees8 ~ } ees4 |
-\partial 2 \tuplet 3/2 { r4 c,8 ees4-. f8 ~ } |
-f2 r4 \tuplet 3/2 { r8 r f16 ges } |
-\tuplet 3/2 { f4-. ees8 c4-. bes8 r4 c8 ees4-. f8 ~ } |
-f2 r4 \tuplet 3/2 { r4 c'8 } |
-\partial 2 \tuplet 3/2 { d4-. ees8 ~ } ees4 |
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key f \minor
-\clef bass
-\partial 2 \tuplet 3/2 { r4 g8 bes4-. c8 ~ } |
-c2 r4 \tuplet 3/2 { r8 r c16 des } |
-\tuplet 3/2 { c4-. bes8 g4-. f8 r4 g8 bes4-. c8 ~ } |
-c2 r4 \tuplet 3/2 { r4 \clef treble g'8 } |
-\partial 2 \tuplet 3/2 { a4-. bes8 ~ } bes4 |
-\partial 2 \tuplet 3/2 { r4 g,8 bes4-. c8 ~ } |
-c2 r4 \tuplet 3/2 { r8 r c16 des } |
-\tuplet 3/2 { c4-. bes8 g4-. f8 r4 g8 bes4-. c8 ~ } |
-c2 r4 \tuplet 3/2 { r4 \clef treble g'8 } |
-\partial 2 \tuplet 3/2 { a4-. bes8 ~ } bes4 |
+\partial 2 \tuplet 3/2 { r4 <g c>8\mf <bes ees>4-. <c f>8\> ~ } |
+<c f>2\! r4 \tuplet 3/2 { r8 r <c f>16\mf <des ges> } |
+\tuplet 3/2 { <c f>4-. <bes ees>8 <g c>4-. <f bes>8 r4 <g c>8 <bes ees>4-. <c f>8\> ~ } |
+<c f>2\! r4 \tuplet 3/2 { r4 <g' c>8\mf } |
+\partial 2 \tuplet 3/2 { <a d>4-. <bes ees>8 ~ } <bes ees>4 \partial 2 \tuplet 3/2 { r4 <g, c>8\mf <bes ees>4-. <c f>8\> ~ } |
+<c f>2\! r4 \tuplet 3/2 { r8 r <c f>16\mf <des ges> } |
+\tuplet 3/2 { <c f>4-. <bes ees>8 <g c>4-. <f bes>8 r4 <g c>8 <bes ees>4-. <c f>8\> ~ } |
+<c f>2\! r4 \tuplet 3/2 { r4 <g' c>8\mf } |
+\partial 2 \tuplet 3/2 { <a d>4-. <bes ees>8 ~ } <bes ees>4
                 }
 
                 \new Staff \relative c {
