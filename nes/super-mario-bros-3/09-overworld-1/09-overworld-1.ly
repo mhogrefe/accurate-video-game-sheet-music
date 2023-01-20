@@ -42,57 +42,34 @@ swing = \markup {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 150
-g8-.^\swing g' g'-. f ~ f a, ais-. b ~ |
-b8 r r g' g'4 r |
+\clef bass
+<b g'>8-.^\swing \clef treble <b' g'> <b' g'>-. <a f'> ~ 8 <c, a'> <cis ais'>-. <d b'> ~ |
+<d b'>8 r r g' g'4 r |
                     \repeat volta 2 {
-r8 e, r dis e4 r8 dis |
-e4 a,8-. c ~ c r r4 |
-r8 e r dis \tuplet 3/2 { e4 e c } |
-d4 r r2 |
-r8 e r dis e4 r8 dis |
-e4 a,8-. c ~ c r r4 |
-r8 e r e \tuplet 3/2 { e4 g, a } |
-c4 r r2 |
+r8 <g,, e'> r <g dis'> <g e'>4 r8 <g dis'> |
+<g e'>4 <f a>8-. <e c'> ~ 4 r |
+r8 <g e'> r <g dis'> \tuplet 3/2 { <g e'>4 4 <g c> } |
+<f d'>4 r r2 |
+r8 <g e'> r <g dis'> <g e'>4 r8 <g dis'> |
+<g e'>4 <f a>8-. <e c'> ~ 4 r |
+r8 <g e'> r <g e'> \tuplet 3/2 { <g e'>4 <d g> <d a'> } |
+<e c'>4 r r2 |
 \bar "||"
-a8-. a c-. c r f' a,4 |
-g,8-. g c-. c r e' g,4 |
-f,8-. f a-. a r d' f,4 |
-e,8-. e g-. g r c' e,4 |
-a,8-. a c-. c r f' a,4 |
-a,8-. a c-. c r fis' a,4 |
-b,8-. b c-. c cis-. cis d-. d |
-r8 g r4 g r |
+<f a>8-. 8 <a c>-. 8 r <f f''> <a, a''>4 |
+<e' g>8-. 8 <g c>-. 8 r <e e''> <g, g''>4 |
+<d' f>8-. 8 <f a>-. <f a> r <d d''> <f, f''>4 |
+<c' e>8-. 8 <e g>-. 8 r <c c''> <e, e''>4 |
+<f' a>8-. 8 <a c>-. 8 r <f f''> <a, a'>4 |
+<fis' a>8-. 8 <a c>-. 8 r <fis fis''> <a, a''>4 |
+<d b'>8-. 8 <e c'>-. 8 <f cis'>-. 8 <fis d'>-. 8 |
+r8 <b g'> r4 <b g'> r |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\clef bass
-b8-. b' \clef treble b'-. a ~ a c, cis d ~ |
-d8 r r4 r2 |
-r8 g r g g4 r8 g |
-g4 f8-. e ~ e4 r |
-r8 g r g \tuplet 3/2 { g4 g g } |
-f4 r r2 |
-r8 g r g g4 r8 g |
-g4 f8-. e ~ e4 r |
-r8 g r g \tuplet 3/2 { g4 d d } |
-e4 r r2 |
-f8-. f a-. a r f a,4 |
-e'8-. e g-. g r e g,4 |
-d'8-. d f-. f r d f,4 |
-c'8-. c e-. e r c e,4 |
-f'8-. f a-. a r f a,4 |
-fis'8-. fis a-. a r fis a,4 |
-d8-. d e-. e f-. f fis-. fis |
-r8 b r4 b4 r |
                 }
 
                 \new Staff \relative c' {

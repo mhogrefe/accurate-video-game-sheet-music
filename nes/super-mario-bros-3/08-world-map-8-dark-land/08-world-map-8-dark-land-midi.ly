@@ -16,32 +16,18 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 112
 \clef bass
-f2 b |
-ais2 e |
-gis2 d' |
-cis2 fis, |
-f2 b |
-ais2 e |
-gis2 d' |
-cis2 fis, |
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\clef bass
-c2 fis |
-f2 ais, |
-dis2 a' |
-gis2 cis, |
-c2 fis |
-f2 ais, |
-dis2 a' |
-gis2 cis, |
+<c f>2 <fis b> |
+<f bes>2 <bes, e> |
+<dis gis>2 <a' d> |
+<gis cis> <cis, fis> |
+<c f>2 <fis b> |
+<f bes>2 <bes, e> |
+<dis gis>2 <a' d> |
+<gis cis> <cis, fis> |
                 }
 
                 \new Staff \relative c {
@@ -49,11 +35,11 @@ gis2 cis, |
                     \set Staff.shortInstrumentName = "T."
 \clef bass
 f2 b |
-ais2 e |
+bes2 e, |
 gis2 d' |
 cis2 fis, |
 f2 b |
-ais2 e |
+bes2 e, |
 gis2 d' |
 cis2 fis, |
                 }

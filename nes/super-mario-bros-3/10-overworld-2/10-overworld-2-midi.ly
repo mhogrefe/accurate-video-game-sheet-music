@@ -15,104 +15,97 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c''' {
 \tempo 4 = 150
-fis8-. g-. g-. g-. fis,-. g-. g-. g-. |
-fis,8-. g-. fis-. g-. g4-. g,-. |
-fis''8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b ~ b a-. g-. f-. |
-fis8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b-. r d-. g4-. |
-fis,8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b ~ b a-. g-. f-. |
-e8-. f-. g-. a ~ a g( f e) |
-d8-. e-. f-. g ~ g f( e d) |
-c8-. d-. e-. f ~ f e( d b) |
-\time 5/4
-c4-. r8 aes, ~ aes bes-. g-. c'-. b-. ais-. |
-\bar "||"
-\time 4/4
-a8 (b c a' ~ a) a-. a'4-. |
-g,,8( a b g' ~ g) g-. g'4-. |
-f,,8 (g a f' ~ f) f-. f'4-. |
-e,,8( dis e e') f4-. g-. |
-a,8 (b c a' ~ a) a-. a'4-. |
-g,,8( a b g' ~ g) g-. g'4-. |
-f,,8( g a f' ~ f e f fis) |
-g8-. g,-. g-. g-. g-. g,-. g-. g-. |
-fis8-. g-. fis-. g-. gis-. a-. ais-. b-. |
-fis''8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b ~ b a-. g-. f-. |
-fis8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b-. r d-. g4-. |
-fis,8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b ~ b a-. g-. f-. |
-e8-. f-. g-. a ~ a g( f e) |
-d8-. e-. f-. g ~ g f( e d) |
-c8-. d-. e-. f ~ f e( d b) |
-\time 5/4
-c4-. r8 aes, ~ aes bes-. g-. c'-. b-. ais-. |
-\bar "||"
-\time 4/4
-a8 (b c a' ~ a) a-. a'4-. |
-g,,8( a b g' ~ g) g-. g'4-. |
-f,,8 (g a f' ~ f) f-. f'4-. |
-e,,8( dis e e') f4-. g-. |
-a,8 (b c a' ~ a) a-. a'4-. |
-g,,8( a b g' ~ g) g-. g'4-. |
-f,,8( g a f' ~ f e f fis) |
-g8-. g,-. g-. g-. g-. g,-. g-. g-. |
-fis8-. g-. fis-. g-. gis-. a-. ais-. b-. |
-                }
+<dis fis>8-. <e g>-. 8-. 8-. <dis, fis>-. <e g>-. 8-. 8-. |
+<dis, fis>8 <e g> <dis fis> <e g> <g, g'>4-. \clef bass <g, g'>4-. |
 
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-dis8-. e-. e-. e-. dis,-. e-. e-. e-. |
-dis,8-. e-. dis-. e-. \clef bass g,4-. g,-. |
 \clef treble
-dis'''8-. e-. e-. dis-. e-. e-. dis-. e-. |
-f8-. e-. f-. g ~ g f-. e-. d-. |
-dis8-. e-. e-. dis-. e-. e-. dis-. e-. |
-f8-. e-. f-. g r c-. fis4-. |
-c,2 b |
+<dis''' fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |
+<f a>8-. <e gis>-. <f a>-. <g b> ~ 8 <f a>-. <e g>-. <d f>-. |
+<dis fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |
+<f a>8-. <e gis>-. <f a>-. <g b>-. r <c d>-. <fis g>4-. |
+<<{
+fis,8-. g-. g-. fis-. g-. g-. fis-. g-. |
+a8-. gis-. a-. b ~ b a-. g-. f-. |
+}\\{
+c2 b |
 a2 g |
-c8-. d-. e-. f ~ f e( d c) |
-b8-. c-. d-. e ~ e d( c b) |
-a8-. b-. c-. d ~ d c( b f) |
-e4-. r8 f ~ f g-. e4-. r |
+}>>
+<c e>8-. <d f>-. <e g>-. <f a> ~ 8 <e g>( <d f> <c e>) |
+<b d>8-. <c e>-. <d f>-. <e g> ~ 8 <d f>( <c e> <b d>) |
+<a c>8-. <b d>-. <c e>-. <d f> ~ 8 <c e>( <b d> <f b>) |
+\time 5/4
+<e c'>4-. r8 <aes, f'> ~ 8 <bes g'>-. g-. c'-. b-. ais-. |
+\bar "||"
+\time 4/4
+a8 (b c a' ~ a) a-. a'4-. |
+g,,8( a b g' ~ g) g-. g'4-. |
+f,,8 (g a f' ~ f) f-. f'4-. |
+<c,, e>8( <b dis> <c e> <g' e'>) <a f'>4-. <b g'>-. |
+a8 (b c a' ~ a) a-. a'4-. |
+g,,8( a b g' ~ g) g-. g'4-. |
+f,,8( g a f' ~ f e f fis) |
+<d g>8-. <d, g>-. 8-. 8-. 8-. \clef bass <d, g>-. 8-. 8-. |
+<dis fis>8-. <e g>-. <dis fis>-. <e g>-. <f aes>-. <fis a>-. <g bes>-. <gis b>-. |
+
+\clef treble
+<dis'' fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |
+<f a>8-. <e gis>-. <f a>-. <g b> ~ 8 <f a>-. <e g>-. <d f>-. |
+<dis fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |
+<f a>8-. <e gis>-. <f a>-. <g b>-. r <c d>-. <fis g>4-. |
+<<{
+fis,8-. g-. g-. fis-. g-. g-. fis-. g-. |
+a8-. gis-. a-. b ~ b a-. g-. f-. |
+}\\{
+c2 b |
+a2 g |
+}>>
+<c e>8-. <d f>-. <e g>-. <f a> ~ 8 <e g>( <d f> <c e>) |
+<b d>8-. <c e>-. <d f>-. <e g> ~ 8 <d f>( <c e> <b d>) |
+<a c>8-. <b d>-. <c e>-. <d f> ~ 8 <c e>( <b d> <f b>) |
+\time 5/4
+<e c'>4-. r8 <aes, f'> ~ 8 <bes g'>-. g-. c'-. b-. ais-. |
+\bar "||"
+\time 4/4
+a8 (b c a' ~ a) a-. a'4-. |
+g,,8( a b g' ~ g) g-. g'4-. |
+f,,8 (g a f' ~ f) f-. f'4-. |
+<c,, e>8( <b dis> <c e> <g' e'>) <a f'>4-. <b g'>-. |
+a8 (b c a' ~ a) a-. a'4-. |
+g,,8( a b g' ~ g) g-. g'4-. |
+f,,8( g a f' ~ f e f fis) |
+<d g>8-. <d, g>-. 8-. 8-. 8-. \clef bass <d, g>-. 8-. 8-. |
+<dis fis>8-. <e g>-. <dis fis>-. <e g>-. <f aes>-. <fis a>-. <g bes>-. <gis b>-. |
+                    }
+
+                    \new Staff \relative c' {
+R1*11
+r2 r4 e-. r |
 f8( g a c b d c a) |
 e8( f g b a c b g) |
 d8( e f a gis b a f) |
-c8( b c g') a4-. b-. |
+R1
 f8( g a c b d c a) |
 e8( f g b a c b g) |
 d8( e f a gis b c cis) |
-d8-. d,-. d-. d-. d-. \clef bass d,-. d-. d-. |
-dis8-. e-. dis-. e-. f-. fis-. g-. gis-. |
-\clef treble
-dis''8-. e-. e-. dis-. e-. e-. dis-. e-. |
-f8-. e-. f-. g ~ g f-. e-. d-. |
-dis8-. e-. e-. dis-. e-. e-. dis-. e-. |
-f8-. e-. f-. g r c-. fis4-. |
-c,2 b |
-a2 g |
-c8-. d-. e-. f ~ f e( d c) |
-b8-. c-. d-. e ~ e d( c b) |
-a8-. b-. c-. d ~ d c( b f) |
-e4-. r8 f ~ f g-. e4-. r |
+R1*2
+
+R1*9
+r2 r4 e,-. r |
 f8( g a c b d c a) |
 e8( f g b a c b g) |
 d8( e f a gis b a f) |
-c8( b c g') a4-. b-. |
+R1
 f8( g a c b d c a) |
 e8( f g b a c b g) |
 d8( e f a gis b c cis) |
-d8-. d,-. d-. d-. d-. \clef bass d,-. d-. d-. |
-dis8-. e-. dis-. e-. f-. fis-. g-. gis-. |
-                }
+R1*2
+                    }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
