@@ -15,31 +15,18 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\tempo 4 = 112
-g4 g'2 g,4 |
-gis4 gis'2 ais4 |
-g4 g,2 g'4 |
-f4 gis,2 bes8 a16 gis |
-g4 g'2 g,4 |
-gis4 gis'2 ais4 |
-g4 g,2 g'4 |
-f4 gis,2 bes8 a16 gis |
-                }
-
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-e4 e'2 e,4 |
-f4 f'2 g4 |
-e4 e,2 e'4 |
-cis4 f,2 f4 |
-e4 e'2 e,4 |
-f4 f'2 g4 |
-e4 e,2 e'4 |
-cis4 f,2 f4 |
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
+\tempo 4 = 112
+<e g>4 <e' g>2 <e, g>4 |
+<f aes>4 <f' aes>2 <g bes>4 |
+<e g>4 <e, g>2 <e' g>4 |
+<des f>4 <f, aes>2 <<{bes8 a16 gis}\\{f4}>> |
+<e g>4 <e' g>2 <e, g>4 |
+<f aes>4 <f' aes>2 <g bes>4 |
+<e g>4 <e, g>2 <e' g>4 |
+<des f>4 <f, aes>2 <<{bes8 a16 gis}\\{f4}>> |
                 }
 
                 \new Staff \relative c {

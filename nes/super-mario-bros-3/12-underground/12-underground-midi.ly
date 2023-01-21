@@ -16,30 +16,9 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 100
-\key bes \major
-\clef bass
-R1*2
-c16 c' a, a' bes, bes' r8 r2 |
-c,16 c' a, a' bes, bes' r8 r2 |
-f,16 f' d, d' ees, ees' r8 r2 |
-f,16 f' d, d' ees, ees' r8 r4 r8 \tuplet 3/2 { ees16 d des } |
-c8-. ees-. d-. aes-. g-. des'-. \tuplet 6/4 { c16 ges' f e bes' a } |
-\tuplet 3/2 { aes8-. ees-. ces-. } \tuplet 3/2 { bes8-. a-. aes-. } r2 |
-R1*2
-c16 c' a, a' bes, bes' r8 r2 |
-c,16 c' a, a' bes, bes' r8 r2 |
-f,16 f' d, d' ees, ees' r8 r2 |
-f,16 f' d, d' ees, ees' r8 r4 r8 \tuplet 3/2 { ees16 d des } |
-c8-. ees-. d-. aes-. g-. des'-. \tuplet 6/4 { c16 ges' f e bes' a } |
-\tuplet 3/2 { aes8-. ees-. ces-. } \tuplet 3/2 { bes8-. a-. aes-. } r2 |
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
 \key bes \major
 \clef bass
 R1*2

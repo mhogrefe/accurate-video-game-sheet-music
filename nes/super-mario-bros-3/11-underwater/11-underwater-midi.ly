@@ -15,67 +15,36 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\tempo 4 = 112
-g8 g' f d ~ d g, a ais |
-b2 r |
-g8 c g' fis ~ fis a4 fis8 |
-g8 e c g ~ g a4 fis8 |
-g8 c g' fis ~ fis a4 fis8 |
-g2 r |
-g,8 c g' fis ~ fis a4 fis8 |
-g8 e c g ~ g a4 fis8 |
-g8 c g' fis ~ fis a4 fis8 |
-g2 r |
-a,8 c a' gis ~ gis b4 a8 |
-g8 g, a' g ~ g r r4 |
-g,8 bes g' f ~ f g4 ees8 |
-a2 g |
-g,8 c g' fis ~ fis a4 fis8 |
-g8 e c g ~ g a4 fis8 |
-g8 c g' fis ~ fis a4 fis8 |
-g2 r |
-g,8 c g' fis ~ fis a4 fis8 |
-g8 e c g ~ g a4 fis8 |
-g8 c g' fis ~ fis a4 fis8 |
-g2 r |
-a,8 c a' gis ~ gis b4 a8 |
-g8 g, a' g ~ g r r4 |
-g,8 bes g' f ~ f g4 ees8 |
-a2 g |
-                }
-
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-b8 b' a f ~ f b, c cis |
-d2 r |
-e8 g e' dis ~ dis f4 dis8 |
-e8 c g e ~ e fis4 dis8 |
-e8 g e' dis ~ dis f4 dis8 |
-e2 r |
-e,8 g e' dis ~ dis f4 dis8 |
-e8 c g e ~ e fis4 dis8 |
-e8 g e' dis ~ dis f4 dis8 |
-e2 r |
-f,8 a f' e ~ e g4 f8 |
-e8 e, f' e ~ e r r4 |
-ees,8 g ees' d ~ d ees4 bes8 |
-f'2 b, |
-e,8 g e' dis ~ dis f4 dis8 |
-e8 c g e ~ e fis4 dis8 |
-e8 g e' dis ~ dis f4 dis8 |
-e2 r |
-e,8 g e' dis ~ dis f4 dis8 |
-e8 c g e ~ e fis4 dis8 |
-e8 g e' dis ~ dis f4 dis8 |
-e2 r |
-f,8 a f' e ~ e g4 f8 |
-e8 e, f' e ~ e r r4 |
-ees,8 g ees' d ~ d ees4 bes8 |
-f'2 b, |
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
+\tempo 4 = 112
+<b g'>8 <b' g'> <a f'> <f d'> ~ 8 <b, g'> <c a'> <cis ais'> |
+<d b'>2 r |
+<e g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>8 <c e> <g c> <e g> ~ 8 <fis a>4 <dis fis>8 |
+<e g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>2 r
+<e, g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>8 <c e> <g c> <e g> ~ 8 <fis a>4 <dis fis>8 |
+<e g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>2 r
+<f, a>8 <a c> <f' a> <e gis> ~ 8 <g b>4 <f a>8 |
+<e g>8 <e, g> <f' a> <e g> ~ 8 r r4 |
+<ees, g>8 <g bes> <ees' g> <d f> ~ 8 <ees g>4 <bes ees>8 |
+<f' a>2 <b, g'>2 |
+<e, g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>8 <c e> <g c> <e g> ~ 8 <fis a>4 <dis fis>8 |
+<e g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>2 r
+<e, g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>8 <c e> <g c> <e g> ~ 8 <fis a>4 <dis fis>8 |
+<e g>8 <g c> <e' g> <dis fis> ~ 8 <f a>4 <dis fis>8 |
+<e g>2 r
+<f, a>8 <a c> <f' a> <e gis> ~ 8 <g b>4 <f a>8 |
+<e g>8 <e, g> <f' a> <e g> ~ 8 r r4 |
+<ees, g>8 <g bes> <ees' g> <d f> ~ 8 <ees g>4 <bes ees>8 |
+<f' a>2 <b, g'>2 |
                 }
 
                 \new Staff \relative c' {
