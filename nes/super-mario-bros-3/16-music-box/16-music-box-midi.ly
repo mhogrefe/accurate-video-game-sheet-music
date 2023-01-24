@@ -10,10 +10,10 @@
 
     \score {
         {
-            \new StaffGroup <<
+            \new GrandStaff <<
+                \set Staff.instrumentName = "Pulse"
+                \set Staff.shortInstrumentName = "P."
                 \new Staff \relative c'''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
 \key c \major
 \tempo 4 = 112
 r4 g8-. fis-. f-. dis dis e |
@@ -35,8 +35,6 @@ c8 c c c r2
                 }
 
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
 c8 c c g' g g c c |
 f,8 f f c'-. c c f, f |
 c8 c c e e e g-. c |

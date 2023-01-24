@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \paper {
-  left-margin = 0.5\in
+  left-margin = 0.6\in
 }
 
 \book {
@@ -15,18 +15,19 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c {
 \time 3/4
 \tempo 4 = 112
 \clef bass
-                    \repeat volta 2 {
-c8-. b'-. bes2 ~ |
-bes4 r16 a aes g ges8-. bes,-. |
+                        \repeat volta 2 {
+<bes c>8-. <a' b>-. <aes bes>2 ~ |
+<aes bes>4 r16 <g a> <ges aes> <f g> <e fis>8-. <aes, bes>-. |
 R2. |
-c8-. b'-. bes2 ~ |
-bes4 r16 a aes g ges8-. bes,-. |
+<bes c>8-. <a' b>-. <aes bes>2 ~ |
+<aes bes>4 r16 <g a> <ges aes> <f g> <e fis>8-. <aes, bes>-. |
 R2. |
 bes8 r r4 g' ~ |
 g2 b4 ~ |
@@ -34,27 +35,21 @@ b2 e,4 ~ |
 e2 a4 ~ |
 \time 4/4
 a2 r |
-                    }
+                        }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
+                    }
 
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \new Staff \relative c {
 \clef bass
-bes8-. a'-. aes2 ~ |
-aes4 r16 g ges f e8-. aes,-. |
-R2. |
-bes8-. a'-. aes2 ~ |
-aes4 r16 g ges f e8-. aes,-. |
-R2. |
+R2.*6
 aes8 r aes'2 ~ |
 aes4 c,2 ~ |
 c4 des2 ~ |
 des4 aes2 ~ |
 aes2 r |
-                }
+                    }
+                >>
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"

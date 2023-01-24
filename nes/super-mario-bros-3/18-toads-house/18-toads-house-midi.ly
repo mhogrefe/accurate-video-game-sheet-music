@@ -12,40 +12,22 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key ees \major
 \tempo 4 = 112
-bes4-. bes-. a16 bes r8 bes4-. |
-c4-. c-. b16 c r8 c4-. |
-bes4-. bes-. a16 bes r8 bes4-. |
-c4-. c-. b16 c r8 c4-. |
-cis4-. cis-. bis16 cis r8 cis4-. |
-ees4-. ees-. d16 ees r8 ees4-. |
-bes4-. bes-. a16 bes r8 bes4-. |
-c4-. c-. b16 c r8 c4-. |
-bes4-. bes-. a16 bes r8 bes4-. |
-c4-. c-. b16 c r8 c4-. |
-cis4-. cis-. bis16 cis r8 cis4-. |
-ees4-. ees-. d16 ees r8 ees4-. |
-                }
-
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\key ees \major
-g4-. g-. fis16 g r8 g4-. |
-a4-. a-. gis16 a r8 a4-. |
-g4-. g-. fis16 g r8 g4-. |
-a4-. a-. gis16 a r8 a4-. |
-bes4-. bes-. a16 bes r8 bes4-. |
-c4-. c-. b16 c r8 c4-. |
-g4-. g-. fis16 g r8 g4-. |
-a4-. a-. gis16 a r8 a4-. |
-g4-. g-. fis16 g r8 g4-. |
-a4-. a-. gis16 a r8 a4-. |
-bes4-. bes-. a16 bes r8 bes4-. |
-c4-. c-. b16 c r8 c4-. |
+<g bes>4-. 4-. <fis a>16 <g bes> r8 <g bes>4-. |
+<a c>4-. 4-. <gis b>16 <a c> r8 <a c>4-. |
+<g bes>4-. 4-. <fis a>16 <g bes> r8 <g bes>4-. |
+<a c>4-. 4-. <gis b>16 <a c> r8 <a c>4-. |
+<bes des>4-. 4-. <a c>16 <bes des> r8 <bes des>4-. |
+<c ees>4-. 4-. <b d>16 <c ees> r8 <c ees>4-. |
+<g bes>4-. 4-. <fis a>16 <g bes> r8 <g bes>4-. |
+<a c>4-. 4-. <gis b>16 <a c> r8 <a c>4-. |
+<g bes>4-. 4-. <fis a>16 <g bes> r8 <g bes>4-. |
+<a c>4-. 4-. <gis b>16 <a c> r8 <a c>4-. |
+<bes des>4-. 4-. <a c>16 <bes des> r8 <bes des>4-. |
+<c ees>4-. 4-. <b d>16 <c ees> r8 <c ees>4-. |
                 }
 
                 \new Staff \relative c' {

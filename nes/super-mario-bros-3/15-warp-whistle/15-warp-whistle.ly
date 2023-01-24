@@ -12,22 +12,14 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
 \tempo 4 = 112
 \partial 4
 d8 e |
 d'4. cis16 c b2 |
 \bar "|."
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\key c \major
-d8 e |
-d'4. cis16 c b2 |
                 }
             >>
         }

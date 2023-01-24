@@ -12,33 +12,19 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key c \major
 \time 2/2
 \tempo 2 = 150
-f4-. f-. f-. d8 f |
-r8 f r d f d f4-. |
-e4-. e-. e-. c8 e |
-r8 e r c e c e4-. |
-f4-. f-. f-. d8 f |
-r8 f r d f d f4-. |
-e4-. e-. e-. c8 e |
-r8 e r c e c e4-. |
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\key c \major
-c4-. c-. c-. r8 c |
-r8 c r4 c-. c-. |
-b4-. b-. b-. r8 b |
-r8 b r4 b-. b-. |
-c4-. c-. c-. r8 c |
-r8 c r4 c-. c-. |
-b4-. b-. b-. r8 b |
-r8 b r4 b-. b-. |
+<f c'>4-. 4-. 4-. d8 <f c'> |
+r8 <f c'> r d <<{c'4-.}\\{f,8[ d]}>> <f c'>4-. |
+<e b'>4-. 4-. 4-. c8 <e b'> |
+r8 <e b'> r c <<{b'4-.}\\{e,8[ c]}>> <e b'>4-. |
+<f c'>4-. 4-. 4-. d8 <f c'> |
+r8 <f c'> r d <<{c'4-.}\\{f,8[ d]}>> <f c'>4-. |
+<e b'>4-. 4-. 4-. c8 <e b'> |
+r8 <e b'> r c <<{b'4-.}\\{e,8[ c]}>> <e b'>4-. |
                 }
 
                 \new Staff \relative c {

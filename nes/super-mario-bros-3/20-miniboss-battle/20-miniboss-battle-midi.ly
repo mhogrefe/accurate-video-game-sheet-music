@@ -15,54 +15,29 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\tempo 4 = 150
-r4 c ees f |
-fis1 |
-R1*2 |
-dis8-. e-. dis-. e-. d-. c-. a-. c ~ |
-c8 c ees16 d c8 ~ c a-. c4 |
-dis8-. e-. dis-. e-. d-. c-. a-. c ~ |
-c8 c ees16 d c8 ~ c a-. c4 |
-g'8-. g-. a-. ais-. b-. g-. r g-. |
-f8-. f-. e-. f-. r c-. d-. c-. |
-ees8-. ees-. d-. ees-. d-. c-. a-. c-. |
-r8 g'-. g-. g-. g-. g-. g-. g-. |
-dis8-. e-. dis-. e-. d-. c-. a-. c ~ |
-c8 c ees16 d c8 ~ c a-. c4 |
-dis8-. e-. dis-. e-. d-. c-. a-. c ~ |
-c8 c ees16 d c8 ~ c a-. c4 |
-g'8-. g-. a-. ais-. b-. g-. r g-. |
-f8-. f-. e-. f-. r c-. d-. c-. |
-ees8-. ees-. d-. ees-. d-. c-. a-. c-. |
-r8 g'-. g-. g-. g-. g-. g-. g-. |
-                }
-
                 \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\clef bass
-r4 e g a |
-cis1 |
-R1*2
-b8-. c-. b-. c-. a-. a-. f-. e ~ |
-e8 e-. fis-. e ~ e r r4 |
-b'8-. c-. b-. c-. a-. a-. f-. e ~ |
-e8 e-. fis-. e ~ e r r4 |
-b'8-. b-. c-. cis-. d-. b-. r b-. |
-a8-. a-. g-. a-. r f-. f-. f-. |
-g8-. g-. g-. g-. f-. f-. f-. e-. |
-r8 b'-. b-. b-. c-. c-. d-. d-. |
-b8-. c-. b-. c-. a-. a-. f-. e ~ |
-e8 e-. fis-. e ~ e r r4 |
-b'8-. c-. b-. c-. a-. a-. f-. e ~ |
-e8 e-. fis-. e ~ e r r4 |
-b'8-. b-. c-. cis-. d-. b-. r b-. |
-a8-. a-. g-. a-. r f-. f-. f-. |
-g8-. g-. g-. g-. f-. f-. f-. e-. |
-r8 b'-. b-. b-. c-. c-. d-. d-. |
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
+\tempo 4 = 150
+r4 <e c'> <g ees'> <a f'> |
+<cis fis>1 |
+R1*2 |
+<b dis>8-. <c e>-. <b dis>-. <c e>-. <a d>-. <a c>-. <f a>-. <e c'> ~ |
+<e c'>8 8 <<{ees'16 d \tieNeutral <e, c'>8 ~ 8[ a_.]}\\{fis8 s s4}>> c'4 |
+<b dis>8-. <c e>-. <b dis>-. <c e>-. <a d>-. <a c>-. <f a>-. <e c'> ~ |
+<e c'>8 8 <<{ees'16 d \tieNeutral <e, c'>8 ~ 8[ a_.]}\\{fis8 s s4}>> c'4 |
+<b g'>8-. 8-. <c a'>-. <cis ais'>-. <d b'>-. <b g'>-. r <b g'>-. |
+<a f'>8-. 8-. <g e'>-. <a f'>-. r <f c'>-. <f d'>-. <f c'>-. |
+<g ees'>8-. 8-. <g d'>-. <g ees'>-. <f d'>-. <f c'>-. <f a>-. <e c'>-. |
+r8 <b' g'>8-. 8-. 8-. 8-. 8-. 8-. 8-. |
+<b dis>8-. <c e>-. <b dis>-. <c e>-. <a d>-. <a c>-. <f a>-. <e c'> ~ |
+<e c'>8 8 <<{ees'16 d \tieNeutral <e, c'>8 ~ 8[ a_.]}\\{fis8 s s4}>> c'4 |
+<b dis>8-. <c e>-. <b dis>-. <c e>-. <a d>-. <a c>-. <f a>-. <e c'> ~ |
+<e c'>8 8 <<{ees'16 d \tieNeutral <e, c'>8 ~ 8[ a_.]}\\{fis8 s s4}>> c'4 |
+<b g'>8-. 8-. <c a'>-. <cis ais'>-. <d b'>-. <b g'>-. r <b g'>-. |
+<a f'>8-. 8-. <g e'>-. <a f'>-. r <f c'>-. <f d'>-. <f c'>-. |
+<g ees'>8-. 8-. <g d'>-. <g ees'>-. <f d'>-. <f c'>-. <f a>-. <e c'>-. |
+r8 <b' g'>8-. 8-. 8-. 8-. 8-. 8-. 8-. |
                 }
 
                 \new Staff \relative c {
