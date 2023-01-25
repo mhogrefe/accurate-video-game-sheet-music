@@ -15,73 +15,39 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
-\tempo 4 = 180
-\partial 2 a8 aes g ges ~ |
-ges2. r4 |
-\clef bass
-e,,8\pp e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-f,,8 f' ees' f, ees' d r f, |
-des'8 r f, des' r c cis d |
-f,,8 f' ees' f, ees' d r f, |
-des'8 r f, des' r c cis d |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-e,,8 e' d' e, d' cis r e, |
-c'8 r e, c' r b c cis |
-f,,8 f' ees' f, ees' d r f, |
-des'8 r f, des' r c cis d |
-f,,8 f' ees' f, ees' d r f, |
-des'8 r f, des' r c cis d |
-                }
-
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
+\tempo 4 = 180
+\partial 2 <c a'>8 <b aes'> <bes g'> <a ges'> ~ |
+<a ges'>2. r4 |
 \clef bass
-c8 b bes a ~ |
-a2. r4 |
-e,8\pp e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-f,8 f' bes f bes a r f |
-aes8 r f aes r g aes a |
-f,8 f' bes f bes a r f |
-aes8 r f aes r g aes a |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-e,8 e' a e a gis r e |
-g8 r e g r fis g gis |
-f,8 f' bes f bes a r f |
-aes8 r f aes r g aes a |
-f,8 f' bes f bes a r f |
-aes8 r f aes r g aes a |
+e,8\pp e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+f,8 f' <bes ees> f <bes ees> <a d> r f |
+<aes des>8 r f <aes des> r <g c> <aes cis> <a d> |
+f,8 f' <bes ees> f <bes ees> <a d> r f |
+<aes des>8 r f <aes des> r <g c> <aes cis> <a d> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+e,8 e' <a d> e <a d> <gis cis> r e |
+<g c>8 r e <g c> r <fis b> <g c> <gis cis> |
+f,8 f' <bes ees> f <bes ees> <a d> r f |
+<aes des>8 r f <aes des> r <g c> <aes cis> <a d> |
+f,8 f' <bes ees> f <bes ees> <a d> r f |
+<aes des>8 r f <aes des> r <g c> <aes cis> <a d> |
                 }
 
                 \new Staff \relative c' {

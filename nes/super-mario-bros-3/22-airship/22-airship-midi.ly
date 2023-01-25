@@ -15,71 +15,36 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 112
 R1*2
-c1 |
-c'1 |
-b1 |
+<f c'>1 |
+<f' c'>1 |
+<e b'>1 |
 R1 |
-c,1 |
-c'1 |
-b1 |
+<f, c'>1 |
+<f' c'>1 |
+<e b'>1 |
 R1 |
-cis,4-. cis-. cis8-. cis-. \tuplet 3/2 { cis8 e e } |
-cis4-. cis-. cis8-. cis-. \tuplet 3/2 { cis8 e e } |
-g4-. g-. g8-. g-. \tuplet 3/2 { g8 bes bes } |
-g4-. g-. g8-. g-. \tuplet 3/2 { g8 bes bes } |
+<cis dis>4-. 4-. 8-. 8-. \tuplet 3/2 { <cis dis>8 <e fis>8 8 } |
+<cis dis>4-. 4-. 8-. 8-. \tuplet 3/2 { <cis dis>8 <e fis>8 8 } |
+<g a>4-. 4-. 8-. 8-. \tuplet 3/2 { <g a>8 <bes c>8 8 } |
+<g a>4-. 4-. 8-. 8-. \tuplet 3/2 { <g a>8 <bes c>8 8 } |
 R1*2
-c,1 |
-c'1 |
-b1 |
+<f, c'>1 |
+<f' c'>1 |
+<e b'>1 |
 R1 |
-c,1 |
-c'1 |
-b1 |
+<f, c'>1 |
+<f' c'>1 |
+<e b'>1 |
 R1 |
-cis,4-. cis-. cis8-. cis-. \tuplet 3/2 { cis8 e e } |
-cis4-. cis-. cis8-. cis-. \tuplet 3/2 { cis8 e e } |
-g4-. g-. g8-. g-. \tuplet 3/2 { g8 bes bes } |
-g4-. g-. g8-. g-. \tuplet 3/2 { g8 bes bes } |
-                }
-
-                \new Staff \relative c {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\clef bass
-R1*2
-f1 |
-f'1 |
-e1 |
-R1 |
-f,1 |
-f'1 |
-e1 |
-R1 |
-\clef treble
-dis4-. dis-. dis8-. dis-. \tuplet 3/2 { dis8 fis fis } |
-dis4-. dis-. dis8-. dis-. \tuplet 3/2 { dis8 fis fis } |
-a4-. a-. a8-. a-. \tuplet 3/2 { a8 c c } |
-a4-. a-. a8-. a-. \tuplet 3/2 { a8 c c } |
-\clef bass
-R1*2
-f,,1 |
-f'1 |
-e1 |
-R1 |
-f,1 |
-f'1 |
-e1 |
-R1 |
-\clef treble
-dis4-. dis-. dis8-. dis-. \tuplet 3/2 { dis8 fis fis } |
-dis4-. dis-. dis8-. dis-. \tuplet 3/2 { dis8 fis fis } |
-a4-. a-. a8-. a-. \tuplet 3/2 { a8 c c } |
-a4-. a-. a8-. a-. \tuplet 3/2 { a8 c c } |
+<cis dis>4-. 4-. 8-. 8-. \tuplet 3/2 { <cis dis>8 <e fis>8 8 } |
+<cis dis>4-. 4-. 8-. 8-. \tuplet 3/2 { <cis dis>8 <e fis>8 8 } |
+<g a>4-. 4-. 8-. 8-. \tuplet 3/2 { <g a>8 <bes c>8 8 } |
+<g a>4-. 4-. 8-. 8-. \tuplet 3/2 { <g a>8 <bes c>8 8 } |
                 }
 
                 \new Staff \relative c {
