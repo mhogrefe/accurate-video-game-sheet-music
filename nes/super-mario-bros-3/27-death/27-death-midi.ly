@@ -42,23 +42,23 @@ swing = \markup {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
 \tempo 4 = 150
 r4 \tuplet 3/2 { e4-. e8 } \tuplet 3/2 { r4 d-. d-. } |
 c4 r r2 |
 \bar "|."
-                }
+                    }
 
-                \new DrumStaff {
-                    \drummode {
-                        \set Staff.instrumentName="Pulse 1"
-                        \set Staff.shortInstrumentName="P.1"
+                    \new DrumStaff {
+                        \drummode {
 r4 \tuplet 3/2 { sn4\ppp sn8 } \tuplet 3/2 { r4 sn sn } |
 sn4 r r2 |
+                        }
                     }
-                }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"

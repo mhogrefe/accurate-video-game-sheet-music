@@ -15,25 +15,16 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4. = 100
 \time 6/8
-r4 r8 c8-. g-. c-. |
-ees4. f8-. f-. f-. |
-g2. ~ |
-g4 r8 r4 r8 |
+r4 r8 <e c'>-. <c g'>-. <e c'>-. |
+<g ees'>4. <a f'>8-. 8-. 8-. 
+<b g'>2. ~ |
+<b g'>4 r r |
 \bar "|."
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-r4 r8 e-. c-. e-. |
-g4. a8-. a-. a-. |
-b2. ~ |
-b4 r8 r4 r8 |
                 }
 
                 \new Staff \relative c' {
