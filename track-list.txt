@@ -62,9 +62,10 @@ nes/super-mario-bros-3/25-king-restored
 nes/super-mario-bros-3/26-level-cleared
 nes/super-mario-bros-3/27-death
 nes/super-mario-bros-3/28-game-over
-nes/super-mario-bros-3/29-bowser-battle
-nes/super-mario-bros-3/30-ending
-nes/super-mario-bros-3/31-credits
+nes/super-mario-bros-3/29-hurry
+nes/super-mario-bros-3/30-bowser-battle
+nes/super-mario-bros-3/31-ending
+nes/super-mario-bros-3/32-credits
 nes/the-legend-of-zelda/01-introduction
 nes/the-legend-of-zelda/02-overworld
 nes/the-legend-of-zelda/03-got-item

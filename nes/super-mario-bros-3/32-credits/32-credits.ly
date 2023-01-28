@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \paper {
-  left-margin = 0.5\in
+  left-margin = 0.6\in
 }
 
 \book {
@@ -15,29 +15,30 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c' {
 \tempo 4 = 150
-g4-. g'8 f ~ f d b a |
-g4-. g-. r2 |
-                    \repeat volta 2 {
-r4 e'8 f e d c b |
-d4 d8 a ~ a r r4 |
-r4 b8 c b a g f |
-e4 e8 g ~ g r r4 |
-r4 e'8 f e d c b |
-d4 d8 a ~ a r r4 |
-r4 b8 c b a g f |
-e4 e8 g ~ g r r4 |
-r4 f8 g aes c bes aes |
-g4 r8 e ~ e r r4 |
-r4 f8 g aes c bes aes |
-g4 r8 e ~ e r r4 |
-r4 f8 g aes c bes aes |
-g4 r8 c ~ c r r4 |
-r4 a8 gis a b c a |
-d4 r r g,( |
+<b g'>4-. <b' g'>8 <a f'> ~ 8 <f d'> <d b'> <c a'> |
+<b g'>4-. 4-. r2 |
+                        \repeat volta 2 {
+r4 <c' e>8 <d f> <c e> <b d> <a c> <g b> |
+<a d>4 8 <f a> ~ 8 r r4 |
+r4 <g b>8 <a c> <g b> <f a> <e g> <d f> |
+<c e>4 8 <e g> ~ 8 r r4
+r4 <c' e>8 <d f> <c e> <b d> <a c> <g b> |
+<a d>4 8 <f a> ~ 8 r r4 |
+r4 <g b>8 <a c> <g b> <f a> <e g> <d f> |
+<c e>4 8 <e g> ~ 8 r r4
+r4 <c f>8 <d g> <aes' f'> <c aes'> <bes g'> <aes f'> |
+<g e'>4 r8 <e c> ~ 8 r r4 |
+r4 <c f>8 <d g> <aes' f'> <c aes'> <bes g'> <aes f'> |
+<g e'>4 r8 <e c> ~ 8 r r4 |
+r4 <c f>8 <d g> <aes' f'> <c aes'> <bes g'> <aes f'> |
+<g e'>4 r8 <c g'>8 ~ 8 r r4 |
+r4 <f, a>8 <e gis> <f a> <gis b> <a c> <f a> |
+<b d>4 r r g(
 \bar "||"
 e'2 ~ e8 d e f |
 g2.) a4( |
@@ -55,33 +56,14 @@ f2 ~ f8 e d e |
 c2) \tuplet 3/2 { b4( c e) } |
 d2( ~ d8 c b c) |
 g'4-. g-. r2 |
-                    }
+                        }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
+                    }
 
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-b4-. b'8 a ~ a f d c |
-b4-. b-. r2 |
-r4 c'8 d c b a g |
-a4 a8 f ~ f r r4 |
-r4 g8 a g f e d |
-c4 c8 e ~ e r r4 |
-r4 c'8 d c b a g |
-a4 a8 f ~ f r r4 |
-r4 g8 a g f e d |
-c4 c8 e ~ e r r4 |
-r4 c8 d f' aes g f |
-e4 r8 c ~ c r r4 |
-r4 c,8 d f' aes g f |
-e4 r8 c ~ c r r4 |
-r4 c,8 d f' aes g f |
-e4 r8 g ~ g r r4 |
-r4 f,8 e f g a f |
-b4 r r2 |
-c,8 g''16 e c8-. g-. r b( c, d) |
+                    \new Staff \relative c' {
+R1*18
+c8 g''16 e c8-. g-. r b( c, d) |
 d8 f'16 d b8-. g-. r4 f |
 e8 f'16 d bes8-. g-. r d( c d) |
 a'8 f'16 c a8-. f-. r4 d |
@@ -97,7 +79,8 @@ c8 f'16 c aes8-. f-. r c( b c) |
 g'8 e'16 c g8-. e-. \tuplet 3/2 { g,4( a c) } |
 a8 fis''16 c a8-. fis-. r a,( gis a) |
 b4-. b-. r2 |
-                }
+                    }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"

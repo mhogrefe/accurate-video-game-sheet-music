@@ -101,38 +101,36 @@ fn parse_timing_config(name: &str) -> TimingConfig {
     let mut previous_page_index = None;
     let mut previous_time = None;
     let mut mode = true;
-    for line in io::BufReader::new(file).lines() {
-        if let Ok(line) = line {
-            if line.starts_with("#") {
+    for line in io::BufReader::new(file).lines().flatten() {
+        if line.starts_with('#') {
+            continue;
+        }
+        if mode {
+            if line.is_empty() {
+                mode = false;
                 continue;
             }
-            if mode {
-                if line.is_empty() {
-                    mode = false;
-                    continue;
-                }
-                let fragment = parse_fragment_config(&line);
-                if let Some(pfi) = previous_fragment_index {
-                    assert_eq!(fragment.fragment_index, pfi + 1);
-                } else {
-                    assert_eq!(fragment.fragment_index, 1);
-                }
-                previous_fragment_index = Some(fragment.fragment_index);
-                if let Some(ppi) = previous_page_index {
-                    assert!(fragment.page_index == ppi || fragment.page_index == ppi + 1);
-                } else {
-                    assert_eq!(fragment.page_index, 1);
-                }
-                previous_page_index = Some(fragment.page_index);
-                fragments.push(fragment);
+            let fragment = parse_fragment_config(&line);
+            if let Some(pfi) = previous_fragment_index {
+                assert_eq!(fragment.fragment_index, pfi + 1);
             } else {
-                let measure = parse_measures_config(&line);
-                if let Some(pt) = previous_time {
-                    assert!(measure.time > pt);
-                }
-                previous_time = Some(measure.time);
-                measures.push(measure);
+                assert_eq!(fragment.fragment_index, 1);
             }
+            previous_fragment_index = Some(fragment.fragment_index);
+            if let Some(ppi) = previous_page_index {
+                assert!(fragment.page_index == ppi || fragment.page_index == ppi + 1);
+            } else {
+                assert_eq!(fragment.page_index, 1);
+            }
+            previous_page_index = Some(fragment.page_index);
+            fragments.push(fragment);
+        } else {
+            let measure = parse_measures_config(&line);
+            if let Some(pt) = previous_time {
+                assert!(measure.time > pt);
+            }
+            previous_time = Some(measure.time);
+            measures.push(measure);
         }
     }
     TimingConfig {
@@ -170,17 +168,17 @@ fn process_track(dir_path: &str) {
         Command::new("lilypond")
             .arg("-o")
             .arg(&path)
-            .arg(format!("{}.ly", path))
+            .arg(format!("{path}.ly"))
             .output()
             .expect("failed to run LilyPond"),
     );
 
     println!("Deleting existing PNGs except for screenshot.png:");
-    let midi_ly_file_name = format!("{}-midi.ly", path);
-    let timing_file_name = format!("{}/video/timing.txt", dir_path);
+    let midi_ly_file_name = format!("{path}-midi.ly");
+    let timing_file_name = format!("{dir_path}/video/timing.txt");
     let mut midi_ly_file_exists = false;
     let mut timing_file_exists = false;
-    for entry in WalkDir::new(&dir_path)
+    for entry in WalkDir::new(dir_path)
         .into_iter()
         .filter_map(Result::ok)
         .filter(|e| !e.file_type().is_dir())
@@ -209,7 +207,7 @@ fn process_track(dir_path: &str) {
             .arg("-dresolution=300")
             .arg("-o")
             .arg(&path)
-            .arg(format!("{}.ly", path))
+            .arg(format!("{path}.ly"))
             .output()
             .expect("failed to run LilyPond"),
     );
@@ -228,8 +226,8 @@ fn process_track(dir_path: &str) {
 
     if timing_file_exists {
         println!("adjusting screenshot.png:");
-        let source_screenshot_name = format!("{}/screenshot.png", dir_path);
-        let target_screenshot_name = format!("{}/video/screenshot.png", dir_path);
+        let source_screenshot_name = format!("{dir_path}/screenshot.png");
+        let target_screenshot_name = format!("{dir_path}/video/screenshot.png");
         let mut img = image::open(&source_screenshot_name).expect("File not found");
         let ratio = Rational::from_unsigneds(img.width(), img.height());
         let new_height = 1080u32.div_round(img.height(), RoundingMode::Ceiling) * img.height();
@@ -242,12 +240,12 @@ fn process_track(dir_path: &str) {
             .expect("Could not write image");
 
         println!("Gathering images for video:");
-        let single_image_name = format!("{}.png", path);
-        let multiple_image_prefix = format!("{}-page", path);
+        let single_image_name = format!("{path}.png");
+        let multiple_image_prefix = format!("{path}-page");
         let mut image_names = Vec::new();
         let mut is_single = false;
         let mut is_multiple = false;
-        for entry in WalkDir::new(&dir_path)
+        for entry in WalkDir::new(dir_path)
             .into_iter()
             .filter_map(Result::ok)
             .filter(|e| !e.file_type().is_dir())
@@ -266,7 +264,7 @@ fn process_track(dir_path: &str) {
         if is_multiple {
             image_names.sort();
             for (i, n) in (1..).zip(image_names.iter()) {
-                assert_eq!(*n, format!("{}-page{}.png", path, i));
+                assert_eq!(*n, format!("{path}-page{i}.png"));
             }
         }
 
@@ -312,7 +310,7 @@ fn count_slashes(s: &str) -> usize {
 
 fn create_video(dir_path: &str) {
     let mut track_names = Vec::new();
-    for path in fs::read_dir(&dir_path).unwrap() {
+    for path in fs::read_dir(dir_path).unwrap() {
         let path = path.unwrap().path().display().to_string();
         let file_name = &path[dir_path.len() + 1..];
         if file_name.chars().next().unwrap().is_numeric() {
@@ -325,7 +323,7 @@ fn create_video(dir_path: &str) {
     {
         let mut ffmpeg_input_file = File::create("input.txt").unwrap();
         for track_name in &track_names {
-            let flac_file_name = format!("{}/{}/{}.flac", dir_path, track_name, track_name);
+            let flac_file_name = format!("{dir_path}/{track_name}/{track_name}.flac");
             let reader = claxon::FlacReader::open(&flac_file_name).unwrap();
             let info = reader.streaminfo();
             let time_seconds = (info.samples.unwrap() as f64) / (info.sample_rate as f64);
@@ -333,18 +331,16 @@ fn create_video(dir_path: &str) {
             sox_command.arg("silence.flac");
             sox_command.arg(&flac_file_name);
 
-            let config =
-                parse_timing_config(&format!("{}/{}/video/timing.txt", dir_path, track_name));
+            let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
             writeln!(
                 &mut ffmpeg_input_file,
-                "file '{}/{}/video/screenshot.png'",
-                dir_path, track_name
+                "file '{dir_path}/{track_name}/video/screenshot.png'",
             )
             .unwrap();
             writeln!(&mut ffmpeg_input_file, "duration 4").unwrap();
             let mut measure_to_fragment: HashMap<u32, FragmentConfig> = HashMap::new();
-            for fragment in &config.fragments {
-                measure_to_fragment.insert(fragment.measure_number, fragment.clone());
+            for &fragment in &config.fragments {
+                measure_to_fragment.insert(fragment.measure_number, fragment);
             }
             let mut fragments_and_times = Vec::new();
             for measure in &config.measures {
@@ -360,7 +356,7 @@ fn create_video(dir_path: &str) {
             let mut running_time = -1.0;
             for (f, t) in fragments_and_times {
                 if let Some(pfm) = previous_fragment_name {
-                    writeln!(&mut ffmpeg_input_file, "file '{}'", pfm).unwrap();
+                    writeln!(&mut ffmpeg_input_file, "file '{pfm}'").unwrap();
                     writeln!(
                         &mut ffmpeg_input_file,
                         "duration {}",
@@ -416,7 +412,7 @@ fn create_video(dir_path: &str) {
     #[allow(unused_must_use)]
     {
         Command::new("rm")
-            .arg(&format!("{}/video.mp4", dir_path))
+            .arg(&format!("{dir_path}/video.mp4"))
             .output();
     }
     print_output(
@@ -431,7 +427,7 @@ fn create_video(dir_path: &str) {
             .arg("aac")
             .arg("-b:a")
             .arg("384k")
-            .arg(&format!("{}/video.mp4", dir_path))
+            .arg(&format!("{dir_path}/video.mp4"))
             .output()
             .expect("failed to merge audio and video"),
     );
@@ -454,7 +450,7 @@ fn main() {
     if args.len() == 2 {
         assert_eq!(args.len(), 2);
         let dir_path = &args[1];
-        let slash_count = count_slashes(&dir_path);
+        let slash_count = count_slashes(dir_path);
         if slash_count == 2 {
             process_track(dir_path);
         } else if slash_count == 1 {
@@ -465,10 +461,8 @@ fn main() {
     } else {
         assert_eq!(args.len(), 1);
         let file = File::open("track-list.txt").unwrap();
-        for line in io::BufReader::new(file).lines() {
-            if let Ok(line) = line {
-                process_track(&line);
-            }
+        for line in io::BufReader::new(file).lines().flatten() {
+            process_track(&line);
         }
     }
 }
