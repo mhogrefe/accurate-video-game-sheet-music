@@ -5,7 +5,7 @@
 4 2 1782 end 43
 5 3 0 1837 60
 
-# time fragment_index
+# time measure_number
 0:00 1
 0:12.2 11
 0:29 25

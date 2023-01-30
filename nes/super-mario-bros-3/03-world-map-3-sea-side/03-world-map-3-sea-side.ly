@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \paper {
-  left-margin = 0.5\in
+  left-margin = 0.6\in
 }
 
 \book {

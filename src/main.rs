@@ -155,7 +155,17 @@ fn adjust_image(image: DynamicImage) -> DynamicImage {
                 .unwrap();
             canvas
         }
-        Ordering::Greater => image,
+        Ordering::Greater => {
+            let new_height = u32::rounding_from(
+                &(Rational::from(image.width()) / &target_aspect_ratio),
+                RoundingMode::Nearest,
+            );
+            let mut canvas = DynamicImage::new_rgb8(image.width(), new_height);
+            canvas
+                .copy_from(&image, 0, (new_height - image.height()) >> 1)
+                .unwrap();
+            canvas
+        }
     }
 }
 
