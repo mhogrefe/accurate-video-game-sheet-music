@@ -32,9 +32,9 @@ r4 <c' e>8 <d f> <c e> <b d> <a c> <g b> |
 r4 <g b>8 <a c> <g b> <f a> <e g> <d f> |
 <c e>4 8 <e g> ~ 8 r r4
 r4 <c f>8 <d g> <aes' f'> <c aes'> <bes g'> <aes f'> |
-<g e'>4 r8 <e c> ~ 8 r r4 |
+<g e'>4 r8 <e c'> ~ 8 r r4 |
 r4 <c f>8 <d g> <aes' f'> <c aes'> <bes g'> <aes f'> |
-<g e'>4 r8 <e c> ~ 8 r r4 |
+<g e'>4 r8 <e c'> ~ 8 r r4 |
 r4 <c f>8 <d g> <aes' f'> <c aes'> <bes g'> <aes f'> |
 <g e'>4 r8 <c g'>8 ~ 8 r r4 |
 r4 <f, a>8 <e gis> <f a> <gis b> <a c> <f a> |

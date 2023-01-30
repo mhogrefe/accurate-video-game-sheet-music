@@ -113,7 +113,7 @@ r4 hh r hh |
 bd4 r wbh r |
 wbh4 \tuplet 3/2 { r8 r timh16 timh } timh4 timh8 wbh |
 \repeat percent 7 { r4 wbh8 wbh r4 timh | }
-r4 wbh8 wbh \tuplet 3/2 { timl8 timl16 } timl8 timh4 |
+r4 wbh8 wbh \tuplet 3/2 { timl8 \set stemLeftBeamCount = #2 \set stemRightBeamCount = #1 timl16 } timl8 timh4 |
 \repeat percent 7 { r4 wbh8 wbh r4 timh | }
 r4 \tuplet 3/2 { r8 r timh16 timh } timh4 timh |
                     }

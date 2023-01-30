@@ -5,4 +5,3 @@
 # time fragment_index
 0:00 1
 0:06.191 5
-0:18.97 1
