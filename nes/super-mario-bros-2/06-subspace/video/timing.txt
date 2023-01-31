@@ -2,7 +2,7 @@
 1 1 0 1661 1
 2 1 1661 3056 9
 
-# time fragment_index
+# time measure_number
 0:00 1
 0:9.807 9
 0:14.607 1
