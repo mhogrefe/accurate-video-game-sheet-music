@@ -11,69 +11,39 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key bes \major
 \tempo 4 = 150
-bes4 r4 \tuplet 3/2 { r8 r bes } \tuplet 3/2 { bes8 bes bes } |
-\tuplet 3/2 { bes8 r aes } bes4 \tuplet 3/2 { r8 r bes } \tuplet 3/2 { bes8 bes bes } |
-\tuplet 3/2 { bes8 r aes } bes4 \tuplet 3/2 { r8 r bes } \tuplet 3/2 { bes8 bes bes } |
-bes8-. f16 f f8-. f16 f f8-. f16 f f8 f |
+<d bes'>4 r \tuplet 3/2 { r8 r <d bes'> } \tuplet 3/2 { <d bes'>8 8 8 } |
+\tuplet 3/2 { <c bes'>8 r <c aes'> } <c bes'>4 \tuplet 3/2 { r8 r bes' } \tuplet 3/2 { <c, bes'>8 8 8 } |
+\tuplet 3/2 { <cis bes'>8 r <cis aes'> } <cis bes'>4 \tuplet 3/2 { r8 r <cis bes'> } \tuplet 3/2 { <cis bes'>8 8 8 } |
+<cis bes'>8-. <a f'>16 16 8-. 16 16 8-. 16 16 8 8 |
                     \repeat volta 2 {
-bes4-. f r8 r16 bes bes c d ees |
-f4 r r8 f \tuplet 3/2 { f8 ges aes } |
-bes4 r \tuplet 3/2 { r8 bes bes } \tuplet 3/2 { bes8 aes ges } |
-\tuplet 3/2 { aes8 r ges } f4 r f |
-ees8 ees16 f ges4 r f8 ees |
-des8 des16 ees f4 r ees8 des |
-c8 c16 d e4 r g |
-f8-. f,16 f f8-. f16 f f8-. f16 f f8 f |
-bes4-. f r8 r16 bes bes c d ees |
-f4 r r8 f \tuplet 3/2 { f8 ges aes } |
-bes4 r r des |
-c4-. a r f |
-ges4 r r bes |
-a4-. f r f |
-ges4 r r bes |
-a4-. f r d |
-ees4 r r ges |
-f4-. des r bes |
-c8 c16 d e4 r g |
-f8-. f,16 f f8-. f16 f f8-. f16 f f8 f |
+<d bes'>4-. <<{f4}\\{\tuplet 3/2 { d8 d c }}>> d8. <d bes'>16 16 <ees c'> <f d'> <g ees'> |
+<<{f'4}\\{aes,8. bes16}>> bes16 c d ees <<{r8 f}\\{f4}>> \tuplet 3/2 { <aes, f'>8 <bes ges'> <c aes'> } |
+<<{bes'4}\\{des,8. ges,16}>> ges16 aes bes c \tuplet 3/2 { des8 bes' <des, bes'> } \tuplet 3/2 { <des bes'>8 <c aes'> <bes ges'> } |
+\tuplet 3/2 { <des aes'>8 r <aes ges'> } <<{f'4}\\{\tuplet 3/2 { aes,8 aes ges }}>> \tuplet 3/2 { aes8 r aes } <<{f'4}\\{\tuplet 3/2 { aes,8 ges aes }}>> |
+<ges ees'>8 16 <f f'> <<{ges'4}\\{ges,8 ges16 aes}>> bes4 <aes f'>8 <ges ees'> |
+<f des'>8 16 <ees ees'> <<{f'4}\\{f,8 f16 ges}>> aes4 <ges ees'>8 <f des'> |
+<<{c'8 c16 d e4}\\{e,4 e8 e16 f}>> g8 g16 a <<{g'4}\\{bes,8 c}>> |
+<a f'>8-. <a, f'>16 16 8-. 16 16 8-. 16 16 8 8 |
+<d bes'>4-. <<{f4}\\{\tuplet 3/2 { d8 d c }}>> d8. <d bes'>16 16 <ees c'> <f d'> <g ees'> |
+<<{f'4}\\{aes,8. bes16}>> bes16 c d ees <<{r8 f}\\{f4}>> \tuplet 3/2 { <aes, f'>8 <bes ges'> <c aes'> } |
+<des bes'>4 r r <e des'> |
+<ees c'>4-. <c a'> r <a f'> |
+<b ges'>4 r r <cis bes'> |
+<c a'>4-. <a f'> r <a f'> |
+<b ges'>4 r r <cis bes'> |
+<c a'>4-. <a f'> r <a d> |
+<ges ees'>4 r r <b ges'> |
+<bes f'>4-. <f des'> r <des bes'> |
+<<{c'8 c16 d e4}\\{e,4 e8 e16 f}>> g8 g16 a <<{g'4}\\{bes,8 c}>> |
+<a f'>8-. <a, f'>16 16 8-. 16 16 8-. 16 16 8 8 |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\key bes \major
-d4 r \tuplet 3/2 { r8 r d } \tuplet 3/2 { d8 d d } |
-\tuplet 3/2 { c8 r c } c4 r \tuplet 3/2 { c8 c c } |
-\tuplet 3/2 { cis8 r cis } cis4 \tuplet 3/2 { r8 r cis } \tuplet 3/2 { cis8 cis cis } |
-cis8-. a16 a a8 a16 a a8 a16 a a8 a |
-d4-. \tuplet 3/2 { d8 d c } d8.-. d16 d ees f g |
-aes8.-. bes16 bes c d ees f4 \tuplet 3/2 { aes,8 bes c } |
-des8.-. ges,16 ges aes bes c \tuplet 3/2 { des8 r des } \tuplet 3/2 { des8 c bes } |
-\tuplet 3/2 { des8 r aes } \tuplet 3/2 { aes8 aes ges } \tuplet 3/2 { aes8 r aes } \tuplet 3/2 { aes8 ges aes } |
-ges8 ges16 f ges8 ges16 aes bes4 aes8 ges |
-f8 f16 ees f8 f16 ges aes4 ges8 f |
-e4 e8 e16 f g8 g16 a bes8 c |
-a8 a,16 a a8 a16 a a8 a16 a a8 a |
-d4-. \tuplet 3/2 { d8 d c } d8.-. d16 d ees f g |
-aes8.-. bes16 bes c d ees f4 \tuplet 3/2 { aes,8 bes c } |
-des4 r r e |
-ees4-. c r a |
-b4 r r cis |
-c4-. a r a |
-b4 r r cis |
-c4-. a r a |
-ges4 r r b |
-bes4-. f r des |
-e4 e8 e16 f g8 g16 a bes8 c |
-a8 a,16 a a8 a16 a a8 a16 a a8 a |
                 }
 
                 \new Staff \relative c {
