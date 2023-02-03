@@ -12,8 +12,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4 = 180
 g8 fis dis a gis e' gis c\fermata |
 \bar "|."

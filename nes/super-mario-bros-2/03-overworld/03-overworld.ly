@@ -72,7 +72,7 @@ r8 <b g'> <c a'>-. <b g'> <c a'>-. <b g'> <g e'>-. <e c'> |
 r4 r8 fis g-. gis <fis a>-. <e c'> |
 r4 r8 <e c'> r4 r8 <e e'> |
 \bar "||"
-r8 <f f'> <dis dis'>-. <e e'> <f f'>-. <d d'> <e e'>-. <b' b'> |
+r8 <f f'> <dis dis'>-. <e e'> <f f'>-. <dis dis'> <e e'>-. <b' b'> |
 r4 <gis gis'>-. <f f'>-. <e e'>-. |
 \override TupletBracket.bracket-visibility = ##t
 \tuplet 3/2 { <d d'>8[ \tuplet 3/2 { <e e'> <d d'> <c c'>] } } <b b'>8-. <c c'> <d d'>-. <c c'> <b b'>-. <c c'> |

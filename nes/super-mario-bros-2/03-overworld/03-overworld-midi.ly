@@ -51,7 +51,7 @@ r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d
 r4 \tuplet 3/2 { r4 fis8 g4-. gis8 <fis a>4-. <e c'>8 } |
 r4 \tuplet 3/2 { r4 <e c'>8 } r4 \tuplet 3/2 { r4 <e e'>8 } |
 \bar "||"
-\tuplet 3/2 { r4 <f f'>8 <dis dis'>4-. <e e'>8 <f f'>4-. <d d'>8 <e e'>4-. <b' b'>8 } |
+\tuplet 3/2 { r4 <f f'>8 <dis dis'>4-. <e e'>8 <f f'>4-. <dis dis'>8 <e e'>4-. <b' b'>8 } |
 r4 <gis gis'>-. <f f'>-. <e e'>-. |
 \override TupletBracket.bracket-visibility = ##t
 \tuplet 3/2 { <d d'>8[ \tuplet 3/2 { <e e'> <d d'> <c c'>] } } \tuplet 3/2 { <b b'>4-. <c c'>8 <d d'>4-. <c c'>8 <b b'>4-. <c c'>8 } |
@@ -86,7 +86,7 @@ r8 <d a'>16 <fis d'> <d a'>[ <d d'> <fis a> <d d'>] <fis a>[ <d d'> <fis a> <d d
 r4 \tuplet 3/2 { r4 fis8 g4-. gis8 <fis a>4-. <e c'>8 } |
 r4 \tuplet 3/2 { r4 <e c'>8 } r4 \tuplet 3/2 { r4 <e e'>8 } |
 \bar "||"
-\tuplet 3/2 { r4 <f f'>8 <dis dis'>4-. <e e'>8 <f f'>4-. <d d'>8 <e e'>4-. <b' b'>8 } |
+\tuplet 3/2 { r4 <f f'>8 <dis dis'>4-. <e e'>8 <f f'>4-. <dis dis'>8 <e e'>4-. <b' b'>8 } |
 r4 <gis gis'>-. <f f'>-. <e e'>-. |
 \override TupletBracket.bracket-visibility = ##t
 \tuplet 3/2 { <d d'>8[ \tuplet 3/2 { <e e'> <d d'> <c c'>] } } \tuplet 3/2 { <b b'>4-. <c c'>8 <d d'>4-. <c c'>8 <b b'>4-. <c c'>8 } |

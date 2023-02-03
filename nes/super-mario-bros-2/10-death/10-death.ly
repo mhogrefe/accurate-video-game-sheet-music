@@ -16,7 +16,7 @@
                     \set Staff.shortInstrumentName = "P."
 \time 6/8
 \tempo 4. = 200
-<g ees'>4-. <d b'>8 <b f'>4-. <a f'>8 |
+<g ees'>4-. <d b'>8 <b g'>4-. <a f'>8 |
 <g e'>2. |
 \bar "|."
                 }
