@@ -27,10 +27,10 @@ e4-. g,-. ais-. b-. |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-hh4\ppp \tuplet 3/2 { hh4 hh8 } r4 \tuplet 3/2 { hh4 hh8 } |
-hh4 \tuplet 3/2 { hh4 hh8 } r4 \tuplet 3/2 { hh4 hh8 } |
-hh4 \tuplet 3/2 { hh4 hh8 } r4 \tuplet 3/2 { hh4 hh8 } |
-hh4 \tuplet 3/2 { hh4 hh8 } r4 \tuplet 3/2 { hh4 hh8 } |
+hh4\ppp \tuplet 3/2 { hh4 hh8 } hh4 \tuplet 3/2 { hh4 hh8 } |
+hh4 \tuplet 3/2 { hh4 hh8 } hh4 \tuplet 3/2 { hh4 hh8 } |
+hh4 \tuplet 3/2 { hh4 hh8 } hh4 \tuplet 3/2 { hh4 hh8 } |
+hh4 \tuplet 3/2 { hh4 hh8 } hh4 \tuplet 3/2 { hh4 hh8 } |
                     }
                 }
             >>

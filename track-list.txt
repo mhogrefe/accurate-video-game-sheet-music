@@ -5,10 +5,9 @@ nes/donkey-kong/04-level-theme-1
 nes/donkey-kong/05-hammer
 nes/donkey-kong/06-level-cleared
 nes/donkey-kong/07-level-theme-2
-nes/donkey-kong/08-pause
-nes/donkey-kong/09-donkey-kong-defeated
-nes/donkey-kong/10-all-levels-cleared
-nes/donkey-kong/11-death
+nes/donkey-kong/08-donkey-kong-defeated
+nes/donkey-kong/09-all-levels-cleared
+nes/donkey-kong/10-death
 nes/super-mario-bros/01-overworld
 nes/super-mario-bros/02-underground
 nes/super-mario-bros/03-underwater

@@ -32,7 +32,6 @@
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\key bes \major
 \clef bass
 c8-. g'-. g-. c-. c-. e-. e-. g-. |
 cis,,8-. gis'-. gis-. cis-. cis-. f-. f-. gis-. |
