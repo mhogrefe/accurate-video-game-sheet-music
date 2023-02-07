@@ -11,29 +11,18 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new Staff \relative c' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 6/8
 \tempo 4. = 150
-c2. |
-\tuplet 4/3 { c8 c c4 } bes8 g d' |
-c2. |
-\tuplet 4/3 { c8 c c4 } bes8 g d' |
-c4. \tuplet 4/3 { c,8 c c4 } |
-c2. |
+<e c'>2. |
+\tuplet 4/3 { <e c'>8 8 4 } <d bes'>8 <c g'> <f d'> |
+<e c'>2. |
+\tuplet 4/3 { <e c'>8 8 4 } <d bes'>8 <c g'> <f d'> |
+<g c>4. \tuplet 4/3 { <g, c>8 8 4 } |
+<g c>2. |
 \bar "|."
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-e2. |
-\tuplet 4/3 { e8 e e4 } d8 c f |
-e2. |
-\tuplet 4/3 { e8 e e4 } d8 c f |
-g4. \tuplet 4/3 { g,8 g g4 } |
-g2. |
                 }
 
                 \new Staff \relative c {
