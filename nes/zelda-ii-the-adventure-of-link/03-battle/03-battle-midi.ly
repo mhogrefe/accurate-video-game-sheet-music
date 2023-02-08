@@ -200,15 +200,5 @@ sn4 r r2 |
             >>
         }
         \midi {}
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
     }
 }
