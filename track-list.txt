@@ -80,3 +80,4 @@ nes/the-legend-of-zelda/11-zelda-rescued
 nes/the-legend-of-zelda/12-credits
 nes/zelda-ii-the-adventure-of-link/01-introduction
 nes/zelda-ii-the-adventure-of-link/02-overworld
+nes/zelda-ii-the-adventure-of-link/03-battle

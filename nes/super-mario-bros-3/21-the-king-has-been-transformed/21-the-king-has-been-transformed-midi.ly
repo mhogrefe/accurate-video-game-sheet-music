@@ -12,8 +12,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 3/4
 \tempo 4 = 75
                     \repeat volta 2 {
