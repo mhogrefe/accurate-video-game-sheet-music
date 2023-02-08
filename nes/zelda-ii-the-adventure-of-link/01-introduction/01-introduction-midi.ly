@@ -18,37 +18,38 @@ smaller = {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c''' {
 \tempo 4 = 112
 c8-.\pp\< b-. g-. d-. c' b g d |
 c'8 b g d c' b g d |
 c'8 b g d c' b g d |
 c'8 b g d c' b g d |
-d2\mf ~ d8 b4 d8 |
-c2. r4 |
-bes2 ~ bes8 g4 bes8 |
-a2. r4 |
-d2 ~ d8 g4 f8 |
-f2. r4 |
-ees2 ~ ees8 bes4 ees8 |
-d4. a8 ~ a4 fis |
-d''4. d8 ~ d d4. |
-ees4. ees8 ~ ees ees4. |
-e4. e8 ~ e e4. |
-f4. fis8 ~ fis2 |
-r4 c, b8 g4 d8 ~ |
-d8 b4. c4 d |
-f4 e d c |
-d8 c4 b8 ~ b2 |
-r4 c' b8 g4 d8 ~ |
-d8 b4. c4 d |
-f4 e d c |
-d8 c4 b8 ~ b2 |
+<b d>2\mf ~ 8 <g b>4 <b d>8 |
+<a c>2. r4 |
+<g bes>2 ~ 8 <ees g>4 <g bes>8 |
+<fis a>2. r4 |
+<b d>2 ~ 8 <b g'>4 <b f'>8 |
+<a f'>2. r4 |
+<g ees'>2 ~ 8 <g bes>4 <g ees'>8 |
+<fis d'>4. <fis a>8 ~ 4 <d fis> |
+<g' d'>4. 8 ~ 8 4. |
+<gis ees'>4. 8 ~ 8 4. |
+<a e'>4. 8 ~ 8 4. |
+<bes f'>4. <c fis>8 ~ 2 |
+r4 <e,, c'> <d b'>8 <b g'>4 <b d>8 ~ |
+<b d>8 <g b>4. <a c>4 <b d> |
+<a f'>4 <a e'> <a d> <f c'> |
+<b d>8 <a c>4 <g b>8 ~ 2 |
+r4 <e' c'> <d b'>8 <b g'>4 <b d>8 ~ |
+<b d>8 <g b>4. <a c>4 <b d> |
+<a f'>4 <a e'> <a d> <f c'> |
+<b d>8 <a c>4 <g b>8 ~ 2 |
 \bar "||"
 \key g \minor
-r4 ees8 f g bes4 a8 ~ |
+r4 ees'8 f g bes4 a8 ~ |
 a8 fis4 d'8 ~ d fis, a4 ~ |
 a4 ees8 f g bes4 c8 ~ |
 c8 bes4 a8 ~ a2 |
@@ -57,29 +58,29 @@ a8 fis4 d'8 ~ d fis, a4 |
 c4. bes8 ~ bes c4. |
 d2. r4 |
 \key c \major
-d2 ~ d8 b4 d8 |
-c2. r4 |
-bes2 ~ bes8 g4 bes8 |
-a2. r4 |
-d2 ~ d8 g4 f8 |
-f2. r4 |
-ees2 ~ ees8 bes4 ees8 |
-d4. a8 ~ a4 fis |
-d''4. d8 ~ d d4. |
-ees4. ees8 ~ ees ees4. |
-e4. e8 ~ e e4. |
-f4. fis8 ~ fis2 |
-r4 c, b8 g4 d8 ~ |
-d8 b4. c4 d |
-f4 e d c |
-d8 c4 b8 ~ b2 |
-r4 c' b8 g4 d8 ~ |
-d8 b4. c4 d |
-f4 e d c |
-d8 c4 b8 ~ b2 |
+<b d>2\mf ~ 8 <g b>4 <b d>8 |
+<a c>2. r4 |
+<g bes>2 ~ 8 <ees g>4 <g bes>8 |
+<fis a>2. r4 |
+<b d>2 ~ 8 <b g'>4 <b f'>8 |
+<a f'>2. r4 |
+<g ees'>2 ~ 8 <g bes>4 <g ees'>8 |
+<fis d'>4. <fis a>8 ~ 4 <d fis> |
+<g' d'>4. 8 ~ 8 4. |
+<fis ees'>4. 8 ~ 8 4. |
+<a e'>4. 8 ~ 8 4. |
+<bes f'>4. <c fis>8 ~ 2 |
+r4 <e,, c'> <d b'>8 <b g'>4 <b d>8 ~ |
+<b d>8 <g b>4. <a c>4 <b d> |
+<a f'>4 <a e'> <a d> <f c'> |
+<b d>8 <a c>4 <g b>8 ~ 2 |
+r4 <e' c'> <d b'>8 <b g'>4 <b d>8 ~ |
+<b d>8 <g b>4. <a c>4 <b d> |
+<a f'>4 <a e'> <a d> <f c'> |
+<b d>8 <a c>4 <g b>8 ~ 2 |
 \bar "||"
 \key g \minor
-r4 ees8 f g bes4 a8 ~ |
+r4 ees'8 f g bes4 a8 ~ |
 a8 fis4 d'8 ~ d fis, a4 ~ |
 a4 ees8 f g bes4 c8 ~ |
 c8 bes4 a8 ~ a2 |
@@ -89,34 +90,23 @@ c4. bes8 ~ bes c4. |
 d2. r4 |
                 }
 
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
+                    \new Staff \relative c''' {
 r16 c8-.\pp\< b-. g-. d-. c' b g d16 |
 r16 c'8 b g d c' b g d16 |
 r16 c'8 b g d c' b g d16 |
 r16 c'8 b g d c' b g d16 |
-b2\mf ~ b8 g4 b8 |
-a2. r4 |
-g2 ~ g8 ees4 g8 |
-fis2. r4 |
-b2 ~ b8 b4 b8 |
-a2. r4 |
-g2 ~ g8 g4 g8 |
-fis4. fis8 ~ fis4 d |
-g'4. g8 ~ g g4. |
-gis4. gis8 ~ gis8 gis4. |
-a4. a8 ~ a a4. |
-bes4. c8 ~ c2 |
-r4 e,, d8 b4 b8 ~ |
-b8 g4. a4 b |
-a4 a a f |
-b8 a4 g8 ~ g2 |
-r4 e' d8 b4 b8 ~ |
-b8 g4. a4 b |
-a4 a a f |
-b8 a4 g8 ~ g2 |
+s1\mf
+R1*19
 \key g \minor
+bes,16\p g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
+a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
+bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
+a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
+bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
+a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
+bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
+a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
+R1*20
 bes16\p g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
 a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
 bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
@@ -125,37 +115,8 @@ bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
 a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
 bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
 a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
-\key c \major
-b'2 ~ b8 g4 b8 |
-a2. r4 |
-g2 ~ g8 ees4 g8 |
-fis2. r4 |
-b2 ~ b8 b4 b8 |
-a2. r4 |
-g2 ~ g8 g4 g8 |
-fis4. fis8 ~ fis4 d |
-g'4. g8 ~ g g4. |
-gis4. gis8 ~ gis8 gis4. |
-a4. a8 ~ a a4. |
-bes4. c8 ~ c2 |
-r4 e,, d8 b4 b8 ~ |
-b8 g4. a4 b |
-a4 a a f |
-b8 a4 g8 ~ g2 |
-r4 e' d8 b4 b8 ~ |
-b8 g4. a4 b |
-a4 a a f |
-b8 a4 g8 ~ g2 |
-\key g \minor
-bes16\p g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
-a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
-bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
-a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
-bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
-a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
-bes16 g ees' g, bes g ees' g, bes g ees' g, bes g ees' g, |
-a fis d' fis, a fis d' fis, a fis d' fis, a fis d' fis, |
-                }
+                    }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"

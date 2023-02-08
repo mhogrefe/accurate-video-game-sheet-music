@@ -16,8 +16,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 2"
-                    \set Staff.shortInstrumentName = "P.2"
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \time 3/2
 \tempo 2 = 130
 <a e'>4-. 8 8 r <a e'>8 8 8 <c g'>4-. 4-. |
@@ -55,45 +55,6 @@ a,4-. e'8 <a e'> r e <a e'> e |
 a,4-. e'8 <a e'> r e <a e'> e |
 ais,4-. f'8 <ais f'> r f <ais f'> f |
 ais,4-. f'8 <ais f'> r f <ais f'> f |
-                }
-
-                \new Staff \relative c' {
-                    \set Staff.instrumentName = "Pulse 1"
-                    \set Staff.shortInstrumentName = "P.1"
-\clef bass
-a4-. a8 a r a a a c4-. c-. |
-a,4-.\p e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
-a,4-. e'8 e' r e, e' e, |
-a,4-. e'8 e' r e, e' e, |
-ais,4-. f'8 f' r f, f' f, |
-ais,4-. f'8 f' r f, f' f, |
                 }
 
                 \new Staff \relative c'' {
