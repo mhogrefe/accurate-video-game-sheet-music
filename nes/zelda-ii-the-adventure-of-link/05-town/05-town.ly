@@ -61,11 +61,18 @@ g8 g ges f e ees d c |
 <e g>8 <b f'> <g e'> <e' g> ~ 4 r |
 <d a''>8 <f g'> <a f'> <d, a''> ~ 4 r |
 <f aes>8 <c g'> <aes f'> c' ~ c4 r |
+<<{
 bes8 c4 ees8 d4 c8 d |
 aes8 bes4 d8 c4 bes8 c |
 bes8 c4 ees8 d4 c8 d |
 aes8 bes4 d8 c4 bes8 c |
-<d, bes'>4 <d aes'>8 <d bes'> ~ 8 <d aes'>4. |
+}\\{
+bes,8 d f bes, d f bes, d |
+aes8 c d aes c d aes c |
+bes8 d f bes, d f bes, d |
+aes8 c d aes c d aes c |
+}>>
+<d bes'>4 <d aes'>8 <d bes'> ~ 8 <d aes'>4. |
 \tuplet 3/2 { <d g>4 <g b> <b d> } <d g>2 |
                         }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
@@ -83,12 +90,7 @@ r4 c b8 c4. |
 b2 a8 b4 a8 |
 g2 r8 e4 g8 |
 a2 r |
-R1*4
-bes,8 d f bes, d f bes, d |
-aes8 c d aes c d aes c |
-bes8 d f bes, d f bes, d |
-aes8 c d aes c d aes c |
-R1*2
+R1*10
                     }
                 >>
 
