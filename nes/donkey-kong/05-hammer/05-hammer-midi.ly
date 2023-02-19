@@ -5,7 +5,7 @@
         title = "Jumpman Theme 1"
         subtitle = \markup { "from" {\italic "Donkey Kong"} "for the NES (1983)" }
         composer = "Yukio Kaneoka"
-        arranger = "arr. Mikhail Hogrefe"
+        arranger = "trans. Mikhail Hogrefe"
     }
 
     \score {

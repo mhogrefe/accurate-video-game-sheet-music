@@ -12,7 +12,7 @@ smaller = {
         title = "Introduction"
         subtitle = \markup { "from" {\italic "Zelda II: The Adventure of Link"} "for the NES (1987)" }
         composer = "Akito Nakatsuka"
-        arranger = "arr. Mikhail Hogrefe"
+        arranger = "trans. Mikhail Hogrefe"
     }
 
     \score {

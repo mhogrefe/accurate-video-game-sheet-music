@@ -5,7 +5,7 @@
         title = "Overworld"
         subtitle = \markup { "from" {\italic "Super Mario Bros."} "for the NES (1985)" }
         composer = "Koji Kondo"
-        arranger = "arr. Mikhail Hogrefe"
+        arranger = "trans. Mikhail Hogrefe"
     }
 
     \score {

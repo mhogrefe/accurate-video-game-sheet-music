@@ -12,7 +12,7 @@ smaller = {
         title = "Overworld"
         subtitle = \markup { "from" {\italic "Super Mario Bros. 2"} "for the NES (1988)" }
         composer = "Koji Kondo"
-        arranger = "arr. Mikhail Hogrefe"
+        arranger = "trans. Mikhail Hogrefe"
     }
 
     \score {

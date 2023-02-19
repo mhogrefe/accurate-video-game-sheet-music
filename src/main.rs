@@ -34,6 +34,20 @@ struct TimingConfig {
     measures: Vec<MeasuresConfig>,
 }
 
+impl TimingConfig {
+    fn has_gb(&self) -> bool {
+        let mut previous = None;
+        for c in &self.measures {
+            let hgb = c.time_gb.is_some();
+            if previous == Some(!hgb) {
+                panic!("inconsistent config");
+            }
+            previous = Some(hgb);
+        }
+        previous.unwrap()
+    }
+}
+
 fn parse_fragment_config(line: &str) -> FragmentConfig {
     let tokens: Vec<&str> = line.split(' ').collect();
     assert_eq!(tokens.len(), 5);
@@ -82,15 +96,34 @@ fn parse_time(s: &str) -> Option<Time> {
 #[derive(Copy, Clone, Eq, PartialEq, Debug)]
 struct MeasuresConfig {
     time: Time,
+    time_gb: Option<Time>,
     measure: u32,
 }
 
 fn parse_measures_config(line: &str) -> MeasuresConfig {
     let tokens: Vec<&str> = line.split(' ').collect();
-    assert_eq!(tokens.len(), 2);
-    let time = parse_time(tokens[0]).unwrap();
-    let measure = u32::from_str(tokens[1]).unwrap();
-    MeasuresConfig { time, measure }
+    match tokens.len() {
+        2 => {
+            let time = parse_time(tokens[0]).unwrap();
+            let measure = u32::from_str(tokens[1]).unwrap();
+            MeasuresConfig {
+                time,
+                time_gb: None,
+                measure,
+            }
+        }
+        3 => {
+            let time = parse_time(tokens[0]).unwrap();
+            let time_gb = parse_time(tokens[1]).unwrap();
+            let measure = u32::from_str(tokens[2]).unwrap();
+            MeasuresConfig {
+                time,
+                time_gb: Some(time_gb),
+                measure,
+            }
+        }
+        _ => panic!(),
+    }
 }
 
 fn parse_timing_config(name: &str) -> TimingConfig {
@@ -318,7 +351,8 @@ fn count_slashes(s: &str) -> usize {
     count
 }
 
-fn create_video(dir_path: &str) {
+// True if input.txt should be deleted
+fn create_video(dir_path: &str, use_gb: bool) -> bool {
     let mut track_names = Vec::new();
     for path in fs::read_dir(dir_path).unwrap() {
         let path = path.unwrap().path().display().to_string();
@@ -333,15 +367,21 @@ fn create_video(dir_path: &str) {
     {
         let mut ffmpeg_input_file = File::create("input.txt").unwrap();
         for track_name in &track_names {
-            let flac_file_name = format!("{dir_path}/{track_name}/{track_name}.flac");
+            let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
+            if use_gb && !config.has_gb() {
+                return true;
+            }
+            let flac_file_name = if use_gb {
+                format!("{dir_path}/{track_name}/{track_name}-garageband.flac")
+            } else {
+                format!("{dir_path}/{track_name}/{track_name}.flac")
+            };
             let reader = claxon::FlacReader::open(&flac_file_name).unwrap();
             let info = reader.streaminfo();
             let time_seconds = (info.samples.unwrap() as f64) / (info.sample_rate as f64);
             track_lengths.push(time_seconds);
             sox_command.arg("silence.flac");
             sox_command.arg(&flac_file_name);
-
-            let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
             writeln!(
                 &mut ffmpeg_input_file,
                 "file '{dir_path}/{track_name}/video/screenshot.png'",
@@ -359,7 +399,12 @@ fn create_video(dir_path: &str) {
                         "{}/{}/video/fragment-{}.png",
                         dir_path, track_name, fragment.fragment_index
                     );
-                    fragments_and_times.push((fragment_file_name, measure.time.to_seconds()));
+                    let time = if use_gb {
+                        measure.time_gb.unwrap()
+                    } else {
+                        measure.time
+                    };
+                    fragments_and_times.push((fragment_file_name, time.to_seconds()));
                 }
             }
             let mut previous_fragment_name = None;
@@ -419,12 +464,11 @@ fn create_video(dir_path: &str) {
             .output()
             .expect("failed to delete ffmpeg input"),
     );
-    #[allow(unused_must_use)]
-    {
-        Command::new("rm")
-            .arg(&format!("{dir_path}/video.mp4"))
-            .output();
-    }
+    let video_path = if use_gb {
+        format!("{dir_path}/video-garageband.mp4")
+    } else {
+        format!("{dir_path}/video.mp4")
+    };
     print_output(
         Command::new("ffmpeg")
             .arg("-i")
@@ -437,7 +481,7 @@ fn create_video(dir_path: &str) {
             .arg("aac")
             .arg("-b:a")
             .arg("384k")
-            .arg(&format!("{dir_path}/video.mp4"))
+            .arg(&video_path)
             .output()
             .expect("failed to merge audio and video"),
     );
@@ -453,6 +497,7 @@ fn create_video(dir_path: &str) {
             .output()
             .expect("failed to delete Sox output"),
     );
+    false
 }
 
 fn main() {
@@ -464,7 +509,25 @@ fn main() {
         if slash_count == 2 {
             process_track(dir_path);
         } else if slash_count == 1 {
-            create_video(dir_path);
+            #[allow(unused_must_use)]
+            {
+                Command::new("rm")
+                    .arg(&format!("{dir_path}/video.mp4"))
+                    .output();
+            }
+            #[allow(unused_must_use)]
+            {
+                Command::new("rm")
+                    .arg(&format!("{dir_path}/video-garageband.mp4"))
+                    .output();
+            }
+            create_video(dir_path, false);
+            if create_video(dir_path, true) {
+                #[allow(unused_must_use)]
+                {
+                    Command::new("rm").arg(&format!("input.txt")).output();
+                }
+            }
         } else {
             panic!();
         }

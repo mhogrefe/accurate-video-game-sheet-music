@@ -5,7 +5,7 @@
         title = "Zelda Rescued"
         subtitle = \markup { "from" {\italic "The Legend of Zelda"} "for the NES (1986)" }
         composer = "Koji Kondo"
-        arranger = "arr. Mikhail Hogrefe"
+        arranger = "trans. Mikhail Hogrefe"
     }
 
     \score {

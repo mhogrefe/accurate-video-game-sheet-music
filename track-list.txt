@@ -84,3 +84,5 @@ nes/zelda-ii-the-adventure-of-link/03-battle
 nes/zelda-ii-the-adventure-of-link/04-level-up
 nes/zelda-ii-the-adventure-of-link/05-town
 nes/zelda-ii-the-adventure-of-link/06-indoors
+nes/zelda-ii-the-adventure-of-link/07-got-item
+nes/zelda-ii-the-adventure-of-link/08-palace
