@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Boss Battle"
+        title = "Palace Cleared"
         subtitle = \markup { "from" {\italic "Zelda II: The Adventure of Link"} "for the NES (1987)" }
         composer = "Akito Nakatsuka"
         arranger = "trans. Mikhail Hogrefe"
@@ -21,36 +21,22 @@ smaller = {
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse"
                     \set Staff.shortInstrumentName = "P."
-\time 2/2
-\tempo 2 = 90
-\key f \minor
-                    \repeat volta 2 {
-<c f>4. <ees aes>8 ~ 4 <d g> |
-<f bes>4. <ees aes>8 ~ 4 <d g> |
-<c f>4. <ees aes>8 ~ 4 <d g> |
-<f bes>4. <ees aes>8 ~ 4 <d g> |
-<bes ees>4. <des ges>8 ~ 4 <c f> |
-<ees aes>4. <des ges>8 ~ 4 <c f> |
-<bes ees>4. <des ges>8 ~ 4 <c f> |
-<ees aes>4. <des ges>8 ~ 4 <c f> |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
+\tempo 4 = 150
+\key f \major
+<e c'>4. <d bes'>16 <e c'> <d bes'>4 <f d'>8. 16 |
+<e c'>4. <d bes'>16 <e c'> <d bes'>4 <f d'>8. 16 |
+<g c>4 <g, c>16 16 16 16 ~ 2 |
+\bar "|."
                 }
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
 \clef bass
-\key f \minor
-f4-. c'8 f, r c' f, c' |
-f,4-. c'8 f, r c' f, c' |
-f,4-. c'8 f, r c' f, c' |
-f,4-. c'8 f, r c' f, c' |
-ees,4-. bes'8 ees, r bes' ees, bes' |
-ees,4-. bes'8 ees, r bes' ees, bes' |
-ees,4-. bes'8 ees, r bes' ees, bes' |
-ees,4-. bes'8 ees, r bes' ees, bes' |
+\key f \major
+c8 g' e f16 g f8 d bes' r16 bes |
+c,8 g' e f16 g f8 d bes' r16 bes |
+c8 r c,4-- r2 |
                 }
             >>
         }
@@ -64,5 +50,6 @@ ees,4-. bes'8 ees, r bes' ees, bes' |
                 \RemoveEmptyStaves
             }
         }
+        \midi {}
     }
 }

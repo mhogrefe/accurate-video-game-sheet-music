@@ -46,7 +46,7 @@ smaller = {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
 \clef bass
-\key g \minor
+\key f \minor
 f4-. c'8 f, r c' f, c' |
 f,4-. c'8 f, r c' f, c' |
 f,4-. c'8 f, r c' f, c' |
