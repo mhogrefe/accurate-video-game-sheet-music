@@ -88,3 +88,4 @@ nes/zelda-ii-the-adventure-of-link/07-got-item
 nes/zelda-ii-the-adventure-of-link/08-palace
 nes/zelda-ii-the-adventure-of-link/09-boss-battle
 nes/zelda-ii-the-adventure-of-link/10-palace-cleared
+nes/zelda-ii-the-adventure-of-link/11-great-palace
