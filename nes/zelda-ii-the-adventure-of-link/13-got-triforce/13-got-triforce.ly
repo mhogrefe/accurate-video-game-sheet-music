@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Dark Link Battle"
+        title = "Got Triforce"
         subtitle = \markup { "from" {\italic "Zelda II: The Adventure of Link"} "for the NES (1987)" }
         composer = "Akito Nakatsuka"
         arranger = "trans. Mikhail Hogrefe"
@@ -21,44 +21,27 @@ smaller = {
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse"
                     \set Staff.shortInstrumentName = "P."
-\key f \minor
-\time 2/2
-\tempo 2 = 90
-                    \repeat volta 2 {
-<c f>4. <ees aes>8 ~ 4 <d g> ~ |
-<d g>8 <des ges>4. <c f>2 |
-<ees aes>4. <ges ces>8 ~ 4 <f bes> ~ |
-<f bes>8 <e a>4. <ees aes>2 |
-<c f>4. <ees aes>8 ~ 4 <d g> ~ |
-<d g>8 <des ges>4. <c f>2 |
-<ees aes>4. <ges ces>8 ~ 4 <f bes> ~ |
-<f bes>8 <e a>4. <ees aes>2 |
-<d g>4. <g des'>8 ~ 4 4 ~ |
-<g des'>8 4. 2 |
-<d g>4. <g des'>8 ~ 4 4 ~ |
-<g des'>8 4. 2 |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
+\time 6/8
+\tempo 4. = 150
+<e c'>4. ~ \tuplet 4/3 { <e c'>4 8 8 } |
+<c' ees>8 <bes d> <aes c> <bes d> <f c'> <f bes> |
+<e c'>4. ~ \tuplet 4/3 { <e c'>4 8 8 } |
+<c' ees>8 <bes d> <aes c> <bes d> <f c'> <f bes> |
+<g c>4. \tuplet 4/3 { <g, c>8 8 8 8 ~ } |
+<g c>4. r4 r8
+\bar "|."
                 }
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
 \clef bass
-\key f \minor
-f4-. c'8 f, r c' f, c' |
-f,4-. c'8 f, r c' f, c' |
-aes4-. ees'8 aes, r ees' aes, ees' |
-aes,4-. ees'8 aes, r ees' aes, ees' |
-f,4-. c'8 f, r c' f, c' |
-f,4-. c'8 f, r c' f, c' |
-aes4-. ees'8 aes, r ees' aes, ees' |
-aes,4-. ees'8 aes, r ees' aes, ees' |
-g,4-. des'8 g, r des' g, des' |
-g,4-. des'8 g, r des' g, des' |
-g,4-. des'8 g, r des' g, des' |
-g,4-. des'8 g, r des' g, des' |
+e8 g c, g' c e, |
+aes8 ees' c f, d' bes |
+e,8 g c, g' c e, |
+aes8 ees' c f, d' bes |
+c8 r r c,4. ~ |
+c8 r r r4 r8 |
                 }
             >>
         }
@@ -72,5 +55,6 @@ g,4-. des'8 g, r des' g, des' |
                 \RemoveEmptyStaves
             }
         }
+        \midi {}
     }
 }

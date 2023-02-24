@@ -27,11 +27,11 @@ smaller = {
 <c f>4. <ees aes>8 ~ 4 <d g> ~ |
 <d g>8 <des ges>4. <c f>2 |
 <ees aes>4. <ges ces>8 ~ 4 <f bes> ~ |
-<f bes>8 <fes beses>4. <ees aes>2 |
+<f bes>8 <e a>4. <ees aes>2 |
 <c f>4. <ees aes>8 ~ 4 <d g> ~ |
 <d g>8 <des ges>4. <c f>2 |
 <ees aes>4. <ges ces>8 ~ 4 <f bes> ~ |
-<f bes>8 <fes beses>4. <ees aes>2 |
+<f bes>8 <e a>4. <ees aes>2 |
 <d g>4. <g des'>8 ~ 4 4 ~ |
 <g des'>8 4. 2 |
 <d g>4. <g des'>8 ~ 4 4 ~ |
@@ -39,11 +39,11 @@ smaller = {
 <c, f>4. <ees aes>8 ~ 4 <d g> ~ |
 <d g>8 <des ges>4. <c f>2 |
 <ees aes>4. <ges ces>8 ~ 4 <f bes> ~ |
-<f bes>8 <fes beses>4. <ees aes>2 |
+<f bes>8 <e a>4. <ees aes>2 |
 <c f>4. <ees aes>8 ~ 4 <d g> ~ |
 <d g>8 <des ges>4. <c f>2 |
 <ees aes>4. <ges ces>8 ~ 4 <f bes> ~ |
-<f bes>8 <fes beses>4. <ees aes>2 |
+<f bes>8 <e a>4. <ees aes>2 |
 <d g>4. <g des'>8 ~ 4 4 ~ |
 <g des'>8 4. 2 |
 <d g>4. <g des'>8 ~ 4 4 ~ |
