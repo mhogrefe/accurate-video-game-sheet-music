@@ -31,7 +31,7 @@ smaller = {
 g4 a b8 c d e |
 }\\{
 s4 |
-a,,8\p c e a a, c e gis |
+a,,8\mp c e a a, c e gis |
 }>>
 <<{
 b'4. a8 ~ 4 e |
@@ -53,7 +53,7 @@ c8 a4 e'8 ~ e2 |
 c8 a4 g'8 ~ g fis4. |
 c8 a4 e'8 ~ e2 |
 }\\{
-a,,8\p c e g a, c e fis |
+a,,8\mp c e g a, c e fis |
 a,8 c e a a, c e gis |
 a,8 c e g a, c e fis |
 a,8 c e a a, c e gis |

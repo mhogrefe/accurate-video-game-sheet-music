@@ -91,3 +91,4 @@ nes/zelda-ii-the-adventure-of-link/10-palace-cleared
 nes/zelda-ii-the-adventure-of-link/11-great-palace
 nes/zelda-ii-the-adventure-of-link/12-dark-link-battle
 nes/zelda-ii-the-adventure-of-link/13-got-triforce
+nes/zelda-ii-the-adventure-of-link/14-zelda-rescued
