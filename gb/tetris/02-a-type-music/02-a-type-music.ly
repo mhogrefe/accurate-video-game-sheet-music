@@ -113,8 +113,8 @@ gis,8 e' gis, e' r2 |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 \repeat percent 12 {
-sn4 sn sn16 sn r8 sn4 |
-sn4 sn sn8 sn sn4 |
+r8 sn r sn r sn16 sn r8 sn |
+r8 sn r sn r sn sn sn |
 }
                     }
                 }
