@@ -367,6 +367,7 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
     {
         let mut ffmpeg_input_file = File::create("input.txt").unwrap();
         for track_name in &track_names {
+            println!("{}", track_name);
             let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
             if use_gb && !config.has_gb() {
                 return true;
