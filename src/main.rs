@@ -1,12 +1,12 @@
 use image::imageops::FilterType;
-use image::{DynamicImage, GenericImage};
+use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use malachite::num::arithmetic::traits::DivRound;
 use malachite::num::conversion::traits::RoundingFrom;
 use malachite::num::float::NiceFloat;
 use malachite::rounding_modes::RoundingMode;
 use malachite::Rational;
 use std::cmp::Ordering;
-use std::collections::HashMap;
+use std::collections::{BTreeMap, HashMap};
 use std::env;
 use std::fs::{self, File};
 use std::io::{self, BufRead, Write};
@@ -501,9 +501,45 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
     false
 }
 
+fn recolor_screenshot(dir_path: &str) {
+    let in_path = format!("{dir_path}/screenshot.png");
+    let out_path = format!("{dir_path}/screenshot-out.png");
+    let mut img = image::open(&in_path).expect("File not found");
+    let mut colors: BTreeMap<u16, [u8; 4]> = BTreeMap::new();
+    for i in 0..img.height() {
+        for j in 0..img.width() {
+            let pixel = img.get_pixel(j, i).0;
+            colors.insert(
+                u16::from(pixel[0]) + u16::from(pixel[1]) + u16::from(pixel[2]),
+                pixel,
+            );
+        }
+    }
+    let mut color_map = HashMap::new();
+    for (i, color) in colors.values().enumerate() {
+        color_map.insert(color, i);
+    }
+    let target_colors = [
+        [26, 69, 41, 255],
+        [32, 98, 40, 255],
+        [88, 160, 39, 255],
+        [173, 216, 39, 255],
+    ];
+    let target_pixels: Vec<_> = target_colors.into_iter().map(Rgba::from).collect();
+    for i in 0..img.height() {
+        for j in 0..img.width() {
+            let pixel = img.get_pixel(j, i).0;
+            img.put_pixel(j, i, target_pixels[color_map[&pixel]]);
+        }
+    }
+    img.save(&out_path).expect("Could not write image");
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
-    if args.len() == 2 {
+    if args[1] == "recolor_screenshot" {
+        recolor_screenshot(&args[2]);
+    } else if args.len() == 2 {
         assert_eq!(args.len(), 2);
         let dir_path = &args[1];
         let slash_count = count_slashes(dir_path);
