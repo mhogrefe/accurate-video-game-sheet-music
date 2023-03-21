@@ -103,3 +103,4 @@ gb/tetris/07-two-player-mode-ending
 gb/tetris/08-level-cleared
 gb/tetris/09-ending-level-9-high-0
 gb/tetris/10-ending-level-9-high-1
+gb/tetris/11-ending-level-9-high-2
