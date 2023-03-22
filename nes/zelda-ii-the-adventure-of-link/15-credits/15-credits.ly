@@ -29,9 +29,9 @@ smaller = {
 <c a'>2 r4 <c a'> |
 <des bes'>8. 16 2 <des c'>8 <des bes'> |
 <bes g'>2 <bes aes'>4 <bes bes'> |
-<b aes'>4 <b g'> <b f'> <b ees> |
+<ces aes'>4 <ces g'> <ces f> <ces ees> |
 <bes g'>2 <bes aes'>4 <bes bes'> |
-<b aes'>4 <b g'> <b f'> <b ees> |
+<ces aes'>4 <ces g'> <ces f> <ces ees> |
 \bar "||"
 <aes f'>2 <aes e'>4 <aes f'> |
 <g e'>8. <e' g>16 <g c>2 <f bes>8 <g c> |
