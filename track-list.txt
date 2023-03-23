@@ -104,3 +104,5 @@ gb/tetris/08-level-cleared
 gb/tetris/09-ending-level-9-high-0
 gb/tetris/10-ending-level-9-high-1
 gb/tetris/11-ending-level-9-high-2
+gb/tetris/12-ending-level-9-high-3
+gb/tetris/13-ending-level-9-high-4
