@@ -108,3 +108,5 @@ gb/tetris/12-ending-level-9-high-3
 gb/tetris/13-ending-level-9-high-4
 gb/tetris/14-ending-level-9-high-5
 gb/tetris/15-true-ending
+gb/tetris/16-game-over
+gb/tetris/17-high-score
