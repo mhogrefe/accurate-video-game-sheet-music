@@ -113,3 +113,4 @@ gb/tetris/17-high-score
 gb/super-mario-land/01-birabuto-kingdom
 gb/super-mario-land/02-underground
 gb/super-mario-land/03-muda-kingdom
+gb/super-mario-land/04-marine-pop-sky-pop
