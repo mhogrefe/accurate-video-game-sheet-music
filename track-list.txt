@@ -115,3 +115,5 @@ gb/super-mario-land/02-underground
 gb/super-mario-land/03-muda-kingdom
 gb/super-mario-land/04-marine-pop-sky-pop
 gb/super-mario-land/05-chai-kingdom
+gb/super-mario-land/06-coin-room
+gb/super-mario-land/07-starman
