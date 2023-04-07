@@ -117,3 +117,5 @@ gb/super-mario-land/04-marine-pop-sky-pop
 gb/super-mario-land/05-chai-kingdom
 gb/super-mario-land/06-coin-room
 gb/super-mario-land/07-starman
+gb/super-mario-land/08-level-cleared
+gb/super-mario-land/09-bonus-game
