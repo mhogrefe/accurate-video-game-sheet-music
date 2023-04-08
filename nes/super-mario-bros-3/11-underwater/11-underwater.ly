@@ -18,6 +18,7 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse"
                     \set Staff.shortInstrumentName = "P."
+\key c \lydian
 \tempo 4 = 112
 <b g'>8 <b' g'> <a f'> <f d'> ~ 8 <b, g'> <c a'> <cis ais'> |
 <d b'>2 r |
@@ -42,6 +43,7 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
+\key c \lydian
 R1
 g4 a ais b |
 c,8-. g''-. c-. g-. g,-. g'-. c-. g-. |
