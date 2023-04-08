@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Level Cleared"
+        title = "Bonus Walk"
         subtitle = \markup { "from" {\italic "Super Mario Land"} "for the Game Boy (1989)" }
         composer = "Hirokazu Tanaka"
         arranger = "trans. Mikhail Hogrefe"
@@ -18,38 +18,37 @@ smaller = {
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c'' {
+                \new Staff \relative c' {
                     \set Staff.instrumentName = "Square"
                     \set Staff.shortInstrumentName = "S."
 \time 6/8
 \tempo 4. = 108
 \key c \major
-<c e>4. 8-. 8-. 8-. |
-<d fis>4. <dis g> |
-<e gis>4. r4 r8 |
+c8 r r d r r |
+e8 r r f r r |
+g8 r r a r r |
+b8 r r c r r |
+d8 r r e r r |
+f8 r r g r r |
+a8 r r c, r r |
 \bar "|."
                 }
 
-                \new Staff \relative c''' {
+                \new Staff \relative c' {
                     \set Staff.instrumentName = "Wave"
                     \set Staff.shortInstrumentName = "W."
 \key c \major
-g4. g8-. g-. g-. |
-a4. ais-. |
-b4. r4 r8 |
-                }
-
-                \new DrumStaff {
-                    \drummode {
-                        \set Staff.instrumentName="Noise"
-                        \set Staff.shortInstrumentName="N."
-hh4. hh8 hh hh |
-hh4. hh |
-hh4. r4 r8 |
-                    }
+c8 r e d r f |
+e8 r g f r a |
+g8 r b a r c |
+b8 r d c r e |
+d8 r f e r g |
+f8 r a g r b |
+a8 r c b r r |
                 }
             >>
         }
+        \midi {}
         \layout {
             \context {
                 \Staff

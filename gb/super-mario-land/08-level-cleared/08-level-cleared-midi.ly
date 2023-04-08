@@ -26,7 +26,7 @@ smaller = {
 \key c \major
 <c e>4. 8-. 8-. 8-. |
 <d fis>4. <dis g> |
-<e gis>4. gis8-! r r |
+<e gis>4. r4 r8 |
 \bar "|."
                 }
 

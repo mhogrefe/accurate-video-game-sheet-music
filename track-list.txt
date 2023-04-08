@@ -119,3 +119,5 @@ gb/super-mario-land/06-coin-room
 gb/super-mario-land/07-starman
 gb/super-mario-land/08-level-cleared
 gb/super-mario-land/09-bonus-game
+gb/super-mario-land/10-bonus-walk
+gb/super-mario-land/11-extra-life
