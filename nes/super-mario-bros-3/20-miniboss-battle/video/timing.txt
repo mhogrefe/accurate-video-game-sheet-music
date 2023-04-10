@@ -2,6 +2,6 @@
 1 1 0 1395 1
 2 1 1395 3251 5
 
-# time measure_number
-0:00 1
-0:06.191 5
+# time time_gb measure_number
+0:00 0:00 1
+0:06.191 0:06.602 5

@@ -21,7 +21,7 @@
 e8 e e e f f fis fis |
 g8 g g g c c e \tuplet 3/2 { e16 e8 } |
 d8 d e e f f b, b |
-\partial 1*3/4 d8 d d d c c \tuplet 3/2 |
+\partial 1*3/4 d8[ d d d] c c \tuplet 3/2 |
 \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Fine" }
@@ -41,8 +41,8 @@ b8 b |
 c8 c r4 d8 d dis dis |
 e8 e c c a' a g g |
 f8 f e e d d f f |
-g8 g g, g c c
- b b |
+g8[ g g, g] c c
+b b |
 e8 e fis fis gis gis b b |
 a8 a gis gis a a g g |
 f8 f g g aes aes f f |

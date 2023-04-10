@@ -377,7 +377,7 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
             } else {
                 format!("{dir_path}/{track_name}/{track_name}.flac")
             };
-            let reader = claxon::FlacReader::open(&flac_file_name).unwrap();
+            let reader = claxon::FlacReader::open(&flac_file_name).expect("{flac_file_name}");
             let info = reader.streaminfo();
             let time_seconds = (info.samples.unwrap() as f64) / (info.sample_rate as f64);
             track_lengths.push(time_seconds);
@@ -537,7 +537,7 @@ fn recolor_screenshot(dir_path: &str) {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    if args[1] == "recolor_screenshot" {
+    if args.len() > 1 && args[1] == "recolor_screenshot" {
         recolor_screenshot(&args[2]);
     } else if args.len() == 2 {
         assert_eq!(args.len(), 2);

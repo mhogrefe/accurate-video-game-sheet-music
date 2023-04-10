@@ -76,8 +76,9 @@ nes/the-legend-of-zelda/07-death
 nes/the-legend-of-zelda/08-continue
 nes/the-legend-of-zelda/09-warp-whistle
 nes/the-legend-of-zelda/10-death-mountain
-nes/the-legend-of-zelda/11-zelda-rescued
-nes/the-legend-of-zelda/12-credits
+nes/the-legend-of-zelda/11-ganon-appears
+nes/the-legend-of-zelda/12-zelda-rescued
+nes/the-legend-of-zelda/13-credits
 nes/zelda-ii-the-adventure-of-link/01-introduction
 nes/zelda-ii-the-adventure-of-link/02-overworld
 nes/zelda-ii-the-adventure-of-link/03-battle

@@ -70,9 +70,15 @@ r2 <gis e'>4 4 |
 <cis a'>2 <g e'> |
 <f d'>4 <g e'> <a f'> <ais fis'> |
 <b g'>2 <g e'> |
+<<{
 c1 ~ |
-c2 r |
-<e g>2 \tuplet 3/2 { r4 <c e>8 ~ } 4 |
+c2
+}\\{
+e,4 \tuplet 3/2 { e4 e8 ~ e4 f8 g4 f8 } |
+e2
+}>>
+r2 |
+<e' g>2 \tuplet 3/2 { r4 <c e>8 ~ } 4 |
 <b dis>2 \tuplet 3/2 { r4 <b dis>8 <dis g>4 <dis b'>8 } |
 <e a>2 \tuplet 3/2 { r4 <c e>8 ~ } 4 |
 <e g>2 r |
@@ -94,8 +100,14 @@ r2 <gis e'>4 4 |
 <cis a'>2 <g e'> |
 <f d'>4 <g e'> <a f'> <ais fis'> |
 <b g'>2 <g e'> |
+<<{
 c1 ~ |
-c2 r |
+c2
+}\\{
+e,4 \tuplet 3/2 { e4 e8 ~ e4 f8 g4 f8 } |
+e2
+}>>
+r2 |
                 }
 
                 \new Staff \relative c {

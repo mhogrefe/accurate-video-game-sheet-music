@@ -91,8 +91,14 @@ r2 <gis e'>4 4 |
 <cis a'>2 <g e'> |
 <f d'>4 <g e'> <a f'> <ais fis'> |
 <b g'>2 <g e'> |
+<<{
 c1 ~ |
-c2 r |
+c2
+}\\{
+e,4 e8 e ~ e f g f |
+e2
+}>>
+r2 |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
