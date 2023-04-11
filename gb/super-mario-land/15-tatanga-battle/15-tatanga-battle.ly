@@ -1,0 +1,104 @@
+\version "2.22.0"
+
+smaller = {
+    \set fontSize = #-3
+    \override Stem #'length-fraction = #0.56
+    \override Beam #'thickness = #0.2688
+    \override Beam #'length-fraction = #0.56
+}
+
+\book {
+    \header {
+        title = "Tatanga Battle"
+        subtitle = \markup { "from" {\italic "Super Mario Land"} "for the Game Boy (1989)" }
+        composer = "Hirokazu Tanaka"
+        arranger = "trans. Mikhail Hogrefe"
+    }
+
+    \score {
+        {
+            \new StaffGroup <<
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Square"
+                    \set GrandStaff.shortInstrumentName = "S."
+                    \new Staff \relative c {
+\tempo 4 = 160
+\clef bass
+R1
+d1 |
+dis1 |
+e2 f |
+fis4 g gis a |
+                        \repeat volta 2 {
+d,2 aes' |
+g2 des' |
+c1 |
+R1 |
+d,2 aes' |
+g2 des' |
+d1 |
+R1 |
+                        }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
+                    }
+
+                    \new Staff \relative c {
+\clef bass
+R1 |
+g1 |
+gis1 |
+a2 ais |
+b4 c cis d |
+g,8\p ges f e ees d des c |
+g'8 ges f e ees d des c |
+g'8 ges f e ees d des c |
+g'8 ges f e ees d des c |
+g'8 ges f e ees d des c |
+g'8 ges f e ees d des c |
+g'8 ges f e ees d des c |
+g'8 ges f e ees d des c |
+                    }
+                >>
+
+                \new Staff \relative c {
+                    \set Staff.instrumentName = "Wave"
+                    \set Staff.shortInstrumentName = "W."
+\clef bass
+R1 |
+g1 |
+gis1 |
+a2 ais |
+b4 c cis d |
+g,16\p g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+                }
+
+                \new DrumStaff {
+                    \drummode {
+                        \set Staff.instrumentName="Noise"
+                        \set Staff.shortInstrumentName="N."
+\repeat percent 5 { bd16 bd bd bd sn bd bd bd bd bd bd bd sn bd bd bd | }
+\repeat percent 8 { bd16 bd bd bd sn bd bd bd bd bd bd bd sn bd bd bd | }
+                    }
+                }
+            >>
+        }
+        \layout {
+            \context {
+                \Staff
+                \RemoveEmptyStaves
+            }
+            \context {
+                \DrumStaff
+                \RemoveEmptyStaves
+            }
+        }
+    }
+}

@@ -124,3 +124,5 @@ gb/super-mario-land/10-bonus-walk
 gb/super-mario-land/11-extra-life
 gb/super-mario-land/12-boss-battle
 gb/super-mario-land/13-princess-daisy
+gb/super-mario-land/14-oh-daisy
+gb/super-mario-land/15-tatanga-battle
