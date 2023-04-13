@@ -128,3 +128,4 @@ gb/super-mario-land/14-oh-daisy
 gb/super-mario-land/15-tatanga-battle
 gb/super-mario-land/16-death
 gb/super-mario-land/17-game-over
+gb/super-mario-land/18-credits
