@@ -129,3 +129,4 @@ gb/super-mario-land/15-tatanga-battle
 gb/super-mario-land/16-death
 gb/super-mario-land/17-game-over
 gb/super-mario-land/18-credits
+gb/super-mario-land-2-6-golden-coins/01-file-selection
