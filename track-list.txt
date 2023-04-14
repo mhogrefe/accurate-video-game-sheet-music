@@ -130,3 +130,4 @@ gb/super-mario-land/16-death
 gb/super-mario-land/17-game-over
 gb/super-mario-land/18-credits
 gb/super-mario-land-2-6-golden-coins/01-file-selection
+gb/super-mario-land-2-6-golden-coins/02-overworld-map
