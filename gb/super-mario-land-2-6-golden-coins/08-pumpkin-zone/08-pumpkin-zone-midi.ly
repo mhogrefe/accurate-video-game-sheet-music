@@ -45,7 +45,6 @@ a,,,8-. bes-. a-. bes-. a-. r r4 |
 
                 \new Staff \relative c {
 \key d \minor
-\tempo 4 = 130
 \clef bass
 d8-. f-. a-. d-. cis-. f,-. a-. cis-. |
 c8-. f,-. a-. c-. b-. r r4 |

@@ -137,3 +137,5 @@ gb/super-mario-land-2-6-golden-coins/05-turtle-zone
 gb/super-mario-land-2-6-golden-coins/06-mario-zone
 gb/super-mario-land-2-6-golden-coins/07-macro-zone
 gb/super-mario-land-2-6-golden-coins/08-pumpkin-zone
+gb/super-mario-land-2-6-golden-coins/09-space-zone
+gb/super-mario-land-2-6-golden-coins/10-level-start
