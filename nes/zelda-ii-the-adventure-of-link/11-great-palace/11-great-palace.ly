@@ -24,18 +24,10 @@ smaller = {
 \tempo 4 = 150
 \key a \minor
 <e a>4 <d g>8 <e a> ~ 8 <b e>4 <d g>8 |
-<c f>8 <c g'> <c a'> <d b'> ~ 8 <d a'>
-<<{
-<d g>4 ~ |
-\bar "||"
-g4 a b8 c d e |
-}\\{
-s4 |
-a,,8 c e a a, c e gis |
-}>>
-
+<c f>8 <c g'> <c a'> <d b'> ~ 8 <d a'> <d g>4 |
                     \repeat volta 2 {
 <<{
+r4 a' b8 c d e |
 b'4. a8 ~ 4 e |
 g4. fis8 ~ fis4 d |
 f4. e8 ~ e4 c ~ |
@@ -55,7 +47,8 @@ c8 a4 e'8 ~ e2 |
 c8 a4 g'8 ~ g fis4. |
 c8 a4 e'8 ~ e2 |
 }\\{
-a,,8 c e g a, c e fis |
+a,,8 c e a a, c e gis
+a,8 c e g a, c e fis |
 a,8 c e a a, c e gis |
 a,8 c e g a, c e fis |
 a,8 c e a a, c e gis |
@@ -75,12 +68,6 @@ a,8 c e g a, c e fis |
 a,8 c e a a, c e gis |
 }>>
 <b, e>8 <c f>4 <d gis>8 ~ 8 <e b'>4. |
-\bar "||"
-<<{
-r4 a b8 c d e |
-}\\{
-a,,8 c e a a, c e gis |
-}>>
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
@@ -113,7 +100,6 @@ a'4-. e8 a r c r e, |
 a4-. e8 a r c r e, |
 a4-. e8 a r c r e, |
 e8 f r aes r b r4 |
-a4-. e8 a r c r e, |
                 }
 
                 \new DrumStaff {
@@ -124,7 +110,6 @@ R1*2
 sn4 s8 sn r4 sn |
 \repeat percent 18 { sn4 s8 sn r4 sn | }
 R1
-sn4 s8 sn r4 sn |
                     }
                 }
             >>
