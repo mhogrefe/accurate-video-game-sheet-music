@@ -11,25 +11,24 @@
     \score {
         {
             \new StaffGroup <<
-                \new DrumStaff {
-                    \drummode {
-                        \set Staff.instrumentName="Pulse"
-                        \set Staff.shortInstrumentName="P."
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Pulse"
+                    \set GrandStaff.shortInstrumentName = "P."
+                    \new Staff \relative c'' {
+\key c \major
 \tempo 2 = 100
 \time 2/2
+b8 f'4-. f8 \tuplet 3/2 { f4 e d } |
+c4-. r r2 |
+                    }
+                    \new DrumStaff {
+                        \drummode {
 sn8\ppp sn4-. sn8 \tuplet 3/2 { sn4 sn sn } |
 sn8 sn4-. sn8 sn4-. r |
 \bar "|."
+                        }
                     }
-                }
-
-                \new Staff \relative c'' {
-                    \set Staff.instrumentName = "Pulse"
-                    \set Staff.shortInstrumentName = "P."
-\key c \major
-b8 f'4-. f8 \tuplet 3/2 { f4 e d } |
-c4-. r r2 |
-                }
+                >>
 
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Triangle"

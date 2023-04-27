@@ -1,0 +1,11 @@
+00:00:00 Introduction
+00:00:21 Game Start
+00:00:33 Level Start
+00:00:43 Level Theme 1
+00:00:58 Hammer
+00:01:16 Level Cleared
+00:01:26 Level Theme 2
+00:01:39 Hurry
+00:01:52 Donkey Kong Defeated
+00:02:02 All Levels Cleared
+00:02:15 Death

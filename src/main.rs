@@ -351,6 +351,28 @@ fn count_slashes(s: &str) -> usize {
     count
 }
 
+fn format_seconds(s: f64) -> String {
+    let hours = i32::rounding_from(s / 3600.0, RoundingMode::Floor);
+    let minutes = i32::rounding_from(s / 60.0, RoundingMode::Floor) - hours * 60;
+    let seconds = i32::rounding_from(s, RoundingMode::Floor) - hours * 3600 - minutes * 60;
+    format!("{hours:02}:{minutes:02}:{seconds:02}")
+}
+
+const TITLE_PREFIX: &str = "        title = \"";
+
+fn get_full_name(dir_path: &str, short_track_name: &str) -> String {
+    let ly_path = format!("{dir_path}/{short_track_name}/{short_track_name}.ly");
+    let file = File::open(&ly_path).unwrap();
+    for line in io::BufReader::new(file).lines().flatten() {
+        if let Some(prefix) = line.strip_prefix(TITLE_PREFIX) {
+            let mut prefix = prefix.to_string();
+            assert_eq!(prefix.pop(), Some('"'));
+            return prefix;
+        }
+    }
+    panic!("Could not find title in {ly_path}");
+}
+
 // True if input.txt should be deleted
 fn create_video(dir_path: &str, use_gb: bool) -> bool {
     let mut track_names = Vec::new();
@@ -364,8 +386,16 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
     track_names.sort();
     let mut track_lengths = Vec::new();
     let mut sox_command = Command::new("sox");
+    let mut total_time = 0.0;
     {
         let mut ffmpeg_input_file = File::create("input.txt").unwrap();
+        let chapters_file_name = if use_gb {
+            format!("{dir_path}/chapters-garageband.txt")
+        } else {
+            format!("{dir_path}/chapters.txt")
+        };
+        let mut chapters_file = File::create(chapters_file_name).unwrap();
+        let mut first_screenshot = None;
         for track_name in &track_names {
             println!("{}", track_name);
             let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
@@ -380,6 +410,15 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
             let reader = claxon::FlacReader::open(&flac_file_name).expect("{flac_file_name}");
             let info = reader.streaminfo();
             let time_seconds = (info.samples.unwrap() as f64) / (info.sample_rate as f64);
+            writeln!(
+                &mut chapters_file,
+                "{} {}",
+                format_seconds(total_time),
+                get_full_name(dir_path, track_name)
+            )
+            .unwrap();
+            total_time += time_seconds;
+            total_time += 5.0;
             track_lengths.push(time_seconds);
             sox_command.arg("silence.flac");
             sox_command.arg(&flac_file_name);
@@ -388,6 +427,9 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
                 "file '{dir_path}/{track_name}/video/screenshot.png'",
             )
             .unwrap();
+            if first_screenshot.is_none() {
+                first_screenshot = Some(format!("{dir_path}/{track_name}/video/screenshot.png"));
+            }
             writeln!(&mut ffmpeg_input_file, "duration 4").unwrap();
             let mut measure_to_fragment: HashMap<u32, FragmentConfig> = HashMap::new();
             for &fragment in &config.fragments {
@@ -436,6 +478,14 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
             )
             .unwrap();
         }
+        writeln!(
+            &mut ffmpeg_input_file,
+            "file '{}'",
+            first_screenshot.unwrap()
+        )
+        .unwrap();
+        writeln!(&mut ffmpeg_input_file, "duration 5",).unwrap();
+        sox_command.arg("silence.flac");
         sox_command.arg("output.flac");
         print_output(
             sox_command

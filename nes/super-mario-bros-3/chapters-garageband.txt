@@ -1,0 +1,32 @@
+00:00:00 World Map 1 (Grass Land)
+00:00:27 World Map 2 (Koopahari Desert)
+00:00:45 World Map 3 (Sea Side)
+00:01:11 World Map 4 (Big Island)
+00:01:37 World Map 5 (The Sky)
+00:01:58 World Map 6 (Iced Land)
+00:02:19 World Map 7 (Pipe Maze)
+00:02:42 World Map 8 (Dark Land)
+00:03:03 Overworld 1
+00:03:46 Overworld 2
+00:04:34 Underwater
+00:05:17 Underground
+00:05:49 Sky
+00:06:12 Starman
+00:06:29 Warp Whistle
+00:06:39 Music Box
+00:07:09 Minigame
+00:07:25 Toad’s House
+00:07:50 Fortress
+00:08:22 Miniboss Battle
+00:08:55 The King Has Been Transformed
+00:09:16 Airship
+00:10:01 Boss Battle
+00:10:35 Battle Victory
+00:10:46 King Restored
+00:11:01 Level Cleared
+00:11:12 Death
+00:11:23 Game Over
+00:11:34 Hurry
+00:11:44 Bowser Battle
+00:12:12 Ending
+00:12:55 Credits
