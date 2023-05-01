@@ -31,7 +31,7 @@ r8 cis-. cis-. cis-. r2 |
 r8 d, r fis a a gis4-. |
 g8 e cis4-. \ottava #1 a''8 a a 4-. \ottava #0 |
 r8 e, r g b b ais4-. |
-a8 b a g fis \ottava #1 e'' a4-. \ottava #0 |
+a8 b a g fis \ottava #1 \acciaccatura dis''8 e8 \acciaccatura gis8 a4-. \ottava #0 |
 e,,8 dis e b' r4 a8 g |
 fis8 eis fis cis' r4 r8 a |
 ais8 b d fis a4-. fis-. |
@@ -48,7 +48,7 @@ r8 b,-. ais-. b-. fis'-. a-. fis-. d-. |
 r8 d r fis a a gis4-. |
 g8 e cis4-. \ottava #1 a''8 a a 4-. \ottava #0 |
 r8 e, r g b b ais4-. |
-a8 b a g fis \ottava #1 e'' a4-. \ottava #0 |
+a8 b a g fis \ottava #1 \acciaccatura dis''8 e8 \acciaccatura gis8 a4-. \ottava #0 |
 e,,8 dis e b' r4 a8 g |
 fis8 eis fis cis' r4 r8 a |
 ais8 b d fis a4-. fis-. |

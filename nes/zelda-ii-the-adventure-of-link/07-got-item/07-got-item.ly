@@ -18,20 +18,14 @@ smaller = {
     \score {
         {
             \new StaffGroup <<
-                \new GrandStaff <<
-                    \set GrandStaff.instrumentName = "Pulse"
-                    \set GrandStaff.shortInstrumentName = "P."
-                    \new Staff \relative c'' {
+                \new Staff \relative c' {
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \tempo 4. = 100
 \time 6/8
-a8 ais b c4.
+<c a'>8 <cis ais'> <d b'> <dis c'>4. |
 \bar "|."
-                    }
-
-                    \new Staff \relative c' {
-c8 cis d dis4. |
-                    }
-                >>
+                }
 
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"

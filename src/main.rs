@@ -34,20 +34,6 @@ struct TimingConfig {
     measures: Vec<MeasuresConfig>,
 }
 
-impl TimingConfig {
-    fn has_gb(&self) -> bool {
-        let mut previous = None;
-        for c in &self.measures {
-            let hgb = c.time_gb.is_some();
-            if previous == Some(!hgb) {
-                panic!("inconsistent config");
-            }
-            previous = Some(hgb);
-        }
-        previous.unwrap()
-    }
-}
-
 fn parse_fragment_config(line: &str) -> FragmentConfig {
     let tokens: Vec<&str> = line.split(' ').collect();
     assert_eq!(tokens.len(), 5);
@@ -95,7 +81,7 @@ fn parse_time(s: &str) -> Option<Time> {
 
 #[derive(Copy, Clone, Eq, PartialEq, Debug)]
 struct MeasuresConfig {
-    time: Time,
+    time: Option<Time>,
     time_gb: Option<Time>,
     measure: u32,
 }
@@ -104,7 +90,11 @@ fn parse_measures_config(line: &str) -> MeasuresConfig {
     let tokens: Vec<&str> = line.split(' ').collect();
     match tokens.len() {
         2 => {
-            let time = parse_time(tokens[0]).unwrap();
+            let time = if tokens[0] == "-" {
+                None
+            } else {
+                Some(parse_time(tokens[0]).unwrap())
+            };
             let measure = u32::from_str(tokens[1]).unwrap();
             MeasuresConfig {
                 time,
@@ -113,12 +103,20 @@ fn parse_measures_config(line: &str) -> MeasuresConfig {
             }
         }
         3 => {
-            let time = parse_time(tokens[0]).unwrap();
-            let time_gb = parse_time(tokens[1]).unwrap();
+            let time = if tokens[0] == "-" {
+                None
+            } else {
+                Some(parse_time(tokens[0]).unwrap())
+            };
+            let time_gb = if tokens[1] == "-" {
+                None
+            } else {
+                Some(parse_time(tokens[1]).unwrap())
+            };
             let measure = u32::from_str(tokens[2]).unwrap();
             MeasuresConfig {
                 time,
-                time_gb: Some(time_gb),
+                time_gb,
                 measure,
             }
         }
@@ -399,9 +397,6 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
         for track_name in &track_names {
             println!("{}", track_name);
             let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
-            if use_gb && !config.has_gb() {
-                return true;
-            }
             let flac_file_name = if use_gb {
                 format!("{dir_path}/{track_name}/{track_name}-garageband.flac")
             } else {
@@ -443,11 +438,13 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
                         dir_path, track_name, fragment.fragment_index
                     );
                     let time = if use_gb {
-                        measure.time_gb.unwrap()
+                        measure.time_gb
                     } else {
                         measure.time
                     };
-                    fragments_and_times.push((fragment_file_name, time.to_seconds()));
+                    if let Some(time) = time {
+                        fragments_and_times.push((fragment_file_name, time.to_seconds()));
+                    }
                 }
             }
             let mut previous_fragment_name = None;

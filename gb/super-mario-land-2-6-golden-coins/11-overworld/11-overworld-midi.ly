@@ -447,7 +447,7 @@ e4-. dis'-. e-. r |
                         \set Staff.shortInstrumentName="N."
 sn8\ppp sn r sn sn4 sn |
 sn4 r hh8 hh hh hh |
-hh8 hh hh-> hh hh hh hh-> hh |
+hh8\pppp hh hh-> hh hh hh hh-> hh |
 hh8 hh hh-> hh hh hh hh-> hh |
 hh8 hh hh-> hh hh hh hh-> hh |
 hh8 hh hh-> hh hh hh hh-> hh |

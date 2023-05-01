@@ -21,7 +21,7 @@
                     \new Staff \relative c''' {
 \tempo 4 = 150
 <dis fis>8-. <e g>-. 8-. 8-. <dis, fis>-. <e g>-. 8-. 8-. |
-<dis, fis>8 <e g> <dis fis> <e g> <g, g'>4-. \clef bass <g, g'>4-. |
+<dis, fis>8-. <e g>-. <dis fis>-. <e g>-. <g, g'>4-. \clef bass <g, g'>4-. |
                         \repeat volta 2 {
 \clef treble
 <dis''' fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |

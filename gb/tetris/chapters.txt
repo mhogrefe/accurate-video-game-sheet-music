@@ -1,0 +1,17 @@
+00:00:00 Introduction
+00:00:47 A-Type Music
+00:01:39 B-Type Music
+00:02:27 C-Type Music
+00:03:19 Two-Player Mode: Round Over
+00:03:33 Two-Player Mode: Danger
+00:03:57 Two-Player Mode: Ending
+00:04:23 Level Cleared
+00:04:31 Ending (Level 9, High 0)
+00:04:43 Ending (Level 9, High 1)
+00:04:57 Ending (Level 9, High 2)
+00:05:09 Ending (Level 9, High 3)
+00:05:21 Ending (Level 9, High 4)
+00:05:37 Ending (Level 9, High 5)
+00:05:58 True Ending
+00:06:20 Game Over
+00:06:31 High Score
