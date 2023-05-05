@@ -138,14 +138,14 @@ e,,2.\p |
 dis2. |
 d2. |
 cis2. |
-r4 cis,2\mp\<( |
-b4\>) r\! r |
-r4 d2\<( |
-cis4\>) r\! r |
-r4 cis2\<( |
-b4\>) r\! r |
-r4 d2\<( |
-cis4\>) r\! r |
+r4 cis,2\mp\>( |
+b4) r\! r |
+r4 d2\mp\> ( |
+cis4) r\! r |
+r4 cis2\mp\>( |
+b4) r\! r |
+r4 d2\mp\>( |
+cis4) r\! r |
 
 fis'4\mp r r |
 cis'4 r r |
@@ -175,14 +175,14 @@ e,,2.\mp |
 dis2. |
 d2. |
 cis2. |
-r4 cis,2\mf\<( |
-b4\>) r\! r |
-r4 d2\<( |
-cis4\>) r\! r |
-r4 cis2\<( |
-b4\>) r\! r |
-r4 d2\<( |
-cis4\>) r\! r |
+r4 cis,2\mp\>( |
+b4) r\! r |
+r4 d2\mp\> ( |
+cis4) r\! r |
+r4 cis2\mp\>( |
+b4) r\! r |
+r4 d2\mp\>( |
+cis4) r\! r |
                     }
                 >>
 
