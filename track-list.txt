@@ -146,3 +146,4 @@ gb/super-mario-land-2-6-golden-coins/14-machine-level
 gb/super-mario-land-2-6-golden-coins/15-graveyard-level
 gb/super-mario-land-2-6-golden-coins/16-haunted-level
 gb/super-mario-land-2-6-golden-coins/17-space-level
+gb/super-mario-land-2-6-golden-coins/18-star-maze
