@@ -50,7 +50,7 @@ cis2 a8 b |
 cis2 a8 b |
 cis4 cis4. bis8 |
 cis4 dis a |
-cis2 r8 c |
+cis2 r8 bis |
 cis2 r8 c |
 b2. |
 r4 r g8 a |
@@ -87,7 +87,7 @@ cis2 a8 b |
 cis2 a8 b |
 cis4 cis4. bis8 |
 cis4 dis a |
-cis2 r8 c |
+cis2 r8 bis |
 cis2 r8 c |
 b2. |
 r4 r g8 a |
