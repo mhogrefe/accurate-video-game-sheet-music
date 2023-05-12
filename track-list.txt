@@ -151,3 +151,5 @@ gb/super-mario-land-2-6-golden-coins/19-death
 gb/super-mario-land-2-6-golden-coins/20-game-over
 gb/super-mario-land-2-6-golden-coins/21-totakas-song
 gb/super-mario-land-2-6-golden-coins/22-starman
+gb/super-mario-land-2-6-golden-coins/23-hurry
+gb/super-mario-land-2-6-golden-coins/24-level-cleared
