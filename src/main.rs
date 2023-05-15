@@ -231,7 +231,10 @@ fn process_track(dir_path: &str) {
         if file_name == timing_file_name {
             timing_file_exists = true;
         }
-        if file_name.ends_with(".png") && !file_name.ends_with("screenshot.png") {
+        if file_name.ends_with(".png")
+            && !file_name.ends_with("screenshot.png")
+            && !file_name.ends_with("-override.png")
+        {
             print_output(
                 Command::new("rm")
                     .arg(&file_name)
@@ -433,10 +436,20 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
             let mut fragments_and_times = Vec::new();
             for measure in &config.measures {
                 if let Some(fragment) = measure_to_fragment.get(&measure.measure) {
+                    let override_fragment_file_name = format!(
+                        "{}/{}/video/fragment-{}-override.png",
+                        dir_path, track_name, fragment.fragment_index
+                    );
                     let fragment_file_name = format!(
                         "{}/{}/video/fragment-{}.png",
                         dir_path, track_name, fragment.fragment_index
                     );
+                    let fragment_file_name =
+                        if std::path::Path::new(&override_fragment_file_name).exists() {
+                            override_fragment_file_name
+                        } else {
+                            fragment_file_name
+                        };
                     let time = if use_gb {
                         measure.time_gb
                     } else {

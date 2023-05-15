@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Totaka’s Song"
+        title = "Bonus Game Grabber"
         subtitle = \markup { "from" {\italic "Super Mario Land 2: 6 Golden Coins"} "for the Game Boy (1992)" }
         composer = "Kazumi Totaka"
         arranger = "trans. Mikhail Hogrefe"
@@ -17,20 +17,13 @@ smaller = {
 
     \score {
         {
-            \new Staff \relative c' {
+            \new Staff \relative c {
                 \set Staff.instrumentName = "Square"
                 \set Staff.shortInstrumentName = "S."
-\key c \major
-\time 6/8
-\tempo 4. = 100
-c8-. r c16 d e8-. r d-. |
-c8-. r r g'-. r r |
-e8-. r r c'-. r r |
-g8-. r r r4 r8 |
-g8-. r g16 aes g8-. r fis-. |
-ees8-. r r r4 r8 |
-d8-. r r g-. r r |
-\tuplet 2/3 { r8 c,-. } r4 r8 |
+\key d \major
+\tempo 4 = 180
+\clef bass
+a8 bes b bes a4-. r |
 \bar "|."
             }
         }

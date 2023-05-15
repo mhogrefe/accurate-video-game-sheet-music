@@ -153,3 +153,6 @@ gb/super-mario-land-2-6-golden-coins/21-totakas-song
 gb/super-mario-land-2-6-golden-coins/22-starman
 gb/super-mario-land-2-6-golden-coins/23-hurry
 gb/super-mario-land-2-6-golden-coins/24-level-cleared
+gb/super-mario-land-2-6-golden-coins/25-bonus-game
+gb/super-mario-land-2-6-golden-coins/26-bonus-game-grabber
+gb/super-mario-land-2-6-golden-coins/27-got-bonus-item
