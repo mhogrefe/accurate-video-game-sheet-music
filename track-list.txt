@@ -156,3 +156,5 @@ gb/super-mario-land-2-6-golden-coins/24-level-cleared
 gb/super-mario-land-2-6-golden-coins/25-bonus-game
 gb/super-mario-land-2-6-golden-coins/26-bonus-game-grabber
 gb/super-mario-land-2-6-golden-coins/27-got-bonus-item
+gb/super-mario-land-2-6-golden-coins/28-boss-battle-intro
+gb/super-mario-land-2-6-golden-coins/29-boss-battle
