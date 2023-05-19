@@ -160,3 +160,5 @@ gb/super-mario-land-2-6-golden-coins/28-boss-battle-intro
 gb/super-mario-land-2-6-golden-coins/29-boss-battle
 gb/super-mario-land-2-6-golden-coins/30-battle-victory
 gb/super-mario-land-2-6-golden-coins/31-got-golden-coin
+gb/super-mario-land-2-6-golden-coins/32-castle-door-opens
+gb/super-mario-land-2-6-golden-coins/33-before-the-castle
