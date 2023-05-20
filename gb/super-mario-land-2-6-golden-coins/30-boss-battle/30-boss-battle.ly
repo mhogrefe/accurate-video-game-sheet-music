@@ -22,6 +22,7 @@ smaller = {
                     \set GrandStaff.instrumentName = "Square"
                     \set GrandStaff.shortInstrumentName = "S."
                     \new Staff \relative c' {     
+\time 2/2
 \key d \major
 \tempo 2 = 150
                         \repeat volta 2 {
