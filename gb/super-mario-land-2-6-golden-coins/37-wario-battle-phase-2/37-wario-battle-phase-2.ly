@@ -32,7 +32,7 @@ smaller = {
 R1*12
 \key f \minor
 \bar "||"
-g'2\p ~ g8. f16 g ees c aes |
+g'2\p ~ g8. fis16 g ees c aes |
 g2 ~ g8. f16 g aes c ees |
 g8. aes16 g4 ~ g8. fis16 g ees c aes |
 g1 |
@@ -92,7 +92,7 @@ R1*2
 r2 r4 r8 r16 e'' |
 cis16 a f e r8 r16 e cis a f e r4 |
 \key f \minor
-g'2 ~ g8. f16 g ees c aes |
+g'2 ~ g8. fis16 g ees c aes |
 g2 ~ g8. f16 g aes c ees |
 g8. aes16 g4 ~ g8. fis16 g ees c aes |
 g1 |
