@@ -164,3 +164,6 @@ gb/super-mario-land-2-6-golden-coins/32-got-golden-coin
 gb/super-mario-land-2-6-golden-coins/33-castle-door-opens
 gb/super-mario-land-2-6-golden-coins/34-before-the-castle
 gb/super-mario-land-2-6-golden-coins/35-warios-castle
+gb/super-mario-land-2-6-golden-coins/36-wario-battle-phase-1
+gb/super-mario-land-2-6-golden-coins/37-wario-battle-phase-2
+gb/super-mario-land-2-6-golden-coins/38-wario-battle-phase-3

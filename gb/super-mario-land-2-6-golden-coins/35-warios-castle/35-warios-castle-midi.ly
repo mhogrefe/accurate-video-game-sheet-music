@@ -318,7 +318,7 @@ a4. bes8 ~ bes4 a |
 gis1 ~ |
 gis1 ~ |
 gis1 |
-g4 e' r2 |
+g4 e'-. r2 |
 R1*31
 f1\f ~ |
 f1 |
@@ -345,7 +345,7 @@ a4. bes8 ~ bes4 a |
 gis1 ~ |
 gis1 ~ |
 gis1 |
-g4 e' r2 |
+g4 e'-. r2 |
 R1*31
 f1\f ~ |
 f1 |
@@ -371,25 +371,25 @@ g4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 bes r2 |
+c4 bes-. r2 |
 R1*3
 g4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 aes' r2 |
+c4 aes'-. r2 |
 R1*19
 g,4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 bes r2 |
+c4 bes-. r2 |
 R1*3
 g4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 aes' r2 |
+c4 aes'-. r2 |
 R1*3
 d,,4-.-> r r d-.-> |
 r2 d4-.-> r |
@@ -405,25 +405,25 @@ g4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 bes r2 |
+c4 bes-. r2 |
 R1*3
 g4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 aes' r2 |
+c4 aes'-. r2 |
 R1*19
 g,4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 bes r2 |
+c4 bes-. r2 |
 R1*3
 g4. bes8 ~ bes4 d |
 cis1 ~ |
 cis1 ~ |
 cis1 |
-c4 aes' r2 |
+c4 aes'-. r2 |
 R1*3
 d,,4-.-> r r d-.-> |
 r2 d4-.-> r |
