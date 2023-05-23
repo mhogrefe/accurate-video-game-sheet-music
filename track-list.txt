@@ -139,7 +139,7 @@ gb/super-mario-land-2-6-golden-coins/07-macro-zone
 gb/super-mario-land-2-6-golden-coins/08-pumpkin-zone
 gb/super-mario-land-2-6-golden-coins/09-space-zone
 gb/super-mario-land-2-6-golden-coins/10-level-start
-gb/super-mario-land-2-6-golden-coins/11-overworld
+gb/super-mario-land-2-6-golden-coins/11-overworld-level
 gb/super-mario-land-2-6-golden-coins/12-tree-level
 gb/super-mario-land-2-6-golden-coins/13-seashore-level
 gb/super-mario-land-2-6-golden-coins/14-machine-level
