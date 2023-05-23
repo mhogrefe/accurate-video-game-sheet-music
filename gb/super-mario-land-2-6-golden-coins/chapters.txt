@@ -1,0 +1,40 @@
+00:00:00 File Selection
+00:00:43 Overworld Map
+00:01:09 Tree Zone
+00:01:30 Turtle Zone Entrance
+00:01:38 Turtle Zone
+00:01:54 Mario Zone
+00:02:16 Macro Zone
+00:02:37 Pumpkin Zone
+00:03:05 Space Zone
+00:03:25 Level Start
+00:03:33 Overworld
+00:04:40 Tree Level
+00:05:23 Seashore Level
+00:06:09 Machine Level
+00:06:50 Graveyard Level
+00:07:46 Haunted Level
+00:08:22 Space Level
+00:09:15 Star Maze
+00:10:58 Death
+00:11:07 Game Over
+00:11:40 Totaka’s Song
+00:11:56 Starman
+00:12:16 Pause
+00:12:23 Hurry
+00:12:31 Level Cleared
+00:12:40 Bonus Game
+00:12:56 Bonus Game Grabber
+00:13:04 Got Bonus Item
+00:13:13 Boss Battle Intro
+00:13:24 Boss Battle
+00:13:58 Battle Victory
+00:14:17 Got Golden Coin
+00:14:29 Castle Door Opens
+00:14:39 Before the Castle
+00:15:00 Wario’s Castle
+00:16:22 Wario Battle (Phase 1)
+00:17:04 Wario Battle (Phase 2)
+00:17:47 Wario Battle (Phase 3)
+00:18:08 Wario Defeated
+00:18:39 Credits
