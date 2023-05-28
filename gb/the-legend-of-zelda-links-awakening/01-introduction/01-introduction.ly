@@ -40,8 +40,8 @@ R2 |
 ais4 r8 dis,4 |
 r4 r8 r16 fis-. fisis-. gis-. |
 a8 r a' ~ a r |
-c,,4^\markup{\italic accel.} r8 c'4 |
-b4 r8 b'4 |
+c,,8^\markup{\italic accel.} r c' ~ c r |
+b8 r b' ~ b r |
 \ottava #1 dis'4. \ottava #0 r4 |
 \time 2/4
 R2\fermata |
