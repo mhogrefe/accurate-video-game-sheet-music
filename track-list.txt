@@ -169,3 +169,4 @@ gb/super-mario-land-2-6-golden-coins/37-wario-battle-phase-2
 gb/super-mario-land-2-6-golden-coins/38-wario-battle-phase-3
 gb/super-mario-land-2-6-golden-coins/39-wario-defeated
 gb/super-mario-land-2-6-golden-coins/40-credits
+gb/the-legend-of-zelda-links-awakening/01-introduction
