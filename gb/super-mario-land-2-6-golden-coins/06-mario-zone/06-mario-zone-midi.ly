@@ -58,6 +58,7 @@ aes16 bes c d e8 fis'' |
                 }
 
                 \new Staff \relative c'' {
+\key d \major
 g8-. d'16 d d,8-. d'-. |
 g,8-. d'16 d d,8-. d'-. |
 bes8-. f'16 f f,8-. f'-. |
