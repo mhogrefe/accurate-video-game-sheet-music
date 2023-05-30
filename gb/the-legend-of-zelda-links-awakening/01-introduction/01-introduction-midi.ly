@@ -56,25 +56,26 @@ R1 |
 \bar "||"
 \key ees \major
 \tempo 4 = 112
-f,,4-.\mf bes,-. r bes16 c d ees |
-r4 ees-. aes,-. aes16 bes c d |
-r8 f'' bes, r r bes bes16 c d ees |
-r8 ees aes, r r aes aes16 bes c d |
-r8 \ottava #1 f' bes, r r bes bes16 c d ees |
-r8 ees aes, r r aes aes16 bes c d |
+f,,4-.\mf^\markup{Echo} bes,4-. r bes16 c d ees |
+r4 ees4-. aes,-. aes16 bes c d |
+r8 f'' bes, \clef bass f,, bes, \clef treble bes''' bes16 c d ees |
+r8 ees aes, \clef bass ees,, aes, \clef treble aes''' aes16 bes c d |
+r8 \ottava #1 f' bes, \ottava #0 f,, bes, \ottava #1 bes''' bes16 c d ees |
+r8 ees aes, \ottava #0 ees,, aes, \ottava #1 aes''' aes16 bes c d |
 \ottava #0
-r8 d, g, r r g g16 a bes c |
-r8 c f, f' d,,16 f a c d f a c |
-r8 bes ees, r c ees ees16 f g a |
-r8 a d, d' bes,,16 d f a bes d f a |
-r8 g c,16 ees g c r8 f, \tuplet 3/2 { bes,-. des-. f-. } |
+ees,,,8 d'' g, ees, ees, g'' g16 a bes c |
+d,,8 c'' f, f' d,,16 f a c d f a c |
+c,,8 bes'' ees, c, c' ees ees16 f g a |
+bes,,8 a'' d, d' bes,,16 d f a bes d f a |
+aes,,8 g'' c,16 ees g c fis,,,8 f'' \tuplet 3/2 { bes,8-. des-. f-. }
 \time 2/4
 \tuplet 3/2 { bes8-. r r } \tempo 4 = 47 r4\fermata |
 \bar "||"
 \time 4/4
 \tempo 4 = 128
-c,,16 f bes r r4 r16 f g a bes c r8 |
-f,16 bes ees r r4 bes16 ees aes r r4 |
+c,,16 f bes \clef bass f,, r8 f16 r r \clef treble f'' g a bes c r \clef bass f,,, |
+\clef treble
+f''16 bes ees \clef bass f,,, r8 f16 r \clef treble bes'' ees aes r \clef bass f,,, f r8 |
 \bar "|."
                     }
 
@@ -99,22 +100,10 @@ ais,8 ais' ais, cis cis' |
 R2\fermata |
 R1*2
 \key ees \major
-R1*2
-\clef bass
-r4 r8 f,,\mf bes, r r4 |
-r4 r8 ees aes, r r4 |
-\clef treble
-r4 r8 f'' bes, r r4 |
-r4 r8 ees aes, r r4 |
-ees'8 r r ees ees, r r4 |
-d'8 r r4 r2 |
-c8 r r c r2 |
-bes8 r r4 r2 |
-aes8 r r4 fis8 r r4 |
+R1*11
 R2 |
 \clef bass
-r8 r16 f, r8 f16 r r4 r8 r16 f |
-r8 r16 f r8 f16 r r4 f16 f r8 |
+R1*2
                     }
                 >>
 
