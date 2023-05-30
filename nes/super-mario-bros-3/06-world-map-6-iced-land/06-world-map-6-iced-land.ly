@@ -22,7 +22,7 @@
 \tempo 4 = 150
                     \repeat volta 2 {
 <<{
-g4 b, dis b |
+g4^\markup{Echo} b, dis b |
 g'4 b, dis f |
 gis4 c, e c |
 gis'4 c, e fis |

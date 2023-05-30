@@ -19,7 +19,7 @@
 \tempo 4 = 75
                     \repeat volta 2 {
 <<{
-e8 c c a e d |
+e8^\markup{Echo} c c a e d |
 e'8 c c a e d |
 e'8 c c a e d |
 }\\{
