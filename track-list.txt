@@ -174,3 +174,5 @@ gb/the-legend-of-zelda-links-awakening/02-title-screen
 gb/the-legend-of-zelda-links-awakening/03-file-selection
 gb/the-legend-of-zelda-links-awakening/04-link-awakens
 gb/the-legend-of-zelda-links-awakening/05-overworld-unarmed
+gb/the-legend-of-zelda-links-awakening/06-owl
+gb/the-legend-of-zelda-links-awakening/07-got-sword
