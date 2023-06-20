@@ -176,3 +176,4 @@ gb/the-legend-of-zelda-links-awakening/04-link-awakens
 gb/the-legend-of-zelda-links-awakening/05-overworld-unarmed
 gb/the-legend-of-zelda-links-awakening/06-owl
 gb/the-legend-of-zelda-links-awakening/07-got-sword
+gb/the-legend-of-zelda-links-awakening/08-overworld-initial-intro
