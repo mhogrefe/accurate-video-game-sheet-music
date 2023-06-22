@@ -177,3 +177,4 @@ gb/the-legend-of-zelda-links-awakening/05-overworld-unarmed
 gb/the-legend-of-zelda-links-awakening/06-owl
 gb/the-legend-of-zelda-links-awakening/07-got-sword
 gb/the-legend-of-zelda-links-awakening/08-overworld-initial-intro
+gb/the-legend-of-zelda-links-awakening/09-mabe-village

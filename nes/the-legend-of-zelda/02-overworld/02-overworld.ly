@@ -14,12 +14,12 @@
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse"
                     \set Staff.shortInstrumentName = "P."
-\key bes \major
+\key bes \minor
 \tempo 4 = 150
 <d bes'>4 r \tuplet 3/2 { r8 r <d bes'> } \tuplet 3/2 { <d bes'>8 8 8 } |
 \tuplet 3/2 { <c bes'>8 r <c aes'> } <c bes'>4 \tuplet 3/2 { r8 r bes' } \tuplet 3/2 { <c, bes'>8 8 8 } |
-\tuplet 3/2 { <cis bes'>8 r <cis aes'> } <cis bes'>4 \tuplet 3/2 { r8 r <cis bes'> } \tuplet 3/2 { <cis bes'>8 8 8 } |
-<cis bes'>8-. <a f'>16 16 8-. 16 16 8-. 16 16 8 8 |
+\tuplet 3/2 { <des bes'>8 r <des aes'> } <des bes'>4 \tuplet 3/2 { r8 r <des bes'> } \tuplet 3/2 { <des bes'>8 8 8 } |
+<des bes'>8-. <a f'>16 16 8-. 16 16 8-. 16 16 8 8 |
                     \repeat volta 2 {
 <d bes'>4-. <<{f4}\\{\tuplet 3/2 { d8 d c }}>> d8. <d bes'>16 16 <ees c'> <f d'> <g ees'> |
 <<{f'4}\\{aes,8. bes16}>> bes16 c d ees <<{r8 f}\\{f4}>> \tuplet 3/2 { <aes, f'>8 <bes ges'> <c aes'> } |
@@ -33,9 +33,9 @@
 <<{f'4}\\{aes,8. bes16}>> bes16 c d ees <<{r8 f}\\{f4}>> \tuplet 3/2 { <aes, f'>8 <bes ges'> <c aes'> } |
 <des bes'>4 r r <e des'> |
 <ees c'>4-. <c a'> r <a f'> |
-<b ges'>4 r r <cis bes'> |
+<b ges'>4 r r <des bes'> |
 <c a'>4-. <a f'> r <a f'> |
-<b ges'>4 r r <cis bes'> |
+<b ges'>4 r r <des bes'> |
 <c a'>4-. <a f'> r <a d> |
 <ges ees'>4 r r <b ges'> |
 <bes f'>4-. <f des'> r <des bes'> |
@@ -49,11 +49,11 @@
                 \new Staff \relative c {
                     \set Staff.instrumentName = "Triangle"
                     \set Staff.shortInstrumentName = "T."
-\key bes \major
+\key bes \minor
 \clef bass
 bes4-. \tuplet 3/2 { bes8 bes bes } bes4-. \tuplet 3/2 { bes8 bes bes } |
 aes4-. \tuplet 3/2 { aes8 aes aes } aes4-. \tuplet 3/2 { aes8 aes aes } |
-fis4-. \tuplet 3/2 { fis8 fis fis } fis4-. \tuplet 3/2 { fis8 fis fis } |
+ges4-. \tuplet 3/2 { ges8 ges ges } ges4-. \tuplet 3/2 { ges8 ges ges } |
 f4-. f-. f-. g8 a |
 bes4-. \tuplet 3/2 { bes8 bes aes } bes4-. bes-. |
 aes4-. \tuplet 3/2 { aes8 aes ges } aes4-. aes-. |
