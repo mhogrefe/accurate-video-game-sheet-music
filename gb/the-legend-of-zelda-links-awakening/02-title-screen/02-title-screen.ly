@@ -22,7 +22,7 @@ smaller = {
                     \set GrandStaff.instrumentName = "Square"
                     \set GrandStaff.shortInstrumentName = "S."
                     \new Staff \relative c'' {      
-\key bes \major
+\key bes \minor
 \tempo 4 = 150
 bes4 r r8 bes-. bes-. bes16 bes |
 bes8.-. aes16 bes8 r r bes-. bes-. bes16 bes |
@@ -44,7 +44,7 @@ r8 a16 a a8-. a16 a a8 r r4 |
                     }
 
                     \new Staff \relative c''' {                 
-\key bes \major
+\key bes \minor
 R1*4
 R1
 r8 bes-. bes16-. c-. d-. ees-. f8 r r4 |
@@ -62,7 +62,7 @@ R1 |
                     \set Staff.instrumentName = "Wave"
                     \set Staff.shortInstrumentName = "W."
 \clef bass
-\key bes \major
+\key bes \minor
 d8-. r r bes,16 bes bes8-. d'-. d-. d16 d |
 c8.-. c16 c8-. aes,16 aes aes8-. c'-. c-. c16 c |
 des8.-. des16 des8-. ges,,16 ges ges8-. des''-. des-. des16 des |

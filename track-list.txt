@@ -180,3 +180,5 @@ gb/the-legend-of-zelda-links-awakening/08-overworld-initial-intro
 gb/the-legend-of-zelda-links-awakening/09-mabe-village
 gb/the-legend-of-zelda-links-awakening/10-minigame
 gb/the-legend-of-zelda-links-awakening/11-indoors
+gb/the-legend-of-zelda-links-awakening/12-phone-booth
+gb/the-legend-of-zelda-links-awakening/13-marins-song
