@@ -182,3 +182,6 @@ gb/the-legend-of-zelda-links-awakening/10-minigame
 gb/the-legend-of-zelda-links-awakening/11-indoors
 gb/the-legend-of-zelda-links-awakening/12-phone-booth
 gb/the-legend-of-zelda-links-awakening/13-marins-song
+gb/the-legend-of-zelda-links-awakening/14-mysterious-woods
+gb/the-legend-of-zelda-links-awakening/15-got-power-up
+gb/the-legend-of-zelda-links-awakening/16-powerful-link
