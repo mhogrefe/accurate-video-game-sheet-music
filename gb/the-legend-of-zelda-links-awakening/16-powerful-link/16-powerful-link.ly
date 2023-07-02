@@ -25,7 +25,7 @@ smaller = {
 \tempo 4=150
 \ottava #1
                     \repeat volta 2 {
-des16\mp\< bes ges des des' bes ges des des' bes ges des des' bes ges des |
+des16^\markup{Echo}\mp\< bes ges des des' bes ges des des' bes ges des des' bes ges des |
 d'16\f\> b g d d' b g d d' b g d d' b g d |
 des'16\mp\< bes ges des des' bes ges des des' bes ges des des' bes ges des |
 b'16\f\> gis e b b' gis e b b' gis e b b' gis e b\! |
