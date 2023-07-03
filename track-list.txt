@@ -186,3 +186,4 @@ gb/the-legend-of-zelda-links-awakening/14-mysterious-woods
 gb/the-legend-of-zelda-links-awakening/15-got-power-up
 gb/the-legend-of-zelda-links-awakening/16-powerful-link
 gb/the-legend-of-zelda-links-awakening/17-fairy-fountain
+gb/the-legend-of-zelda-links-awakening/18-cave
