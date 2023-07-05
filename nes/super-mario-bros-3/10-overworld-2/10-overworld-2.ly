@@ -25,12 +25,12 @@
                         \repeat volta 2 {
 \clef treble
 <dis''' fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |
-<f a>8-. <e gis>-. <f a>-. <g b> ~ 8 <f a>-. <e g>-. <d f>-. |
+<f a>8-. <e gis>-. <f a>-. \acciaccatura <fis ais>8 <g b>8 ~ 8 <f a>-. <e g>-. <d f>-. |
 <dis fis>8-. <e g>-. 8-. <dis fis>-. <e g>-. 8-. <dis fis>-. <e g>-. |
 <f a>8-. <e gis>-. <f a>-. <g b>-. r <c d>-. <fis g>4-. |
 <<{
 fis,8-. g-. g-. fis-. g-. g-. fis-. g-. |
-a8-. gis-. a-. b ~ b a-. g-. f-. |
+a8-. gis-. a-. \acciaccatura ais8 b8 ~ b a-. g-. f-. |
 }\\{
 c2 b |
 a2 g |
