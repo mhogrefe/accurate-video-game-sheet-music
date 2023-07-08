@@ -189,3 +189,5 @@ gb/the-legend-of-zelda-links-awakening/17-fairy-fountain
 gb/the-legend-of-zelda-links-awakening/18-cave
 gb/the-legend-of-zelda-links-awakening/19-overworld
 gb/the-legend-of-zelda-links-awakening/20-witchs-hut
+gb/the-legend-of-zelda-links-awakening/21-got-item
+gb/the-legend-of-zelda-links-awakening/22-got-important-item

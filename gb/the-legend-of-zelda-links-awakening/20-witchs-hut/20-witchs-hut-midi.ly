@@ -25,7 +25,7 @@ smaller = {
 \key d \minor
 \tempo 4 = 90
 
-g8.\mf d16 b8 g aes4 ees'16 c aes ees |
+g8.\f d16 b8 g aes4 ees'16 c aes ees |
 d8 d'16 b g8 d f ees16 f d4 |
 cis8-.\pp d-. ees'-. d-. cis-. d-. bis-. cis-. |
 b8-. c-. ais-. b-. a16 bes gis a r4 |
@@ -33,7 +33,7 @@ b8-. c-. ais-. b-. a16 bes gis a r4 |
 R4. |
 
 \time 4/4
-g'8.\mf d16 b8 g aes4 ees'16 c aes ees |
+g'8.\f d16 b8 g aes4 ees'16 c aes ees |
 d8 d'16 b g8 d f ees16 f d4 |
 cis8-.\pp d-. ees'-. d-. cis-. d-. bis-. cis-. |
 b8-. c-. ais-. b-. a16 bes gis a r4 |
@@ -41,7 +41,7 @@ b8-. c-. ais-. b-. a16 bes gis a r4 |
 R4. |
 
 \time 4/4
-g'8.\mf d16 b8 g aes4 ees'16 c aes ees |
+g'8.\f d16 b8 g aes4 ees'16 c aes ees |
 d8 d'16 b g8 d f ees16 f d4 |
 cis8-.\pp d-. ees'-. d-. cis-. d-. bis-. cis-. |
 b8-. c-. ais-. b-. a16 bes gis a r4 |
@@ -49,7 +49,7 @@ b8-. c-. ais-. b-. a16 bes gis a r4 |
 R4. |
 
 \time 4/4
-g'8.\mf d16 b8 g aes4 ees'16 c aes ees |
+g'8.\f d16 b8 g aes4 ees'16 c aes ees |
 d8 d'16 b g8 d f ees16 f d4 |
 cis8-.\pp d-. ees'-. d-. cis-. d-. bis-. cis-. |
 b8-. c-. ais-. b-. a16 bes gis a r4 |
@@ -59,43 +59,51 @@ R4. |
 
                     \new Staff \relative c'' {                 
 \key d \minor
-r4 bes8\mf \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 bes,,,8 \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 des,8-.\pp c-. b-. des-. ais-. b-. |
+r4 bes8\f r r4 a8 r |
+r4 bes8 r r4 a8 r |
+r4 des'8-.\pp c-. b-. des-. ais-. b-. |
 a8-. b-. gis-. a-. g-. fis-. r4 |
 R4. |
 
-r4 bes,8\mf \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 bes,,,8 \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 des,8-.\pp c-. b-. des-. ais-. b-. |
+r4 bes,8\f r r4 a8 r |
+r4 bes8 r r4 a8 r |
+r4 des'8-.\pp c-. b-. des-. ais-. b-. |
 a8-. b-. gis-. a-. g-. fis-. r4 |
 R4. |
 
-r4 bes,8\mf \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 bes,,,8 \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 des,8-.\pp c-. b-. des-. ais-. b-. |
+r4 bes,8\f r r4 a8 r |
+r4 bes8 r r4 a8 r |
+r4 des'8-.\pp c-. b-. des-. ais-. b-. |
 a8-. b-. gis-. a-. g-. fis-. r4 |
 R4. |
 
-r4 bes,8\mf \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 bes,,,8 \ottava #2 g'''16 g \ottava #0 r4 a,,,8 \ottava #2 g'''16 g \ottava #0 |
-r4 des,8-.\pp c-. b-. des-. ais-. b-. |
+r4 bes,8\f r r4 a8 r |
+r4 bes8 r r4 a8 r |
+r4 des'8-.\pp c-. b-. des-. ais-. b-. |
 a8-. b-. gis-. a-. g-. fis-. r4 |
 R4. |
                     }
 
                     \new DrumStaff {
                         \drummode {
-R1*4
-r8 r8 tomh16\pp tomh |
-
-R1*4
+r4 r8 trio16\pp trio r4 r8 trio16 trio |
+r4 r8 trio16 trio r4 r8 trio16 trio |
+R1*2
 r8 r8 tomh16 tomh |
 
-R1*4
+r4 r8 trio16\pp trio r4 r8 trio16 trio |
+r4 r8 trio16 trio r4 r8 trio16 trio |
+R1*2
 r8 r8 tomh16 tomh |
 
-R1*4
+r4 r8 trio16\pp trio r4 r8 trio16 trio |
+r4 r8 trio16 trio r4 r8 trio16 trio |
+R1*2
+r8 r8 tomh16 tomh |
+
+r4 r8 trio16\pp trio r4 r8 trio16 trio |
+r4 r8 trio16 trio r4 r8 trio16 trio |
+R1*2
 r8 r8 tomh16 tomh |
                         }
                     }
@@ -106,7 +114,7 @@ r8 r8 tomh16 tomh |
                     \set Staff.shortInstrumentName = "W."
 \clef bass
 \key d \minor
-g8-. des'-. ges-. des-. d,8-. c'-. f-. c-. |
+g8-.\mp des'-. ges-. des-. d,8-. c'-. f-. c-. |
 g8-. des'-. ges-. des-. d,8-. c'-. f-. c-. |
 R1*2 |
 R4.
