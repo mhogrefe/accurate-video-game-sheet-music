@@ -101,7 +101,7 @@ r4 e,16-. f-. g-. bes-. r4 ees16-. fis-. a-. c-. |
                     \new Staff \relative c'' {                 
 \clef bass
 \key d \major
-b8-.\p b,16 b b8-. b16 b b8-. b16 b b8-. b16 b |
+b8-.\mp b,16 b b8-. b16 b b8-. b16 b b8-. b16 b |
 a8-. a16 a a8-. a16 a a8-. a16 a a8-. a16 a |
 g8-. g16 g g8-. g16 g g8-. g16 g g8-. g16 g |
 fis8-. fis16 fis fis8-. fis16 fis fis8-. fis16 fis fis8-. fis16 fis |
@@ -142,7 +142,7 @@ bes8-. bes16 bes bes8-. bes16 bes bes8-. bes16 bes a8-. a16 a |
                     \set Staff.shortInstrumentName = "W."
 \clef bass
 \key d \major
-g8-.\p g16 g g8-. g16 g g8-. g16 g g8-. g16 g |
+g8-.\mp g16 g g8-. g16 g g8-. g16 g g8-. g16 g |
 fis8-. fis16 fis fis8-. fis16 fis fis8-. fis16 fis fis8-. fis16 fis |
 e8-. e16 e e8-. e16 e e8-. e16 e e8-. e16 e |
 b8-. b16 b b8-. b16 b b8-. b16 b b8-. b16 b |

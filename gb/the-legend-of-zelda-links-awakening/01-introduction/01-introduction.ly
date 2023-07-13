@@ -70,7 +70,7 @@ aes,,8 g'' c,16 ees g c fis,,,8 f'' \tuplet 3/2 { bes,8-. des-. f-. }
 \bar "||"
 \time 4/4
 \tempo 4 = 128
-c,,16 f bes \clef bass f,, r8 f16 r r \clef treble f'' g a bes c r \clef bass f,,, |
+c,,16\ff f bes \clef bass f,, r8 f16 r r \clef treble f'' g a bes c r \clef bass f,,, |
 \clef treble
 f''16 bes ees \clef bass f,,, r8 f16 r \clef treble bes'' ees aes r \clef bass f,,, f r8 |
 \bar "|."
