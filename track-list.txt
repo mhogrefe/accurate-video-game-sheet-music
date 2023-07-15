@@ -192,3 +192,4 @@ gb/the-legend-of-zelda-links-awakening/20-witchs-hut
 gb/the-legend-of-zelda-links-awakening/21-got-item
 gb/the-legend-of-zelda-links-awakening/22-got-important-item
 gb/the-legend-of-zelda-links-awakening/23-tail-cave
+gb/the-legend-of-zelda-links-awakening/25-miniboss
