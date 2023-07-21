@@ -196,3 +196,5 @@ gb/the-legend-of-zelda-links-awakening/25-miniboss
 gb/the-legend-of-zelda-links-awakening/26-boss
 gb/the-legend-of-zelda-links-awakening/27-heart-container
 gb/the-legend-of-zelda-links-awakening/28-instrument-room
+gb/the-legend-of-zelda-links-awakening/29-instrument
+gb/the-legend-of-zelda-links-awakening/30-full-moon-cello
