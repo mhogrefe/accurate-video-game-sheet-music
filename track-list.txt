@@ -199,3 +199,4 @@ gb/the-legend-of-zelda-links-awakening/28-instrument-room
 gb/the-legend-of-zelda-links-awakening/29-instrument
 gb/the-legend-of-zelda-links-awakening/30-full-moon-cello
 gb/the-legend-of-zelda-links-awakening/31-moblin-hideout
+gb/the-legend-of-zelda-links-awakening/32-mr-writes-house
