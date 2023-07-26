@@ -201,3 +201,4 @@ gb/the-legend-of-zelda-links-awakening/30-full-moon-cello
 gb/the-legend-of-zelda-links-awakening/31-moblin-hideout
 gb/the-legend-of-zelda-links-awakening/32-mr-writes-house
 gb/the-legend-of-zelda-links-awakening/33-bottle-grotto
+gb/the-legend-of-zelda-links-awakening/34-conch-horn
