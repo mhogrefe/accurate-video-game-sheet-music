@@ -202,3 +202,5 @@ gb/the-legend-of-zelda-links-awakening/31-moblin-hideout
 gb/the-legend-of-zelda-links-awakening/32-mr-writes-house
 gb/the-legend-of-zelda-links-awakening/33-bottle-grotto
 gb/the-legend-of-zelda-links-awakening/34-conch-horn
+gb/the-legend-of-zelda-links-awakening/35-richards-villa
+gb/the-legend-of-zelda-links-awakening/36-totakas-song
