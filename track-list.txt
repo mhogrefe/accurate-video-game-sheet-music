@@ -207,3 +207,4 @@ gb/the-legend-of-zelda-links-awakening/36-totakas-song
 gb/the-legend-of-zelda-links-awakening/37-monkeys-at-work
 gb/the-legend-of-zelda-links-awakening/38-kanalet-castle
 gb/the-legend-of-zelda-links-awakening/39-key-cavern
+gb/the-legend-of-zelda-links-awakening/40-sea-lilys-bell
