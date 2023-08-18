@@ -233,7 +233,7 @@ g,16 e' c e g, e' c e g, e' c e g, e' c e |
                         \drummode {
 R1*8
 R1*46
-r2 trio4\p r |
+r2 trio4 r |
 r2 trio4 r |
 r2 trio4 r |
 r2 trio4 r |

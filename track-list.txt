@@ -213,3 +213,4 @@ gb/the-legend-of-zelda-links-awakening/42-dream-shrine-dreaming
 gb/the-legend-of-zelda-links-awakening/43-dream-shrine
 gb/the-legend-of-zelda-links-awakening/44-tal-tal-heights
 gb/the-legend-of-zelda-links-awakening/45-bee-scene
+gb/the-legend-of-zelda-links-awakening/46-animal-village
