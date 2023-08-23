@@ -215,3 +215,5 @@ gb/the-legend-of-zelda-links-awakening/44-tal-tal-heights
 gb/the-legend-of-zelda-links-awakening/45-bee-scene
 gb/the-legend-of-zelda-links-awakening/46-animal-village
 gb/the-legend-of-zelda-links-awakening/47-goats-house
+gb/the-legend-of-zelda-links-awakening/48-beach-scene-introduction
+gb/the-legend-of-zelda-links-awakening/49-beach-scene
