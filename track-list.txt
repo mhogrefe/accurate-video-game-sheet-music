@@ -217,3 +217,5 @@ gb/the-legend-of-zelda-links-awakening/46-animal-village
 gb/the-legend-of-zelda-links-awakening/47-goats-house
 gb/the-legend-of-zelda-links-awakening/48-beach-scene-introduction
 gb/the-legend-of-zelda-links-awakening/49-beach-scene
+gb/the-legend-of-zelda-links-awakening/50-link-plays-the-ballad-of-the-wind-fish
+gb/the-legend-of-zelda-links-awakening/51-ballad-of-the-wind-fish

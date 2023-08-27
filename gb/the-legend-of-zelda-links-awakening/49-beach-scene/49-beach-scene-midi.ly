@@ -68,7 +68,7 @@ b4-. d,,16 f gis b d8-. f-. b-. gis-. |
 r16 e, gis b \ottava #1 e gis b d e4-. e,8-. cis'-. \ottava #0 |
 a,,,16 cis e gis a cis e gis cis, e gis a e gis a cis |
 \ottava #1 c'4-. r8 a' r4 gis-. \ottava #0 |
-cis,,,,,16^\markup{Echo} e gis b dis e gis b dis b gis e dis b gis e |
+cis,,,,,16 e gis b dis^\markup{Echo} e gis b dis b gis e dis b gis e |
 \time 5/4
 b16 fis' a cis fis a cis^\markup{No echo}\pp fis b r r8 \tempo 4=74 r cis-.\mf[ dis-. e-.] |
                 }
