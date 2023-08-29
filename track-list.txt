@@ -219,3 +219,5 @@ gb/the-legend-of-zelda-links-awakening/48-beach-scene-introduction
 gb/the-legend-of-zelda-links-awakening/49-beach-scene
 gb/the-legend-of-zelda-links-awakening/50-link-plays-the-ballad-of-the-wind-fish
 gb/the-legend-of-zelda-links-awakening/51-ballad-of-the-wind-fish
+gb/the-legend-of-zelda-links-awakening/52-anglers-tunnel-introduction
+gb/the-legend-of-zelda-links-awakening/53-anglers-tunnel
