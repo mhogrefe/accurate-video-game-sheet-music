@@ -191,7 +191,8 @@ gb/the-legend-of-zelda-links-awakening/19-overworld
 gb/the-legend-of-zelda-links-awakening/20-witchs-hut
 gb/the-legend-of-zelda-links-awakening/21-got-item
 gb/the-legend-of-zelda-links-awakening/22-got-important-item
-gb/the-legend-of-zelda-links-awakening/23-tail-cave
+gb/the-legend-of-zelda-links-awakening/23-got-secret
+gb/the-legend-of-zelda-links-awakening/24-tail-cave
 gb/the-legend-of-zelda-links-awakening/25-miniboss
 gb/the-legend-of-zelda-links-awakening/26-boss
 gb/the-legend-of-zelda-links-awakening/27-heart-container
@@ -221,3 +222,4 @@ gb/the-legend-of-zelda-links-awakening/50-link-plays-the-ballad-of-the-wind-fish
 gb/the-legend-of-zelda-links-awakening/51-ballad-of-the-wind-fish
 gb/the-legend-of-zelda-links-awakening/52-anglers-tunnel-introduction
 gb/the-legend-of-zelda-links-awakening/53-anglers-tunnel
+gb/the-legend-of-zelda-links-awakening/54-underwater-passage
