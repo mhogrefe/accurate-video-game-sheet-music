@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Underwater Passage"
+        title = "Link Plays Manbo’s Mambo"
         subtitle = \markup { "from" {\italic "The Legend of Zelda: Link’s Awakening"} "for the Game Boy (1993)" }
         composer = "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa"
         arranger = "trans. Mikhail Hogrefe"
@@ -17,22 +17,27 @@ smaller = {
 
     \score {
         {
-            \new Staff \relative c, {
-                \set Staff.instrumentName = "Square"
-                \set Staff.shortInstrumentName = "S."
-\tempo 4 = 112
-\clef bass
-                \repeat volta 2 {
-c8-! ges'-! f-! r r4 r8 r16 c-. |
-c8-! ges'-! f16-. b-. r8 r2 |
-R1 |
-\time 3/8
-R4. |
+            \new StaffGroup <<
+                \new Staff \relative c''' {
+                    \set Staff.instrumentName = "Square"
+                    \set Staff.shortInstrumentName = "S."
+\key g \major
+\tempo 4=150
+e4.\p b8 d fis4 e8 ~ |
+e8 b'4 b8 b4 r |
+\bar "|."
                 }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
-            }
+
+                \new Staff \relative c''' {
+                    \set Staff.instrumentName = "Wave"
+                    \set Staff.shortInstrumentName = "W."
+\key g \major
+e4-. e8-. b-. d-. fis r e |
+r8 b' r b-. b4 r |
+                }
+            >>
         }
+        \midi {}
         \layout {
             \context {
                 \Staff

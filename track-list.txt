@@ -222,4 +222,7 @@ gb/the-legend-of-zelda-links-awakening/50-link-plays-the-ballad-of-the-wind-fish
 gb/the-legend-of-zelda-links-awakening/51-ballad-of-the-wind-fish
 gb/the-legend-of-zelda-links-awakening/52-anglers-tunnel-introduction
 gb/the-legend-of-zelda-links-awakening/53-anglers-tunnel
-gb/the-legend-of-zelda-links-awakening/54-underwater-passage
+gb/the-legend-of-zelda-links-awakening/54-passage
+gb/the-legend-of-zelda-links-awakening/55-sea-harp
+gb/the-legend-of-zelda-links-awakening/56-link-plays-manbos-mambo
+gb/the-legend-of-zelda-links-awakening/57-manbos-mambo
