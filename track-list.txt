@@ -226,3 +226,5 @@ gb/the-legend-of-zelda-links-awakening/54-passage
 gb/the-legend-of-zelda-links-awakening/55-sea-harp
 gb/the-legend-of-zelda-links-awakening/56-link-plays-manbos-mambo
 gb/the-legend-of-zelda-links-awakening/57-manbos-mambo
+gb/the-legend-of-zelda-links-awakening/58-followed-by-a-ghost
+gb/the-legend-of-zelda-links-awakening/59-ghosts-house

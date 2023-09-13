@@ -134,15 +134,5 @@ r2 <sn hh>4 r |
             >>
         }
         \midi {}
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
     }
 }
