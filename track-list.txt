@@ -228,3 +228,5 @@ gb/the-legend-of-zelda-links-awakening/56-link-plays-manbos-mambo
 gb/the-legend-of-zelda-links-awakening/57-manbos-mambo
 gb/the-legend-of-zelda-links-awakening/58-followed-by-a-ghost
 gb/the-legend-of-zelda-links-awakening/59-ghosts-house
+gb/the-legend-of-zelda-links-awakening/60-catfishs-maw
+gb/the-legend-of-zelda-links-awakening/61-wind-marimba
