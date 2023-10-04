@@ -230,3 +230,5 @@ gb/the-legend-of-zelda-links-awakening/58-followed-by-a-ghost
 gb/the-legend-of-zelda-links-awakening/59-ghosts-house
 gb/the-legend-of-zelda-links-awakening/60-catfishs-maw
 gb/the-legend-of-zelda-links-awakening/61-wind-marimba
+gb/the-legend-of-zelda-links-awakening/62-fisherman
+gb/the-legend-of-zelda-links-awakening/63-rapids-ride
