@@ -232,3 +232,6 @@ gb/the-legend-of-zelda-links-awakening/60-catfishs-maw
 gb/the-legend-of-zelda-links-awakening/61-wind-marimba
 gb/the-legend-of-zelda-links-awakening/62-fisherman
 gb/the-legend-of-zelda-links-awakening/63-rapids-ride
+gb/the-legend-of-zelda-links-awakening/64-southern-face-shrine
+gb/the-legend-of-zelda-links-awakening/65-face-shrine
+gb/the-legend-of-zelda-links-awakening/66-coral-triangle
