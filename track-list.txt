@@ -235,3 +235,5 @@ gb/the-legend-of-zelda-links-awakening/63-rapids-ride
 gb/the-legend-of-zelda-links-awakening/64-southern-face-shrine
 gb/the-legend-of-zelda-links-awakening/65-face-shrine
 gb/the-legend-of-zelda-links-awakening/66-coral-triangle
+gb/the-legend-of-zelda-links-awakening/67-link-plays-frogs-song-of-soul
+gb/the-legend-of-zelda-links-awakening/68-frogs-song-of-soul

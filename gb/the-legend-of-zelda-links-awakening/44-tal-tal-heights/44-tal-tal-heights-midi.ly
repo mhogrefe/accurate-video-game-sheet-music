@@ -138,9 +138,9 @@ g,16 d' bes d g, d' bes d g, d' bes d g, d' bes d |
 e,16 d' bes d e, d' bes d e, d' bes d e, d' bes d |
 aes16 ees' c ees aes, ees' c ees aes, ees' c ees aes, ees' c ees |
 d16 g a c d8 r r2 |
-d2 c |
+d2\f c |
 bes2 c |
-g,16 d' bes d g, d' bes d g, d' bes d g, d' bes d |
+g,16\mp d' bes d g, d' bes d g, d' bes d g, d' bes d |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
 g,16 f' d f g, f' d f g, f' d f g, f' d f |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
@@ -163,11 +163,11 @@ gis,16 dis' b dis gis, dis' b dis gis, dis' b dis gis, dis' b dis |
 f,16 dis' b dis f, dis' b dis f, dis' b dis f, dis' b dis |
 a16 e' cis e a, e' cis e a, e' cis e a, e' cis e |
 dis16 gis ais cis dis8 r r2 |
-dis2\mp cis |
+dis2\f cis |
 b2 cis |
 R1*2
 \key g \minor
-g,16 d' bes d g, d' bes d g, d' bes d g, d' bes d |
+g,16\mp d' bes d g, d' bes d g, d' bes d g, d' bes d |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
 g,16 f' d f g, f' d f g, f' d f g, f' d f |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
@@ -190,9 +190,9 @@ g,16 d' bes d g, d' bes d g, d' bes d g, d' bes d |
 e,16 d' bes d e, d' bes d e, d' bes d e, d' bes d |
 aes16 ees' c ees aes, ees' c ees aes, ees' c ees aes, ees' c ees |
 d16 g a c d8 r r2 |
-d2 c |
+d2\f c |
 bes2 c |
-g,16 d' bes d g, d' bes d g, d' bes d g, d' bes d |
+g,16\mp d' bes d g, d' bes d g, d' bes d g, d' bes d |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
 g,16 f' d f g, f' d f g, f' d f g, f' d f |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
@@ -215,11 +215,11 @@ gis,16 dis' b dis gis, dis' b dis gis, dis' b dis gis, dis' b dis |
 f,16 dis' b dis f, dis' b dis f, dis' b dis f, dis' b dis |
 a16 e' cis e a, e' cis e a, e' cis e a, e' cis e |
 dis16 gis ais cis dis8 r r2 |
-dis2\mp cis |
+dis2\f cis |
 b2 cis |
 R1*2
 \key g \minor
-g,16 d' bes d g, d' bes d g, d' bes d g, d' bes d |
+g,16\mp d' bes d g, d' bes d g, d' bes d g, d' bes d |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
 g,16 f' d f g, f' d f g, f' d f g, f' d f |
 g,16 e' c e g, e' c e g, e' c e g, e' c e |
