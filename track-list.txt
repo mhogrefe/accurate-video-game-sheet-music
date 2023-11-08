@@ -237,3 +237,5 @@ gb/the-legend-of-zelda-links-awakening/65-face-shrine
 gb/the-legend-of-zelda-links-awakening/66-coral-triangle
 gb/the-legend-of-zelda-links-awakening/67-link-plays-frogs-song-of-soul
 gb/the-legend-of-zelda-links-awakening/68-frogs-song-of-soul
+gb/the-legend-of-zelda-links-awakening/69-hen-house
+gb/the-legend-of-zelda-links-awakening/70-eagles-tower
