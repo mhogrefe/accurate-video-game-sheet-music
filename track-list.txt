@@ -239,3 +239,5 @@ gb/the-legend-of-zelda-links-awakening/67-link-plays-frogs-song-of-soul
 gb/the-legend-of-zelda-links-awakening/68-frogs-song-of-soul
 gb/the-legend-of-zelda-links-awakening/69-hen-house
 gb/the-legend-of-zelda-links-awakening/70-eagles-tower
+gb/the-legend-of-zelda-links-awakening/71-eagles-tower-roof
+gb/the-legend-of-zelda-links-awakening/72-evil-eagle-intro
