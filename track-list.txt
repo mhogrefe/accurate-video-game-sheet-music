@@ -243,3 +243,5 @@ gb/the-legend-of-zelda-links-awakening/71-eagles-tower-roof
 gb/the-legend-of-zelda-links-awakening/72-evil-eagle-intro
 gb/the-legend-of-zelda-links-awakening/73-organ-of-evening-calm
 gb/the-legend-of-zelda-links-awakening/74-turtle-rock-awakens
+gb/the-legend-of-zelda-links-awakening/75-turtle-rock
+gb/the-legend-of-zelda-links-awakening/76-thunder-drum
