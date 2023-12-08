@@ -245,3 +245,6 @@ gb/the-legend-of-zelda-links-awakening/73-organ-of-evening-calm
 gb/the-legend-of-zelda-links-awakening/74-turtle-rock-awakens
 gb/the-legend-of-zelda-links-awakening/75-turtle-rock
 gb/the-legend-of-zelda-links-awakening/76-thunder-drum
+gb/the-legend-of-zelda-links-awakening/77-opening-the-wind-fishs-egg-two-instruments
+gb/the-legend-of-zelda-links-awakening/78-opening-the-wind-fishs-egg-three-instruments
+gb/the-legend-of-zelda-links-awakening/79-opening-the-wind-fishs-egg-four-instruments
