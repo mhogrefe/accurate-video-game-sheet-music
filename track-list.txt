@@ -248,3 +248,5 @@ gb/the-legend-of-zelda-links-awakening/76-thunder-drum
 gb/the-legend-of-zelda-links-awakening/77-opening-the-wind-fishs-egg-two-instruments
 gb/the-legend-of-zelda-links-awakening/78-opening-the-wind-fishs-egg-three-instruments
 gb/the-legend-of-zelda-links-awakening/79-opening-the-wind-fishs-egg-four-instruments
+gb/the-legend-of-zelda-links-awakening/80-opening-the-wind-fishs-egg-five-instruments
+gb/the-legend-of-zelda-links-awakening/81-opening-the-wind-fishs-egg-six-instruments
