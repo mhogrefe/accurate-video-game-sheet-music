@@ -77,7 +77,7 @@ d,16-> d fis-> fis cis'-> cis a-> a d,-> d fis-> fis cis'-> cis a-> a |
                     \set Staff.shortInstrumentName = "W."
 \key b \minor
 R1 |
-r2 r8 b\f^\markup{Echo} cis d ~ |
+r2 r8 b\f cis d ~ |
 d2 ~ d8 b cis d ~ |
 d2 ~ d8 cis b fis |
 a4. b8 ~ b2 ~ |

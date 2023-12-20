@@ -250,3 +250,5 @@ gb/the-legend-of-zelda-links-awakening/78-opening-the-wind-fishs-egg-three-instr
 gb/the-legend-of-zelda-links-awakening/79-opening-the-wind-fishs-egg-four-instruments
 gb/the-legend-of-zelda-links-awakening/80-opening-the-wind-fishs-egg-five-instruments
 gb/the-legend-of-zelda-links-awakening/81-opening-the-wind-fishs-egg-six-instruments
+gb/the-legend-of-zelda-links-awakening/82-opening-the-wind-fishs-egg-seven-instruments
+gb/the-legend-of-zelda-links-awakening/83-opening-the-wind-fishs-egg-eight-instruments

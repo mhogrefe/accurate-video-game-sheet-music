@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Opening the Wind Fish’s Egg (Six Instruments)"
+        title = "Opening the Wind Fish’s Egg (Eight Instruments)"
         subtitle = \markup { "from" {\italic "The Legend of Zelda: Link’s Awakening"} "for the Game Boy (1993)" }
         composer = "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa"
         arranger = "trans. Mikhail Hogrefe"
@@ -35,16 +35,18 @@ a'2 r |
 a2 r |
 a,4 d, e b' |
 a4 d, e b' |
-b'4 r fis r |
-b4 r g r |
-b4 r fis r |
-b4 r g r |
-a4 r g r |
-fis4 r a r |
-b4 r g r |
-ais4 r g r |
-a2 r |
-a2 \ottava #0 r |
+\ottava #0
+\clef bass
+b,,,,4 fis' d fis |
+b,4 g' e g |
+b,4 fis' d fis |
+b,4 g' e g |
+a4 e c e |
+a4 ees c ees |
+g4 d b d |
+g4 cis, ais cis |
+d4 a' fis a |
+d,4 a' fis a |
                     }
 
                     \new Staff \relative c'' {                 
@@ -99,26 +101,46 @@ R1 |
 \bar "|."
                 }
 
-                \new Staff \relative c''' {
-                    \set Staff.instrumentName = "Noise"
-                    \set Staff.shortInstrumentName = "N."
+                \new GrandStaff <<
+                    \set GrandStaff.instrumentName = "Noise"
+                    \set GrandStaff.shortInstrumentName = "N."
+                    \new DrumStaff {
+                        \drummode {
+\override TupletBracket.bracket-visibility = ##f
+sn8->\ppp \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+R1
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+R1
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> \tuplet 3/2 { sn16 sn sn } sn8-> sn-> |
+                        }
+                    }
+
+                    \new Staff \relative c''' {
 \key b \minor
-\repeat percent 10 {
+R1*10
+c16\ppp c c c c8 c-> ~ c c c4-> |
+R1
 c16 c c c c8 c-> ~ c c c4-> |
-c16 c c c c4-> c16 c c c c4-> |
-}
-                }
+R1*7
+                    }
+                >>
             >>
         }
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
+        \midi {}
     }
 }

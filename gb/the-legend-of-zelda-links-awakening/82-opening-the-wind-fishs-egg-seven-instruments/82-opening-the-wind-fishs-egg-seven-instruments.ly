@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Opening the Wind Fish’s Egg (Six Instruments)"
+        title = "Opening the Wind Fish’s Egg (Seven Instruments)"
         subtitle = \markup { "from" {\italic "The Legend of Zelda: Link’s Awakening"} "for the Game Boy (1993)" }
         composer = "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa"
         arranger = "trans. Mikhail Hogrefe"
@@ -35,31 +35,8 @@ a'2 r |
 a2 r |
 a,4 d, e b' |
 a4 d, e b' |
-b'4 r fis r |
-b4 r g r |
-b4 r fis r |
-b4 r g r |
-a4 r g r |
-fis4 r a r |
-b4 r g r |
-ais4 r g r |
-a2 r |
-a2 \ottava #0 r |
-                    }
-
-                    \new Staff \relative c'' {                 
-\key b \minor
-d16->\p d fis-> fis cis'-> cis a-> a d,-> d fis-> fis cis'-> cis a-> a |
-d,16-> d fis-> fis cis'-> cis a-> a d,-> d fis-> fis cis'-> cis a-> a |
-e16-> e g-> g d'-> d b-> b e,-> e g-> g d'-> d b-> b |
-e,16-> e g-> g d'-> d b-> b e,-> e g-> g d'-> d b-> b |
-d,16-> d fis-> fis cis'-> cis b-> b d,-> d fis-> fis cis'-> cis b-> b |
-d,16-> d fis-> fis cis'-> cis b-> b d,-> d fis-> fis cis'-> cis b-> b |
-e,16-> e g-> g d'-> d b-> b e,-> e g-> g d'-> d b-> b |
-e,16-> e g-> g d'-> d b-> b e,-> e g-> g d'-> d b-> b |
-d,16-> d fis-> fis cis'-> cis b-> b d,-> d fis-> fis cis'-> cis b-> b |
-d,16-> d fis-> fis cis'-> cis b-> b d,-> d fis-> fis cis'-> cis b-> b |
-b,16-> b d-> d b'-> b fis-> fis b,-> b d-> d b'-> b fis-> fis |
+\ottava #0
+b,,16->\p b d-> d b'-> b fis-> fis b,-> b d-> d b'-> b fis-> fis |
 b,16-> b e-> e b'-> b g-> g b,-> b e-> e b'-> b g-> g |
 b,16-> b d-> d b'-> b fis-> fis b,-> b d-> d b'-> b fis-> fis |
 b,16-> b e-> e b'-> b g-> g b,-> b e-> e b'-> b g-> g |
@@ -69,6 +46,31 @@ g,16-> g b-> b fis'-> fis d-> d g,-> g b-> b fis'-> fis d-> d |
 g,16-> g ais-> ais e'-> e cis-> cis g-> g ais-> ais e'-> e cis-> cis |
 d16-> d fis-> fis cis'-> cis a-> a d,-> d fis-> fis cis'-> cis a-> a |
 d,16-> d fis-> fis cis'-> cis a-> a d,-> d fis-> fis cis'-> cis a-> a |
+                    }
+
+                    \new Staff \relative c {                 
+\key b \minor
+\clef bass
+d4 a' fis a |
+d,4 a' fis a |
+e4 b' g b |
+e,4 b' g b |
+d,4 a' fis a |
+d,4 a' fis a |
+e4 b' g b |
+e,4 b' g b |
+d,4 a' fis a |
+d,4 a' fis a |
+b,4 fis' d fis |
+b,4 g' e g |
+b,4 fis' d fis |
+b,4 g' e g |
+a4 e c e |
+a4 ees c ees |
+g4 d b d |
+g4 cis, ais cis |
+d4 a' fis a |
+d,4 a' fis a |
                     }
                 >>
 
