@@ -252,3 +252,5 @@ gb/the-legend-of-zelda-links-awakening/80-opening-the-wind-fishs-egg-five-instru
 gb/the-legend-of-zelda-links-awakening/81-opening-the-wind-fishs-egg-six-instruments
 gb/the-legend-of-zelda-links-awakening/82-opening-the-wind-fishs-egg-seven-instruments
 gb/the-legend-of-zelda-links-awakening/83-opening-the-wind-fishs-egg-eight-instruments
+gb/the-legend-of-zelda-links-awakening/84-wind-fishs-egg
+gb/the-legend-of-zelda-links-awakening/85-battle-with-nightmare-intro
