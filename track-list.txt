@@ -258,3 +258,5 @@ gb/the-legend-of-zelda-links-awakening/86-battle-with-nightmare
 gb/the-legend-of-zelda-links-awakening/87-nightmare-defeated
 gb/the-legend-of-zelda-links-awakening/88-stairway-appears
 gb/the-legend-of-zelda-links-awakening/89-talking-to-the-wind-fish
+gb/the-legend-of-zelda-links-awakening/90-ballad-of-the-wind-fish-final
+gb/the-legend-of-zelda-links-awakening/91-game-over
