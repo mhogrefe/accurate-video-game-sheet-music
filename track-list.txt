@@ -260,3 +260,4 @@ gb/the-legend-of-zelda-links-awakening/88-stairway-appears
 gb/the-legend-of-zelda-links-awakening/89-talking-to-the-wind-fish
 gb/the-legend-of-zelda-links-awakening/90-ballad-of-the-wind-fish-final
 gb/the-legend-of-zelda-links-awakening/91-game-over
+gb/the-legend-of-zelda-links-awakening/92-credits
