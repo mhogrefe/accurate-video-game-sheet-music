@@ -48,12 +48,12 @@ r8 a16 a a8-. a16 a a8 r r4 |
 R1*4
 R1
 r8 bes-. bes16-. c-. d-. ees-. f8 r r4 |
-r4 des16-. ges-. aes-. bes-. des8 r r4 |
+r4 \ottava #1 des16-. ges-. aes-. bes-. des8 \ottava #0 r r4 |
 r4 r8 des,16-. ees-. f8-. des-. aes r |
 r4 r8 ees'16-. f-. ges8-. ees16-. f-. ges8-. r |
 r4 r8 des16-. ees-. f8-. des16-. ees-. f8-. r |
-r4 r8 c16-. d-. e8-. e16-. f-. g-. a-. bes-. c-. |
-a8-. r r4 r2 |
+r4 r8 \ottava #1 c16-. d-. e8-. e16-. f-. g-. a-. bes-. c-. |
+a8-. \ottava #0 r r4 r2 |
 R1 |
                     }
                 >>

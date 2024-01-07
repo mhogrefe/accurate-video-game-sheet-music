@@ -25,8 +25,8 @@ smaller = {
 \key g \minor
 \tempo 4 = 128
                     \repeat volta 2 {
-c16 b c b c b c b c b c b c b c b |
-<ees, c'>16 <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> |
+c16\mp b c b c b c b c b c b c b c b |
+<ees, c'>16 <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'>\mf <d b'> <ees c'> <d b'> <ees c'> <d b'> <ees c'> <d b'> |
 g4 r8 d-. g-. a-. b-. d-. |
 cis4 r8 d-. ees4 r |
 g,4 r8 d-. g-. a-. b-. d-. |
@@ -62,7 +62,7 @@ R1*2
 \clef bass
 \key g \minor
 R1*2
-g8-. r d'-. g,-. r g-. aes-. ees'-. |
+g8-.\f r d'-. g,-. r g-. aes-. ees'-. |
 g,8-. r d'-. g,-. r g-. f-. fis-. |
 g8-. r d'-. g,-. r g-. aes-. ees'-. |
 g,8-. r d'-. g,-. r g-. d'-. g-. |

@@ -26,21 +26,21 @@ smaller = {
 
 c16\f d ees bes' ~ bes r c, d ees a ~ a r r4 |
 c,16 d ees bes' ~ bes r c, d ees a ~ a r r4 |
-d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
-d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
+d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
+d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
 e,16-.\fff fis-. g-. d'-. r8 e,16-. fis-. g-. cis-. r8 r4 |
 e,16-. fis-. g-. d'-. r8 e,16-. fis-. g-. cis-. r8 r4 |
-d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
-d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
+d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
+d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
 
 c,16\f d ees bes' ~ bes r c, d ees a ~ a r r4 |
 c,16 d ees bes' ~ bes r c, d ees a ~ a r r4 |
-d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
-d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
+d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
+d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
 e,16-.\fff fis-. g-. d'-. r8 e,16-. fis-. g-. cis-. r8 r4 |
 e,16-. fis-. g-. d'-. r8 e,16-. fis-. g-. cis-. r8 r4 |
-d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
-d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b r8 r4 |
+d,16-.\ff e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
+d,16-. e-. f-. c'-. r8 d,16-. e-. f-. b-. r8 r4 |
 
                 }
 

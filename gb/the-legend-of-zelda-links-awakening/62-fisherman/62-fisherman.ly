@@ -56,6 +56,7 @@ g,8-. r16 b d8-. g,-. d-. aes'-. c-. r |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
+\override TupletBracket.bracket-visibility = ##f
 \repeat percent 8 { hh8 \tuplet 3/2 { hh16 hh hh } hh8 \tuplet 3/2 { hh16 hh hh } hh8 \tuplet 3/2 { hh16 hh hh } hh16 hh hh hh | }
                     }
                 }

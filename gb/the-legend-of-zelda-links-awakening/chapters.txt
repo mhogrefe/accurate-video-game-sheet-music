@@ -1,0 +1,92 @@
+00:00:00 Introduction
+00:00:57 Title Screen
+00:01:31 File Selection
+00:01:52 Link Awakens
+00:02:20 Overworld (Unarmed)
+00:03:10 Owl
+00:03:28 Got Sword
+00:03:40 Overworld (Initial Intro)
+00:04:39 Mabe Village
+00:05:15 Minigame
+00:05:45 Indoors
+00:06:31 Phone Booth
+00:07:01 Marin’s Song
+00:07:47 Mysterious Woods
+00:08:49 Got Power-Up
+00:08:59 Powerful Link
+00:09:18 Fairy Fountain
+00:09:37 Cave
+00:10:07 Overworld
+00:11:06 Witch’s Hut
+00:11:30 Got Item
+00:11:38 Got Important Item
+00:11:48 Got Secret
+00:11:56 Tail Cave
+00:13:41 Miniboss
+00:14:04 Boss
+00:14:35 Heart Container
+00:14:45 Instrument Room
+00:15:05 Instrument
+00:15:19 Full Moon Cello
+00:15:36 Moblin Hideout
+00:16:02 Mr. Write’s House
+00:16:24 Bottle Grotto
+00:17:33 Conch Horn
+00:17:48 Richard’s Villa
+00:18:21 Totaka’s Song
+00:18:39 Monkeys at Work
+00:19:00 Kanalet Castle
+00:19:29 Key Cavern
+00:20:21 Sea Lily’s Bell
+00:20:33 Dream Shrine (Introduction)
+00:20:50 Dream Shrine (Dreaming)
+00:21:03 Dream Shrine
+00:21:34 Tal Tal Heights
+00:23:25 Bee Scene
+00:23:44 Animal Village
+00:24:09 Goat’s House
+00:24:30 Beach Scene (Introduction)
+00:24:39 Beach Scene
+00:25:35 Link Plays the Ballad of the Wind Fish
+00:25:46 Ballad of the Wind Fish
+00:26:27 Angler’s Tunnel (Introduction)
+00:26:43 Angler’s Tunnel
+00:27:09 Passage
+00:27:29 Sea Harp
+00:27:44 Link Plays Manbo’s Mambo
+00:27:54 Manbo’s Mambo
+00:28:27 Followed by a Ghost
+00:28:35 Ghost’s House
+00:29:19 Catfish’s Maw
+00:30:30 Wind Marimba
+00:30:42 Fisherman
+00:31:14 Rapids Ride
+00:31:50 Southern Face Shrine
+00:32:43 Face Shrine
+00:33:49 Coral Triangle
+00:34:03 Link Plays Frog’s Song of Soul
+00:34:14 Frog’s Song of Soul
+00:34:47 Hen House
+00:35:20 Eagle’s Tower
+00:37:19 Eagle’s Tower (Roof)
+00:37:36 Evil Eagle (Introduction)
+00:37:54 Organ of Evening Calm
+00:38:09 Turtle Rock Awakens
+00:38:47 Turtle Rock
+00:39:39 Thunder Drum
+00:39:50 Opening the Wind Fish’s Egg (Two Instruments)
+00:40:30 Opening the Wind Fish’s Egg (Three Instruments)
+00:41:15 Opening the Wind Fish’s Egg (Four Instruments)
+00:42:01 Opening the Wind Fish’s Egg (Five Instruments)
+00:42:46 Opening the Wind Fish’s Egg (Six Instruments)
+00:43:31 Opening the Wind Fish’s Egg (Seven Instruments)
+00:44:16 Opening the Wind Fish’s Egg (Eight Instruments)
+00:45:01 Wind Fish’s Egg
+00:46:38 Battle with Nightmare (Introduction)
+00:46:59 Battle with Nightmare
+00:48:00 Nightmare Defeated
+00:48:16 Stairway Appears
+00:48:37 Talking to the Wind Fish
+00:49:01 Ballad of the Wind Fish (Final)
+00:49:44 Game Over
+00:50:15 Credits

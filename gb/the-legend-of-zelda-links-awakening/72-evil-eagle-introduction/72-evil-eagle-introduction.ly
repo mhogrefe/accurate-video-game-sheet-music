@@ -9,7 +9,7 @@ smaller = {
 
 \book {
     \header {
-        title = "Evil Eagle Intro"
+        title = "Evil Eagle (Introduction)"
         subtitle = \markup { "from" {\italic "The Legend of Zelda: Link’s Awakening"} "for the Game Boy (1993)" }
         composer = "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa"
         arranger = "trans. Mikhail Hogrefe"

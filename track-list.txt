@@ -240,7 +240,7 @@ gb/the-legend-of-zelda-links-awakening/68-frogs-song-of-soul
 gb/the-legend-of-zelda-links-awakening/69-hen-house
 gb/the-legend-of-zelda-links-awakening/70-eagles-tower
 gb/the-legend-of-zelda-links-awakening/71-eagles-tower-roof
-gb/the-legend-of-zelda-links-awakening/72-evil-eagle-intro
+gb/the-legend-of-zelda-links-awakening/72-evil-eagle-introduction
 gb/the-legend-of-zelda-links-awakening/73-organ-of-evening-calm
 gb/the-legend-of-zelda-links-awakening/74-turtle-rock-awakens
 gb/the-legend-of-zelda-links-awakening/75-turtle-rock
@@ -253,7 +253,7 @@ gb/the-legend-of-zelda-links-awakening/81-opening-the-wind-fishs-egg-six-instrum
 gb/the-legend-of-zelda-links-awakening/82-opening-the-wind-fishs-egg-seven-instruments
 gb/the-legend-of-zelda-links-awakening/83-opening-the-wind-fishs-egg-eight-instruments
 gb/the-legend-of-zelda-links-awakening/84-wind-fishs-egg
-gb/the-legend-of-zelda-links-awakening/85-battle-with-nightmare-intro
+gb/the-legend-of-zelda-links-awakening/85-battle-with-nightmare-introduction
 gb/the-legend-of-zelda-links-awakening/86-battle-with-nightmare
 gb/the-legend-of-zelda-links-awakening/87-nightmare-defeated
 gb/the-legend-of-zelda-links-awakening/88-stairway-appears
