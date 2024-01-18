@@ -134,32 +134,24 @@ hh8-> hh-> hh hh-> hh hh-> hh-> hh |
 hh8-> hh-> hh hh-> hh-> hh-> hh4-> |
 hh4 sn8 sn sn4 r |
 
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh bd hh sn hh bd hh |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 bd hh bd sn bd bd hh |
-bd8 hh sn8 sn sn4 r |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh bd hh sn hh bd hh |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 bd hh bd sn bd bd hh |
-bd8 hh sn8 sn sn4 r |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh bd hh sn hh bd hh |
-bd8 hh bd hh sn hh bd hh |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh hh bd hh hh sn sn |
-bd8 hh bd hh sn hh bd hh |
+\repeat percent 3 { <bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> | }
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> hh |
+<bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> |
+<bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> |
+<bd hh>8 <bd hh> hh <bd hh> <sn hh> <bd hh> <bd hh> hh |
+<bd hh>8 hh sn8 sn sn4 r |
+\repeat percent 3 { <bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> | }
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> hh |
+<bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> |
+<bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> |
+<bd hh>8 <bd hh> hh <bd hh> <sn hh> <bd hh> <bd hh> hh |
+<bd hh>8 hh sn8 sn sn4 r |
+<bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> |
+<bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> |
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> hh |
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> hh |
+\repeat percent 5 { <bd hh>8 hh hh <bd hh> hh hh <sn hh> <sn hh> | }
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> hh |
                     }
                 }
             >>

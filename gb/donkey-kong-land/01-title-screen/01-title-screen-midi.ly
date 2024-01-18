@@ -169,59 +169,59 @@ c4-. bes-. a-. g-. |
 \tuplet 3/2 { hh4-> hh8-> hh4 hh8-> hh4-> hh8-> } hh4-> |
 hh4 \tuplet 3/2 { sn4 sn8 } sn4 r |
 
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 bd8 hh4 bd8 sn4 bd8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 sn4 sn8 } sn4 r |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 bd8 hh4 bd8 sn4 bd8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 sn4 sn8 } sn4 r |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 <bd hh>8 hh4 <bd hh>8 <sn hh>4 <bd hh>8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 sn4 sn8 } sn4 r |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 <bd hh>8 hh4 <bd hh>8 <sn hh>4 <bd hh>8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 sn4 sn8 } sn4 r |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
 
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 bd8 hh4 bd8 sn4 bd8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 sn4 sn8 } sn4 r |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 bd8 hh4 bd8 sn4 bd8 bd4 hh8 } |
-\tuplet 3/2 { bd8 hh4 sn4 sn8 } sn4 r |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 hh4 hh8 sn4 sn8 } |
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4 hh8 bd4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 <bd hh>8 hh4 <bd hh>8 <sn hh>4 <bd hh>8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 sn4 sn8 } sn4 r |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 <bd hh>8 hh4 <bd hh>8 <sn hh>4 <bd hh>8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 sn4 sn8 } sn4 r |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 hh4 hh8 <sn hh>4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4 hh8 <bd hh>4 hh8 } |
                     }
                 }
             >>
