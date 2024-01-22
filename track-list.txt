@@ -264,3 +264,4 @@ gb/the-legend-of-zelda-links-awakening/92-credits
 gb/donkey-kong-land/01-title-screen
 gb/donkey-kong-land/02-file-selection
 gb/donkey-kong-land/03-map
+gb/donkey-kong-land/04-dk-island-swing
