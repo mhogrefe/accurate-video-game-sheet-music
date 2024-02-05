@@ -267,3 +267,4 @@ gb/donkey-kong-land/03-map
 gb/donkey-kong-land/04-dk-island-swing
 gb/donkey-kong-land/05-level-cleared
 gb/donkey-kong-land/06-game-over
+gb/donkey-kong-land/07-ice-cave-chant
