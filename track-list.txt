@@ -268,3 +268,4 @@ gb/donkey-kong-land/04-dk-island-swing
 gb/donkey-kong-land/05-level-cleared
 gb/donkey-kong-land/06-game-over
 gb/donkey-kong-land/07-ice-cave-chant
+gb/donkey-kong-land/08-gang-plank-galleon
