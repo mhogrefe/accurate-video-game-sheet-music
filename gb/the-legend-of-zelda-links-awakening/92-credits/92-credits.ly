@@ -63,7 +63,7 @@ r4 r8 r4 r8 <d,,,, fis>4.\< 8 8 8 |
 \clef treble
 <a fis'>4.\ff 8 8 8 <c g'>4. 8 8 <e g> |
 <fis a>4. <d d'>8 8 8 4. 8 <e d'> <fis d'> |
-                    \repeat volta 2 {
+                    \repeat volta 3 {
 <b, g'>4. <<{ d4. }\\{ c8 b a }>> <b d>8 r <b g'> <c a'> <d b'> <e c'> |
 <<{ d'2. r8 d e }\\{ f,4. a8 b a gis4. }>> <e f'>8 <fis e'> <g d'> |
 <<{ a4. a'8 c e }\\{ c,2. }>> g''8 <ees,, c'> <f d'> <g ees'> <f d'> <e c'> |
@@ -80,6 +80,9 @@ b4. g d' r4 r8 |
 b4. g d' \ottava #0 r4 r8 |
 <c,, e>8\ff <d fis> <e g>8 8 <e a> <e b'> <ees c'>4. 8 <f d'> <ees c'> |
 <d b'>4. 8 <e c'> <d b'> <c a'>2. |
+                    }
+                        \alternative {
+                            {
 g'8 r a bes4. ~ bes g8 r a |
 bes4. r4 bes8 \tuplet 8/6 { a4. g8 ~ g4 d } |
 <<{ f2. g ~ | g1. | }\\{ c,2. ~ c4. ~ c8 d c | b2. c4. d | }>>
@@ -87,9 +90,26 @@ bes4. r4 bes8 \tuplet 8/6 { a4. g8 ~ g4 d } |
 <g ees'>2. ~ 4. 8 <g d'> <g bes> |
 <<{ c1. }\\{ r8 ees, ees ees d ees r ees ees ees d ees }>> |
 <d c'>4. <e, c'>8 d' <e, c'> <d b'> c' <d, b'> <c a'> b' <c, a'> |
-                    }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
+                            }
+                            {
+<<{g''4. ~ g8 s s}\\{bes,8 a bes c bes a}>> bes <bes g'>8 8 8 <a f'> <bes g'> |
+                            }
+                        }
+<<{ aes'4. ~ aes8 s s }\\{ c,8 bes c ees aes c }>> ees8 <aes, bes> <aes c> <c d> <c ees> <c f> |
+\time 4/4
+\override TextSpanner.bound-details.left.text = "rit."
+\tempo \markup {
+    \concat {
+      \smaller \general-align #Y #DOWN \note {4.} #1
+      " = "
+      \smaller \general-align #Y #DOWN \note {4} #1
+    }
+  }
+<b g'>4\startTextSpan <b, g'>8 <b d>16 <b g'> <a f'>4 8 <bes g'>16 <c a'> |
+<ees bes'>4 8 <ees g>16 <ees bes'> <<{c'4 c16 d ees f}\\{a,8 g f4}>> |
+<<{g'1}\\{b,4 b8 a16 b c8 d ees c}>> |
+<d b'>4 <g,,, g'>8 16 16 4\stopTextSpan r |
+\bar "|."
                     }
 
                     \new Staff \relative c' {                 
@@ -120,7 +140,8 @@ e8 fis g g a g fis d b d4. |
 R1.*6
 e8 fis g e fis g fis d b d4. |
 e8 fis g g a g fis d b d4. |
-R1.*10
+R1.*12
+R1*4
                     }
                 >>
 
@@ -179,6 +200,12 @@ c,,8 g' bes ees g bes ees4. r4 r8 |
 \clef bass
 aes,,,8 aes' aes aes bes c aes, aes' aes aes bes c |
 d8 r r d,, r r e r r fis r r |
+ees'8 g bes \clef treble ees g bes ees4. \clef bass ees,,8 ees ees |
+aes,8 c ees aes c ees \clef treble aes'4. \clef bass aes,,,8 aes aes |
+g8-. d-. g-. d-. f-. c-. f-. c-. |
+ees8-. bes'-. ees,-. bes'-. f-. c'-. f,-. c'-. |
+g8-. d-. g-. d-. aes'-. ees-. aes-. ees-. |
+g8-. r g-. g16 g g8-. r r4 |
                 }
 
                 \new DrumStaff {
@@ -196,6 +223,10 @@ sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
 sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
 }
 \repeat percent 8 { hh8 hh hh sn hh hh hh hh hh sn hh hh | }
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+\repeat percent 3 { sn16 sn sn8 r8 sn16 sn sn4 sn16 sn sn sn | }
+sn4 sn8 sn16 sn sn4 r |
                     }
                 }
             >>

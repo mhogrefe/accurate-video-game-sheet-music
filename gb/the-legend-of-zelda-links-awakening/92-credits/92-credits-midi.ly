@@ -111,6 +111,36 @@ bes4. r4 bes8 \tuplet 8/6 { a4. g8 ~ g4 d } |
 <g ees'>2. ~ 4. 8 <g d'> <g bes> |
 <<{ c1. }\\{ r8 ees, ees ees d ees r ees ees ees d ees }>> |
 <d c'>4. <e, c'>8 d' <e, c'> <d b'> c' <d, b'> <c a'> b' <c, a'> |
+
+<b g'>4. <<{ d4. }\\{ c8 b a }>> <b d>8 r <b g'> <c a'> <d b'> <e c'> |
+<<{ d'2. r8 d e }\\{ f,4. a8 b a gis4. }>> <e f'>8 <fis e'> <g d'> |
+<<{ a4. a'8 c e }\\{ c,2. }>> g''8 <ees,, c'> <f d'> <g ees'> <f d'> <e c'> |
+<d b'>4. 8 <e c'> <d b'> <c a'>4. r8 \ottava #1 g'''\f a |
+b4. g d' r4 r8 |
+b4. g d' \ottava #0 r4 r8 |
+<c,, e>8\ff <d fis> <e g>8 8 <e a> <e b'> <ees c'>4. 8 <f d'> <ees c'> |
+<d b'>4. 8 <e c'> <d b'> <c a'>2. |
+<b, g'>4. <<{ d4. }\\{ c8 b a }>> <b d>8 r <b g'> <c a'> <d b'> <e c'> |
+<<{ d'2. r8 d e }\\{ f,4. a8 b a gis4. }>> <e f'>8 <fis e'> <g d'> |
+<<{ a4. a'8 c e }\\{ c,2. }>> g''8 <ees,, c'> <f d'> <g ees'> <f d'> <e c'> |
+<d b'>4. 8 <e c'> <d b'> <c a'>4. r8 \ottava #1 g'''\f a |
+b4. g d' r4 r8 |
+b4. g d' \ottava #0 r4 r8 |
+<c,, e>8\ff <d fis> <e g>8 8 <e a> <e b'> <ees c'>4. 8 <f d'> <ees c'> |
+<d b'>4. 8 <e c'> <d b'> <c a'>2. |
+
+<<{g'4. ~ g8 s s}\\{bes,8 a bes c bes a}>> bes <bes g'>8 8 8 <a f'> <bes g'> |
+<<{ aes'4. ~ aes8 s s }\\{ c,8 bes c ees aes c }>> ees8 <aes, bes> <aes c> <c d> <c ees> <c f> |
+\time 4/4
+\override TextSpanner.bound-details.left.text = "rit."
+\tempo 4=148
+<b g'>4\startTextSpan <b, g'>8 <b d>16 <b g'> <a f'>4 8 <bes g'>16 <c a'> |
+\tempo 4=128
+<ees bes'>4 8 <ees g>16 <ees bes'> <<{c'4 c16 d ees f}\\{a,8 g f4}>> |
+<<{g'1}\\{b,4 b8 a16 b c8 d ees c}>> |
+\tempo 4=100
+<d b'>4 <g,,, g'>8 16 16 4\stopTextSpan r |
+\bar "|."
                     }
 
                     \new Staff \relative c' {                 
@@ -150,6 +180,17 @@ R1.*6
 e8 fis g e fis g fis d b d4. |
 e8 fis g g a g fis d b d4. |
 R1.*10
+
+R1.*4
+e8 fis g e fis g fis d b d4. |
+e8 fis g g a g fis d b d4. |
+R1.*6
+e8 fis g e fis g fis d b d4. |
+e8 fis g g a g fis d b d4. |
+R1.*2
+
+R1.*2
+R1*4
                     }
                 >>
 
@@ -236,6 +277,30 @@ c,,8 g' bes ees g bes ees4. r4 r8 |
 \clef bass
 aes,,,8 aes' aes aes bes c aes, aes' aes aes bes c |
 d8 r r d,, r r e r r fis r r |
+
+g8 r r g g f g r r g g g |
+f8 r r f' f f e4. e, |
+a8 r r a a a a r r a a a |
+d,8 r r d d d d4. dis |
+e8 g' b e b g b, fis' a d a fis |
+e8 g b e b g b, fis' a d a b, |
+c8 r r c c c aes r r aes aes aes |
+d,8 g a d g a d d, e fis e d |
+g,8 r r g g f g r r g g g |
+f8 r r f' f f e4. e, |
+a8 r r a a a a r r a a a |
+d,8 r r d d d d4. dis |
+e8 g' b e b g b, fis' a d a fis |
+e8 g b e b g b, fis' a d a b, |
+c8 r r c c c aes r r aes aes aes |
+d,8 g a d g a d d, e fis e d |
+
+ees8 g bes \clef treble ees g bes ees4. \clef bass ees,,8 ees ees |
+aes,8 c ees aes c ees \clef treble aes'4. \clef bass aes,,,8 aes aes |
+g8-. d-. g-. d-. f-. c-. f-. c-. |
+ees8-. bes'-. ees,-. bes'-. f-. c'-. f,-. c'-. |
+g8-. d-. g-. d-. aes'-. ees-. aes-. ees-. |
+g8-. r g-. g16 g g8-. r r4 |
                 }
 
                 \new DrumStaff {
@@ -300,6 +365,30 @@ hh8 hh hh sn hh hh hh hh hh sn hh hh |
 hh8 hh hh sn hh hh hh hh hh sn hh hh |
 hh8 hh hh sn hh hh hh hh hh sn hh hh |
 hh8 hh hh sn hh hh hh hh hh sn hh hh |
+
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+
+sn4. 8-> 8-> 8-> 4. 8-> 8-> 8-> |
+sn4. 8-> 8-> 8-> 8 8 8 8-> 8 8 |
+sn16 sn sn8 r8 sn16 sn sn4 sn16 sn sn sn |
+sn16 sn sn8 r8 sn16 sn sn4 sn16 sn sn sn |
+sn16 sn sn8 r8 sn16 sn sn4 sn16 sn sn sn |
+sn4 sn8 sn16 sn sn4 r |
                     }
                 }
             >>
