@@ -270,3 +270,6 @@ gb/donkey-kong-land/06-game-over
 gb/donkey-kong-land/07-ice-cave-chant
 gb/donkey-kong-land/08-gang-plank-galleon
 gb/donkey-kong-land/09-boss-battle
+gb/donkey-kong-land/10-voices-of-the-temple
+gb/donkey-kong-land/11-kremlantis
+gb/donkey-kong-land/12-aquatic-ambiance
