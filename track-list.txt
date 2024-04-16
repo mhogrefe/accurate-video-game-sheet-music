@@ -278,3 +278,4 @@ gb/donkey-kong-land/14-mountain
 gb/donkey-kong-land/15-sky
 gb/donkey-kong-land/16-building-site
 gb/donkey-kong-land/17-airship
+gb/donkey-kong-land/18-construction-site
