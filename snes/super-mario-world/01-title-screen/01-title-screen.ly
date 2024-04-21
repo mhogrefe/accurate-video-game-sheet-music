@@ -1,7 +1,8 @@
 \version "2.22.0"
+#(set-global-staff-size 16)
 
 \paper {
-  left-margin = 0.8\in
+  left-margin = 0.6\in
 }
 
 \book {
