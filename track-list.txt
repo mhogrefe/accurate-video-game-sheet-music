@@ -279,3 +279,4 @@ gb/donkey-kong-land/15-sky
 gb/donkey-kong-land/16-building-site
 gb/donkey-kong-land/17-airship
 gb/donkey-kong-land/18-construction-site
+snes/super-mario-world/01-title-screen

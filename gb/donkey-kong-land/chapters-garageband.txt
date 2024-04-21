@@ -1,0 +1,18 @@
+00:00:00 Title Screen
+00:00:47 File Selection
+00:01:09 Map
+00:01:54 DK Island Swing
+00:03:02 Level Cleared
+00:03:14 Game Over
+00:03:24 Ice Cave Chant
+00:04:49 Gang-Plank Galleon
+00:06:05 Boss Battle
+00:07:31 Voices of the Temple
+00:08:40 Kremlantis
+00:10:09 Aquatic Ambiance
+00:11:33 Cave Dweller Concert
+00:12:50 Mountain
+00:14:13 Sky
+00:15:18 Building Site
+00:16:50 Airship
+00:18:05 Construction Site
