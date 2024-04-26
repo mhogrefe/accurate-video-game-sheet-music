@@ -282,3 +282,4 @@ gb/donkey-kong-land/18-construction-site
 snes/super-mario-world/01-title-screen
 snes/super-mario-world/02-introduction
 snes/super-mario-world/03-yoshis-island
+snes/super-mario-world/04-donut-plains
