@@ -21,17 +21,10 @@
 \key g \major
 \tempo 4 = 150
                     \repeat volta 2 {
-<<{
-g4^\markup{Echo} b, dis b |
-g'4 b, dis f |
-gis4 c, e c |
-gis'4 c, e fis |
-}\\{
-r8 g,4 g g g8 ~ |
-g8 g4 g g g8 ~ |
-g8 gis4 gis gis gis8 ~ |
-gis8 gis4 gis gis r8 |
-}>>
+g8^\markup{Echo} g, b g dis' g, b g |
+g'8 g, b g dis' g, f' g, |
+gis'8 gis, c gis e' gis, c gis |
+gis'8 gis, c gis e' gis, fis' gis, |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
