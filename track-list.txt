@@ -283,3 +283,5 @@ snes/super-mario-world/01-title-screen
 snes/super-mario-world/02-introduction
 snes/super-mario-world/03-yoshis-island
 snes/super-mario-world/04-donut-plains
+snes/super-mario-world/05-vanilla-dome
+snes/super-mario-world/06-forest-of-illusion

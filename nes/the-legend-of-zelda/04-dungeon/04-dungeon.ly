@@ -17,24 +17,14 @@
 \key bes \major
 \tempo 4 = 90
                     \repeat volta 2 {
-<<{
-r16 bes8 ees bes ees bes ees bes ees16 ~ |
-ees16 a,8 ees' a, ees' a, ees' a, ees'16 ~ |
-ees16 aes,8 ees' aes, ees' aes, ees' aes, ees'16 ~ |
-ees16 g,8 ees' g, ees' g, ees' g, ees'16 |
-r16 g,8 d' g, d' g, d' g, d'16 ~ |
-d16 g,8 d' g, d' g, d' g, d'16 ~ |
+g16^\markup{Echo} bes d ees g, bes d ees g, bes d ees g, bes d ees |
+fis,16 a d ees fis, a d ees fis, a d ees fis, a d ees |
+f,16 aes d ees f, aes d ees f, aes d ees f, aes d ees |
+e,16 g d' ees e, g d' ees e, g d' ees e, g d' ees |
+ees,16 g c d ees, g c d ees, g c d ees, g c d |
+d,16 g c d d, g c d d, g c d d, g c d |
 \time 5/4
-d16 fis,8 c' a ees' c c fis fis fis c'16 |
-}\\{
-g,8 d' g, d' g, d' g, d' |
-fis, d' fis, d' fis, d' fis, d' |
-f,8 d' f, d' f, d' f, d' |
-e,8 d' e, d' e, d' e, d' |
-ees,8 c' ees, c' ees, c' ees, c' |
-d,8 c' d, c' d, c' d, c' |
-c,8 a' fis c' a ees' ees ees a a |
-}>>
+c,16 fis a c fis, a c ees a, c ees c ees fis ees fis a fis a c |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }

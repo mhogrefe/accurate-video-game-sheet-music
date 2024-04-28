@@ -18,15 +18,9 @@
 \set Timing.beamExceptions = #'()
 \tempo 4 = 75
                     \repeat volta 2 {
-<<{
-e8^\markup{Echo} c c a e d |
-e'8 c c a e d |
-e'8 c c a e d |
-}\\{
-r16 d'8 b g g c, e16 ~ |
-e16 d'8 b g g c, e16 ~ |
-e16 d'8 b g g c, e16 |
-}>>
+e16^\markup{Echo} d c b c g a g e c d e |
+e'16 d c b c g a g e c d e |
+e'16 d c b c g a g e c d e |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
