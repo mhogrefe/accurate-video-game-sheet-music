@@ -24,7 +24,7 @@ smaller = {
 \tempo 4 = 100
 \key aes \major
                     \repeat volta 2 {
-aes8 c, ees aes bes des, f bes |
+aes8^\markup{Echo} c, ees aes bes des, f bes |
 c8 ees, aes c des f, aes des |
 bes8 des, f bes g bes, des g |
                     }

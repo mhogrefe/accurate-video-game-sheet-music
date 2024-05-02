@@ -405,7 +405,7 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
             } else {
                 format!("{dir_path}/{track_name}/{track_name}.flac")
             };
-            let reader = claxon::FlacReader::open(&flac_file_name).expect("{flac_file_name}");
+            let reader = claxon::FlacReader::open(&flac_file_name).expect(&flac_file_name);
             let info = reader.streaminfo();
             let time_seconds = (info.samples.unwrap() as f64) / (info.sample_rate as f64);
             writeln!(

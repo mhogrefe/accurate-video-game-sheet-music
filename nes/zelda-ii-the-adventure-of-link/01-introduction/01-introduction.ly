@@ -23,12 +23,12 @@ smaller = {
                     \set GrandStaff.shortInstrumentName = "P."
                     \new Staff \relative c''' {
 \tempo 4 = 112
-s1*0\pp\< <<{c8-. b-. g-. d-. c' b g d}\\{r16 c'8-. b-. g-. d16 r c'8 b g d16}>> |
-<<{c'8 b g d c' b g d}\\{r16 c'8 b g d16 r c'8 b g d16}>> |
-<<{c'8 b g d c' b g d}\\{r16 c'8 b g d16 r c'8 b g d16}>> |
-<<{c'8 b g d c' b g d}\\{r16 c'8 b g d16 r c'8 b g d16}>> |
+c16-.\pp\<^\markup{Echo} c-. b-. b-. g-. g-. d-. d-. c' c b b g g d d |
+c'16 c b b g g d d c' c b b g g d d |
+c'16 c b b g g d d c' c b b g g d d |
+c'16 c b b g g d d c' c b b g g d d |
                     \repeat volta 2 {
-<b d>2\mf ~ 8 <g b>4 <b d>8 |
+<b d>2\mf^\markup{"No echo"} ~ 8 <g b>4 <b d>8 |
 <a c>2. r4 |
 <g bes>2 ~ 8 <ees g>4 <g bes>8 |
 <fis a>2. r4 |
