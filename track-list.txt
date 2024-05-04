@@ -287,3 +287,4 @@ snes/super-mario-world/05-vanilla-dome
 snes/super-mario-world/06-forest-of-illusion
 snes/super-mario-world/07-bowsers-castle-emerges
 snes/super-mario-world/08-valley-of-bowser
+snes/super-mario-world/09-star-world

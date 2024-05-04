@@ -23,7 +23,7 @@ smaller = {
                     \set Staff.shortInstrumentName = "S."
 \tempo 4 = 150
 \key aes \major
-r4 ees f g |
+r4 ees^\markup{Echo} f g |
 \repeat volta 2 {
 aes4. bes8 aes4. g8 |
 g4. f8 g4. f8 |
