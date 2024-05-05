@@ -24,13 +24,13 @@ smaller = {
 \time 6/8
 \tempo 4. = 108
 \key c \major
-c8 r r d r r |
+c8^\markup{Echo} r r d r r |
 e8 r r f r r |
 g8 r r a r r |
 b8 r r c r r |
 d8 r r e r r |
 f8 r r g r r |
-a8 r r c, r r |
+a8 r r c,4^\markup{"No echo"} r8 |
 \bar "|."
                 }
 
@@ -44,7 +44,7 @@ g8 r b a r c |
 b8 r d c r e |
 d8 r f e r g |
 f8 r a g r b |
-a8 r c b r r |
+a8 r c b4 r8 |
                 }
             >>
         }

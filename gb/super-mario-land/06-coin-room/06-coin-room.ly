@@ -26,7 +26,7 @@ smaller = {
 \key c \major
 \clef bass
                     \repeat volta 2 {
-c8 r e g, a b |
+c8^\markup{Echo} r e g, a b |
 c8 r g' e r r |
 c8 r e g, a b |
 c8 r r r4 r8 |

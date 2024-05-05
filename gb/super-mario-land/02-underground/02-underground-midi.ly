@@ -25,28 +25,28 @@ smaller = {
 \key g \phrygian
 \override TupletBracket.bracket-visibility = ##f
 g4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes aes8 bes g2 |
+aes8. bes16 aes8 bes g2 |
 g'4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes c8 bes32 c bes aes g2 |
+aes8. bes16 c8 bes32 c bes aes g2 |
 g'4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes aes8 bes g2 |
+aes8. bes16 aes8 bes g2 |
 g'4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes c8 bes32 c bes aes g2 |
+aes8. bes16 c8 bes32 c bes aes g2 |
 aes2 r4 c |
-f2 ees4 ees8 f16 ees |
+f2 ees4. f16 ees |
 d2 r |
 R1 |
 
 g4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes aes8 bes g2 |
+aes8. bes16 aes8 bes g2 |
 g'4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes c8 bes32 c bes aes g2 |
+aes8. bes16 c8 bes32 c bes aes g2 |
 g'4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes aes8 bes g2 |
+aes8. bes16 aes8 bes g2 |
 g'4 fis8 \tuplet 3/2 { ees16 fis ees } d4. g,8 |
-aes8 aes16 bes c8 bes32 c bes aes g2 |
+aes8. bes16 c8 bes32 c bes aes g2 |
 aes2 r4 c |
-f2 ees4 ees8 f16 ees |
+f2 ees4. f16 ees |
 d2 r |
 R1 |
                 }
