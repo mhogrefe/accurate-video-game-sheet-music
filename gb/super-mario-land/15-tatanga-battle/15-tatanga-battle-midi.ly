@@ -30,7 +30,7 @@ dis1 |
 e2 f |
 fis4 g gis a |
 
-d,2 aes' |
+d,2\ff aes' |
 g2 des' |
 c1 |
 R1 |
@@ -56,7 +56,7 @@ g1 |
 gis1 |
 a2 ais |
 b4 c cis d |
-g,8\p ges f e ees d des c |
+g,8\mf ges f e ees d des c |
 g'8 ges f e ees d des c |
 g'8 ges f e ees d des c |
 g'8 ges f e ees d des c |
@@ -85,7 +85,7 @@ g1 |
 gis1 |
 a2 ais |
 b4 c cis d |
-g,16\p g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
+g,16\mf g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
 g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
 g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
 g16 g' ges, ges' f, f' e, e' ees, ees' d, d' des, des' c, c' |
