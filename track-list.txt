@@ -291,3 +291,4 @@ snes/super-mario-world/09-star-world
 snes/super-mario-world/10-special-zone
 snes/super-mario-world/11-super-mario-bros-theme
 snes/super-mario-world/12-overworld-1
+snes/super-mario-world/13-overworld-1-yoshi
