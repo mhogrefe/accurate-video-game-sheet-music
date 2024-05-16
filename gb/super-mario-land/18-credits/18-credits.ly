@@ -23,7 +23,7 @@ smaller = {
                     \set Staff.shortInstrumentName = "S."
 \tempo 4 = 160
 \key e \major
-cis4 e, a cis |
+cis4^\markup{Echo} e, a cis |
 dis4 fis, b dis |
 e4 g, c e |
 fis4 a, d fis |
