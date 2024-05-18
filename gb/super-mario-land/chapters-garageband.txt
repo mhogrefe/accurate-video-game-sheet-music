@@ -1,18 +1,18 @@
 00:00:00 Birabuto Kingdom
 00:00:40 Underground
-00:01:17 Muda Kingdom
-00:01:57 Marine Pop/Sky Pop
-00:02:29 Chai Kingdom
-00:03:32 Coin Room
-00:03:49 Starman
-00:04:11 Level Cleared
-00:04:21 Bonus Game
-00:04:39 Bonus Walk
-00:04:55 Extra Life
-00:05:03 Boss Battle
-00:05:19 Princess Daisy
-00:05:55 Oh! Daisy
-00:06:11 Tatanga Battle
-00:06:43 Death
-00:06:51 Game Over
-00:07:04 Credits
+00:01:18 Muda Kingdom
+00:01:58 Marine Pop/Sky Pop
+00:02:30 Chai Kingdom
+00:03:33 Coin Room
+00:03:50 Starman
+00:04:12 Level Cleared
+00:04:22 Bonus Game
+00:04:40 Bonus Walk
+00:04:56 Extra Life
+00:05:04 Boss Battle
+00:05:20 Princess Daisy
+00:05:56 Oh! Daisy
+00:06:12 Tatanga Battle
+00:06:44 Death
+00:06:53 Game Over
+00:07:05 Credits

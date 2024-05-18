@@ -36,8 +36,8 @@ d2 |
                     \new StaffGroup <<
                         \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
                         \new Staff \relative c' {                 
-                            \set Staff.instrumentName = "Trumpet"
-                            \set Staff.shortInstrumentName = "Tpt."  
+                            \set Staff.instrumentName = "Trumpet 1"
+                            \set Staff.shortInstrumentName = "Tpt. 1"  
 \key c \major 
 r8 <e g>16\p 16 8-. 8-. 8-. 8-. 8-. 8-. |
 r8 <f a>16 16 8-. 8-. 8-. 8-. 8-. 8-. |
@@ -103,8 +103,8 @@ g2 |
                     \new StaffGroup <<
                         \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
                         \new Staff \relative c'' {                 
-                            \set Staff.instrumentName = "Violin"
-                            \set Staff.shortInstrumentName = "Vln."  
+                            \set Staff.instrumentName = "Violin 1"
+                            \set Staff.shortInstrumentName = "Vln. 1"  
 \key c \major 
 r8 <e g>16\f <f a> <c' e>8-. <e, g>16 <f a> <c' e>2 |
 r8 <e, g>16 <f a> <d' f>8-. <e, g>16 <f a> <d' f>2 |
