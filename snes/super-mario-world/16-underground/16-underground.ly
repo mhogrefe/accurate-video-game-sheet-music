@@ -118,18 +118,18 @@ r4 c f8 c'4 aes8 ~ |
 \override Glissando.style = #'trill
 aes1\glissando |
 a1 ~ |
-a1 ~ |
+a1\> ~ |
 a1 ~ |
 a1 |
-r4 aes f4. c8 |
+r4\! aes\f f4. c8 |
 d8 f2.. |
 r4 c f8 c'4 aes8 ~ |
 aes1\glissando |
 a1 ~ |
-a1 ~ |
+a1\> ~ |
 a1 ~ |
 a1 |
-a4. f8 ~ f4 c |
+a4.\!\f f8 ~ f4 c |
 a'4. f8 ~ f4 r |
 aes8 f c4 aes'4. g8 ~ |
 g2. r4 |
