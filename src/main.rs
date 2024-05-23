@@ -1,7 +1,7 @@
 use image::imageops::FilterType;
 use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use malachite::num::arithmetic::traits::DivRound;
-use malachite::num::conversion::traits::RoundingFrom;
+use malachite::num::conversion::traits::{FromSciString, RoundingFrom};
 use malachite::num::float::NiceFloat;
 use malachite::rounding_modes::RoundingMode;
 use malachite::Rational;
@@ -198,6 +198,18 @@ fn adjust_image(image: DynamicImage) -> DynamicImage {
             canvas
         }
     }
+}
+
+fn resize_image_for_book(mut img: DynamicImage) -> DynamicImage {
+    let target_width_inches = Rational::from_sci_string("5.75").unwrap();
+    let target_width_px = target_width_inches * Rational::from(600);
+    let target_height_px = Rational::from_unsigneds(img.height(), img.width()) * &target_width_px;
+    img = img.resize(
+        u32::rounding_from(&target_width_px, RoundingMode::Nearest),
+        u32::rounding_from(&target_height_px, RoundingMode::Nearest),
+        FilterType::Nearest,
+    );
+    img
 }
 
 fn process_track(dir_path: &str) {
@@ -595,6 +607,27 @@ fn recolor_screenshot(dir_path: &str) {
     img.save(&out_path).expect("Could not write image");
 }
 
+fn resize_images_for_book(dir_path: &str) {
+    let mut track_names = Vec::new();
+    for path in fs::read_dir(dir_path).unwrap() {
+        let path = path.unwrap().path().display().to_string();
+        let file_name = &path[dir_path.len() + 1..];
+        if file_name.chars().next().unwrap().is_numeric() {
+            track_names.push(file_name.to_string());
+        }
+    }
+    track_names.sort();
+    println!("Resizing images for book...");
+    for track_name in track_names {
+        println!("{track_name}");
+        let img = image::open(&format!("{dir_path}/{track_name}/screenshot.png"))
+            .expect("File not found");
+        let out_path = format!("../video-game-extracted-music-books/{dir_path}/{track_name}.png");
+        let resized = resize_image_for_book(img);
+        resized.save(&out_path).expect("Could not write image");
+    }
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() > 1 && args[1] == "recolor_screenshot" {
@@ -618,6 +651,7 @@ fn main() {
                     .arg(&format!("{dir_path}/video-garageband.mp4"))
                     .output();
             }
+            resize_images_for_book(&dir_path);
             create_video(dir_path, false);
             if create_video(dir_path, true) {
                 #[allow(unused_must_use)]

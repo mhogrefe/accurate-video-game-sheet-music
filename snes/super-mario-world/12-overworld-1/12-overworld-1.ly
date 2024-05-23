@@ -175,7 +175,7 @@ f16-. r d8 d16-. g gis a gis-. a f d c-. f a, bes |
 \key f \major
 R1 |
 R1*10
-bes8\mf b c d c a f g |
+bes8\mf^\markup{\italic pizz.} b c d c a f g |
 aes8 b d f g f e c |
 bes8 a bes d f e c a |
 b8 d f b, bes d c e |

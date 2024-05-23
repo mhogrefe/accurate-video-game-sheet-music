@@ -22,7 +22,7 @@ smaller = {
                 \set Staff.shortInstrumentName = "S."
 \tempo 4 = 180
 \key a \major
-<<{a8 cis a' cis a'2 }\\{r16 bes,,8 e bes' e ~ e4..}>> |
+a16^\markup{Echo} bes cis e a bes cis e a2 |
 \bar "|."
             }
         }

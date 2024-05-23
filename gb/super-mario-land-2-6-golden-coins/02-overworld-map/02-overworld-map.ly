@@ -42,7 +42,7 @@ r8 <g' bes> r <fis, dis'> <g e'>4-. <a' c>-. |
                     \set Staff.shortInstrumentName = "W."
 \clef bass
 \key bes \major
-f8-. e-. f-. bes-. r bes-. r bes-. |
+f8-.^\markup{Echo} e-. f-. bes-. r bes-. r bes-. |
 f'8-. e-. f-. bes,-. r bes-. r bes-. |
 f8-. e-. f-. bes-. r bes-. r bes-. |
 f'8-. e-. f-. bes,-. r bes-. r bes-. |
