@@ -105,7 +105,7 @@ f8-. c-. ees-. c-. des-. b-. ees-. des-. |
                     >>
 
                     \new Staff \relative c' {                 
-                    \set Staff.instrumentName = "Bongos"
+                        \set Staff.instrumentName = "Bongos"
                         \set Staff.shortInstrumentName = "Bon."  
 \key a \major
 \clef bass

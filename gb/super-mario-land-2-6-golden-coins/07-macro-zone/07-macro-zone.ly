@@ -63,7 +63,7 @@ r4 r <e c'>-. |
                     \set GrandStaff.shortInstrumentName = "W."
                     \new Staff \relative c''' {
 \key d \major
-r4 r8 cis r4 |
+r4 r8 cis^\markup{Echo} r4 |
 r4 r a-. |
 r4 r8 cis r4 |
 r4 r a-. |
@@ -76,7 +76,7 @@ r4 r a-. |
                     \new Staff \relative c {
 \clef bass
 \key d \major
-d4-. r r8 d |
+d4-.^\markup{Echo} r r8 d |
 a4-. a-. r |
 d4-. r r8 d |
 a4-. a-. r |

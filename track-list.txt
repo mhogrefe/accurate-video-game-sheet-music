@@ -297,3 +297,4 @@ snes/super-mario-world/15-overworld-2-yoshi
 snes/super-mario-world/16-underground
 snes/super-mario-world/17-underground-yoshi
 snes/super-mario-world/18-underwater
+snes/super-mario-world/19-underwater-yoshi

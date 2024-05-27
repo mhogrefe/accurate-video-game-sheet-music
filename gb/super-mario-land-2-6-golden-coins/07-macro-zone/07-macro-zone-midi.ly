@@ -67,6 +67,27 @@ r4 \times 2/3 { r4 c8 } r4 |
 r4 r a-. |
                     }
 
+                    \new Staff \relative c''' {
+\key d \major
+r4 r \times 2/3 { cis4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+r4 r \times 2/3 { cis4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+r4 r \times 2/3 { c4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+r4 r \times 2/3 { c4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+
+r4 r \times 2/3 { cis4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+r4 r \times 2/3 { cis4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+r4 r \times 2/3 { c4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+r4 r \times 2/3 { c4 r8 } |
+r4 r \times 2/3 { r4 a8 } |
+                    }
+
                     \new Staff \relative c {
 \clef bass
 \key d \major
@@ -87,6 +108,28 @@ f'4-. r \times 2/3 { r4 f8 } |
 c4-. c-. r |
 f4-. r \times 2/3 { r4 f8 } |
 c4-. c-. r |
+                    }
+
+                    \new Staff \relative c {
+\clef bass
+\key d \major
+\times 2/3 { r4 d8 } r4 r |
+\times 2/3 { d4 a8 } \times 2/3 { r4 a8 } r4 |
+\times 2/3 { r4 d8 } r4 r |
+\times 2/3 { d4 a8 } \times 2/3 { r4 a8 } r4 |
+\times 2/3 { r4 f'8 } r4 r |
+\times 2/3 { f4 c8 } \times 2/3 { r4 c8 } r4 |
+\times 2/3 { r4 f8 } r4 r |
+\times 2/3 { f4 c8 } \times 2/3 { r4 c8 } r4 |
+
+\times 2/3 { r4 d8 } r4 r |
+\times 2/3 { d4 a8 } \times 2/3 { r4 a8 } r4 |
+\times 2/3 { r4 d8 } r4 r |
+\times 2/3 { d4 a8 } \times 2/3 { r4 a8 } r4 |
+\times 2/3 { r4 f'8 } r4 r |
+\times 2/3 { f4 c8 } \times 2/3 { r4 c8 } r4 |
+\times 2/3 { r4 f8 } r4 r |
+\times 2/3 { f4 c8 } \times 2/3 { r4 c8 } r4 |
                     }
                 >>
 

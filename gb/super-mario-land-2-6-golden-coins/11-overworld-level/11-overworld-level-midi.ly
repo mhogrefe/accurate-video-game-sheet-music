@@ -29,46 +29,46 @@ smaller = {
 a8 a r a b4-. c-. |
 cis4-. r a8 b c cis
 
-d2 fis |
-a2 gis |
-g2 e4-. cis ~ |
-cis1 |
+d4 r fis r |
+a4 r gis r |
+g4 r e-. cis ~ |
+cis2 r |
 r4 a,4-. gis-. a-. |
-e'4-. e2 g4-. |
+e'4-. e r g-. |
 fis4-. d-. b-. a ~ |
-a1 |
-b4-. ais-. b-. d ~ |
-d4 d-. e2 |
-fis4-. eis-. fis-. b ~ |
-b4 r ais-. b-. |
-cis2 gis4-. a ~ |
-a4 r gis-. a-. |
-b2 fis4-. g ~ |
-g4 e2 r4 |
-d'2 fis |
-a2 gis |
-g2 e4-. cis ~ |
-cis1 |
+a2 r |
+b4-. ais-. b-. d |
+r4 d-. e r |
+fis4-. eis-. fis-. b |
+r2 ais4-. b-. |
+cis4 r gis4-. a |
+r2 gis4-. a-. |
+b4 r fis-. g |
+r4  e2 r4 |
+d'4 r fis r |
+a4 r gis r |
+g4 r e4-. cis ~ |
+cis2 r |
 r4 a,4-. gis-. a-. |
-e'4-. e2 g4-. |
+e'4-. e r g-. |
 fis4-. d-. b-. a ~ |
-a1 |
-b4-. ais-. b-. d ~ |
-d4 d-. e2 |
-fis4-. eis-. fis-. b ~ |
-b4 b-. fis2 |
-e4-. dis-. e-. a ~ |
-a4 a-. cis,2 |
+a2 r |
+b4-. ais-. b-. d |
+r4 d-. e r |
+fis4-. eis-. fis-. b |
+r4 b-. fis r |
+e4-. dis-. e-. a |
+r4 a-. cis, r |
 d2 r |
 r2 d'4-. e-. |
 \bar "||"
 \key e \major
-fis2 d4-. e-. |
-fis2 d4-. fis-. |
-e2 cis4 r |
+fis4 r d-. e-. |
+fis4 r d-. fis-. |
+e4 r cis r |
 r2 cis4-. dis-. |
-e2 gis4-. fis ~ |
-fis4 e-. dis-. e-. |
+e4 r gis-. fis |
+r4 e-. dis-. e-. |
 fis2 r |
 r2 fis,4 gis |
 a2 fis4 gis |
@@ -79,63 +79,64 @@ e4 gis b cis |
 dis2 cis |
 fis,1 ~ |
 fis2 r |
-e'2 gis |
-b2 ais |
-a2 fis4-. dis ~ |
-dis1 |
+e'4 r gis r |
+b4 r ais r |
+a4 r fis4-. dis ~ |
+dis2 r |
 r4 b,-. ais-. b-. |
-fis'4-. fis2 a4-. |
+fis'4-. fis r a-. |
 gis4-. e-. cis-. b ~ |
-b1 |
-cis4-. bis-. cis-. e ~ |
-e4 e-. fis2 |
-gis4-. fisis-. gis-. cis ~ |
-cis4 cis-. gis2 |
-fis4-. eis-. fis-. b ~ |
-b4 b-. dis,2 |
+b2 r |
+cis4-. bis-. cis-. e |
+r4 e-. fis r |
+gis4-. fisis-. gis-. cis |
+r4 cis-. gis r |
+fis4-. eis-. fis-. b |
+r4 b-. dis, r |
 e2 r |
 R1 |
+
 \key d \major
-d'2 fis |
-a2 gis |
-g2 e4-. cis ~ |
-cis1 |
+d'4 r fis r |
+a4 r gis r |
+g4 r e-. cis ~ |
+cis2 r |
 r4 a,4-. gis-. a-. |
-e'4-. e2 g4-. |
+e'4-. e r g-. |
 fis4-. d-. b-. a ~ |
-a1 |
-b4-. ais-. b-. d ~ |
-d4 d-. e2 |
-fis4-. eis-. fis-. b ~ |
-b4 r ais-. b-. |
-cis2 gis4-. a ~ |
-a4 r gis-. a-. |
-b2 fis4-. g ~ |
-g4 e2 r4 |
-d'2 fis |
-a2 gis |
-g2 e4-. cis ~ |
-cis1 |
+a2 r |
+b4-. ais-. b-. d |
+r4 d-. e r |
+fis4-. eis-. fis-. b |
+r2 ais4-. b-. |
+cis4 r gis4-. a |
+r2 gis4-. a-. |
+b4 r fis-. g |
+r4  e2 r4 |
+d'4 r fis r |
+a4 r gis r |
+g4 r e4-. cis ~ |
+cis2 r |
 r4 a,4-. gis-. a-. |
-e'4-. e2 g4-. |
+e'4-. e r g-. |
 fis4-. d-. b-. a ~ |
-a1 |
-b4-. ais-. b-. d ~ |
-d4 d-. e2 |
-fis4-. eis-. fis-. b ~ |
-b4 b-. fis2 |
-e4-. dis-. e-. a ~ |
-a4 a-. cis,2 |
+a2 r |
+b4-. ais-. b-. d |
+r4 d-. e r |
+fis4-. eis-. fis-. b |
+r4 b-. fis r |
+e4-. dis-. e-. a |
+r4 a-. cis, r |
 d2 r |
 r2 d'4-. e-. |
 \bar "||"
 \key e \major
-fis2 d4-. e-. |
-fis2 d4-. fis-. |
-e2 cis4 r |
+fis4 r d-. e-. |
+fis4 r d-. fis-. |
+e4 r cis r |
 r2 cis4-. dis-. |
-e2 gis4-. fis ~ |
-fis4 e-. dis-. e-. |
+e4 r gis-. fis |
+r4 e-. dis-. e-. |
 fis2 r |
 r2 fis,4 gis |
 a2 fis4 gis |
@@ -146,20 +147,20 @@ e4 gis b cis |
 dis2 cis |
 fis,1 ~ |
 fis2 r |
-e'2 gis |
-b2 ais |
-a2 fis4-. dis ~ |
-dis1 |
+e'4 r gis r |
+b4 r ais r |
+a4 r fis4-. dis ~ |
+dis2 r |
 r4 b,-. ais-. b-. |
-fis'4-. fis2 a4-. |
+fis'4-. fis r a-. |
 gis4-. e-. cis-. b ~ |
-b1 |
-cis4-. bis-. cis-. e ~ |
-e4 e-. fis2 |
-gis4-. fisis-. gis-. cis ~ |
-cis4 cis-. gis2 |
-fis4-. eis-. fis-. b ~ |
-b4 b-. dis,2 |
+b2 r |
+cis4-. bis-. cis-. e |
+r4 e-. fis r |
+gis4-. fisis-. gis-. cis |
+r4 cis-. gis r |
+fis4-. eis-. fis-. b |
+r4 b-. dis, r |
 e2 r |
 R1 |
                     }
