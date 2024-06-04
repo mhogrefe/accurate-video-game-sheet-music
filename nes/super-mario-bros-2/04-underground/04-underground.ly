@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.3"
 
 \paper {
   left-margin = 0.5\in
@@ -20,12 +20,12 @@
                     \set Staff.shortInstrumentName = "P."
 \key f \minor
 \tempo 4 = 128
-\clef bass f8 c' f \clef treble <ees' aes> r <e a>4. |
+\clef bass f8\mf c' f \clef treble <ees' aes> r <e a>4. |
 \clef bass f,,8 c' f \clef treble <ees' aes> r <d g>4. |
 r4 <f c'> ~ 8 <ees bes'>4. |
 <c f>4 <ees aes> ~ 8 <f bes>4 <bes, ees>8 |
 <c f>4 <f, c'> ~ 8 <g d'>4. |
-<aes ees'>1\> c1*0\! |
+<<{<aes ees'>1}\\{s2...\> s16\p}>> |
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
                 }

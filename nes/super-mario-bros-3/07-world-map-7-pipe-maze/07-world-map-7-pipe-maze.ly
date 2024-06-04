@@ -1,34 +1,13 @@
-\version "2.22.0"
+\version "2.24.3"
 
 \paper {
   left-margin = 0.5\in
 }
 
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
-}
-
 swing = \markup {
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      b'8^[ b']
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-  =
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      \times 2/3 {\stemUp b'4 b'8}
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
+  \bold Swing
+  \hspace #0.4
+  \rhythm { 8[ 8] } = \rhythm { \tuplet 3/2 { 4 8 } }
 }
 
 \book {

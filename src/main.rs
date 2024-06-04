@@ -158,7 +158,9 @@ fn parse_timing_config(name: &str) -> TimingConfig {
         } else {
             let measure = parse_measures_config(&line);
             if let Some(pt) = previous_time {
-                assert!(measure.time > pt);
+                if measure.time.is_some() {
+                    assert!(measure.time > pt);
+                }
             }
             previous_time = Some(measure.time);
             measures.push(measure);

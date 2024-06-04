@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.3"
 #(set-global-staff-size 16)
 
 \book {

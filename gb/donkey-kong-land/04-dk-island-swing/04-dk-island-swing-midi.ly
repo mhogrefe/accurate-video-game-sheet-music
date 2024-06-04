@@ -1,31 +1,4 @@
-\version "2.22.0"
-
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
-}
-
-swing = \markup {
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      b'8^[ b']
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-  =
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      \times 2/3 {\stemUp b'4 b'8}
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-}
+\version "2.24.3"
 
 \book {
     \header {
@@ -48,7 +21,7 @@ swing = \markup {
 \tempo 2 = 112
 \clef bass
 
-<e a>4-.\p^\swing \tuplet 3/2 { 4-. 8-. } 4-. \tuplet 3/2 { 4-. 8-. } |
+<e a>4-.\p \tuplet 3/2 { 4-. 8-. } 4-. \tuplet 3/2 { 4-. 8-. } |
 \tuplet 3/2 { <e a>4-. 8-. 4-. <d g>8 ~ 4 8-. } 4-. |
 <e a>4-. \tuplet 3/2 { 4-. 8-. } 4-. \tuplet 3/2 { 4-. 8-. } |
 \tuplet 3/2 { <e a>4-. 8-. 4-. <d g>8 ~ 4 8-. } 4-. |
@@ -100,7 +73,7 @@ c1 ~ |
 c1 |
 
 \clef bass
-<e,, a>4-.\p^\swing \tuplet 3/2 { 4-. 8-. } 4-. \tuplet 3/2 { 4-. 8-. } |
+<e,, a>4-.\p \tuplet 3/2 { 4-. 8-. } 4-. \tuplet 3/2 { 4-. 8-. } |
 \tuplet 3/2 { <e a>4-. 8-. 4-. <d g>8 ~ 4 8-. } 4-. |
 <e a>4-. \tuplet 3/2 { 4-. 8-. } 4-. \tuplet 3/2 { 4-. 8-. } |
 \tuplet 3/2 { <e a>4-. 8-. 4-. <d g>8 ~ 4 8-. } 4-. |

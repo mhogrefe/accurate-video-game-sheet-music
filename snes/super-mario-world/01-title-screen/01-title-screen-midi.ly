@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.3"
 
 \paper {
   left-margin = 0.8\in

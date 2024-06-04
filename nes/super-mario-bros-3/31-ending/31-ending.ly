@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.24.3"
 
 \book {
     \header {
@@ -19,16 +19,16 @@
                     \repeat volta 2 {
 \partial 4 \tuplet 3/2 { g8 fis g } |
 e8 e e e f f fis fis |
-g8 g g g c c e \tuplet 3/2 { e16 e8 } |
+g8 g g g c c e \tuplet 3/2 { \set stemLeftBeamCount = 1 \set stemRightBeamCount = 2 e16 e8 } |
 d8 d e e f f b, b |
 \partial 1*3/4 d8[ d d d] c c \tuplet 3/2 |
 \once \override Score.RehearsalMark.break-visibility = #end-of-line-visible
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Fine" }
                     }
-\partial 4 e8 \tuplet 3/2 { e16 e8 } |
+\partial 4 e8 \tuplet 3/2 { \set stemLeftBeamCount = 1 \set stemRightBeamCount = 2 e16 e8 } |
 e8 e e e b b b d |
-d8 d \tuplet 3/2 { r8 c b } c8 c f \tuplet 3/2 { f16 f8 } |
+d8 d \tuplet 3/2 { r8 c b } c8 c f \tuplet 3/2 { \set stemLeftBeamCount = 1 \set stemRightBeamCount = 2 f16 f8 } |
 f8 f f f c c c d |
 \partial 1*3/4 e8[ e e e] d d |
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT

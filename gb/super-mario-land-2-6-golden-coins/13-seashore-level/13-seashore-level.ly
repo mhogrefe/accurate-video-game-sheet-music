@@ -1,11 +1,4 @@
-\version "2.22.0"
-
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
-}
+\version "2.24.3"
 
 \book {
     \header {
@@ -82,7 +75,7 @@ tomh8 tommh tommh tomml r2 |
                     \new Staff \relative c' {
 \clef bass
 \key d \major
-a8 b r cis r d r e |
+a8^\markup{Echo} b r cis r d r e |
 r2 a,,4-. r |
 d4-. r8 a r2 |
 e'4-. r8 a, r4 e-. |

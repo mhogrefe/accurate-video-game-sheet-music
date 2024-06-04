@@ -1,11 +1,4 @@
-\version "2.22.0"
-
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
-}
+\version "2.24.3"
 
 \book {
     \header {
@@ -86,7 +79,7 @@ R1*16
 \clef bass
 \key d \major
 cis4-. d-. dis-. e-. |
-r8 e-. e-. e-. r4 a,, |
+r8 e-.^\markup{Echo} e-. e-. r4 a,, |
 d4-. r8 fis r4 a-. |
 e4-. r8 g r4 a-. |
 e4-. r8 g r4 a-. |

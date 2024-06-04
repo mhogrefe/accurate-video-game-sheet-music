@@ -1,12 +1,10 @@
-\version "2.22.0"
+\version "2.24.3"
 
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
+swing = \markup {
+  \bold Swing
+  \hspace #0.4
+  \rhythm { 8[ 8] } = \rhythm { \tuplet 3/2 { 4 8 } }
 }
-
 \book {
     \header {
         title = "Mr. Write’s House"

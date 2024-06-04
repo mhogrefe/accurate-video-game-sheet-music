@@ -1,11 +1,4 @@
-\version "2.22.0"
-
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
-}
+\version "2.24.3"
 
 \book {
     \header {

@@ -1,40 +1,40 @@
 00:00:00 File Selection
 00:00:43 Overworld Map
-00:01:08 Tree Zone
-00:01:28 Turtle Zone Entrance
-00:01:35 Turtle Zone
-00:01:51 Mario Zone
-00:02:14 Macro Zone
-00:02:34 Pumpkin Zone
-00:03:03 Space Zone
-00:03:23 Level Start
-00:03:31 Overworld Level
-00:04:39 Tree Level
-00:05:25 Seashore Level
-00:06:11 Machine Level
-00:06:52 Graveyard Level
-00:07:51 Haunted Level
-00:08:27 Space Level
-00:09:18 Star Maze
-00:11:01 Death
-00:11:10 Game Over
-00:11:42 Totaka’s Song
-00:11:59 Starman
-00:12:20 Pause
-00:12:28 Hurry
-00:12:37 Level Cleared
-00:12:48 Bonus Game
-00:13:04 Bonus Game Grabber
-00:13:13 Got Bonus Item
-00:13:23 Boss Battle Intro
-00:13:35 Boss Battle
-00:14:09 Battle Victory
-00:14:29 Got Golden Coin
-00:14:42 Castle Door Opens
-00:14:53 Before the Castle
-00:15:14 Wario’s Castle
-00:16:36 Wario Battle (Phase 1)
-00:17:18 Wario Battle (Phase 2)
-00:18:01 Wario Battle (Phase 3)
-00:18:22 Wario Defeated
-00:18:57 Credits
+00:01:09 Tree Zone
+00:01:29 Turtle Zone Entrance
+00:01:36 Turtle Zone
+00:01:52 Mario Zone
+00:02:15 Macro Zone
+00:02:36 Pumpkin Zone
+00:03:05 Space Zone
+00:03:25 Level Start
+00:03:33 Overworld Level
+00:04:40 Tree Level
+00:05:23 Seashore Level
+00:06:09 Machine Level
+00:06:50 Graveyard Level
+00:07:49 Haunted Level
+00:08:25 Space Level
+00:09:16 Star Maze
+00:10:59 Death
+00:11:08 Game Over
+00:11:40 Totaka’s Song
+00:11:57 Starman
+00:12:18 Pause
+00:12:26 Hurry
+00:12:35 Level Cleared
+00:12:46 Bonus Game
+00:13:02 Bonus Game Grabber
+00:13:11 Got Bonus Item
+00:13:21 Boss Battle Intro
+00:13:33 Boss Battle
+00:14:07 Battle Victory
+00:14:27 Got Golden Coin
+00:14:40 Castle Door Opens
+00:14:51 Before the Castle
+00:15:12 Wario’s Castle
+00:16:34 Wario Battle (Phase 1)
+00:17:16 Wario Battle (Phase 2)
+00:17:59 Wario Battle (Phase 3)
+00:18:20 Wario Defeated
+00:18:55 Credits

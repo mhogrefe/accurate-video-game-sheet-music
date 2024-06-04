@@ -1,31 +1,4 @@
-\version "2.22.0"
-
-smaller = {
-    \set fontSize = #-3
-    \override Stem #'length-fraction = #0.56
-    \override Beam #'thickness = #0.2688
-    \override Beam #'length-fraction = #0.56
-}
-
-swing = \markup {
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      b'8^[ b']
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-  =
-  \score {
-    \new Staff \with { \remove "Time_signature_engraver" \remove "Clef_engraver" \remove "Staff_symbol_engraver"  }
-    {
-      \smaller
-      \times 2/3 {\stemUp b'4 b'8}
-    }
-    \layout { ragged-right = ##t  indent = 0\cm }
-  }
-}
+\version "2.24.3"
 
 \book {
     \header {
@@ -44,7 +17,7 @@ swing = \markup {
 \key f \major
 \time 2/2
 \tempo 2 = 100
-\partial 4 \tuplet 3/2 { r8^\swing r g16 a } |
+\partial 4 \tuplet 3/2 { r8 r g16 a } |
 \tuplet 3/2 { bes4 a8 g4 e8 d4 f8 fis4 g8 } |
 r4 \tuplet 6/4 { f16 d f d f d } \tuplet 6/4 { f16[ d f d f d] } \tuplet 3/2 { f16 d f ~ } f8 |
 R1 |
