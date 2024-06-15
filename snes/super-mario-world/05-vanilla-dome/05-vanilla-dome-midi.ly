@@ -41,24 +41,24 @@ aes4 r8 aes16-. aes-. r2 |
 des,4 r8 des16-. des-. r2 |
                     }
 
-                    \new Staff \relative c'''' {                 
+                    \new Staff \relative c''' {                 
                         \set Staff.instrumentName = "Glockenspiel"
                         \set Staff.shortInstrumentName = "Glock."  
 \key d \minor
 R1*2
-c8 c,,4. r4 c'' |
-b8 b,,4. r4 b'' |
-c8 c,,4. r4 c'' |
-b8 b,,4. r4 b'' |
-bes8 bes,,4. r2 |
-a''8 a,,4. r2 |
+c8 c,4. r4 c'' |
+b,8 b,4. r4 b'' |
+c,8 c,4. r4 c'' |
+b,8 b,4. r4 b'' |
+bes,8 bes,4. r2 |
+a'8 a,4. r2 |
 
-c''8 c,,4. r4 c'' |
-b8 b,,4. r4 b'' |
-c8 c,,4. r4 c'' |
-b8 b,,4. r4 b'' |
-bes8 bes,,4. r2 |
-a''8 a,,4. r2 |
+c'8 c,4. r4 c'' |
+b,8 b,4. r4 b'' |
+c,8 c,4. r4 c'' |
+b,8 b,4. r4 b'' |
+bes,8 bes,4. r2 |
+a'8 a,4. r2 |
                     }
 
                     \new Staff \relative c'' {                 
@@ -86,19 +86,19 @@ r32 ees8 ees4. r32 r16 r8 r4 |
                         \set Staff.shortInstrumentName = "Glock."  
 \key d \minor
 R1*2
-r16 c8 c''4. r16 r8 r4 |
-r16 b,,8 b''4. r16 r8 r4 |
-r16 c,,8 c''4. r16 r8 r4 |
-r16 b,,8 b''4. r16 r8 r4 |
-r16 bes,,8 bes''4. r16 r8 r4 |
-r16 a,,8 a''4. r16 r8 r4 |
+r16 c8 c'4. r16 r8 r4 |
+r16 b,8 b'4. r16 r8 r4 |
+r16 c,8 c'4. r16 r8 r4 |
+r16 b,8 b'4. r16 r8 r4 |
+r16 bes,8 bes'4. r16 r8 r4 |
+r16 a,8 a'4. r16 r8 r4 |
 
-r16 c,,8 c''4. r16 r8 r4 |
-r16 b,,8 b''4. r16 r8 r4 |
-r16 c,,8 c''4. r16 r8 r4 |
-r16 b,,8 b''4. r16 r8 r4 |
-r16 bes,,8 bes''4. r16 r8 r4 |
-r16 a,,8 a''4. r16 r8 r4 |
+r16 c,8 c'4. r16 r8 r4 |
+r16 b,8 b'4. r16 r8 r4 |
+r16 c,8 c'4. r16 r8 r4 |
+r16 b,8 b'4. r16 r8 r4 |
+r16 bes,8 bes'4. r16 r8 r4 |
+r16 a,8 a'4. r16 r8 r4 |
                     }
 
                     \new Staff \relative c' {                 

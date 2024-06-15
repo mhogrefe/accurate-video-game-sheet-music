@@ -32,11 +32,6 @@ g16 e g e g e g e g e g e-- r4 |
                 \DrumStaff
                 \RemoveEmptyStaves
             }
-            \context {
-                % Force measures to widen, revealing second glissando line
-                \Score
-                \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)
-            }
         }
         \midi {}
     }

@@ -71,24 +71,24 @@ r8 g g g a a b b |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 R1*2
-hhp8\ppp hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hhp hhp hhp hhp hhp hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hhp hhp hhp hhp hhp hhp |
+hh8\ppp hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh hh hh hh hh hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh hh hh hh hh hh |
                     }
                 }
 

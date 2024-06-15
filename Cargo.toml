@@ -8,5 +8,5 @@ edition = "2021"
 [dependencies]
 claxon = "0.4.3"
 image = "0.24.5"
-malachite = "0.3.2"
+malachite = "0.4.12"
 walkdir = "2.3.2"

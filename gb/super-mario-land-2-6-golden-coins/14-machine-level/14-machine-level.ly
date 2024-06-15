@@ -24,7 +24,7 @@ swing = \markup {
 \time 2/2
 \tempo 2 = 100
                     \repeat volta 2 {
-d4-.^\swing fis-. a-. r |
+d4-.^\swing^\markup{Echo} fis-. a-. r |
 R1 |
 d,4-. fis-. a-. gis-. |
 g4-. e8-. cis r2 |

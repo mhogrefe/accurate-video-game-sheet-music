@@ -18,11 +18,11 @@
             <<
                 \new StaffGroup <<
                     \new Staff \relative c' {  
-                        \set Staff.instrumentName = "Tenor Saxophone"
-                        \set Staff.shortInstrumentName = "T. Sax."  
+                        \set Staff.instrumentName = "English Horn"
+                        \set Staff.shortInstrumentName = "E. Hn."  
 \key g \major
 \tempo 4 = 150
-d8-.\mf d-. d-. d,-. d'-. d-. d-. d,-. |
+d8-.\f d-. d-. d,-. d'-. d-. d-. d,-. |
 <f' a>4. r8 <d fis>4-. r |
                         \repeat volta 2 {
 r8 <b g'>8 4-. r8 <b g'>8 4-. |

@@ -65,11 +65,11 @@ b4-. b r r8 b |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
                         \repeat percent 3 {
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
                         }
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh4 hh r8 \tuplet 3/2 { hhp16 hhp hhp } hh4 |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh4-> hh-> r8 \tuplet 3/2 { hh16 hh hh } hh4-> |
                     }
                 }
 

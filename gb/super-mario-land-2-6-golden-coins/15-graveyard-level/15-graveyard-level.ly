@@ -20,7 +20,7 @@
 \tempo 4 = 112
 \clef bass
                         \repeat volta 2 {
-d8-.\mf r r fis-. a-. r r aes-. |
+d8-.\mf^\markup{Echo} r r fis-. a-. r r aes-. |
 g8-. e-. cis-. \clef treble \ottava #1 d''''32-.\p e-. cis-. dis-. d-. e-. cis-. \set stemRightBeamCount = #1 dis-. \set stemLeftBeamCount = #1 d-. e-. cis-. dis-. d-. e-. cis-. \set stemRightBeamCount = #1 dis-. \set stemLeftBeamCount = #1 d-. e-. cis-. dis-. |
 d32-. e-. cis-. \set stemRightBeamCount = #1 dis-. \set stemLeftBeamCount = #1 d-. e-. cis-. dis-. d-.[ e-. cis-. dis-.] d-. \ottava #0 r r16 r2 |
 r2 r4 r8 \clef bass gis,,,,,-.\mf |
@@ -50,7 +50,7 @@ R2. |
                     \new DrumStaff {                 
                         \drummode {
 R1*6
-r8 tomh tomh16 tomh tommh8 tommh tomml tomml tomml |
+r8 tomh\mf^\markup{Echo} tomh16 tomh tommh8 tommh tomml tomml tomml |
 R1 |
 R2 |
 R1*10

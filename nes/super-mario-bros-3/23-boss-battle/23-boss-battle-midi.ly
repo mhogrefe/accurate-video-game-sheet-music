@@ -88,34 +88,34 @@ aes8 f ees f r2 |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-hhp4\ppp hhp8 hhp |
-r8 hhp hhp hhp hhp hhp hhp hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hhp hh hhp |
+hh4\ppp hh8 hh |
+r8 hh hh hh hh hh hh hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
+hh8 hh hh-> hh hh hh hh-> hh |
                     }
                 }
 

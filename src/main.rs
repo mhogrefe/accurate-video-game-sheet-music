@@ -1,7 +1,8 @@
+use crate::book::generate_book;
 use image::imageops::FilterType;
 use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use malachite::num::arithmetic::traits::DivRound;
-use malachite::num::conversion::traits::{FromSciString, RoundingFrom};
+use malachite::num::conversion::traits::RoundingFrom;
 use malachite::num::float::NiceFloat;
 use malachite::rounding_modes::RoundingMode;
 use malachite::Rational;
@@ -13,6 +14,8 @@ use std::io::{self, BufRead, Write};
 use std::process::{Command, Output};
 use std::str::FromStr;
 use walkdir::WalkDir;
+
+pub mod book;
 
 fn print_output(o: Output) {
     println!("{}", std::str::from_utf8(&o.stdout).unwrap());
@@ -181,7 +184,8 @@ fn adjust_image(image: DynamicImage) -> DynamicImage {
             let new_width = u32::rounding_from(
                 &(Rational::from(image.height()) * &target_aspect_ratio),
                 RoundingMode::Nearest,
-            );
+            )
+            .0;
             let mut canvas = DynamicImage::new_rgb8(new_width, image.height());
             canvas
                 .copy_from(&image, (new_width - image.width()) >> 1, 0)
@@ -192,7 +196,8 @@ fn adjust_image(image: DynamicImage) -> DynamicImage {
             let new_height = u32::rounding_from(
                 &(Rational::from(image.width()) / &target_aspect_ratio),
                 RoundingMode::Nearest,
-            );
+            )
+            .0;
             let mut canvas = DynamicImage::new_rgb8(image.width(), new_height);
             canvas
                 .copy_from(&image, 0, (new_height - image.height()) >> 1)
@@ -200,18 +205,6 @@ fn adjust_image(image: DynamicImage) -> DynamicImage {
             canvas
         }
     }
-}
-
-fn resize_image_for_book(mut img: DynamicImage) -> DynamicImage {
-    let target_width_inches = Rational::from_sci_string("5.75").unwrap();
-    let target_width_px = target_width_inches * Rational::from(600);
-    let target_height_px = Rational::from_unsigneds(img.height(), img.width()) * &target_width_px;
-    img = img.resize(
-        u32::rounding_from(&target_width_px, RoundingMode::Nearest),
-        u32::rounding_from(&target_height_px, RoundingMode::Nearest),
-        FilterType::Nearest,
-    );
-    img
 }
 
 fn process_track(dir_path: &str) {
@@ -247,6 +240,7 @@ fn process_track(dir_path: &str) {
         }
         if file_name.ends_with(".png")
             && !file_name.ends_with("screenshot.png")
+            && !file_name.ends_with("sprite.png")
             && !file_name.ends_with("-override.png")
         {
             print_output(
@@ -288,9 +282,9 @@ fn process_track(dir_path: &str) {
         let target_screenshot_name = format!("{dir_path}/video/screenshot.png");
         let mut img = image::open(&source_screenshot_name).expect("File not found");
         let ratio = Rational::from_unsigneds(img.width(), img.height());
-        let new_height = 1080u32.div_round(img.height(), RoundingMode::Ceiling) * img.height();
+        let new_height = 1080u32.div_round(img.height(), RoundingMode::Ceiling).0 * img.height();
         let new_width =
-            u32::rounding_from(&(Rational::from(new_height) * ratio), RoundingMode::Nearest);
+            u32::rounding_from(&(Rational::from(new_height) * ratio), RoundingMode::Nearest).0;
         img = img.resize(new_width, new_height, FilterType::Nearest);
         let adjusted = adjust_image(img);
         adjusted
@@ -367,9 +361,9 @@ fn count_slashes(s: &str) -> usize {
 }
 
 fn format_seconds(s: f64) -> String {
-    let hours = i32::rounding_from(s / 3600.0, RoundingMode::Floor);
-    let minutes = i32::rounding_from(s / 60.0, RoundingMode::Floor) - hours * 60;
-    let seconds = i32::rounding_from(s, RoundingMode::Floor) - hours * 3600 - minutes * 60;
+    let hours = i32::rounding_from(s / 3600.0, RoundingMode::Floor).0;
+    let minutes = i32::rounding_from(s / 60.0, RoundingMode::Floor).0 - hours * 60;
+    let seconds = i32::rounding_from(s, RoundingMode::Floor).0 - hours * 3600 - minutes * 60;
     format!("{hours:02}:{minutes:02}:{seconds:02}")
 }
 
@@ -389,7 +383,7 @@ fn get_full_name(dir_path: &str, short_track_name: &str) -> String {
 }
 
 // True if input.txt should be deleted
-fn create_video(dir_path: &str, use_gb: bool) -> bool {
+pub fn create_video(dir_path: &str, use_gb: bool) -> bool {
     let mut track_names = Vec::new();
     for path in fs::read_dir(dir_path).unwrap() {
         let path = path.unwrap().path().display().to_string();
@@ -412,7 +406,6 @@ fn create_video(dir_path: &str, use_gb: bool) -> bool {
         let mut chapters_file = File::create(chapters_file_name).unwrap();
         let mut first_screenshot = None;
         for track_name in &track_names {
-            println!("{}", track_name);
             let config = parse_timing_config(&format!("{dir_path}/{track_name}/video/timing.txt"));
             let flac_file_name = if use_gb {
                 format!("{dir_path}/{track_name}/{track_name}-garageband.flac")
@@ -609,27 +602,6 @@ fn recolor_screenshot(dir_path: &str) {
     img.save(&out_path).expect("Could not write image");
 }
 
-fn resize_images_for_book(dir_path: &str) {
-    let mut track_names = Vec::new();
-    for path in fs::read_dir(dir_path).unwrap() {
-        let path = path.unwrap().path().display().to_string();
-        let file_name = &path[dir_path.len() + 1..];
-        if file_name.chars().next().unwrap().is_numeric() {
-            track_names.push(file_name.to_string());
-        }
-    }
-    track_names.sort();
-    println!("Resizing images for book...");
-    for track_name in track_names {
-        println!("{track_name}");
-        let img = image::open(&format!("{dir_path}/{track_name}/screenshot.png"))
-            .expect("File not found");
-        let out_path = format!("../video-game-extracted-music-books/{dir_path}/{track_name}.png");
-        let resized = resize_image_for_book(img);
-        resized.save(&out_path).expect("Could not write image");
-    }
-}
-
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() > 1 && args[1] == "recolor_screenshot" {
@@ -653,14 +625,7 @@ fn main() {
                     .arg(&format!("{dir_path}/video-garageband.mp4"))
                     .output();
             }
-            resize_images_for_book(&dir_path);
-            create_video(dir_path, false);
-            if create_video(dir_path, true) {
-                #[allow(unused_must_use)]
-                {
-                    Command::new("rm").arg(&format!("input.txt")).output();
-                }
-            }
+            generate_book(&dir_path);
         } else {
             panic!();
         }

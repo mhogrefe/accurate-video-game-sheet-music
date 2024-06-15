@@ -101,8 +101,8 @@ c2. |
                         \set Staff.shortInstrumentName="N."
 \set Timing.beamExceptions = #'()
                         \repeat percent 16 {
-r4 hhp hh |
-r4 hhp8 hhp hh4 |
+r4 hh hh-> |
+r4 hh8 hh hh4-> |
                         }
                     }
                 }

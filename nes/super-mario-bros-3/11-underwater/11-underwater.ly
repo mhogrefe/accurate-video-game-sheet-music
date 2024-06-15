@@ -65,7 +65,7 @@ f,8-. f'-. c'-. f,-. g,-. g'-. d'-. g,-. |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 R1*2
-\repeat percent 12 { hh8 hhp hhp hhp hh hhp hhp hhp | }
+\repeat percent 12 { hh8-> hh hh hh hh-> hh hh hh | }
                     }
                 }
 

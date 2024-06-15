@@ -20,8 +20,8 @@
                     \new StaffGroup <<
                         \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
                         \new Staff \relative c'' {                 
-                            \set Staff.instrumentName = "Alto Saxophone 1"
-                            \set Staff.shortInstrumentName = "A. Sax. 1"  
+                            \set Staff.instrumentName = "Oboe 1"
+                            \set Staff.shortInstrumentName = "Ob. 1"  
                             \repeat volta 2 {
 \key c \minor
 \tempo 4=128
@@ -39,8 +39,8 @@ c8 b2.. |
                         }
 
                         \new Staff \relative c' {                 
-                            \set Staff.instrumentName = "Alto Saxophone 2"
-                            \set Staff.shortInstrumentName = "A. Sax. 2"  
+                            \set Staff.instrumentName = "Oboe 2"
+                            \set Staff.shortInstrumentName = "Ob. 2"  
 \key c \minor
 r2 <c ees>8\mf <ees aes>4. |
 r2 <fis ais>8 <g b>4. |
@@ -54,8 +54,8 @@ r2 <fis ais>8 <g b>4. |
                     >>
 
                     \new Staff \relative c {                 
-                        \set Staff.instrumentName = "Tenor Saxophone"
-                        \set Staff.shortInstrumentName = "T. Sax."  
+                        \set Staff.instrumentName = "English Horn 1"
+                        \set Staff.shortInstrumentName = "E. Hn. 1"  
 \key c \minor
 \clef bass
 r4 ees2\mf ~ ees8 r |
@@ -66,8 +66,8 @@ R1*4
                     }
 
                     \new Staff \relative c {                 
-                        \set Staff.instrumentName = "Baritone Saxophone"
-                        \set Staff.shortInstrumentName = "Bar. Sax."  
+                        \set Staff.instrumentName = "English Horn 2"
+                        \set Staff.shortInstrumentName = "E. Hn. 2"  
 \key c \minor
 \clef bass
 aes2.\mf r4 |

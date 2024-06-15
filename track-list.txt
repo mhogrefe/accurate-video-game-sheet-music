@@ -298,3 +298,4 @@ snes/super-mario-world/16-underground
 snes/super-mario-world/17-underground-yoshi
 snes/super-mario-world/18-underwater
 snes/super-mario-world/19-underwater-yoshi
+snes/super-mario-world/20-ghost-house

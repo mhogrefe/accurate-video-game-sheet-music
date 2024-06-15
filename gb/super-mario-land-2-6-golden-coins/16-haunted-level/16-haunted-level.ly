@@ -18,7 +18,7 @@
 \time 6/8
 \tempo 4. = 100
 \clef bass
-d8-. r fis-. a,-. b-. cis-. |
+d8-.\mf^\markup{Echo} r fis-. a,-. b-. cis-. |
 d8-. r a'-. fis-. r r |
 d8-. r fis-. a,-. b-. cis-. |
 d8-. r r r4 r8 |

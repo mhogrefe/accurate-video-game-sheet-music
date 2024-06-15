@@ -84,22 +84,23 @@ b4-. b r r8 b |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-hhp8\ppp hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh4 hh r8 \tuplet 3/2 { hhp16 hhp hhp } hh4 |
-hhp8\ppp hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh8 hhp hhp hh hhp hhp hh hhp |
-hhp8 hhp hh hhp hhp hh hhp hhp |
-hh4 hh r8 \tuplet 3/2 { hhp16 hhp hhp } hh4 |
+hh8\ppp hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh4-> hh-> r8 \tuplet 3/2 { hh16 hh hh } hh4-> |
+
+hh8 hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh8-> hh hh hh-> hh hh hh-> hh |
+hh8 hh hh-> hh hh hh-> hh hh |
+hh4-> hh-> r8 \tuplet 3/2 { hh16 hh hh } hh4-> |
                     }
                 }
 

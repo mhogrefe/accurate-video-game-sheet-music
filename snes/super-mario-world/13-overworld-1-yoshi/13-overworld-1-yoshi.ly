@@ -25,11 +25,11 @@ swing = \markup {
             <<
                 \new StaffGroup <<
                     \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Alto Saxophone"
-                        \set Staff.shortInstrumentName = "A. Sax"  
+                        \set Staff.instrumentName = "Oboe"
+                        \set Staff.shortInstrumentName = "Ob."  
 \key f \major
 \tempo 4 = 132
-<f d'>4\mf <d bes'>8. <bes f'>16 <g e'>8-. <a f'>16 <bes g'>16 ~ 4 |
+<f d'>4\f <d bes'>8. <bes f'>16 <g e'>8-. <a f'>16 <bes g'>16 ~ 4 |
                         \repeat volta 2 {
 R1*20
 <d, f>16 <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <g bes> <a c> <bes d>16 ~ 8 r |

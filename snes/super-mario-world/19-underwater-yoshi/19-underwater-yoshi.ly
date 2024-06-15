@@ -19,8 +19,8 @@
             <<
                 \new StaffGroup <<
                     \new Staff \relative c' {                 
-                        \set Staff.instrumentName = "Alto Saxophone"
-                        \set Staff.shortInstrumentName = "A. Sax."  
+                        \set Staff.instrumentName = "English Horn"
+                        \set Staff.shortInstrumentName = "E. Hn."
 \key f \major 
 \time 3/4
 \tempo 2.=83
