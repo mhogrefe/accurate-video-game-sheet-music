@@ -20,7 +20,7 @@
 \time 2/2
 \tempo 2 = 128
                         \repeat volta 2 {
-gis4-. fis-. e-. fis8 gis |
+gis4-.\mf^\markup{Echo} fis-. e-. fis8 gis |
 r4 fis-. e-. fis-. |
 gis4-. fis-. e-. fis8 gis |
 r4 fis-. e-. fis-. |
@@ -35,7 +35,7 @@ r4 fis-. e-. fis-. |
 a4-. fis-. e-. fis8 a |
 r4 fis-. e-. fis-. |
 e,8 e e' e \ottava #1 e' e \ottava #0 r4 |
-b,,2 b' |
+b,,2^\markup{"No echo"} b' |
 gis2 r4 e ~ |
 e1 |
 R1 |
@@ -52,7 +52,7 @@ b,2 r4 a ~ |
 a1 ~ |
 a1 |
 R1 |
-gis''4-. fis-. e-. fis8 gis |
+gis''4-.^\markup{Echo} fis-. e-. fis8 gis |
 r4 fis-. e-. fis-. |
 gis4-. fis-. e-. fis8 gis |
 r4 fis-. e-. fis-. |
@@ -67,7 +67,7 @@ r4 fis-. e-. fis-. |
 a4-. fis-. e-. fis8 a |
 r4 fis-. e-. fis-. |
 e,8 e e' e \ottava #1 e' e \ottava #0 r4 |
-b,,2 b' |
+b,,2^\markup{"No echo"} b' |
 gis2 r4 e ~ |
 e1 |
 R1 |
@@ -84,7 +84,7 @@ b,2 r4 a ~ |
 a1 ~ |
 a1 |
 R1 |
-gis''4-. fis-. e-. fis8 gis |
+gis''4-.^\markup{Echo} fis-. e-. fis8 gis |
 r4 fis-. e-. fis-. |
 gis4-. fis-. e-. fis8 gis |
 r4 fis-. e-. fis-. |
@@ -99,7 +99,7 @@ r4 fis-. e-. fis-. |
 a4-. fis-. e-. fis8 a |
 r4 fis-. e-. fis-. |
 e,8 e e' e \ottava #1 e' e \ottava #0 r4 |
-b,,2 b' |
+b,,2^\markup{"No echo"} b' |
 gis2 r4 e ~ |
 e1 |
 R1 |
@@ -138,7 +138,7 @@ bd4 r bd r |
                     \new Staff \relative c {
 \clef bass
 \key a \major
-a4-. r8 fis r4 e-. |
+a4-.\f^\markup{Echo} r8 fis r4 e-. |
 r4 fis-. a-. b-. |
 a4-. r8 fis r4 e-. |
 r4 fis-. a-. fis-. |

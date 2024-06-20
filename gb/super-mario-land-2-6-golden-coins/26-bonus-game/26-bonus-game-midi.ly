@@ -46,7 +46,7 @@ d,4-. r8 fis r4 a-. |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-hh8\pppp hh hh-> hh hh hh sn hh-> |
+hh8\ppp hh hh-> hh hh hh sn hh-> |
 hh8 hh hh-> hh hh hh sn hh-> |
 hh8 hh hh-> hh hh hh sn hh-> |
 hh8 hh hh-> hh hh hh sn hh-> |

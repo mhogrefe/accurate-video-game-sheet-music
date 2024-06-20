@@ -40,9 +40,12 @@ r8 g-. b-. <cis, cis'>-. r g'-. b-. g-. |
 r8 fis-. a-. <b, b'>-. r fis'-. a-. fis-. |
 <e e'>8-. g-. b-. <dis, dis'>-. r e-. b'-. <d, d'>-. |
 r8 g-. b-. <cis, cis'>-. r g'-. b-. g-. |
-R1*4
+<a,, cis>8 <b d> r <cis e> r2 |
+<a cis>8 <b d> r <cis e> r2 |
+<a cis>8 <b d> r <cis e> r <d fis> r <e g> |
+r8 <fis a> r <g b> r4 <a a''> |
 
-<fis, a>8 <a d> <d fis> <fis a> r <f aes> r <e g> |
+<fis a>8 <a d> <d fis> <fis a> r <f aes> r <e g> |
 r8 <cis e> r <a cis> <e a>4-. r |
 <a cis>8 <gis bis> <a cis> <e' g> r <f aes> r <fis a> |
 R1 |
@@ -64,19 +67,7 @@ r8 g-. b-. <cis, cis'>-. r g'-. b-. g-. |
 r8 fis-. a-. <b, b'>-. r fis'-. a-. fis-. |
 <e e'>8-. g-. b-. <dis, dis'>-. r e-. b'-. <d, d'>-. |
 r8 g-. b-. <cis, cis'>-. r g'-. b-. g-. |
-R1*4
-                    }
-
-                    \new Staff \relative c' {                 
-\key d \major
-R1*22
-<a cis>8 <b d> r <cis e> r2 |
-<a cis>8 <b d> r <cis e> r2 |
-<a cis>8 <b d> r <cis e> r <d fis> r <e g> |
-r8 <fis a> r <g b> r4 <a a''> |
-
-R1*22
-<a, cis>8 <b d> r <cis e> r2 |
+<a,, cis>8 <b d> r <cis e> r2 |
 <a cis>8 <b d> r <cis e> r2 |
 <a cis>8 <b d> r <cis e> r <d fis> r <e g> |
 r8 <fis a> r <g b> r4 <a a''> |

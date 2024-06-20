@@ -57,39 +57,42 @@ R1 |
                 \new Staff \relative c''' {
 \key d \major
 \ottava #1
-d8\pp fis a fis d fis a fis |
-fis8 a d a f b d b |
-e,8 a cis a e a cis a |
-e8 a cis a e a cis a |
-e8 a cis a e a cis a |
-e8 a cis a e a cis a |
-d,8 fis a fis d fis a fis |
-d8 fis a fis d fis a fis |
-g8 b e b g b e b |
-gis8 b d b gis b d b |
-a8 d fis d a d fis d |
-b8 dis fis dis b dis fis dis |
-gis,8 b e b gis b e b |
-g8 cis e cis g cis e cis |
-fis,8 a d a e a cis a |
-d,8 a' d a d, a' d a |
+\set Timing.beamExceptions = #'()
+\set Timing.baseMoment = #(ly:make-moment 1/4)
+\set Timing.beatStructure = 1,1,1,1
+d16\pp d fis fis a a fis fis d d fis fis a a fis fis |
+fis16 fis a a d d a a f f b b d d b b |
+e,16 e a a cis cis a a e e a a cis cis a a |
+e16 e a a cis cis a a e e a a cis cis a a |
+e16 e a a cis cis a a e e a a cis cis a a |
+e16 e a a cis cis a a e e a a cis cis a a |
+d,16 d fis fis a a fis fis d d fis fis a a fis fis |
+d16 d fis fis a a fis fis d d fis fis a a fis fis |
+g16 g b b e e b b g g b b e e b b |
+gis16 gis b b d d b b gis gis b b d d b b |
+a16 a d d fis fis d d a a d d fis fis d d |
+b16 b dis dis fis fis dis dis b b dis dis fis fis dis dis |
+gis,16 gis b b e e b b gis gis b b e e b b |
+g16 g cis cis e e cis cis g g cis cis e e cis cis |
+fis,16 fis a a d d a a e e a a cis cis a a |
+d,16 d a' a d d a a d, d a' a d d a a |
 
-d,8 fis a fis d fis a fis |
-fis8 a d a f b d b |
-e,8 a cis a e a cis a |
-e8 a cis a e a cis a |
-e8 a cis a e a cis a |
-e8 a cis a e a cis a |
-d,8 fis a fis d fis a fis |
-d8 fis a fis d fis a fis |
-g8 b e b g b e b |
-gis8 b d b gis b d b |
-a8 d fis d a d fis d |
-b8 dis fis dis b dis fis dis |
-gis,8 b e b gis b e b |
-g8 cis e cis g cis e cis |
-fis,8 a d a e a cis a |
-d,8 a' d a d, a' d a |
+d,16 d fis fis a a fis fis d d fis fis a a fis fis |
+fis16 fis a a d d a a f f b b d d b b |
+e,16 e a a cis cis a a e e a a cis cis a a |
+e16 e a a cis cis a a e e a a cis cis a a |
+e16 e a a cis cis a a e e a a cis cis a a |
+e16 e a a cis cis a a e e a a cis cis a a |
+d,16 d fis fis a a fis fis d d fis fis a a fis fis |
+d16 d fis fis a a fis fis d d fis fis a a fis fis |
+g16 g b b e e b b g g b b e e b b |
+gis16 gis b b d d b b gis gis b b d d b b |
+a16 a d d fis fis d d a a d d fis fis d d |
+b16 b dis dis fis fis dis dis b b dis dis fis fis dis dis |
+gis,16 gis b b e e b b gis gis b b e e b b |
+g16 g cis cis e e cis cis g g cis cis e e cis cis |
+fis,16 fis a a d d a a e e a a cis cis a a |
+d,16 d a' a d d a a d, d a' a d d a a |
                 }
             >>
         }

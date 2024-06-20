@@ -1,8 +1,8 @@
 # fragment_index page_index starting_height ending_height measure_number
-1 1 0 2096 1
-2 1 2046 end 12
-3 2 0 1683 24
-4 2 1634 end 36
+1 1 0 2134 1
+2 1 2079 end 12
+3 2 0 1699 24
+4 2 1644 end 36
 5 3 0 1865 48
 6 3 1821 end 60
 7 4 0 1623 72

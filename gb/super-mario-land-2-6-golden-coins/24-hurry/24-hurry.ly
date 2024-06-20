@@ -26,7 +26,7 @@ f8-. r fis-. g-. r |
                 \new Staff \relative c''' {
                     \set Staff.instrumentName = "Wave"
                     \set Staff.shortInstrumentName = "W."
-g8 r gis a r4 r8 |
+g8^\markup{Echo} r gis a r4 r8 |
 b8 r c cis r |
 d8 r dis e r |
                 }

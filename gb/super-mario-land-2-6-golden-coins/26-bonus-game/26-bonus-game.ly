@@ -32,7 +32,7 @@ r4 a,8 bes b bes a4-. |
                     \set Staff.shortInstrumentName = "W."
 \clef bass
 \key d \major
-e4-. r8 g r4 a-. |
+e4-.^\markup{Echo} r8 g r4 a-. |
 e4-. r8 g r4 a-. |
 d,4-. r8 fis r4 a-. |
 d,4-. r8 fis r4 a-. |
@@ -42,7 +42,7 @@ d,4-. r8 fis r4 a-. |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-\repeat percent 4 { hh8\p hh hh-> hh hh hh sn hh-> | }
+\repeat percent 4 { hh8 hh hh-> hh hh hh sn hh-> | }
                     }
                 }
             >>

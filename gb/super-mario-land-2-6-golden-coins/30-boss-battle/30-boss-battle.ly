@@ -41,19 +41,13 @@ r8 g-. b-. <cis, cis'>-. r g'-. b-. g-. |
 r8 fis-. a-. <b, b'>-. r fis'-. a-. fis-. |
 <e e'>8-. g-. b-. <dis, dis'>-. r e-. b'-. <d, d'>-. |
 r8 g-. b-. <cis, cis'>-. r g'-. b-. g-. |
-R1*4
-                        }
-\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-\mark \markup { \fontsize #-2 "Loop forever" }
-                    }
-
-                    \new Staff \relative c' {                 
-\key d \major
-R1*22
-<a cis>8 <b d> r <cis e> r2 |
+<a,, cis>8 <b d> r <cis e> r2 |
 <a cis>8 <b d> r <cis e> r2 |
 <a cis>8 <b d> r <cis e> r <d fis> r <e g> |
 r8 <fis a> r <g b> r4 <a a''> |
+                        }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                     }
 
                     \new DrumStaff {

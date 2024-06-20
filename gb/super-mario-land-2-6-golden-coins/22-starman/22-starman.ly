@@ -66,7 +66,7 @@ R1*2
 \key f \major
 \grace s8
 R1*14
-aes8 g aes d r f, r g |
+aes8^\markup{Echo} g aes d r f, r g |
 r4 r8 bes' bes4-. r |
                     }
 
