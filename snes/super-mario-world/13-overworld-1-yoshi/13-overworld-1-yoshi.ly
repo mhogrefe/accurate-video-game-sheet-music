@@ -17,7 +17,7 @@ swing = \markup {
         subtitle = \markup { "from" {\italic "Super Mario World"} "for the SNES (1990)" }
         composer = "Koji Kondo"
         arranger = "trans. Mikhail Hogrefe"
-        opus = "bongos soundfont by William Kage"
+        opus = "glockenspiel soundfont by MrSanic; bongos soundfont by William Kage"
     }
 
     \score {
@@ -54,7 +54,7 @@ R1*22
 \key f \major
 R1
 R1*18
-<d f>16\mf <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <f aes> <e g> <ees ges>16 ~ 8 r |
+<d f>16\f <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <f aes> <e g> <ees ges>16 ~ 8 r |
 <d f>16 <bes d>8 <d f>16 ~ 8 <e g> <f a>4. r8 |
 R1*2
                     }
@@ -86,8 +86,8 @@ R1*4
 
                 \new StaffGroup <<
                     \new Staff \relative c'''' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
+                        \set Staff.instrumentName = "Glockenspiel"
+                        \set Staff.shortInstrumentName = "Glock."  
 \key f \major
 g4\p ees8. bes16 a8 bes16 c ~ c4 |
 R1*22

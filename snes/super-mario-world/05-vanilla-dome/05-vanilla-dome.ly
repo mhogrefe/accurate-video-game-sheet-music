@@ -17,6 +17,19 @@
         {
             <<
                 \new StaffGroup <<
+                    \new Staff \relative c''' {                 
+                        \set Staff.instrumentName = "Glockenspiel"
+                        \set Staff.shortInstrumentName = "Glock."  
+\key d \minor
+R1*2
+c32 fis, c fis, c' fis c'16 ~ c4 r \acciaccatura c16 c'4 |
+b,32 f b, f b f' b16 ~ b4 r \acciaccatura b16 b'4 |
+c,32 fis, c fis, c' fis c'16 ~ c4 r \acciaccatura c16 c'4 |
+b,32 f b, f b f' b16 ~ b4 r \acciaccatura b16 b'4 |
+bes,32 e, bes e, bes' e bes'16 ~ bes4 r2 |
+a32 ees a, ees a ees' a16 ~ a4 r2 |
+                    }
+
                     \new Staff \relative c, {                 
                         \set Staff.instrumentName = "Steel Drums"
                         \set Staff.shortInstrumentName = "St. Dr."  
@@ -35,19 +48,6 @@ des,4 r8 des16-. des-. r2 |
                         }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                    }
-
-                    \new Staff \relative c''' {                 
-                        \set Staff.instrumentName = "Glockenspiel"
-                        \set Staff.shortInstrumentName = "Glock."  
-\key d \minor
-R1*2
-c32 fis, c fis, c' fis c'16 ~ c4 r \acciaccatura c16 c'4 |
-b,32 f b, f b f' b16 ~ b4 r \acciaccatura b16 b'4 |
-c,32 fis, c fis, c' fis c'16 ~ c4 r \acciaccatura c16 c'4 |
-b,32 f b, f b f' b16 ~ b4 r \acciaccatura b16 b'4 |
-bes,32 e, bes e, bes' e bes'16 ~ bes4 r2 |
-a32 ees a, ees a ees' a16 ~ a4 r2 |
                     }
 
                     \new DrumStaff {

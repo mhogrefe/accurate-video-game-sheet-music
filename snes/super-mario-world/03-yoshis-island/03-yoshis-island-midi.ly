@@ -80,8 +80,8 @@ c,8 b bes a aes2 |
 
                 \new StaffGroup <<
                     \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
+                        \set Staff.instrumentName = "Electric Piano"
+                        \set Staff.shortInstrumentName = "El. Pno."  
 \key c \major
 <c e>8.\mf 16 8 <e, g> <f a>4 <e g> |
 <c' e>8 8 4-. r2 |

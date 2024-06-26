@@ -30,10 +30,40 @@ R1.*7
 r4 r8 r4 r8 r4 g16-.\mf a-. g4 r8 |
                 }
 
-                \new StaffGroup <<
-                    \new Staff \relative c' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
+                \new DrumStaff {
+                    \drummode {
+                        \set Staff.instrumentName="Drumset"
+                        \set Staff.shortInstrumentName="D. Set"
+hh8\ppp r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh4. hh8 hh hh hh4.-> hh-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh4. hh8 hh hh hh4.-> hh-> |
+hh8\ppp r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh4. hh8 hh hh hh4.-> hh-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh4. hh8 hh hh hh4.-> hh-> |
+hh8\ppp r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh4. hh8 hh hh hh4.-> hh-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh8 r hh hh4.-> hh8 r hh hh4.-> |
+hh4. hh8 hh hh hh4.-> hh-> |
+                    }
+                }
+
+                \new Staff \relative c' {                 
+                    \set Staff.instrumentName = "Electric Piano"
+                    \set Staff.shortInstrumentName = "El. Pno."  
 \key c \major
 r4 c8\mf <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
@@ -59,39 +89,7 @@ r4 c'8 <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |
 d8 r e f r g r4 r8 r4 r8 |
-                    }
-
-                    \new DrumStaff {
-                        \drummode {
-                            \set Staff.instrumentName="Drumset"
-                            \set Staff.shortInstrumentName="D. Set"
-hh8\ppp r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh4. hh8 hh hh hh4.-> hh-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh4. hh8 hh hh hh4.-> hh-> |
-hh8\ppp r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh4. hh8 hh hh hh4.-> hh-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh4. hh8 hh hh hh4.-> hh-> |
-hh8\ppp r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh4. hh8 hh hh hh4.-> hh-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh8 r hh hh4.-> hh8 r hh hh4.-> |
-hh4. hh8 hh hh hh4.-> hh-> |
-                        }
-                    }
-                >>
+                }
 
                 \new Staff \relative c, {                 
                     \set Staff.instrumentName = "Bass Guitar"

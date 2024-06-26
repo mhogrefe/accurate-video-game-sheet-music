@@ -11,6 +11,7 @@
         subtitle = \markup { "from" {\italic "Super Mario World"} "for the SNES (1990)" }
         composer = "Koji Kondo"
         arranger = "trans. Mikhail Hogrefe"
+        opus = "glockenspiel soundfont by MrSanic"
     }
 
     \score {
@@ -107,6 +108,24 @@ d8-. r r4 r r8 d, |
                 >>
 
                 \new StaffGroup <<
+                    \new Staff \relative c''' {                 
+                        \set Staff.instrumentName = "Glockenspiel"
+                        \set Staff.shortInstrumentName = "Glock."  
+                        \key c \major 
+R1
+r2 r4 r8 \ottava #1 g\pp |
+e'8 e e g, e' e e g, |
+e'8 e e e16 f e4 d8 g, |
+d'8 d d g, d' d d g, |
+d'8 d d d16 e d4 c8 g |
+e'8 e e g, e' e e g, |
+e'8 e e d16 e f4 a |
+g8 g g g, f' f f b, |
+c4 \ottava #0 r r2 |
+R1*15
+r2 r4 r8 g |
+                    }
+
                     \new Staff \relative c'' {  
                         \set Staff.instrumentName = "Xylophone"
                         \set Staff.shortInstrumentName = "Xyl."  
@@ -124,11 +143,11 @@ R1*2
 \ottava #1
 fis32\mf a, fis' a, fis' a, fis' r f a, f' r fis a, fis' r c' d, c' d, c' d, c' d, c' d, c' r fis, a, fis' r |
 \repeat tremolo 12 { g32\> b,\p } \ottava #0 r4 |
-e,,32\mf fisih gis aih c d e f g a bes c d e f16 r2 |
+e,,32\mf fis gis ais c d e f g a bes c d e f16 r2 |
 R1 |
-e,,32 fisih gis aih c d e f g a bes c d e f16 r2 |
+e,,32 fis gis ais c d e f g a bes c d e f16 r2 |
 R1 |
-e,,32 fisih gis aih c d e f g a bes c d e f16 r2 |
+e,,32 fis gis ais c d e f g a bes c d e f16 r2 |
 R1 |
 r2 d,,8 a' d a' |
 d4-. r r2 |
@@ -148,24 +167,6 @@ r8 g c4-. cis-. cis-. |
 r8 a d4-. r8 fis, c'4-. |
 d,4-. b-. g-. r |
 R1*16
-                    }
-
-                    \new Staff \relative c''' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
-                        \key g \major 
-R1
-r2 r4 r8 \ottava #1 g\p |
-e'8 e e g, e' e e g, |
-e'8 e e e16 f e4 d8 g, |
-d'8 d d g, d' d d g, |
-d'8 d d d16 e d4 c8 g |
-e'8 e e g, e' e e g, |
-e'8 e e d16 e f4 a |
-g8 g g g, f' f f b, |
-c4 \ottava #0 r r2 |
-R1*15
-r2 r4 r8 g |
                     }
                 >>
 

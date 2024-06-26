@@ -300,3 +300,4 @@ snes/super-mario-world/18-underwater
 snes/super-mario-world/19-underwater-yoshi
 snes/super-mario-world/20-ghost-house
 snes/super-mario-world/21-castle
+snes/super-mario-world/22-p-switch

@@ -51,36 +51,6 @@ g8-. r g-. r r g-. r g-. |
 g8-. r r4 g8-. g r c,-. |
                     }
 
-                    \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
-\key c \major
-<g c>4-.\f <g e'>8 <g b> r <g e'> r <g a> |
-r8 <g e'> r <g b> r <g b> <g c> <g d'> |
-<g c>4-. <g e'>8 <g b> r <g e'> r <g a> |
-r8 <g e'> r <g b> r <g b> <g c> <g cis> |
-<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
-r8 <a f'> r <a b> r <a b> <a c> <a cis> |
-<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
-r8 <a f'> r <a b> r <a b> <a c> <a d> |
-<e c'>4-. <e e'>8 <e b'> r <e e'> r <e a> |
-r8 <e e'> r <e b'> r <e b'> <e c'> <e d'> |
-<e c'>4-. 4-. r8 <f c'> r <f c'> |
-<e c'>4-. r r2 |
-<g c>4-.\f <g e'>8 <g b> r <g e'> r <g a> |
-r8 <g e'> r <g b> r <g b> <g c> <g d'> |
-<g c>4-. <g e'>8 <g b> r <g e'> r <g a> |
-r8 <g e'> r <g b> r <g b> <g c> <g cis> |
-<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
-r8 <a f'> r <a b> r <a b> <a c> <a cis> |
-<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
-r8 <a f'> r <a b> r <a b> <a c> <a d> |
-<e c'>4-. <e e'>8 <e b'> r <e e'> r <e a> |
-r8 <e e'> r <e b'> r <e b'> <e c'> <e d'> |
-<e c'>4-. 4-. r8 <f c'> r <f c'> |
-<e c'>4-. r r2 |
-                    }
-
                     \new DrumStaff \with {
                         drumStyleTable = #bongos-style
                         \override StaffSymbol.line-count = #2
@@ -240,6 +210,36 @@ ss4 r ss8 ss r sn |
                         }
                     }
                 >>
+
+                \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Electric Piano"
+                    \set Staff.shortInstrumentName = "El. Pno."  
+\key c \major
+<g c>4-.\f <g e'>8 <g b> r <g e'> r <g a> |
+r8 <g e'> r <g b> r <g b> <g c> <g d'> |
+<g c>4-. <g e'>8 <g b> r <g e'> r <g a> |
+r8 <g e'> r <g b> r <g b> <g c> <g cis> |
+<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
+r8 <a f'> r <a b> r <a b> <a c> <a cis> |
+<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
+r8 <a f'> r <a b> r <a b> <a c> <a d> |
+<e c'>4-. <e e'>8 <e b'> r <e e'> r <e a> |
+r8 <e e'> r <e b'> r <e b'> <e c'> <e d'> |
+<e c'>4-. 4-. r8 <f c'> r <f c'> |
+<e c'>4-. r r2 |
+<g c>4-.\f <g e'>8 <g b> r <g e'> r <g a> |
+r8 <g e'> r <g b> r <g b> <g c> <g d'> |
+<g c>4-. <g e'>8 <g b> r <g e'> r <g a> |
+r8 <g e'> r <g b> r <g b> <g c> <g cis> |
+<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
+r8 <a f'> r <a b> r <a b> <a c> <a cis> |
+<a d>4-. <a f'>8 <a cis> r <a f'> r <a c> |
+r8 <a f'> r <a b> r <a b> <a c> <a d> |
+<e c'>4-. <e e'>8 <e b'> r <e e'> r <e a> |
+r8 <e e'> r <e b'> r <e b'> <e c'> <e d'> |
+<e c'>4-. 4-. r8 <f c'> r <f c'> |
+<e c'>4-. r r2 |
+                }
 
                 \new Staff \relative c, {                 
                     \set Staff.instrumentName = "Bass Guitar"

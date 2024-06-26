@@ -55,23 +55,10 @@ c4. g'8 c4 g |
 c,8 b bes a aes2 |
                 }
 
-                \new StaffGroup <<
-                    \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
-\key c \major
-<c e>8.\mf 16 8 <e, g> <f a>4 <e g> |
-<c' e>8 8 4-. r2 |
-<d f>8. 16 8 <f, a> <g b>4 <f a> | |
-<d' f>8 8 4-. r2 |
-<c e>8.\mf 16 8 <e, g> <f a>4 <e g> |
-R1 |
-                    }
-
-                    \new DrumStaff {
-                        \drummode {
-                            \set Staff.instrumentName="Drumset"
-                            \set Staff.shortInstrumentName="D. Set"
+                \new DrumStaff {
+                    \drummode {
+                        \set Staff.instrumentName="Drumset"
+                        \set Staff.shortInstrumentName="D. Set"
 hh16\mf hh hh hh hh8 hh hh4 hh |
 hh8 hh hh4 r2 |
 hh16 hh hh hh hh8 hh hh4 hh |
@@ -79,8 +66,19 @@ hh8 hh hh4 r2 |
 hh16 hh hh hh hh8 hh hh4 hh |
 r2 r4 sn |
                         }
-                    }
-                >>
+                }
+
+                \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Electric Piano"
+                    \set Staff.shortInstrumentName = "El. Pno."  
+\key c \major
+<c e>8.\mf 16 8 <e, g> <f a>4 <e g> |
+<c' e>8 8 4-. r2 |
+<d f>8. 16 8 <f, a> <g b>4 <f a> | |
+<d' f>8 8 4-. r2 |
+<c e>8.\mf 16 8 <e, g> <f a>4 <e g> |
+R1 |
+                }
             >>
         }
         \layout {

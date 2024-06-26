@@ -67,45 +67,6 @@ R1*8
 
                 \new StaffGroup <<
                     \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
-\key c \major
-R1*2
-c4-.\mp e8 b r e r a, |
-r8 e' r b r b c d |
-c4-. e8 b r e r a, |
-r8 e' r b r b c d |
-c4-. e8 b r e r a, |
-r8 e' r b r b c d |
-c4-. e8 b r e r a, |
-r8 e' r b r b c d |
-R1*16
-aes'4-. c8 ees, r aes r g |
-r8 c r e, g4-. c-. |
-aes4-. c8 ees, r aes r g |
-r8 c r e, g4-. c-. |
-aes4-. c8 ees, r aes r g |
-r8 c r e, g4-. c-. |
-R1*2
-c,4-. e8 b r e r a, |
-r8 e' r b r b c d |
-c4-. e8 b r e r a, |
-r8 e' r b r b c d |
-c4-. e8 b r e r a, |
-r8 e' r b r b c d |
-c4-. e8 b r e r a, |
-r8 e' r b r b c d |
-R1*16
-aes'4-. c8 ees, r aes r g |
-r8 c r e, g4-. c-. |
-aes4-. c8 ees, r aes r g |
-r8 c r e, g4-. c-. |
-aes4-. c8 ees, r aes r g |
-r8 c r e, g4-. c-. |
-R1*10
-                    }
-
-                    \new Staff \relative c'' {                 
                         \set Staff.instrumentName = "Steel Drums"
                         \set Staff.shortInstrumentName = "St. Dr."  
 \key c \major
@@ -210,6 +171,45 @@ r8 sn sn4 ss8 ss r sn |
                         }
                     }
                 >>
+
+                \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Electric Piano"
+                    \set Staff.shortInstrumentName = "El. Pno."  
+\key c \major
+R1*2
+c4-.\mp e8 b r e r a, |
+r8 e' r b r b c d |
+c4-. e8 b r e r a, |
+r8 e' r b r b c d |
+c4-. e8 b r e r a, |
+r8 e' r b r b c d |
+c4-. e8 b r e r a, |
+r8 e' r b r b c d |
+R1*16
+aes'4-. c8 ees, r aes r g |
+r8 c r e, g4-. c-. |
+aes4-. c8 ees, r aes r g |
+r8 c r e, g4-. c-. |
+aes4-. c8 ees, r aes r g |
+r8 c r e, g4-. c-. |
+R1*2
+c,4-. e8 b r e r a, |
+r8 e' r b r b c d |
+c4-. e8 b r e r a, |
+r8 e' r b r b c d |
+c4-. e8 b r e r a, |
+r8 e' r b r b c d |
+c4-. e8 b r e r a, |
+r8 e' r b r b c d |
+R1*16
+aes'4-. c8 ees, r aes r g |
+r8 c r e, g4-. c-. |
+aes4-. c8 ees, r aes r g |
+r8 c r e, g4-. c-. |
+aes4-. c8 ees, r aes r g |
+r8 c r e, g4-. c-. |
+R1*10
+                }
 
                 \new Staff \relative c'' {                 
                     \set Staff.instrumentName = "Orchestra Hit"

@@ -11,23 +11,16 @@
     \score {
         {
             \new StaffGroup <<
-                \new Staff \relative c''' {   
+                \new Staff \relative c'' {   
                     \set Staff.instrumentName = "Square"
                     \set Staff.shortInstrumentName = "S."  
 \key e \major
 \tempo 4 = 105
                     \repeat volta 2 {
-<<{
-r16 gis8 gis gis gis b b b b16 ~ |
-b16 d8 d d d f f f f16 ~ |
-f16 gis8 gis gis gis fis fis fis fis16 ~ |
-fis16 cis8 cis cis cis b b b b16\laissezVibrer |
-}\\{
-dis,8 dis dis dis fis fis fis fis |
-a8 a a a c c c c |
-dis8 dis dis dis cis cis cis cis |
-gis8 gis gis gis fis fis fis fis |
-}>>
+dis16^\markup{Echo} gis dis gis dis gis dis gis fis b fis b fis b fis b |
+a16 d a d a d a d c f c f c f c f |
+dis16 gis dis gis dis gis dis gis cis, fis cis fis cis fis cis fis |
+gis,16 cis gis cis gis cis gis cis fis, b fis b fis b fis b |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }

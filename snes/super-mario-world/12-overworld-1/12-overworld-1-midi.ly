@@ -50,12 +50,12 @@ R1*22
 \key f \major
 R1
 R1*18
-<d f>16\mf <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <f aes> <e g> <ees ges>16 ~ 8 r |
+<d f>16\f <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <f aes> <e g> <ees ges>16 ~ 8 r |
 <d f>16 <bes d>8 <d f>16 ~ 8 <e g> <f a>4. r8 |
 R1*2
 
 R1*18
-<d f>16\mf <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <f aes> <e g> <ees ges>16 ~ 8 r |
+<d f>16\f <bes d>8 <d f>16 ~ 8 <d g> <f a>16 <f aes> <e g> <ees ges>16 ~ 8 r |
 <d f>16 <bes d>8 <d f>16 ~ 8 <e g> <f a>4. r8 |
 R1*2
                     }
@@ -103,22 +103,13 @@ R1*4
                 }
 
                 \new StaffGroup <<
-                    \new Staff \relative c'''' {                 
-                        \set Staff.instrumentName = "Dulcimer"
-                        \set Staff.shortInstrumentName = "Dlc."  
-\key f \major
-g4\pppp ees8. bes16 a8 bes16 c ~ c4 |
-R1*22
-R1*22
-                    }
-
                     \new Staff \relative c'' {                 
                         \set Staff.instrumentName = "Steel Drums"
                         \set Staff.shortInstrumentName = "St. Dr."  
 \key f \major
 R1 |
 R1*2
-a4\mf f8. c16 d f8 f16 ~ f8. d16 |
+a4\f f8. c16 d f8 f16 ~ f8. d16 |
 c8 f f c' a8. g16 ~ g8. c,16 |
 a'4 f8. c16 d f8 f16 ~ f8. d16 |
 c8 f bes16 a g f ~ f8 r r4 |
