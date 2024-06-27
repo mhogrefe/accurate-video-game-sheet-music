@@ -18,7 +18,7 @@
 \key cis \minor
 \tempo 4=132
 \partial 8 a16^\markup{Echo} b |
-cis16 dis fis a b cis dis fis \tempo 4=74 r8 cis-.^\markup{No echo} dis-. e-. |
+cis16 dis fis a b cis dis fis \tempo 4=74 r8 cis-. dis-. e-. |
                     \repeat volta 2 {
 \tempo 4=112
 fis,,8-. gis-. a-. cis-. \tempo 4=74 e-. cis'-. dis-. e-. |
@@ -29,7 +29,7 @@ cis,8-. eis-. gis-. b-. cis-. cis'-. dis-. e-. |
 fis,,8-. gis-. a-. cis-. e-. b'-. e-. a-. |
 b,,,8-. fis'-. a-. cis-. fis-. gis'-. fis-. gis-. |
 e,,8-. gis-. b-. dis-. e-. gis-. b-. dis-. |
-\ottava #1 b'8-. r b'-. r dis,16^\markup{Echo} b gis e \ottava #0 dis b gis dis |
+\ottava #1 b'8-. r b'-. r dis,16 b gis e \ottava #0 dis b gis dis |
 r4 \ottava #1 dis''-.^\markup{No echo} cis-. gis-. |
 gis8-. \ottava #0 fis,,,-. cis'-. a'''-. fis,,16 gis a cis fis gis a e' |
 cis,,16 gis' dis' b' \ottava #1 fis''4-. e-. gis,-. |

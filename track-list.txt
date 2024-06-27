@@ -301,3 +301,4 @@ snes/super-mario-world/19-underwater-yoshi
 snes/super-mario-world/20-ghost-house
 snes/super-mario-world/21-castle
 snes/super-mario-world/22-p-switch
+snes/super-mario-world/23-p-switch-cave
