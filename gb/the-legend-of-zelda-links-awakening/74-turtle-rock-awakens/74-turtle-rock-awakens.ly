@@ -30,11 +30,8 @@ R2. |
 <b, f'>16 <c ges'> <b' f'> <c ges'> r4 r2 |
 <g g'>16\f <aes aes'> <g g'> <fis fis'> <g g'> <aes aes'> <g g'> <fis fis'> <g g'> <aes aes'> <g g'> <fis fis'> <g g'> <aes aes'> <g g'> <fis fis'> |
 <g g'> <aes aes'> <g g'> <fis fis'> <g g'> <fis fis'> <f f'> <e e'> <ees ees'> <d d'> <des des'> <c c'> <b b'> <bes bes'> <a a'> <aes aes'> |
-\time 5/4
+\compoundMeter #'((3 3 4 8))
                 \repeat volta 2 {
-\set Timing.beamExceptions = #'()
-\set Timing.baseMoment = #(ly:make-moment 1/8)
-\set Timing.beatStructure = 3,3,2
 <ees' g>8-.\f c-. c-. <ees ges>-. c-. c-. <ees g>-. c-. <ees aes>-. c-. |
 <ees g>8-. c-. c-. <ees ges>-. c-. c-. <ees g>-. c-. <ees aes>-. c-. |
 <ees g>8-. c-. c-. <ees ges>-. c-. c-. <ees g>-. c-. <ees aes>-. c-. |
@@ -60,14 +57,14 @@ R1 |
 R2. |
 R1*3
 g'8-.\f g-. g-. g-. g,-. g-. g16 g aes g |
-c'16 c c, c c8-. c'16 c c, c c8-. c'16 c c, c c' c c, c |
-c'16 c c, c c8-. c'16 c c, c c8-. c'16 c c, c c' c c, c |
-c'16 c c, c c8-. c'16 c c, c c8-. c'16 c c, c c' c c, c |
-c'16 c c, c c8-. c'16 c c, c c8-. c'16 c c, c c' c c, c |
-cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis' cis cis, cis |
-cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis' cis cis, cis |
-cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis' cis cis, cis |
-cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis' cis cis, cis |
+c'16 c c, c c8-. c'16 c c, c c8-. c'16[ c c, c] c' c c, c |
+c'16 c c, c c8-. c'16 c c, c c8-. c'16[ c c, c] c' c c, c |
+c'16 c c, c c8-. c'16 c c, c c8-. c'16[ c c, c] c' c c, c |
+c'16 c c, c c8-. c'16 c c, c c8-. c'16[ c c, c] c' c c, c |
+cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16[ cis cis, cis] cis' cis cis, cis |
+cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16[ cis cis, cis] cis' cis cis, cis |
+cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16[ cis cis, cis] cis' cis cis, cis |
+cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16[ cis cis, cis] cis' cis cis, cis |
                 }
 
                 \new DrumStaff {
@@ -77,7 +74,7 @@ cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis8-. cis'16 cis cis, cis cis' c
 R1*4
 R2.
 R1*4
-\repeat percent 8 { sn16 sn sn sn sn8 r16 sn sn sn sn8 r16 sn sn sn sn sn sn sn | }
+\repeat percent 8 { sn16 sn sn sn sn8 r16 sn sn sn sn8 r16 sn[ sn sn] sn sn sn sn | }
                     }
                 }
             >>

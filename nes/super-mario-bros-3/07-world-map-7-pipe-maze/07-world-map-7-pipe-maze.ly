@@ -4,12 +4,6 @@
   left-margin = 0.5\in
 }
 
-swing = \markup {
-  \bold Swing
-  \hspace #0.4
-  \rhythm { 8[ 8] } = \rhythm { \tuplet 3/2 { 4 8 } }
-}
-
 \book {
     \header {
         title = "World Map 7 (Pipe Maze)"
@@ -24,15 +18,16 @@ swing = \markup {
                 \new Staff \relative c' {
                     \set Staff.instrumentName = "Pulse"
                     \set Staff.shortInstrumentName = "P."
-\tempo 4 = 110
+\time 12/8
+\tempo 4. = 110
 \key f \minor
                     \repeat volta 2 {
 \override Hairpin.to-barline = ##f
-\partial 2 r8^\swing <g c>\mf <bes ees>-. <c f>\> ~ |
-<c f>2\! r4 \tuplet 3/2 { r8 r <c f>16\mf <des ges> } |
-<c f>8-. <bes ees> <g c>-. <f bes> r <g c> <bes ees>-. <c f>\> ~ |
-<c f>2\! r4 r8 <g' c>\mf |
-\partial 2 <a d>8-. <bes ees>4. |
+\partial 2. r4 <g c>8\mf <bes ees>4 <c f>8\> ~ |
+\tuplet 3/2 { <c f>16 4 4 8. ~ } \tuplet 3/2 { <c f>16\pp r r8 r } r4 r8 r4 <c f>16\mf <des ges> |
+<c f>4-. <bes ees>8 <g c>4-. <f bes>8 r4 <g c>8 <bes ees>4 <c f>8\> ~ |
+\tuplet 3/2 { <c f>16 4 4 8. ~ } \tuplet 3/2 { <c f>16\pp r r8 r } r4 r8 r4 <g' c>8\mf |
+\partial 2. <a d>4-. <bes ees>8 ~ 4. |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
@@ -43,20 +38,20 @@ swing = \markup {
                     \set Staff.shortInstrumentName = "T."
 \key f \minor
 \clef bass
-r8 c ees-. f ~ |
-f4 r r2 |
-r2 r8 c ees-. f ~ |
-f4 r r2 |
-r2 |
+r4 c8 ees4-. f8 ~ |
+f4. r4 r8 r4 r8 r4 r8 |
+r4 r8 r4 r8 r4 c8 ees4-. f8 ~ |
+f4. r4 r8 r4 r8 r4 r8 |
+R2. |
                 }
 
                 \new DrumStaff {
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-hh4 sn8 hh |
-\repeat percent 3 { hh4 sn8 hh hh4 sn8 hh | }
-hh4 sn8 hh |
+hh4. sn4 hh8 |
+\repeat percent 3 { hh4. sn4 hh8 hh4. sn4 hh8 | }
+hh4. sn4 hh8 |
                     }
                 }
 
@@ -64,11 +59,11 @@ hh4 sn8 hh |
                     \drummode {
                         \set Staff.instrumentName="DMC"
                         \set Staff.shortInstrumentName="DMC"
-bd4 r |
-r4 wbl r wbl |
-r4 wbl bd r |
-r4 wbl r wbl |
-r4 wbl |
+bd4. r4 r8 |
+r4 r8 wbl4. r4 r8 wbl4. |
+r4 r8 wbl4. bd r4 r8 |
+r4 r8 wbl4. r4 r8 wbl4. |
+r4 r8 wbl4. |
                     }
                 }
             >>

@@ -19,15 +19,9 @@
 \tempo 4=90
 \ottava #1
 fis8:32 fis4. |
-<<{
-r16 cis8 e a e16 ~ |
-e16 b'8 a'16 ~ a4 ~ |
-a4
-}\\{
-b,,8 d fis gis |
-fis8 e' fis4 ~ |
-fis4
-}>> \ottava #0 r4 |
+b,16^\markup{Echo} cis d e fis a gis e |
+fis16 b e a <fis a>4 ~ |
+<fis a>4 \ottava #0 r |
 \bar "|."
                 }
 
