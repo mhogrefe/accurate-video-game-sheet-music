@@ -20,7 +20,7 @@
 \time 2/4
 \tempo 4 = 112
 \partial 8
-f16\f e |
+f16\ff e |
 d16 c d e f e d e |
 f8-. a-. f-. r |
 \repeat tremolo 6 { c'32 g } bes32 g bes bes |

@@ -88,7 +88,7 @@ R1*4
                     \new Staff \relative c'''' {                 
                         \set Staff.instrumentName = "Glockenspiel"
                         \set Staff.shortInstrumentName = "Glock."  
-\key f \major
+\key bes \major
 g4\p ees8. bes16 a8 bes16 c ~ c4 |
 R1*22
                     }

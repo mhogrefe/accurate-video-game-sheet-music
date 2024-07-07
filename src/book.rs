@@ -733,7 +733,7 @@ fn write_cover_latex_file(dir_path: &str, info: &TrackInfo) {
     writeln!(&mut latex_file, "{ending}").unwrap();
 }
 
-fn write_spine_latex_file(dir_path: &str, info: &TrackInfo) {
+fn write_spine_latex_file(dir_path: &str, page_count: usize, info: &TrackInfo) {
     let out_path = format!("../video-game-extracted-music-books/{dir_path}/spine.tex");
     let mut latex_file = File::create(out_path).unwrap();
     let preamble = r#"\documentclass{book}
@@ -751,11 +751,22 @@ fn write_spine_latex_file(dir_path: &str, info: &TrackInfo) {
 \begin{document}
 "#;
     write!(&mut latex_file, "{preamble}").unwrap();
-    write!(
-        &mut latex_file,
-        "Sheet Music from \\textit{{{}}} for the {} ({})\\ ---\\ {} / Mikhail Hogrefe",
-        info.game, info.system, info.year, info.composer
-    )
+    if page_count >= 103 {
+        writeln!(
+            &mut latex_file,
+            "Sheet Music from \\textit{{{}}} for the {} ({})",
+            info.game, info.system, info.year
+        )
+        .unwrap();
+        writeln!(&mut latex_file).unwrap();
+        writeln!(&mut latex_file, "{} / Mikhail Hogrefe", info.composer)
+    } else {
+        write!(
+            &mut latex_file,
+            "Sheet Music from \\textit{{{}}} for the {} ({})\\ ---\\ {} / Mikhail Hogrefe",
+            info.game, info.system, info.year, info.composer
+        )
+    }
     .unwrap();
     let ending = r"\backmatter
 \end{document}";
@@ -778,9 +789,19 @@ fn get_dimensions(page_count: usize) -> CoverDimensions {
             cover_width_px: 10283,
             cover_height_px: 6450,
         },
-        56..=74 => CoverDimensions {
+        56..=79 => CoverDimensions {
             spine_width_in: Rational::from_sci_string("0.31").unwrap(),
             cover_width_px: 10320,
+            cover_height_px: 6450,
+        },
+        80..=103 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.38").unwrap(),
+            cover_width_px: 10358,
+            cover_height_px: 6450,
+        },
+        104..=116 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.44").unwrap(),
+            cover_width_px: 10395,
             cover_height_px: 6450,
         },
         _ => panic!("no dimensions available for page count {page_count}"),
@@ -791,6 +812,9 @@ fn map_game_name_for_title(game_name: &str) -> String {
     match game_name {
         "Zelda II: The Adventure of Link" => {
             "Zelda II: \\\\ \\vspace{-0.3cm} The Adventure of Link"
+        }
+        "Super Mario Land 2: 6 Golden Coins" => {
+            "Super Mario Land 2: \\\\ \\vspace{-0.1cm} 6 Golden Coins"
         }
         s => s,
     }
@@ -975,7 +999,7 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         .expect("failed to delete file");
 
     if page_count >= 56 {
-        write_spine_latex_file(dir_path, info);
+        write_spine_latex_file(dir_path, page_count, info);
         Command::new("xelatex")
             .arg(&format!(
                 "../video-game-extracted-music-books/{dir_path}/spine.tex"
@@ -1090,9 +1114,7 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
             (dimensions.cover_width_px - target_spine_width)
                 .shr_round(1u32, Nearest)
                 .0,
-            (dimensions.cover_height_px - target_spine_height)
-                .shr_round(1u32, Nearest)
-                .0,
+            spine_box_top,
         );
         Command::new("rm")
             .arg(&format!(

@@ -576,10 +576,12 @@ fn recolor_screenshot(dir_path: &str) {
     for i in 0..img.height() {
         for j in 0..img.width() {
             let pixel = img.get_pixel(j, i).0;
-            colors.insert(
-                u16::from(pixel[0]) + u16::from(pixel[1]) + u16::from(pixel[2]),
-                pixel,
-            );
+            if pixel[3] != 0 {
+                colors.insert(
+                    u16::from(pixel[0]) + u16::from(pixel[1]) + u16::from(pixel[2]),
+                    pixel,
+                );
+            }
         }
     }
     let mut color_map = HashMap::new();
@@ -596,7 +598,9 @@ fn recolor_screenshot(dir_path: &str) {
     for i in 0..img.height() {
         for j in 0..img.width() {
             let pixel = img.get_pixel(j, i).0;
-            img.put_pixel(j, i, target_pixels[color_map[&pixel]]);
+            if pixel[3] != 0 {
+                img.put_pixel(j, i, target_pixels[color_map[&pixel]]);
+            }
         }
     }
     img.save(&out_path).expect("Could not write image");
