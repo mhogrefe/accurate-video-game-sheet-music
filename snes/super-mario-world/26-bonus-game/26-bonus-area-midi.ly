@@ -7,7 +7,7 @@
 
 \book {
     \header {
-        title = "Bonus Area"
+        title = "Bonus Game"
         subtitle = \markup { "from" {\italic "Super Mario World"} "for the SNES (1990)" }
         composer = "Koji Kondo"
         arranger = "trans. Mikhail Hogrefe"
