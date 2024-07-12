@@ -306,3 +306,4 @@ snes/super-mario-world/24-starman
 snes/super-mario-world/25-starman-cave
 snes/super-mario-world/26-bonus-game
 snes/super-mario-world/27-bonus-game-cleared
+snes/super-mario-world/28-boss-battle

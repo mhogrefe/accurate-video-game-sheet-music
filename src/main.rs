@@ -622,12 +622,14 @@ fn main() {
                 Command::new("rm")
                     .arg(&format!("{dir_path}/video.mp4"))
                     .output();
+                create_video(dir_path, false);
             }
             #[allow(unused_must_use)]
             {
                 Command::new("rm")
                     .arg(&format!("{dir_path}/video-garageband.mp4"))
                     .output();
+                create_video(dir_path, true);
             }
             generate_book(&dir_path);
         } else {

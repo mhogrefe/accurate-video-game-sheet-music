@@ -548,11 +548,8 @@ pub fn generate_page(
                     );
                 }
             }
-            let page_number_index = *i
-                - ((contents_count - 1)
-                    .round_to_multiple_of_power_of_2(1, Ceiling)
-                    .0
-                    + 1);
+            let diff = if contents_count.even() { 3 } else { 1 };
+            let page_number_index = *i - diff;
             if !first {
                 let page_number_img = image::open(&format!(
                     "../video-game-extracted-music-books/{}/book-{}.png",
@@ -573,11 +570,7 @@ pub fn generate_page(
                 *i
             );
             *i += 1;
-            let page_number_index = *i
-                - ((contents_count - 1)
-                    .round_to_multiple_of_power_of_2(1, Ceiling)
-                    .0
-                    + 1);
+            let page_number_index = *i - diff;
             let page_number_img = image::open(&format!(
                 "../video-game-extracted-music-books/{}/book-{}.png",
                 dir_path, page_number_index
@@ -627,10 +620,19 @@ fn get_contents_page_count(track_count: usize) -> usize {
     (track_count + 29) / 24
 }
 
+fn map_game_name_for_inner_title(game_name: &str) -> String {
+    match game_name {
+        "The Legend of Zelda: Link’s Awakening" => "The Legend of Zelda: \\\\ Link’s Awakening",
+        s => s,
+    }
+    .to_string()
+}
+
 fn write_latex_file(dir_path: &str, track_names: &[String]) {
     let info = read_track_info(dir_path, &track_names[0]);
     let out_path = format!("../video-game-extracted-music-books/{dir_path}/book.tex");
     let mut latex_file = File::create(out_path).unwrap();
+    let game_name = map_game_name_for_inner_title(&info.game);
     let preamble = r#"\documentclass{book}
 \usepackage[paperheight=9.25in,paperwidth=7.5in,margin=1in,heightrounded]{geometry}
 \usepackage[T1]{fontenc}
@@ -653,7 +655,7 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
 \fancyfoot[LE,RO]{\thepage}
 "#;
     write!(&mut latex_file, "{preamble}").unwrap();
-    write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\Huge {} \\\\ \\normalsize \\textit{{for the {} \\\\ {} }}}}", info.game, info.system, info.year).unwrap();
+    write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\Huge {} \\\\ \\normalsize \\textit{{for the {} \\\\ {} }}}}", game_name, info.system, info.year).unwrap();
     write!(&mut latex_file, "\\author{{composed by {} \\\\ transcribed by Mikhail Hogrefe \\\\ \\\\ \\\\ \\\\ \\psvectorian{{79}}}}", info.composer).unwrap();
     let more_stuff = r"\date{}
 \begin{document}
@@ -695,6 +697,7 @@ fn write_cover_latex_file(dir_path: &str, info: &TrackInfo) {
     let out_path = format!("../video-game-extracted-music-books/{dir_path}/cover.tex");
     let mut latex_file = File::create(out_path).unwrap();
     let game_name = map_game_name_for_title(&info.game);
+    let composer = map_composer_for_title(&info.composer);
     let preamble = r#"\documentclass{book}
 \usepackage[paperheight=9.25in,paperwidth=7.5in,margin=1in,heightrounded]{geometry}
 \usepackage[T1]{fontenc}
@@ -721,7 +724,7 @@ fn write_cover_latex_file(dir_path: &str, info: &TrackInfo) {
     write!(
         &mut latex_file,
         "\\author{{composed by {} \\\\ transcribed by Mikhail Hogrefe}}",
-        info.composer
+        composer
     )
     .unwrap();
     let more_stuff = r"\date{}
@@ -799,9 +802,34 @@ fn get_dimensions(page_count: usize) -> CoverDimensions {
             cover_width_px: 10358,
             cover_height_px: 6450,
         },
-        104..=116 => CoverDimensions {
+        104..=127 => CoverDimensions {
             spine_width_in: Rational::from_sci_string("0.44").unwrap(),
             cover_width_px: 10395,
+            cover_height_px: 6450,
+        },
+        128..=151 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.5").unwrap(),
+            cover_width_px: 10433,
+            cover_height_px: 6450,
+        },
+        152..=175 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.56").unwrap(),
+            cover_width_px: 10470,
+            cover_height_px: 6450,
+        },
+        176..=199 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.63").unwrap(),
+            cover_width_px: 10508,
+            cover_height_px: 6450,
+        },
+        200..=223 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.69").unwrap(),
+            cover_width_px: 10545,
+            cover_height_px: 6450,
+        },
+        224..=242 => CoverDimensions {
+            spine_width_in: Rational::from_sci_string("0.75").unwrap(),
+            cover_width_px: 10583,
             cover_height_px: 6450,
         },
         _ => panic!("no dimensions available for page count {page_count}"),
@@ -815,6 +843,19 @@ fn map_game_name_for_title(game_name: &str) -> String {
         }
         "Super Mario Land 2: 6 Golden Coins" => {
             "Super Mario Land 2: \\\\ \\vspace{-0.1cm} 6 Golden Coins"
+        }
+        "The Legend of Zelda: Link’s Awakening" => {
+            "The Legend of Zelda: \\\\ \\vspace{-0.3cm} Link’s Awakening"
+        }
+        s => s,
+    }
+    .to_string()
+}
+
+fn map_composer_for_title(game_name: &str) -> String {
+    match game_name {
+        "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa" => {
+            "Kazumi Totaka, \\\\ Minako Hamano, and Kozue Ishikawa"
         }
         s => s,
     }

@@ -61,7 +61,7 @@
 00:30:49 Wind Marimba
 00:31:00 Fisherman
 00:31:32 Rapids Ride
-00:32:09 Southern Face Shrine
+00:32:08 Southern Face Shrine
 00:33:02 Face Shrine
 00:34:08 Coral Triangle
 00:34:22 Link Plays Frog’s Song of Soul
@@ -71,8 +71,8 @@
 00:37:40 Eagle’s Tower (Roof)
 00:37:57 Evil Eagle (Introduction)
 00:38:14 Organ of Evening Calm
-00:38:29 Turtle Rock Awakens
-00:39:07 Turtle Rock
+00:38:28 Turtle Rock Awakens
+00:39:06 Turtle Rock
 00:39:59 Thunder Drum
 00:40:10 Opening the Wind Fish’s Egg (Two Instruments)
 00:40:48 Opening the Wind Fish’s Egg (Three Instruments)

@@ -13,28 +13,28 @@
 00:05:23 Seashore Level
 00:06:09 Machine Level
 00:06:50 Graveyard Level
-00:07:49 Haunted Level
-00:08:25 Space Level
-00:09:16 Star Maze
-00:10:59 Death
-00:11:08 Game Over
-00:11:40 Totaka’s Song
-00:11:57 Starman
-00:12:18 Pause
-00:12:26 Hurry
-00:12:35 Level Cleared
-00:12:46 Bonus Game
-00:13:02 Bonus Game Grabber
-00:13:11 Got Bonus Item
-00:13:21 Boss Battle Intro
-00:13:33 Boss Battle
-00:14:07 Battle Victory
-00:14:27 Got Golden Coin
-00:14:40 Castle Door Opens
-00:14:51 Before the Castle
-00:15:12 Wario’s Castle
-00:16:34 Wario Battle (Phase 1)
-00:17:16 Wario Battle (Phase 2)
-00:17:59 Wario Battle (Phase 3)
-00:18:20 Wario Defeated
-00:18:55 Credits
+00:07:46 Haunted Level
+00:08:22 Space Level
+00:09:13 Star Maze
+00:10:56 Death
+00:11:05 Game Over
+00:11:38 Totaka’s Song
+00:11:55 Starman
+00:12:16 Pause
+00:12:24 Hurry
+00:12:34 Level Cleared
+00:12:45 Bonus Game
+00:13:01 Bonus Game Grabber
+00:13:09 Got Bonus Item
+00:13:19 Boss Battle Intro
+00:13:32 Boss Battle
+00:14:06 Battle Victory
+00:14:26 Got Golden Coin
+00:14:38 Castle Door Opens
+00:14:49 Before the Castle
+00:15:10 Wario’s Castle
+00:16:32 Wario Battle (Phase 1)
+00:17:14 Wario Battle (Phase 2)
+00:17:57 Wario Battle (Phase 3)
+00:18:18 Wario Defeated
+00:18:54 Credits
