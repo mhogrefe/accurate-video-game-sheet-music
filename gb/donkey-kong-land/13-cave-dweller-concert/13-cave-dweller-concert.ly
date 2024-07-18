@@ -32,7 +32,7 @@ d8^\markup{\bold{Straight}}\f d d d r2 |
 R1
 d8^\markup{\bold{Swing}} d f f d d g g |
 d8 d f f d d c c |
-d8^\markup{\bold{Straight}}\f d d d r2 |
+d8^\markup{\bold{Straight}} d d d r2 |
 R1
 d8^\markup{\bold{Swing}} d f f d d g g |
 d8 d f f d \clef treble d' \tuplet 3/2 { fis8[ a c] } |

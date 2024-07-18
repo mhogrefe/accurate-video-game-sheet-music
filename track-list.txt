@@ -309,3 +309,4 @@ snes/super-mario-world/27-bonus-game-cleared
 snes/super-mario-world/28-boss-battle
 snes/super-mario-world/29-pause
 snes/super-mario-world/30-hurry
+snes/super-mario-world/31-level-cleared
