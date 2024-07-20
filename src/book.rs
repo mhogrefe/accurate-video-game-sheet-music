@@ -550,6 +550,7 @@ pub fn generate_page(
             }
             let diff = if contents_count.even() { 3 } else { 1 };
             let page_number_index = *i - diff;
+            let eighth = i32::rounding_from(&(DPI >> 3), Nearest).0;
             if !first {
                 let page_number_img = image::open(&format!(
                     "../video-game-extracted-music-books/{}/book-{}.png",
@@ -559,8 +560,8 @@ pub fn generate_page(
                 copy_from_with_trans_2(
                     &mut canvas,
                     &page_number_img,
-                    -504,
-                    272,
+                    -504 + eighth,
+                    272 - eighth,
                     PAGE_NUMBER_CUTOFF_PX,
                     true,
                 );
@@ -582,8 +583,8 @@ pub fn generate_page(
             copy_from_with_trans_2(
                 &mut canvas,
                 &page_number_img,
-                i32::rounding_from(&(&page_width * DPI), Nearest).0 + 504,
-                272,
+                i32::rounding_from(&(&page_width * DPI), Nearest).0 + 504 - eighth,
+                272 - eighth,
                 PAGE_NUMBER_CUTOFF_PX,
                 true,
             );
@@ -653,6 +654,8 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
 \renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
 \fancyhf{}
 \fancyfoot[LE,RO]{\thepage}
+\usepackage{tocloft}
+\renewcommand{\cftchapaftersnum}{.}
 "#;
     write!(&mut latex_file, "{preamble}").unwrap();
     write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\Huge {} \\\\ \\normalsize \\textit{{for the {} \\\\ {} }}}}", game_name, info.system, info.year).unwrap();
@@ -866,7 +869,7 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
     let dimensions = get_dimensions(page_count);
     let left_margin_in = Rational::from_sci_string("0.75").unwrap();
     let right_margin_in = Rational::from_sci_string("0.875").unwrap();
-    let bottom_margin_in = Rational::from_sci_string("0.875").unwrap();
+    let bottom_margin_in = Rational::from_sci_string("1.625").unwrap();
     let top_margin_in = Rational::from_sci_string("0.875").unwrap();
     let background_color = get_background_color_2(dir_path);
     let foreground_color = get_foreground_color_2(dir_path);

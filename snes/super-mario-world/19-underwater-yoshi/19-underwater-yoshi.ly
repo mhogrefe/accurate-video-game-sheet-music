@@ -99,6 +99,7 @@ r4 <a c>4-. 4-. |
                         \set Staff.instrumentName = "Soprano Recorder"
                         \set Staff.shortInstrumentName = "S. Rec."  
 \key f \major 
+\set Timing.beamExceptions = #'()
 R2.*4
 
 R2.*40
