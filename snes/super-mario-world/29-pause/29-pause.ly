@@ -15,7 +15,7 @@
 
     \score {
         {
-            \new Staff \relative c'' {  
+            \new Staff \relative c''' {  
                 \set Staff.instrumentName = "Electric Piano"
                 \set Staff.shortInstrumentName = "El. Pno."  
 \tempo 4 = 140

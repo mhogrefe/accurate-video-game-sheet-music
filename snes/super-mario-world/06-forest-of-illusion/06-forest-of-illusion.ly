@@ -25,7 +25,7 @@
                             \repeat volta 2 {
 \key c \minor
 \tempo 4=128
-c16\mf d c8 c16 d c8 c-. c'4 c8 |
+c16\f d c8 c16 d c8 c-. c'4 c8 |
 b8 d,-. d-. d-. d2 |
 c16 d c8 c16 d c8 c-. c'4 c8 |
 b8 d,-. d-. d-. d2 |
@@ -42,7 +42,7 @@ c8 b2.. |
                             \set Staff.instrumentName = "Oboe 2"
                             \set Staff.shortInstrumentName = "Ob. 2"  
 \key c \minor
-r2 <c ees>8\mf <ees aes>4. |
+r2 <c ees>8\mp <ees aes>4. |
 r2 <fis ais>8 <g b>4. |
 r2 <c, ees>8 <ees aes>4. |
 r2 <fis ais>8 <g b>4. |
@@ -54,26 +54,14 @@ r2 <fis ais>8 <g b>4. |
                     >>
 
                     \new Staff \relative c {                 
-                        \set Staff.instrumentName = "English Horn 1"
-                        \set Staff.shortInstrumentName = "E. Hn. 1"  
+                        \set Staff.instrumentName = "English Horn"
+                        \set Staff.shortInstrumentName = "E. Hn."  
 \key c \minor
 \clef bass
-r4 ees2\mf ~ ees8 r |
-r4 g2 ~ g8 r |
-r4 ees2 ~ ees8 r |
-r4 g2 ~ g8 r |
-R1*4
-                    }
-
-                    \new Staff \relative c {                 
-                        \set Staff.instrumentName = "English Horn 2"
-                        \set Staff.shortInstrumentName = "E. Hn. 2"  
-\key c \minor
-\clef bass
-aes2.\mf r4 |
-g2. r4 |
-aes2. r4 |
-g2. r4 |
+<<{ r4 ees2 ~ ees8 r | }\\{ aes,2.\mp r4 | }>>
+<<{ r4 g'2 ~ g8 r | }\\{ g,2. r4 | }>>
+<<{ r4 ees'2 ~ ees8 r | }\\{ aes,2. r4 | }>>
+<<{ r4 g'2 ~ g8 r | }\\{ g,2. r4 | }>>
 R1*4
                     }
                 >>

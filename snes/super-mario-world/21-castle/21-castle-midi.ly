@@ -197,32 +197,32 @@ R1*22
 \override Glissando.style = #'trill
 R2.
 R1*26
-c4\fff\glissando c'\glissando c,2 |
-ges'4\glissando ges'\glissando ges,2 |
-f4\glissando f'\glissando f,2 |
-g4\glissando g'\glissando g,2 |
+c8 \tuplet 11/8 { cis64 d dis e f fis g gis a ais b } c8 \tuplet 11/8 { b64 bes a aes g ges f e ees d des } c2 |
+ges'8 \tuplet 11/8 { g64 gis a ais b c cis d dis e f } ges8 \tuplet 11/8 { f64 e ees d des c b bes a aes g } ges2 |
+f8 \tuplet 11/8 { fis64 g gis a ais b c cis d dis e } f8 \tuplet 11/8 { e64 ees d des c b bes a aes g ges } f2 |
+g8 \tuplet 11/8 { gis64 a ais b c cis d dis e f fis } g8 \tuplet 11/8 { ges64 f e ees d des c b bes a aes } g2 |
 
 R1*4
-c,4\glissando c'\glissando c,2 |
-ges'4\glissando ges'\glissando ges,2 |
-f4\glissando f'\glissando f,2 |
-g4\glissando g'\glissando g,2 |
+c,8 \tuplet 11/8 { cis64 d dis e f fis g gis a ais b } c8 \tuplet 11/8 { b64 bes a aes g ges f e ees d des } c2 |
+ges'8 \tuplet 11/8 { g64 gis a ais b c cis d dis e f } ges8 \tuplet 11/8 { f64 e ees d des c b bes a aes g } ges2 |
+f8 \tuplet 11/8 { fis64 g gis a ais b c cis d dis e } f8 \tuplet 11/8 { e64 ees d des c b bes a aes g ges } f2 |
+g8 \tuplet 11/8 { gis64 a ais b c cis d dis e f fis } g8 \tuplet 11/8 { ges64 f e ees d des c b bes a aes } g2 |
 R1*12
-c,4\glissando c'\glissando c,2 |
-ges'4\glissando ges'\glissando ges,2 |
-f4\glissando f'\glissando f,2 |
-g4\glissando g'\glissando g,2 |
+c,8 \tuplet 11/8 { cis64 d dis e f fis g gis a ais b } c8 \tuplet 11/8 { b64 bes a aes g ges f e ees d des } c2 |
+ges'8 \tuplet 11/8 { g64 gis a ais b c cis d dis e f } ges8 \tuplet 11/8 { f64 e ees d des c b bes a aes g } ges2 |
+f8 \tuplet 11/8 { fis64 g gis a ais b c cis d dis e } f8 \tuplet 11/8 { e64 ees d des c b bes a aes g ges } f2 |
+g8 \tuplet 11/8 { gis64 a ais b c cis d dis e f fis } g8 \tuplet 11/8 { ges64 f e ees d des c b bes a aes } g2 |
 
 R1*4
-c,4\glissando c'\glissando c,2 |
-ges'4\glissando ges'\glissando ges,2 |
-f4\glissando f'\glissando f,2 |
-g4\glissando g'\glissando g,2 |
+c,8 \tuplet 11/8 { cis64 d dis e f fis g gis a ais b } c8 \tuplet 11/8 { b64 bes a aes g ges f e ees d des } c2 |
+ges'8 \tuplet 11/8 { g64 gis a ais b c cis d dis e f } ges8 \tuplet 11/8 { f64 e ees d des c b bes a aes g } ges2 |
+f8 \tuplet 11/8 { fis64 g gis a ais b c cis d dis e } f8 \tuplet 11/8 { e64 ees d des c b bes a aes g ges } f2 |
+g8 \tuplet 11/8 { gis64 a ais b c cis d dis e f fis } g8 \tuplet 11/8 { ges64 f e ees d des c b bes a aes } g2 |
 R1*12
-c,4\glissando c'\glissando c,2 |
-ges'4\glissando ges'\glissando ges,2 |
-f4\glissando f'\glissando f,2 |
-g4\glissando g'\glissando g,2 |
+c,8 \tuplet 11/8 { cis64 d dis e f fis g gis a ais b } c8 \tuplet 11/8 { b64 bes a aes g ges f e ees d des } c2 |
+ges'8 \tuplet 11/8 { g64 gis a ais b c cis d dis e f } ges8 \tuplet 11/8 { f64 e ees d des c b bes a aes g } ges2 |
+f8 \tuplet 11/8 { fis64 g gis a ais b c cis d dis e } f8 \tuplet 11/8 { e64 ees d des c b bes a aes g ges } f2 |
+g8 \tuplet 11/8 { gis64 a ais b c cis d dis e f fis } g8 \tuplet 11/8 { ges64 f e ees d des c b bes a aes } g2 |
                 }
 
                 \new Staff \relative c, {                 
