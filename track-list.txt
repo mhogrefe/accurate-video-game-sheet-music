@@ -314,3 +314,4 @@ snes/super-mario-world/32-castle-cleared
 snes/super-mario-world/33-egg-rescued
 snes/super-mario-world/34-death
 snes/super-mario-world/35-game-over
+snes/super-mario-world/36-bowser-battle

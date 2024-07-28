@@ -68,7 +68,7 @@ hh4. hh8 hh hh hh4.-> hh-> |
 r4 c8\mf <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |
-<<{c'4-. a-. f-. e4. d}\\{<f a>4. r4 r8 <f, b>2.}>> |
+<<{c'4-.\mf a-. f-. e4. d}\\{<f a>4.\mf r4 r8 <f, b>2.}>> |
 r4 c'8 <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |
@@ -76,7 +76,7 @@ d8 r e f r g r4 r8 r4 r8 |
 r4 c,8\mf <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |
-<<{c'4-. a-. f-. e4. d}\\{<f a>4. r4 r8 <f, b>2.}>> |
+<<{c'4-.\mf a-. f-. e4. d}\\{<f a>4.\mf r4 r8 <f, b>2.}>> |
 r4 c'8 <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |
@@ -84,7 +84,7 @@ d8 r e f r g r4 r8 r4 r8 |
 r4 c,8\mf <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |
-<<{c'4-. a-. f-. e4. d}\\{<f a>4. r4 r8 <f, b>2.}>> |
+<<{c'4-.\mf a-. f-. e4. d}\\{<f a>4.\mf r4 r8 <f, b>2.}>> |
 r4 c'8 <e g b> c <e g b> r4 r8 <c e a>4. |
 r4 d8 <f a c> d <f a c> r4 r8 <d g b>4. |
 r4 c8 <e g b> c <e g b> r4 r8 <c e a>4. |

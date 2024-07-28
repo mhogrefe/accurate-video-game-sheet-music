@@ -111,7 +111,7 @@ R1*24
 \override Glissando.style = #'trill
 \partial 4 a8\f g ~ |
 g2 e8 d4. |
-a8 g4. ~ g4 c8\glissando c, |
+a8 g4. ~ g4 \tuplet 3/2 { c8 \tuplet 11/8 { b64 bes a aes g ges f e ees d des } c8 } |
 \bar "||"
 c4. g'8 ~ g4 c |
 des,4. aes'8 ~ aes4 des |
@@ -137,7 +137,7 @@ r4 r8 des ~ des c ces4 |
 c4. g'8 ~ g4 c |
 des,4. aes'8 ~ aes4 des |
 c,4. g'8 ~ g4 c |
-des,4. des'8 ~ des4\glissando c, |
+des,4. des'8 ~ des4 \tuplet 12/8 { c32 b bes a aes g ges f e ees d des } |
 c4. g'8 ~ g4 c |
 des,4. aes'8 ~ aes4 des |
 c,4. g'8 ~ g4 c |
@@ -162,7 +162,7 @@ r4 r8 des ~ des c ces4 |
 c4. g'8 ~ g4 c |
 des,4. aes'8 ~ aes4 des |
 c,4. g'8 ~ g4 c |
-des,4. des'8 ~ des4\glissando c, |
+des,4. des'8 ~ des4 \tuplet 12/8 { c32 b bes a aes g ges f e ees d des } |
 c4. g'8 ~ g4 c |
 des,4. aes'8 ~ aes4 des |
 c,4. g'8 ~ g4 c |
@@ -273,8 +273,8 @@ ees8 f2.. |
 \override Glissando.style = #'trill
 r4
 R1*7
-r4 aes\ff^\markup{Echo} ~ aes2\glissando |
-f'''1 ~ |
+r4 aes32 a ais b c cis d dis e f fis g gis a ais b c cis d dis e f fis g |
+gis32 a ais b c cis d dis e f8.. ~ f2 ~ |
 f1 ~ |
 
 f8 d ees d ees d c b |
@@ -291,8 +291,8 @@ ces4 bes8 a aes g4 g8 |
 f8 des b g f des' b4 |
 b8 c d f ~ f f ees d |
 c8 f,4 f8 ~ f ees f4 ~ |
-f1\glissando |
-f,1 |
+f8 \tuplet 11/12 { e16 ees d des c b bes a aes g ges } f8 ~ |
+f1 |
 R1*8
 
 r8 d''' ees d ees d c b |
@@ -309,8 +309,8 @@ ces4 bes8 a aes g4 g8 |
 f8 des b g f des' b4 |
 b8 c d f ~ f f ees d |
 c8 f,4 f8 ~ f ees f4 ~ |
-f1\glissando |
-f,1 |
+f8 \tuplet 11/12 { e16 ees d des c b bes a aes g ges } f8 ~ |
+f1 |
 R1*8
 
                 }

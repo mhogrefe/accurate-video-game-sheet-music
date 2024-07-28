@@ -84,18 +84,18 @@ r2 r4 f,8 fis |
 \repeat tremolo 8 { bes16 f } |
 \repeat tremolo 8 { bes16 f } |
 \repeat tremolo 8 { bes16 f } |
-\repeat tremolo 8 { a16 e } |
-\repeat tremolo 8 { a16 e } |
-\repeat tremolo 8 { a16 e } |
-\repeat tremolo 8 { a16 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
 \repeat tremolo 8 { bes'16 ees, } |
 \repeat tremolo 8 { bes'16 ees, } |
 \repeat tremolo 8 { bes'16 ees, } |
 \repeat tremolo 8 { bes'16 ees, } |
-\repeat tremolo 8 { a16 e } |
-\repeat tremolo 8 { a16 e } |
-\repeat tremolo 8 { a16 e } |
-\repeat tremolo 8 { a16 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
+\repeat tremolo 8 { \once \override Beam.gap = #2.5 a16 \once \override NoteColumn.X-offset = #2.0 e } |
                     }
                 >>
 

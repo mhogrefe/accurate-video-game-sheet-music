@@ -63,13 +63,13 @@ f'8 g aes ees' r \clef bass f,, r4 |
 fis'8\ffff gis a e' r \clef bass fis,, r4 |
 R1 |
 \repeat tremolo 16 { f32\mf\< a } |
-\repeat tremolo 16 { e32\ff\> gis } |
+\repeat tremolo 16 { \once \override Beam.gap = #3.0 e32\ff\> \once \override NoteColumn.X-offset = #2.0 gis } |
 \repeat tremolo 16 { ees32\mf\< g } |
-\repeat tremolo 16 { e32\ff\> gis } |
+\repeat tremolo 16 { \once \override Beam.gap = #3.0 e32\ff\> \once \override NoteColumn.X-offset = #2.0 gis } |
 \repeat tremolo 16 { g32\mf\< b } |
-\repeat tremolo 16 { fis32\ff\> ais } |
+\repeat tremolo 16 { \once \override Beam.gap = #3.0 fis32\ff\> \once \override NoteColumn.X-offset = #2.0 ais } |
 \repeat tremolo 16 { f32\mf\< a } |
-\repeat tremolo 16 { fis32\ff\> ais } |
+\repeat tremolo 16 { \once \override Beam.gap = #3.0 fis32\ff\> \once \override NoteColumn.X-offset = #2.0 ais } |
 b,16-.\sff cis-. d-. a-. b-. c-. r f, ~ f2 ~ |
 \time 3/4
 f4 r r |

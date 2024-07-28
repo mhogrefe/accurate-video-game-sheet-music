@@ -20,7 +20,7 @@
                     \new Staff \relative c'' {                 
                         \set Staff.instrumentName = "Trumpet"
                         \set Staff.shortInstrumentName = "Tpt."  
-\key f \major
+\key f \major 
 \tempo 4 = 132
 <a c f>4-.\f 4-. <f a d>8 <a c f>4-. <f a d>8-. |
 <a c f>8 <f a d>-. <f c'>-. <a c f>8 ~ 4. <f a d>8-. |
