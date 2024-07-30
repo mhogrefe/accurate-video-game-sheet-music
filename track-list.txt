@@ -315,3 +315,5 @@ snes/super-mario-world/33-egg-rescued
 snes/super-mario-world/34-death
 snes/super-mario-world/35-game-over
 snes/super-mario-world/36-bowser-battle
+snes/super-mario-world/37-peachs-item
+snes/super-mario-world/38-ending

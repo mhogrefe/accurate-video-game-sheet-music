@@ -54,15 +54,15 @@ r2 r4 r8 <a ees' aes>\f |
                     \set Staff.instrumentName = "Bass Guitar"
                     \set Staff.shortInstrumentName = "B. Guit."  
 \clef bass
-r16 \ottava #-1 e\f e e e8 e16 e ~ e e e8 e dih''16\glissando e |
+r16 \ottava #-1 e\f e e e8 e16 e ~ e e e8 e dis''16\glissando e |
 r16 e,, e e e8 e16 e ~ e e e8 e a'16\glissando b |
-r16 e,, e e e8 e16 e ~ e e e8 e dih''16\glissando e |
+r16 e,, e e e8 e16 e ~ e e e8 e dis''16\glissando e |
 r16 e,, e e e8 e16 e ~ e e e8 e a'16\glissando b |
-r16 e,, e e e8 e16 e ~ e e e8 e dih''16\glissando e |
+r16 e,, e e e8 e16 e ~ e e e8 e dis''16\glissando e |
 r16 e,, e e e8 e16 e ~ e e e8 e a'16\glissando b |
-r16 e,, e e e8 e16 e ~ e e e8 e dih''16\glissando e |
+r16 e,, e e e8 e16 e ~ e e e8 e dis''16\glissando e |
 r16 e,, e e e8 e16 e ~ e e e8 e a'16\glissando b |
-r16 e,, e e e8 e16 e ~ e e e8 e dih''16\glissando e |
+r16 e,, e e e8 e16 e ~ e e e8 e dis''16\glissando e |
 r16 e,, e e e8 e16 e ~ e e e8 e a'16\glissando b |
                 }
             >>

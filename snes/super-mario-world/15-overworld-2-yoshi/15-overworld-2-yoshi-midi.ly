@@ -195,24 +195,24 @@ c4-. r r2 |
 \key c \major
 \clef bass
 <cis f'>8.\mf 16 ~ 4 <d aes'>8 \acciaccatura ais''16 <gis b>8 \acciaccatura ais16 <gis b>4 |
-r8 <<{cis,8 ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8 r cis r cis r cis}>> |
+r8 <<{cis,8\mf ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8\mf r cis r cis r cis}>> |
 r8 <<{
-f'8 ~ f16 f8. f f16 ~ f4 |
+f'8\mf ~ f16 f8. f f16 ~ f4 |
 r8 b, ~ b16 b8. b b16 ~ b4 |
 }\\{
-f8 r f r f r f ~ |
+f8\mf r f r f r f ~ |
 f8 b, r b r b r b |
 }>> |
-r8 <<{c'8 ~ c16 c8.}\\{c,8 r c}>> <e bes'>8 8 <ees a> <d aes'> |
-r8 <<{cis'8 ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8 r cis r cis r cis}>> |
+r8 <<{c'8\mf ~ c16 c8.}\\{c,8\mf r c}>> <e bes'>8\mf 8 <ees a> <d aes'> |
+r8 <<{cis'8\mf ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8\mf r cis r cis r cis}>> |
 r8 <<{
-f'8 ~ f16 f8. f f16 ~ f4 |
+f'8\mf ~ f16 f8. f f16 ~ f4 |
 r8 f ~ f16 f8. f f16 ~ f4 |
 }\\{
-f,8 r f r f r f ~ |
+f,8\mf r f r f r f ~ |
 f8 b, r b r b r b |
 }>> |
-r8 <<{e'16 c ~ c c c d}\\{c,8 r c}>> <e' g>8 <d g> <e g> <e, g> |
+r8 <<{e'16\mf c ~ c c c d}\\{c,8\mf r c}>> <e' g>8\mf <d g> <e g> <e, g> |
 r8 <e c'> r <e c'> r <f c'> r <fis c'> |
 r8 <e c'> r <e c'> r <f c'> r <f b> |
 r8 <e c'> r <e c'> r <f c'> r <fis c'> |
@@ -230,24 +230,24 @@ r8 <e c'> r <e c'> r <ees c'> r <ees c'> |
 <f b>2 r |
 r8 <g c>16 <c, e>16 ~ 16 <g' c> <c, e>8 <g' c>16 <c, e>8 <g' c>16 ~ 8 c,16 c |
 
-r8 <<{cis'8 ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8 r cis r cis r cis}>> |
+r8 <<{cis'8\mf ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8\mf r cis r cis r cis}>> |
 r8 <<{
-f'8 ~ f16 f8. f f16 ~ f4 |
+f'8\mf ~ f16 f8. f f16 ~ f4 |
 r8 b, ~ b16 b8. b b16 ~ b4 |
 }\\{
-f8 r f r f r f ~ |
+f8\mf r f r f r f ~ |
 f8 b, r b r b r b |
 }>> |
-r8 <<{c'8 ~ c16 c8.}\\{c,8 r c}>> <e bes'>8 8 <ees a> <d aes'> |
-r8 <<{cis'8 ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8 r cis r cis r cis}>> |
+r8 <<{c'8\mf ~ c16 c8.}\\{c,8\mf r c}>> <e bes'>8\mf 8 <ees a> <d aes'> |
+r8 <<{cis'8\mf ~ cis16 cis8. cis cis16 ~ cis4}\\{cis,8\mf r cis r cis r cis}>> |
 r8 <<{
-f'8 ~ f16 f8. f f16 ~ f4 |
+f'8\mf ~ f16 f8. f f16 ~ f4 |
 r8 f ~ f16 f8. f f16 ~ f4 |
 }\\{
-f,8 r f r f r f ~ |
+f,8\mf r f r f r f ~ |
 f8 b, r b r b r b |
 }>> |
-r8 <<{e'16 c ~ c c c d}\\{c,8 r c}>> <e' g>8 <d g> <e g> <e, g> |
+r8 <<{e'16\mf c ~ c c c d}\\{c,8\mf r c}>> <e' g>8\mf <d g> <e g> <e, g> |
 r8 <e c'> r <e c'> r <f c'> r <fis c'> |
 r8 <e c'> r <e c'> r <f c'> r <f b> |
 r8 <e c'> r <e c'> r <f c'> r <fis c'> |
