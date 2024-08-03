@@ -18,8 +18,8 @@
         {
             <<
                 \new Staff \relative c''' {                 
-                    \set Staff.instrumentName = "Soprano Recorder"
-                    \set Staff.shortInstrumentName = "S. Rec."  
+                    \set Staff.instrumentName = "Ocarina"
+                    \set Staff.shortInstrumentName = "Oc."  
 \key c \minor
 <<{\override MultiMeasureRest.staff-position = 0 R2.}\\{s4^\markup{\italic accel.} s s}>> |
 R1*30

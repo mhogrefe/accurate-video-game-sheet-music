@@ -17,8 +17,8 @@
         {
             <<
                 \new Staff \relative c'''' {  
-                    \set Staff.instrumentName = "Soprano Recorder"
-                    \set Staff.shortInstrumentName = "S. Rec."  
+                    \set Staff.instrumentName = "Ocarina"
+                    \set Staff.shortInstrumentName = "Oc."  
 \key g \major
 \tempo 4 = 102
 R1 |

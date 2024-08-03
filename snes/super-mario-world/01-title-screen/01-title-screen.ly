@@ -74,8 +74,8 @@ R1*8
                     }
 
                     \new Staff \relative c'''' {                 
-                        \set Staff.instrumentName = "Soprano Recorder"
-                        \set Staff.shortInstrumentName = "S. Rec."  
+                        \set Staff.instrumentName = "Ocarina"
+                        \set Staff.shortInstrumentName = "Oc."  
                         \key g \major
 \ottava #1
 d8\mf d d d, d' d d d, |

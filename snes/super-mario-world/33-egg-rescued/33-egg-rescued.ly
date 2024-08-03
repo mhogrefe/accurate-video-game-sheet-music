@@ -32,8 +32,8 @@ g2 g' |
                     }
 
                     \new Staff \relative c'''' {                 
-                        \set Staff.instrumentName = "Soprano Recorder"
-                        \set Staff.shortInstrumentName = "S. Rec."  
+                        \set Staff.instrumentName = "Ocarina"
+                        \set Staff.shortInstrumentName = "Oc."  
 \key c \major
 \ottava #1
 g16 a g a g a g a g a g a \repeat tremolo 4 { g32 a } |

@@ -65,8 +65,8 @@ g4-. r8 <<{ <ces e>8 ~ 8[ <bes ees>]}\\{ bes8 ~ bes4 }>> <a d>4 |
                     }
 
                     \new Staff \relative c'''' {                 
-                        \set Staff.instrumentName = "Soprano Recorder"
-                        \set Staff.shortInstrumentName = "S. Rec."  
+                        \set Staff.instrumentName = "Ocarina"
+                        \set Staff.shortInstrumentName = "Oc."  
 \key c \minor
 \ottava #1
 bes8\f aes ~ |

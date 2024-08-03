@@ -317,3 +317,4 @@ snes/super-mario-world/35-game-over
 snes/super-mario-world/36-bowser-battle
 snes/super-mario-world/37-peachs-item
 snes/super-mario-world/38-ending
+snes/super-mario-world/39-credits

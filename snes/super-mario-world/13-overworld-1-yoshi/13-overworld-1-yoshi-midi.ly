@@ -46,8 +46,8 @@ R1*22
                     }
 
                     \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Soprano Recorder"
-                        \set Staff.shortInstrumentName = "S. Rec"  
+                        \set Staff.instrumentName = "Ocarina"
+                        \set Staff.shortInstrumentName = "Oc."  
 \key f \major
 R1
 R1*18

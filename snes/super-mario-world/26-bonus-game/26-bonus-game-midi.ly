@@ -18,8 +18,8 @@
         {
             <<
                 \new Staff \relative c'''' {                 
-                    \set Staff.instrumentName = "Soprano Recorder"
-                    \set Staff.shortInstrumentName = "S. Rec"  
+                    \set Staff.instrumentName = "Ocarina"
+                    \set Staff.shortInstrumentName = "Oc."  
 \key f \major
 \tempo 4 = 160
 \ottava #1

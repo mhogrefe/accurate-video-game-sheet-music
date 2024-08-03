@@ -157,8 +157,8 @@ r4 <a c>4-. 4-. |
                     }
 
                     \new Staff \relative c''' {                 
-                        \set Staff.instrumentName = "Soprano Recorder"
-                        \set Staff.shortInstrumentName = "S. Rec."  
+                        \set Staff.instrumentName = "Ocarina"
+                        \set Staff.shortInstrumentName = "Oc."  
 \key f \major 
 R2.*4
 
