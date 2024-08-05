@@ -1,0 +1,14 @@
+00:00:00 Introduction
+00:00:34 Character Selection
+00:01:15 Overworld
+00:02:09 Underground
+00:02:33 Starman
+00:02:48 Subspace
+00:03:15 Birdo
+00:03:37 Fanfare
+00:03:45 Bonus Game
+00:03:53 Death
+00:04:00 Wart
+00:04:27 Boss Victory
+00:04:37 Game Over
+00:04:45 Ending

@@ -30,8 +30,8 @@ swing = \markup {
 \key c \major 
 <<{\override MultiMeasureRest.staff-position = 0 R1}\\{s4^\swing^\markup{\italic accel.} s s s }>>
 R1*49
-R2.*9
-R2
+R2.*7
+R4
 R1*4
 R4
 R1*4
@@ -88,8 +88,8 @@ R1*2
 \tuplet 3/2 { e4-. c8 a4-. e'8 c4-. a8 c4-. g'8 ~ } |
 g4 ~ \tuplet 3/2 { g4 r8 } r2 |
 R1*40
-R2.*9
-R2
+R2.*7
+R4
 R1*4
 R4
 R1*20
@@ -136,8 +136,8 @@ R1*6
 \tempo 4=129
 \tuplet 3/2 { r4 <g g'>8 } 4 \tempo 4=121 \tuplet 3/2 { r4 <g g'>8 r4 <g g'>8\stopTextSpan } |
 <<{\override MultiMeasureRest.staff-position = 0 R2.}\\{s4^\markup {\bold Straight} s s }>>
-R2.*8
-R2
+R2.*6
+R4
 R1*4
 <<{\override MultiMeasureRest.staff-position = 0 R4}\\{s8^\markup {\bold Swing} s }>>
 R1*2
@@ -265,8 +265,8 @@ hh4 \tuplet 3/2 { hh4 hh8 } hh4 \tuplet 3/2 { hh4 hh8 } |
 hh4 \tuplet 3/2 { hh4 hh8 } \tuplet 3/2 { hh4 hh8 } \tuplet 3/2 { hh8 hh hh } |
 \tuplet 3/2 { r4 bd8 } bd4 \tuplet 3/2 { r4 bd8 } bd4 |
 \tuplet 3/2 { r4 bd8 } bd4 r \tuplet 3/2 { bd8 hh hh } |
-R2.*9
-R2
+R2.*7
+R4
 R1*4
 R4
 hh4 \tuplet 3/2 { hh4 hh8 } hh4 \tuplet 3/2 { hh4 hh8 } |
@@ -410,10 +410,9 @@ c4 r c |
 c4 r c |
 b2. ~ |
 b2 r4 |
-b2.\> ~ |
-b2. ~ |
-b2.\p |
-R2
+\tempo 2.=21
+b2. |
+R4
 R1*4
 R4
 r4 <c f>-.\f r <c fis>-. |
@@ -500,11 +499,9 @@ R1*8
 \set tieWaitForNote = ##t
 g4 ~ b ~ ees ~ |
 <g, b ees g ~>4 b' ~ ees ~ |
-<ees,, g' b ees g>2.\> ~ |
-<ees g' b ees g>2. ~ |
-<ees g' b ees g>2.\p |
+<ees,, g' b ees g>2. |
 \set tieWaitForNote = ##f
-r4 dis'\mp^\markup{Echo} |
+dis'4\mp^\markup{Echo} |
 e8 g a g ~ g4. a8 |
 b4 b8 a ~ a4. dis,8 |
 e8 g a g ~ g4. gis8 |
@@ -641,8 +638,8 @@ cis1 |
 c2. \tuplet 3/2 { a4 c8 } |
 e1 |
 R1*2
-R2.*9
-R2
+R2.*7
+R4
 \set tieWaitForNote = ##t
 r8 g,,\p ~ e' ~ <g, e'~ g~> <e' g c e>2 |
 r8 g, ~ ees' ~ <g, ees'~ g~> <ees' g b ees>2 |
@@ -694,8 +691,8 @@ R1*2
 <des ges bes>4 r <des ges bes> |
 <des ges beses> r <des ges beses> |
 <c ees aes>2. |
-<ges c e>2 <f b ees>4 ~ |
-<f b ees>2.\fermata |
+<<{<ges c e>2 <f b ees>4_~ |
+<f b ees>2.\fermata}\\{s2 s4\> s s s\pp}>> |
                     }
                 >>
 
@@ -766,13 +763,11 @@ a4 r a |
 aes4 r aes |
 g2. ~ |
 g2 r4 |
-g2.\> ~ |
-g2. ~ |
-g2.\p |
+g2. |
 \bar "||"
-\time 2/4
+\time 1/4
 \tempo 4=92
-R2
+R4
 \time 4/4
 c1\mf |
 b1 |
@@ -835,9 +830,11 @@ a,8 e' e, e' a, e' e, e' |
 f,8 a' c, a' fis, a' c, a' |
 g,8 g' d g a, a' e a |
 \bar "||"
+\tempo 4=115
+\tuplet 3/2 { r4 d,,8 } d4 \tempo 4=122 \tuplet 3/2 { r4 d8 } d4 |
+\tempo 4=133
+\tuplet 3/2 { r4 g8 } g4 \tempo 4=142 r g |
 \tempo 4=142
-\tuplet 3/2 { r4 d,,8 } d4 \tuplet 3/2 { r4 d8 } d4 |
-\tuplet 3/2 { r4 g8 } g4 r g |
 c4 r g \tuplet 3/2 { r4 g8 } |
 b4 r g \tuplet 3/2 { r4 g8 } |
 bes4 r g \tuplet 3/2 { r4 g8 } |
@@ -874,8 +871,9 @@ ges4 ges ges |
 g4 g g |
 aes2. |
 \tempo 2.=52
-aes2 des,4 ~ |
-des2.\fermata |
+<<{aes2 des,4_~ |
+\tempo 2.=15
+\once \override NoteHead.extra-spacing-width = #'(-2.5 . 7.5) des2.\fermata }\\{s2 s4\> s s s\pp}>> |
 \bar "|."
                 }
             >>

@@ -58,9 +58,8 @@ cgh4 r r2 |
                         \drummode {
                             \set Staff.instrumentName="Drumset"
                             \set Staff.shortInstrumentName="D. Set"
-\repeat percent 4 { hh4->\f r hh8 hh r4 | }
-hh4-> r hh8 hh r hh |
-hh8 hh hh4 r2 |
+\repeat percent 5 { r4 hh->\f r hh8 hh | }
+r8 hh hh hh hh4 r |
                         }
                     }
                 >>

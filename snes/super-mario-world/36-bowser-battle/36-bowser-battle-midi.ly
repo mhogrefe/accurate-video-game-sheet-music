@@ -28,9 +28,9 @@ R1.*2
 \time 12/8
 \tempo 4. = 70
 \set tieWaitForNote = ##t
-r4^\markup{\italic accel.} r8 r4 r8 bes8 ~ \tempo 4. = 94 ees ~ aes ~ \stemUp des_~ \tempo 4. = 103 ges_~ <bes,, ees aes des ges bes> |
+r4^\markup{\italic accel.} r8 r4 r8 bes8\f ~ \tempo 4. = 94 ees ~ aes ~ \stemUp des_~ \tempo 4. = 103 ges_~ <bes,, ees aes des ges bes> |
 \tempo 4. = 120
-<b e a d g b>2. <<{\tuplet 22/24 {bes''32 a aes g ges f e ees d des c b bes a aes g ges f e ees d des}}\\{\tuplet 19/12 {ges'16 f e ees d des c b bes a aes g ges f e ees d des c}}\\{\tuplet 16/12 {des'16 c b bes a aes g ges f e ees d des c b bes}}\\{\tuplet 13/12 {aes'16 g ges f e ees d des c b bes a aes}}\\{\tuplet 8/6 {ees'8 d des c b bes a aes}}\\{\tuplet 7/6 {bes8 a aes g ges f e}}>> |
+<b e a d g b>2. <<{\tuplet 22/24 {bes''32\pp a aes g ges f e ees d des c b bes a aes g ges f e ees d des}}\\{\tuplet 19/12 {ges'16\pp f e ees d des c b bes a aes g ges f e ees d des c}}\\{\tuplet 16/12 {des'16\pp c b bes a aes g ges f e ees d des c b bes}}\\{\tuplet 13/12 {aes'16\pp g ges f e ees d des c b bes a aes}}\\{\tuplet 8/6 {ees'8\pp d des c b bes a aes}}\\{\tuplet 7/6 {bes8\pp a aes g ges f e}}>> |
 \bar "||"
 \time 4/4
 \tempo 4 = 150

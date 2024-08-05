@@ -1004,7 +1004,7 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         &mut canvas,
         &sprite_img,
         (sprite_box_left + sprite_box_right - target_sprite_width_px) >> 1,
-        sprite_box_top,
+        (sprite_box_top + sprite_box_bottom - target_sprite_height_px) >> 1,
     );
 
     let mut cover_text_img = image::open(&format!(

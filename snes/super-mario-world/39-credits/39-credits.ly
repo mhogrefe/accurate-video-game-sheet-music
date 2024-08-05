@@ -30,8 +30,8 @@ swing = \markup {
 \key c \major 
 <<{\override MultiMeasureRest.staff-position = 0 R1}\\{s4^\swing^\markup{\italic accel.} s s s }>>
 R1*49
-R2.*9
-R2
+R2.*7
+R4
 R1*4
 R4
 R1*4
@@ -67,7 +67,7 @@ g16 a g4. r8 a,16 b c d e f |
 e16 f e4. r8 b16 c d e f fis |
 g16 a g4. r8 d16 e f g a b |
 \ottava #0
-<<{\override MultiMeasureRest.staff-position = 0 R1}\\{s4^\markup {\bold Swing} s s s }>>
+<<{\override MultiMeasureRest.staff-position = 0 R1}\\{s4^\markup {\bold Swing}^\markup{\italic accel.} s s s }>>
 R1*17
 \key des \major
 R1*10
@@ -88,8 +88,8 @@ g8-. gis a-. e ~ e4 r |
 e8-. c a-. e' c-. a c-. g' ~ |
 g4. r8 r2 |
 R1*40
-R2.*9
-R2
+R2.*7
+R4
 R1*4
 R4
 R1*20
@@ -134,13 +134,13 @@ R1*6
 r8\startTextSpan <d d'>8 4 r8 <d d'>8 4 |
 r8 <g g'>8 4 r8 <g g'> r <g g'>\stopTextSpan |
 <<{\override MultiMeasureRest.staff-position = 0 R2.}\\{s4^\markup {\bold Straight} s s }>>
-R2.*8
-R2
+R2.*6
+R4
 R1*4
 <<{\override MultiMeasureRest.staff-position = 0 R4}\\{s8^\markup {\bold Swing} s }>>
 R1*2
-r8 <d d'>8 4 r8 <d d'>8 4 |
-r8 <g g'>8 4 r <g g'>4-. |
+r8\startTextSpan <d d'>8 4 r8 <d d'>8 4 |
+r8 <g g'>8 4 r <g g'>4-.\stopTextSpan |
 r8 e' r e r e r e |
 r8 ees r ees r ees r ees |
 r8 d r d r d r d |
@@ -212,13 +212,13 @@ R2.*5
                         \set Staff.shortInstrumentName = "Glock."  
 \key f \major 
 R1*50
-R2.*9
-r4 gis\pp |
+R2.*7
+gis4\pp |
 a8 c d c ~ c4. d8 |
 e4 e8 d ~ d4. gis,8 |
 a8 c d c ~ c4. cis8 |
 d4 d8 c\> ~ \once \override NoteHead.extra-spacing-width = #'(-5.0 . 2.5) c2\fermata\pp |
-R4
+R4^\markup {\bold Swing}
 R1*68
 \key ges \major
 R1*10
@@ -265,8 +265,8 @@ hh4 hh8 hh hh hh \tuplet 3/2 { hh8 hh hh } |
 }
 r8 bd bd4 r8 bd bd4 |
 r8 bd bd4 r \tuplet 3/2 { bd8 hh hh } |
-R2.*9
-R2
+R2.*7
+R4
 R1*4
 R4
 hh4 hh8 hh hh4 hh8 hh |
@@ -361,10 +361,8 @@ c4 r c |
 c4 r c |
 b2. ~ |
 b2 r4 |
-b2.\> ~ |
-b2. ~ |
-b2.\p |
-R2
+<<{b2.\fermata}\\{s4\> s s\p}>> |
+R4
 R1*4
 R4
 r4 <c f>-.\f r <c fis>-. |
@@ -448,14 +446,13 @@ R1*8
 <c g' e' c'>2. ~ |
 <c g' e' c'>2. ~ |
 <c g' e' c'>2. |
+<<{
 \set tieWaitForNote = ##t
-g4 ~ b ~ ees ~ |
-<g, b ees g ~>4 b' ~ ees ~ |
-<ees,, g' b ees g>2.\> ~ |
-<ees g' b ees g>2. ~ |
-<ees g' b ees g>2.\p |
+g4 ~ b_~ ees_~ |
+<g, b ees g ~>4 b'_~ ees ~ |
+<ees,, g' b ees g>2.\fermata}\\{s2. s s4\> s s\p}>> |
 \set tieWaitForNote = ##f
-r4 dis'\mp^\markup{Echo} |
+dis'4\mp^\markup{Echo} |
 e8 g a g ~ g4. a8 |
 b4 b8 a ~ a4. dis,8 |
 e8 g a g ~ g4. gis8 |
@@ -592,8 +589,8 @@ cis1 |
 c2. a8 c |
 e1 |
 R1*2
-R2.*9
-R2
+R2.*7
+R4
 \set tieWaitForNote = ##t
 r8 g,,\p ~ e' ~ <g, e'~ g~> <e' g c e>2 |
 r8 g, ~ ees' ~ <g, ees'~ g~> <ees' g b ees>2 |
@@ -645,8 +642,8 @@ R1*2
 <des ges bes>4 r <des ges bes> |
 <des ges beses> r <des ges beses> |
 <c ees aes>2. |
-<ges c e>2 <f b ees>4 ~ |
-<f b ees>2.\fermata |
+<<{<ges c e>2 <f b ees>4_~ |
+<f b ees>2.\fermata}\\{s2 s4\> s s s\pp}>> |
                     }
                 >>
 
@@ -717,13 +714,11 @@ a4 r a |
 aes4 r aes |
 g2. ~ |
 g2 r4 |
-g2.\> ~ |
-g2. ~ |
-g2.\p |
+<<{g2.\fermata}\\{s4\> s s\p}>> |
 \bar "||"
-\time 2/4
+\time 1/4
 \tempo 4=92
-R2
+R4
 \time 4/4
 c1\mf |
 b1 |
@@ -786,9 +781,10 @@ a,8 e' e, e' a, e' e, e' |
 f,8 a' c, a' fis, a' c, a' |
 g,8 g' d g a, a' e a |
 \bar "||"
-\tempo 4=142
+\tempo 4=115
 r8 d,, d4 r8 d d4 |
 r8 g g4 r g |
+\tempo 4=142
 c4 r g r8 g |
 b4 r g r8 g |
 bes4 r g r8 g |
@@ -824,8 +820,8 @@ f4 f f |
 ges4 ges ges |
 g4 g g |
 aes2. |
-aes2 des,4 ~ |
-des2.\fermata |
+<<{aes2 des,4_~ |
+\once \override NoteHead.extra-spacing-width = #'(-2.5 . 7.5) des2.\fermata }\\{s2 s4\> s s s\pp}>> |
 \bar "|."
                 }
             >>

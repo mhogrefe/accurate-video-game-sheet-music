@@ -83,18 +83,18 @@ cgh4 r r2 |
                         \drummode {
                             \set Staff.instrumentName="Drumset"
                             \set Staff.shortInstrumentName="D. Set"
-hh4->\pp r hh8 hh r4 |
-hh4-> r hh8 hh r4 |
-hh4-> r hh8 hh r4 |
-hh4-> r hh8 hh r4 |
-hh4-> r hh8 hh r hh |
-hh8 hh hh4 r2 |
-hh4->\pp r hh8 hh r4 |
-hh4-> r hh8 hh r4 |
-hh4-> r hh8 hh r4 |
-hh4-> r hh8 hh r4 |
-hh4-> r hh8 hh r hh |
-hh8 hh hh4 r2 |
+r4 hh->\pp r hh8 hh |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r8 hh hh hh hh4 r |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r4 hh-> r hh8 hh |
+r8 hh hh hh hh4 r |
                         }
                     }
                 >>

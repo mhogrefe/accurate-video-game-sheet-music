@@ -329,47 +329,47 @@ fis16 gis e g fis gis e g fis\pp gis e g fis gis e g |
 R1*2
 \override Glissando.style = #'trill
 <b f'>2\ff ~ 2\>\glissando |
-<a ees'>2. r4 |
+<a ees'>2.\p r4 |
 \key g \minor
-<cis g'>2 ~ 2\>\glissando |
-<b f'>2. r4 |
+<cis g'>2\ff ~ 2\>\glissando |
+<b f'>2.\p r4 |
 \key a \minor
-<dis a'>2 ~ 2\>\glissando |
-<cis g'>2. r4 |
+<dis a'>2\ff ~ 2\>\glissando |
+<cis g'>2.\p r4 |
 \key b \minor
-<f b>2 ~ 2\>\glissando |
-<ees a>2. r4 |
+<f b>2\ff ~ 2\>\glissando |
+<ees a>2.\p r4 |
 R1*6
 \key a \minor
-<dis a'>2 ~ 2\>\glissando |
-<cis g'>2. r4 |
+<dis a'>2\ff ~ 2\>\glissando |
+<cis g'>2.\p r4 |
 R1*6
 \key g \minor
-<cis g'>2 ~ 2\>\glissando |
-<b f'>2. r4 |
+<cis g'>2\ff ~ 2\>\glissando |
+<b f'>2.\p r4 |
 R1*6
 
 R1*2
 \override Glissando.style = #'trill
-<b f'>2 ~ 2\>\glissando |
-<a ees'>2. r4 |
+<b f'>2\ff ~ 2\>\glissando |
+<a ees'>2.\p r4 |
 \key g \minor
-<cis g'>2 ~ 2\>\glissando |
-<b f'>2. r4 |
+<cis g'>2\ff ~ 2\>\glissando |
+<b f'>2.\p r4 |
 \key a \minor
-<dis a'>2 ~ 2\>\glissando |
-<cis g'>2. r4 |
+<dis a'>2\ff ~ 2\>\glissando |
+<cis g'>2.\p r4 |
 \key b \minor
-<f b>2 ~ 2\>\glissando |
-<ees a>2. r4 |
+<f b>2\ff ~ 2\>\glissando |
+<ees a>2.\p r4 |
 R1*6
 \key a \minor
-<dis a'>2 ~ 2\>\glissando |
-<cis g'>2. r4 |
+<dis a'>2\ff ~ 2\>\glissando |
+<cis g'>2.\p r4 |
 R1*6
 \key g \minor
-<cis g'>2 ~ 2\>\glissando |
-<b f'>2. r4 |
+<cis g'>2\ff ~ 2\>\glissando |
+<b f'>2.\p r4 |
 R1*6
                         }
                     >>

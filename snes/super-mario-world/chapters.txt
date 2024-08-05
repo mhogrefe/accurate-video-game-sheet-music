@@ -1,0 +1,39 @@
+00:00:00 Title Screen
+00:00:56 Introduction
+00:01:15 Yoshi’s Island
+00:01:38 Donut Plains
+00:02:05 Vanilla Dome
+00:02:40 Forest of Illusion
+00:03:08 Bowser’s Castle Emerges
+00:03:22 Valley of Bowser
+00:03:46 Star World
+00:04:10 Special Zone
+00:04:37 Super Mario Bros. Theme
+00:06:18 Overworld 1
+00:07:13 Overworld 1 (Yoshi)
+00:08:08 Overworld 2
+00:09:00 Overworld 2 (Yoshi)
+00:09:52 Underground
+00:10:49 Underground (Yoshi)
+00:11:46 Underwater
+00:12:49 Underwater (Yoshi)
+00:13:52 Ghost House
+00:15:33 Castle
+00:17:42 P-Switch
+00:18:01 P-Switch (Cave)
+00:18:20 Starman
+00:18:37 Starman (Cave)
+00:18:54 Bonus Game
+00:19:42 Bonus Game Cleared
+00:19:52 Boss Battle
+00:20:39 Pause
+00:20:46 Hurry
+00:20:54 Level Cleared
+00:21:08 Castle Cleared
+00:21:23 Egg Rescued
+00:21:35 Death
+00:21:45 Game Over
+00:21:57 Bowser Battle
+00:23:09 Peach’s Item
+00:23:16 Ending
+00:23:39 Credits
