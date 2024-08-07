@@ -188,14 +188,11 @@ R1*16
                 }
 
                  \new StaffGroup <<
-                    \new Staff \relative c''' {  
-                        \set Staff.instrumentName = "Violin"
-                        \set Staff.shortInstrumentName = "Vln."   
+                    \new Staff \relative c'' {  
+                        \set Staff.instrumentName = "Violin 1"
+                        \set Staff.shortInstrumentName = "Vln. 1"   
                         \key g \major
-R1*6
-g2\mf f |
-e2 dis |
-d2 c |
+R1*9
 r2 r4 d8.\f c16 |
 b4 d g4. fis8 |
 dis4 e a4. g8 |
@@ -213,12 +210,15 @@ dis2 r |
 r2 <a d>4. r8 |
                     }
 
-                    \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Viola"
-                        \set Staff.shortInstrumentName = "Vla." 
+                    \new Staff \relative c''' {                 
+                        \set Staff.instrumentName = "Violin 2"
+                        \set Staff.shortInstrumentName = "Vln. 2" 
                         \key g \major
-R1*9
-b1\f\> ~ |
+R1*6
+g2\mf f |
+e2 dis |
+d2 c |
+b1\> ~ |
 b1 ~ |
 b1\ppp |
 R1*11

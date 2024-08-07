@@ -49,7 +49,7 @@ f2. |
                     \new Staff \relative c'' {                 
                         \set Staff.instrumentName = "Glockenspiel"
                         \set Staff.shortInstrumentName = "Glock."  
-\key f \major
+\key bes \major
 r4 |
 R2. |
 \set subdivideBeams = ##t
