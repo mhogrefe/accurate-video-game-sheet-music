@@ -318,3 +318,4 @@ snes/super-mario-world/36-bowser-battle
 snes/super-mario-world/37-peachs-item
 snes/super-mario-world/38-ending
 snes/super-mario-world/39-credits
+snes/super-mario-world-2-yoshis-island/01-prologue
