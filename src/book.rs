@@ -6,6 +6,7 @@ use malachite::num::conversion::traits::{ExactFrom, FromSciString, RoundingFrom}
 use malachite::num::logic::traits::BitBlockAccess;
 use malachite::rounding_modes::RoundingMode::*;
 use malachite::Rational;
+use std::cmp::max;
 use std::fs::{self, File};
 use std::io::{self, BufRead, Write};
 use std::process::Command;
@@ -866,7 +867,7 @@ fn map_composer_for_title(game_name: &str) -> String {
 }
 
 fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
-    let dimensions = get_dimensions(page_count);
+    let dimensions = get_dimensions(max(page_count, MIN_PAGES));
     let left_margin_in = Rational::from_sci_string("0.75").unwrap();
     let right_margin_in = Rational::from_sci_string("0.875").unwrap();
     let bottom_margin_in = Rational::from_sci_string("1.625").unwrap();
@@ -1200,6 +1201,8 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         .output()
         .expect("failed to delete file");
 }
+
+const MIN_PAGES: usize = 18;
 
 pub fn generate_book(dir_path: &str) {
     let mut track_names = Vec::new();

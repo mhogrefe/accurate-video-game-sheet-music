@@ -1,0 +1,21 @@
+1 Hotel 1 0
+2 Laser Jones 0:31
+3 The Wall 0:47
+4 Res Q 1:03
+5 The Hills Are Alive 1:18
+6 Scoot 1:34
+7 99 Red Balloons 1:50
+8 Wipe Out 2:05
+9 Cleaning Closet 2:21
+10 Hotel 2 2:37
+11 Hotel 3 2:53
+12 Eggie Chuck 3:09
+13 The Reflex 3:24
+14 The Turk 3:40
+15 Jay Walk 3:56
+16 Outland 4:11
+17 Lazy Nightmare 4:27
+18 Hotel 4 4:43
+19 Hotel Bar 4:59
+20 Wild Wafers 5:15
+21 Star Dust

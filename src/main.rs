@@ -2,12 +2,14 @@ use crate::book::generate_book;
 use image::imageops::FilterType;
 use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use malachite::num::arithmetic::traits::DivRound;
-use malachite::num::conversion::traits::RoundingFrom;
+use malachite::num::basic::traits::Zero;
+use malachite::num::conversion::traits::{FromSciString, RoundingFrom};
 use malachite::num::float::NiceFloat;
+use malachite::num::logic::traits::NotAssign;
 use malachite::rounding_modes::RoundingMode;
 use malachite::Rational;
 use std::cmp::Ordering;
-use std::collections::{BTreeMap, HashMap};
+use std::collections::{BTreeMap, BTreeSet, HashMap};
 use std::env;
 use std::fs::{self, File};
 use std::io::{self, BufRead, Write};
@@ -606,10 +608,80 @@ fn recolor_screenshot(dir_path: &str) {
     img.save(&out_path).expect("Could not write image");
 }
 
+const SIXTY: Rational = Rational::const_from_unsigned(60);
+
+fn calculate_tempo(args: &[String]) {
+    let mut flipper = false;
+    let mut timestamp = None;
+    let mut duration = Rational::ZERO;
+    for arg in args {
+        if flipper {
+            duration = Rational::from_str(arg).unwrap();
+        } else {
+            let new_timestamp = Rational::from_sci_string(arg).unwrap();
+            if let Some(ts) = timestamp {
+                println!(
+                    "{}",
+                    NiceFloat(
+                        f64::rounding_from(
+                            SIXTY / ((&new_timestamp - ts) / &duration),
+                            RoundingMode::Nearest
+                        )
+                        .0
+                    )
+                );
+            }
+            timestamp = Some(new_timestamp);
+        }
+        flipper.not_assign();
+    }
+}
+
+const M4A_SUFFIX: &str = ".m4a";
+
+fn convert_m4a(path: &str) {
+    let mut input_files = BTreeSet::new();
+    for entry in WalkDir::new(path)
+        .into_iter()
+        .filter_map(Result::ok)
+        .filter(|e| !e.file_type().is_dir())
+    {
+        let file_name = String::from(entry.path().to_string_lossy());
+        if file_name.ends_with(M4A_SUFFIX) {
+            input_files.insert(file_name);
+        }
+    }
+    for input_file in input_files {
+        let output_file = format!("{}.flac", input_file.strip_suffix(M4A_SUFFIX).unwrap());
+        print_output(
+            Command::new("ffmpeg")
+                .arg("-i")
+                .arg(&format!("{input_file}"))
+                .arg("-f")
+                .arg("flac")
+                .arg("-sample_fmt")
+                .arg("s16")
+                .arg(&format!("{output_file}"))
+                .output()
+                .expect("failed to convert file"),
+        );
+        print_output(
+            Command::new("rm")
+                .arg(&format!("{input_file}"))
+                .output()
+                .expect("failed to delete file"),
+        );
+    }
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() > 1 && args[1] == "recolor_screenshot" {
         recolor_screenshot(&args[2]);
+    } else if args.len() > 1 && args[1] == "calculate_tempo" {
+        calculate_tempo(&args[2..]);
+    } else if args.len() > 1 && args[1] == "convert_m4a" {
+        convert_m4a(&args[2]);
     } else if args.len() == 2 {
         assert_eq!(args.len(), 2);
         let dir_path = &args[1];
