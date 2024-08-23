@@ -16,7 +16,7 @@
         {
             \new GrandStaff <<
                 \set GrandStaff.instrumentName = "Saw Synthesizer"
-                \set GrandStaff.shortInstrumentName = "Synth."
+                \set GrandStaff.shortInstrumentName = "Saw"
                 \new Staff \relative c {
 % The default line breaks almost consistently break between subtracks; so we make the breaks
 % consistent by forcing them.

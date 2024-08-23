@@ -321,4 +321,6 @@ snes/super-mario-world/39-credits
 snes/super-mario-world-2-yoshis-island/01-prologue
 snes/super-mario-world-2-yoshis-island/02-title-screen
 snes/super-mario-world-2-yoshis-island/03-introduction
+snes/super-mario-world-2-yoshis-island/04-level-start
+snes/super-mario-world-2-yoshis-island/05-training-course
 c64/lazy-jones/01-all-themes
