@@ -18,8 +18,8 @@
             <<
                 \new GrandStaff <<
                     \new DrumStaff \with{
-                        drumStyleTable = #percussion-style
-                        \override StaffSymbol.line-count = #1
+                        \override StaffSymbol.line-count = #2
+                        drumStyleTable = #bongos-style
                     } \drummode { 
                         \set DrumStaff.instrumentName = "Bongos"
                         \set DrumStaff.shortInstrumentName = "Bon."  
