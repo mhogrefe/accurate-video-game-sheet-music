@@ -5,28 +5,28 @@
 00:01:37 World Map 5 (The Sky)
 00:01:58 World Map 6 (Iced Land)
 00:02:19 World Map 7 (Pipe Maze)
-00:02:42 World Map 8 (Dark Land)
-00:03:03 Overworld 1
-00:03:46 Overworld 2
-00:04:35 Underwater
-00:05:18 Underground
-00:05:50 Sky
-00:06:13 Starman
-00:06:30 Warp Whistle
-00:06:40 Music Box
-00:07:10 Minigame
-00:07:26 Toad’s House
-00:07:51 Fortress
-00:08:23 Miniboss Battle
-00:08:56 The King Has Been Transformed
-00:09:17 Airship
-00:10:02 Boss Battle
-00:10:36 Battle Victory
-00:10:47 King Restored
-00:11:02 Level Cleared
-00:11:13 Death
-00:11:24 Game Over
-00:11:35 Hurry
-00:11:45 Bowser Battle
-00:12:13 Ending
-00:12:56 Credits
+00:02:41 World Map 8 (Dark Land)
+00:03:02 Overworld 1
+00:03:45 Overworld 2
+00:04:34 Underwater
+00:05:17 Underground
+00:05:49 Sky
+00:06:12 Starman
+00:06:29 Warp Whistle
+00:06:38 Music Box
+00:07:08 Minigame
+00:07:24 Toad’s House
+00:07:49 Fortress
+00:08:21 Miniboss Battle
+00:08:54 The King Has Been Transformed
+00:09:15 Airship
+00:10:01 Boss Battle
+00:10:35 Battle Victory
+00:10:46 King Restored
+00:11:01 Level Cleared
+00:11:12 Death
+00:11:23 Game Over
+00:11:34 Hurry
+00:11:43 Bowser Battle
+00:12:11 Ending
+00:12:55 Credits

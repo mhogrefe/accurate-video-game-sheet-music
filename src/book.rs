@@ -317,34 +317,41 @@ fn get_high_res_page_images(dir_path: &str, track_name: &str) -> Vec<String> {
     }
 }
 
-fn get_color_helper(color_path: &str) -> Rgba<u8> {
+fn get_color_helper(color_path: &str) -> (Rgba<u8>, bool) {
     let file = File::open(color_path).unwrap();
-    for line in io::BufReader::new(file).lines().flatten() {
+    for mut line in io::BufReader::new(file).lines().flatten() {
+        let flag = line.ends_with('!');
+        if flag {
+            line = line[..line.len() - 1].to_string();
+        }
         let hex = u32::from_str_radix(&line, 16).unwrap();
-        return Rgba([
-            hex.get_bits(16, 24) as u8,
-            hex.get_bits(8, 16) as u8,
-            hex.get_bits(0, 8) as u8,
-            255,
-        ]);
+        return (
+            Rgba([
+                hex.get_bits(16, 24) as u8,
+                hex.get_bits(8, 16) as u8,
+                hex.get_bits(0, 8) as u8,
+                255,
+            ]),
+            flag,
+        );
     }
     panic!();
 }
 
-fn get_background_color(dir_path: &str, track_name: &str) -> Rgba<u8> {
+fn get_background_color(dir_path: &str, track_name: &str) -> (Rgba<u8>, bool) {
     get_color_helper(&format!("{dir_path}/{track_name}/background-color.txt"))
 }
 
 fn get_background_color_2(dir_path: &str) -> Rgba<u8> {
-    get_color_helper(&format!("{dir_path}/background-color.txt"))
+    get_color_helper(&format!("{dir_path}/background-color.txt")).0
 }
 
 fn get_foreground_color_2(dir_path: &str) -> Rgba<u8> {
-    get_color_helper(&format!("{dir_path}/foreground-color.txt"))
+    get_color_helper(&format!("{dir_path}/foreground-color.txt")).0
 }
 
 const DPI: Rational = Rational::const_from_unsigned(600);
-const _SCREENSHOT_MARGIN_PX: u32 = 15;
+const SCREENSHOT_MARGIN_PX: u32 = 15;
 const SPRITE_WIDTH_PX: u32 = 300;
 
 fn add_score_image(
@@ -465,7 +472,7 @@ pub fn generate_page(
                 u32::rounding_from(&((&page_width << 1) * DPI), Nearest).0,
                 u32::rounding_from(&(&page_height * DPI), Nearest).0,
             );
-            let background_color = get_background_color(dir_path, track_name);
+            let (background_color, draw_border) = get_background_color(dir_path, track_name);
             draw_rectangle(
                 &mut canvas,
                 background_color,
@@ -502,8 +509,23 @@ pub fn generate_page(
                 }
             }
             lighten_img(&mut canvas);
-
             if *page_number == 0 {
+                if draw_border {
+                    draw_rectangle(
+                        &mut canvas,
+                        Rgba([0, 0, 0, 255]),
+                        u32::rounding_from(&(&outer_margin * DPI), Nearest).0
+                            - SCREENSHOT_MARGIN_PX,
+                        u32::rounding_from(&screenshot_vertical_margin_px, Nearest).0
+                            - SCREENSHOT_MARGIN_PX,
+                        u32::rounding_from(&(&outer_margin * DPI), Nearest).0
+                            + u32::rounding_from(&target_screenshot_width_px, Nearest).0
+                            + SCREENSHOT_MARGIN_PX,
+                        u32::rounding_from(&target_screenshot_height_px, Nearest).0
+                            + u32::rounding_from(&screenshot_vertical_margin_px, Nearest).0
+                            + SCREENSHOT_MARGIN_PX,
+                    );
+                }
                 canvas
                     .copy_from(
                         &img,
@@ -659,8 +681,8 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
 \renewcommand{\cftchapaftersnum}{.}
 "#;
     write!(&mut latex_file, "{preamble}").unwrap();
-    write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\Huge {} \\\\ \\normalsize \\textit{{for the {} \\\\ {} }}}}", game_name, info.system, info.year).unwrap();
-    write!(&mut latex_file, "\\author{{composed by {} \\\\ transcribed by Mikhail Hogrefe \\\\ \\\\ \\\\ \\\\ \\psvectorian{{79}}}}", info.composer).unwrap();
+    write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\vspace{{-0.2cm}} \\Huge {} \\\\ \\normalsize \\textit{{for the {} \\\\ {} }}}}", game_name, info.system, info.year).unwrap();
+    write!(&mut latex_file, "\\author{{\\normalsize composed by {} \\\\ \\normalsize transcribed by Mikhail Hogrefe \\\\ \\\\ \\\\ \\\\ \\psvectorian{{79}}}}", info.composer).unwrap();
     let more_stuff = r"\date{}
 \begin{document}
     \maketitle
@@ -697,7 +719,7 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
     writeln!(&mut latex_file, "{ending}").unwrap();
 }
 
-fn write_cover_latex_file(dir_path: &str, info: &TrackInfo) {
+fn write_cover_latex_file(dir_path: &str, info: &TrackInfo, text_size: &str) {
     let out_path = format!("../video-game-extracted-music-books/{dir_path}/cover.tex");
     let mut latex_file = File::create(out_path).unwrap();
     let game_name = map_game_name_for_title(&info.game);
@@ -724,10 +746,10 @@ fn write_cover_latex_file(dir_path: &str, info: &TrackInfo) {
 \fancyfoot[LE,RO]{\thepage}
 "#;
     write!(&mut latex_file, "{preamble}").unwrap();
-    write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\vspace{{-0.2cm}} \\Huge \\textbf{{{}}} \\\\ \\normalsize \\textit{{for the {} \\\\ {} \\vspace{{-0.8cm}} }}}}", game_name, info.system, info.year).unwrap();
+    write!(&mut latex_file, "\\title{{\\normalsize \\textit{{Sheet Music from}} \\\\ \\vspace{{-0.2cm}} \\{text_size} \\textbf{{{}}} \\\\ \\normalsize \\textit{{for the {} \\\\ {} \\vspace{{-0.8cm}} }}}}", game_name, info.system, info.year).unwrap();
     write!(
         &mut latex_file,
-        "\\author{{composed by {} \\\\ transcribed by Mikhail Hogrefe}}",
+        "\\author{{\\normalsize composed by {} \\\\ \\normalsize transcribed by Mikhail Hogrefe}}",
         composer
     )
     .unwrap();
@@ -859,23 +881,20 @@ fn map_game_name_for_title(game_name: &str) -> String {
 fn map_composer_for_title(game_name: &str) -> String {
     match game_name {
         "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa" => {
-            "Kazumi Totaka, \\\\ Minako Hamano, and Kozue Ishikawa"
+            "Kazumi Totaka, \\\\ \\normalsize Minako Hamano, and Kozue Ishikawa"
         }
         s => s,
     }
     .to_string()
 }
 
-fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
-    let dimensions = get_dimensions(max(page_count, MIN_PAGES));
-    let left_margin_in = Rational::from_sci_string("0.75").unwrap();
-    let right_margin_in = Rational::from_sci_string("0.875").unwrap();
-    let bottom_margin_in = Rational::from_sci_string("1.625").unwrap();
-    let top_margin_in = Rational::from_sci_string("0.875").unwrap();
-    let background_color = get_background_color_2(dir_path);
-    let foreground_color = get_foreground_color_2(dir_path);
-
-    write_cover_latex_file(dir_path, &info);
+fn create_cover_text_image(
+    dir_path: &str,
+    info: &TrackInfo,
+    foreground_color: Rgba<u8>,
+    text_size: &str,
+) -> DynamicImage {
+    write_cover_latex_file(dir_path, &info, text_size);
     Command::new("xelatex")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover.tex"
@@ -933,6 +952,39 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         ))
         .output()
         .expect("failed to delete file");
+    let mut cover_text_img = image::open(&format!(
+        "../video-game-extracted-music-books/{dir_path}/cover-text-0.png"
+    ))
+    .expect("File not found");
+    crop_to_non_trans(&mut cover_text_img);
+    recolor(&mut cover_text_img, foreground_color);
+    let cover_text_scale = Rational::from_sci_string("1.8").unwrap();
+    cover_text_img = cover_text_img.resize(
+        u32::rounding_from(
+            &(Rational::from(cover_text_img.width()) * &cover_text_scale),
+            Nearest,
+        )
+        .0,
+        u32::rounding_from(
+            &(Rational::from(cover_text_img.height()) * &cover_text_scale),
+            Nearest,
+        )
+        .0,
+        FilterType::CatmullRom,
+    );
+    cover_text_img
+}
+
+const DESCENDING_TEXT_SIZES: [&str; 5] = ["Huge", "huge", "LARGE", "Large", "large"];
+
+fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
+    let dimensions = get_dimensions(max(page_count, MIN_PAGES));
+    let left_margin_in = Rational::from_sci_string("0.75").unwrap();
+    let right_margin_in = Rational::from_sci_string("1.375").unwrap();
+    let bottom_margin_in = Rational::from_sci_string("1.625").unwrap();
+    let top_margin_in = Rational::from_sci_string("0.875").unwrap();
+    let background_color = get_background_color_2(dir_path);
+    let foreground_color = get_foreground_color_2(dir_path);
 
     let mut canvas = DynamicImage::new_rgb8(dimensions.cover_width_px, dimensions.cover_height_px);
     draw_rectangle(
@@ -966,7 +1018,7 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
     .0 + big_box_top;
     let title_box_bottom = border;
 
-    let sprite_box_top = border;
+    let sprite_box_top = border + u32::rounding_from(&DPI, Nearest).0 / 2;
     let sprite_box_left = big_box_left;
     let sprite_box_right = big_box_right;
     let sprite_box_bottom = big_box_bottom;
@@ -1008,26 +1060,29 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         (sprite_box_top + sprite_box_bottom - target_sprite_height_px) >> 1,
     );
 
-    let mut cover_text_img = image::open(&format!(
-        "../video-game-extracted-music-books/{dir_path}/cover-text-0.png"
-    ))
-    .expect("File not found");
-    crop_to_non_trans(&mut cover_text_img);
-    recolor(&mut cover_text_img, foreground_color);
-    let cover_text_scale = Rational::from_sci_string("2.0").unwrap();
-    cover_text_img = cover_text_img.resize(
-        u32::rounding_from(
-            &(Rational::from(cover_text_img.width()) * &cover_text_scale),
-            Nearest,
-        )
-        .0,
-        u32::rounding_from(
-            &(Rational::from(cover_text_img.height()) * &cover_text_scale),
-            Nearest,
-        )
-        .0,
-        FilterType::CatmullRom,
-    );
+    let mut cover_text_img = None;
+    let mut too_big = false;
+    for size in DESCENDING_TEXT_SIZES {
+        cover_text_img = Some(create_cover_text_image(
+            dir_path,
+            info,
+            foreground_color,
+            size,
+        ));
+        let cti = cover_text_img.as_ref().unwrap();
+        too_big = cti.width() > title_box_right - title_box_left
+            || cti.height() > title_box_bottom - title_box_top;
+        if too_big {
+            println!("Cover text image too big with size `{size}`. Trying smaller size");
+        } else {
+            break;
+        }
+    }
+    if too_big {
+        panic!("Cover text image still too big in spite of efforts to reduce");
+    }
+    let cover_text_img = cover_text_img.unwrap();
+
     let x: u32 = title_box_left + title_box_right - cover_text_img.width();
     let y: u32 = title_box_top + title_box_bottom - cover_text_img.height();
     copy_from_with_trans_3(

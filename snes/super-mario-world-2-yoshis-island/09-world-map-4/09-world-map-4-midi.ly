@@ -7,7 +7,7 @@
 
 \book {
     \header {
-        title = "World Map 2"
+        title = "World Map 4"
         subtitle = \markup { "from" {\italic "Super Mario World 2: Yoshi’s Island"} "for the SNES (1995)" }
         composer = "Koji Kondo"
         arranger = "trans. Mikhail Hogrefe"
@@ -96,6 +96,31 @@ g8. g16 r8 g ~ |
 g4 r |
                 }
 
+                \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Poly Synthesizer"
+                    \set Staff.shortInstrumentName = "Synth."  
+\key g \major
+<c g'>16-.\pp 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+
+<c g'>16-.\pp 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+<c g'>16-.-> 16-. 16-. 16-.-> 16-.-> 16-. 16-.-> 16-. |
+<c g'>16-. 16-. 16-. 16-. 16-.-> 16-. 16-. 16-.-> |
+                }
+
                 \new Staff \relative c {  
                     \set Staff.instrumentName = "Bass Guitar"
                     \set Staff.shortInstrumentName = "B. Guit."  
@@ -120,6 +145,32 @@ b8. c16 r4 |
 d4-. c8-. r |
 bes8. aes16 r8 g ~ |
 g4 r |
+                }
+
+                \new Staff \relative c {  
+                    \set Staff.instrumentName = "Violoncello"
+                    \set Staff.shortInstrumentName = "Vc."  
+\key g \major
+\clef bass
+R2 |
+<d b'>8.\f <e c'>16 ~ 16 r r8 |
+R2 |
+<d b'>8. <c a'>16 ~ 16 r r8 |
+R2 |
+<d b'>8. <e c'>16 ~ 16 r r8 |
+R2 |
+<d b'>8. <c a'>16 r8 <b g'> ~ |
+<b g'>4 r |
+
+R2 |
+<d b'>8.\f <e c'>16 ~ 16 r r8 |
+R2 |
+<d b'>8. <c a'>16 ~ 16 r r8 |
+R2 |
+<d b'>8. <e c'>16 ~ 16 r r8 |
+R2 |
+<d b'>8. <c a'>16 r8 <b g'> ~ |
+<b g'>4 r |
                 }
             >>
         }

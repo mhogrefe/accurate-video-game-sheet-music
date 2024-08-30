@@ -1,11 +1,11 @@
 00:00:00 Overworld
 00:01:43 Underground
 00:02:10 Underwater
-00:02:50 Castle
-00:03:11 Starman
-00:03:27 Level Cleared
-00:03:41 Castle Cleared
-00:03:56 Death
-00:04:06 Game Over
-00:04:17 Hurry
-00:04:27 Princess Rescued
+00:02:49 Castle
+00:03:10 Starman
+00:03:26 Level Cleared
+00:03:40 Castle Cleared
+00:03:55 Death
+00:04:05 Game Over
+00:04:16 Hurry
+00:04:26 Princess Rescued
