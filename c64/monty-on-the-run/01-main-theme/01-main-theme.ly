@@ -75,6 +75,39 @@ g,8 d'16 d cis8 d g fis g a |
 bes8 c16 bes a8 g ees' f16 ees d8 c |
 bes8 c16 bes a8 d g,2 |
 R1*18
+
+g,8 d'16 d cis8 d g d cis d |
+g,8 d'16 d cis8 d g fis g a |
+bes8 c16 bes a8 g ees' f16 ees d8 c |
+d1 |
+g,,8 d'16 d cis8 d g d cis d |
+g,8 d'16 d cis8 d g fis g a |
+bes8 c16 bes a8 g ees' f16 ees d8 c |
+bes8 c16 bes a8 d g,2 |
+R1*18
+
+\key des \major
+bes,4. bes16 c des8 ees des c |
+bes4. a8 bes4 r |
+r4 r16 bes c des ees8 des c bes |
+a8 bes2.. |
+\key d \major
+b4. b16 cis d8 e d cis |
+b4. ais8 b4 r |
+r4 r16 b cis d e8 d cis b |
+ais8 b2.. |
+\key c \major
+f4.\ff ees8 d4 c8 b |
+c4. d8 c2 |
+f4. ees8 d4 c8 b |
+c1 |
+c'4.\f c16 d ees8 f ees d |
+cis4. cis16 dis e8 fis e dis |
+d8 d16 e f8 e d cis d c |
+bes8 bes16 c des8 c bes a bes c |
+\key g \minor
+d8 d4 ees d c8 |
+d4 r r2 |
                         }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
@@ -141,6 +174,56 @@ a,8 a a' a c, c c' c |
 c,8 c c' c c, c c' c |
 e,8 e e' e e, e e' e |
 R1*2
+
+g,,8 g g' g g, g g' g |
+g,8 g g' g g, g g' g |
+a,8 a g' a a, a g' a |
+d,8 d e e f f fis fis |
+g,8 g g' g g, g g' g |
+g,8 g g' g g, g g' g |
+a,8 a g' a a, a g' a |
+d,8 d c' d g,, g g'4 |
+c,8 c c' c c, c c' c |
+aes8 aes aes' aes aes, aes aes' aes |
+c,,8 c c' c c, c c' c |
+aes8 aes aes' aes aes, aes aes' aes |
+des,,8 des des' des des, des des' des |
+a8 a a' a a, a a' a |
+des,,8 des des' des des, des des' des |
+a8 a a' a a, a a' a |
+d,,8 d d' d d, d d' d |
+a,8 a a' a c, c c' c |
+c,8 c c' c c, c c' c |
+g8 g g' g g, g g' g |
+d,8 d d' d d, d d' d |
+a,8 a a' a c, c c' c |
+c,8 c c' c c, c c' c |
+e,8 e e' e e, e e' e |
+R1*2
+
+\bar "||"
+\key des \major
+ees,8 ees ees' ees ees, ees ees' ees |
+ees,8 ees ees' ees ees, ees ees' ees |
+ees,8 ees ees' ees ees, ees ees' ees |
+ees,8 ees ees' ees ees, ees ees' ees |
+\key d \major
+e,8 e e' e e, e e' e |
+e,8 e e' e e, e e' e |
+e,8 e e' e e, e e' e |
+e,8 e e' e e, e e' e |
+\key c \major
+f,8 f f' f f, f f' f |
+f,8 f f' f f, f f' f |
+f,8 f f' f f, f f' f |
+c,8 c c' c c, c c' c |
+f,8 f f' f f, f f' f |
+fis,8 fis fis' fis fis, fis fis' fis |
+d8 \clef treble d'''16 e,, f,8 e''' d cis,, d'' \clef bass c,,, |
+bes8 \clef treble bes'''16 c,, cis,8 c''' bes a,, bes'' \clef bass c,,, |
+\key g \minor
+R1*2
+\bar "||"
                     }
                 >>
 
@@ -180,6 +263,44 @@ e4 g16 fis g fis g8 a g e |
 \repeat tremolo 4 { e,,64 e' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { fis,64 fis' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { e,64 e' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { bes,64 bes' } \repeat tremolo 4 { cis,64 cis' } |
 \repeat tremolo 4 { <fis,, d'>64 <fis' d'> } \repeat tremolo 8 { <fis, d'>64 <fis' d'> } \repeat tremolo 8 { <g, ees'>64 <g' ees'> } \repeat tremolo 8 { <fis, d'>64 <fis' d'> } \repeat tremolo 4 { <ees, c'>64 <ees' c'> } |
 \repeat tremolo 8 { <d, d'>64 <d' d'> } r4 r2 |
+
+R1*8
+c'1 ~ |
+c4 ees16 d ees d ees8 f ees d |
+c1 ~ |
+c4 ees16 d ees d ees8 f ees c |
+e1 ~ |
+e4 g16 fis g fis g8 a g fis |
+e1 ~ |
+e4 g16 fis g fis g8 a g e |
+\clef bass
+\repeat tremolo 4 { d,,,64 d' } \repeat tremolo 4 { f,64 f' } \repeat tremolo 4 { e,64 e' } \repeat tremolo 4 { f,64 f' } \repeat tremolo 4 { d,64 d' } \clef treble \repeat tremolo 4 { f64 f' } \repeat tremolo 4 { e,64 e' } \repeat tremolo 4 { d,64 d' } |
+\repeat tremolo 4 { a,64 a' } \repeat tremolo 4 { c,64 c' } \repeat tremolo 4 { b,64 b' } \repeat tremolo 4 { c,64 c' } \repeat tremolo 4 { a,64 a' } \repeat tremolo 4 { c64 c' } \repeat tremolo 4 { b,64 b' } \repeat tremolo 4 { a,64 a' } |
+\repeat tremolo 4 { c,,64 c' } \repeat tremolo 4 { ees,64 ees' } \repeat tremolo 4 { d,64 d' } \repeat tremolo 4 { ees,64 ees' } \repeat tremolo 4 { c,64 c' } \repeat tremolo 4 { ees64 ees' } \repeat tremolo 4 { d,64 d' } \repeat tremolo 4 { c,64 c' } |
+\repeat tremolo 4 { bes64 bes' } \repeat tremolo 4 { a,64 a' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { bes,,64 bes' } \repeat tremolo 4 { a,64 a' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { bes,,64 bes' } \repeat tremolo 4 { a,64 a' } |
+\clef bass
+\repeat tremolo 4 { d,,64 d' } \repeat tremolo 4 { f,64 f' } \repeat tremolo 4 { e,64 e' } \repeat tremolo 4 { f,64 f' } \repeat tremolo 4 { d,64 d' } \clef treble \repeat tremolo 4 { f64 f' } \repeat tremolo 4 { e,64 e' } \repeat tremolo 4 { d,64 d' } |
+\repeat tremolo 4 { a,64 a' } \repeat tremolo 4 { c,64 c' } \repeat tremolo 4 { b,64 b' } \repeat tremolo 4 { c,64 c' } \repeat tremolo 4 { a,64 a' } \repeat tremolo 4 { c64 c' } \repeat tremolo 4 { b,64 b' } \repeat tremolo 4 { a,64 a' } |
+\repeat tremolo 4 { c,,64 c' } \repeat tremolo 4 { ees,64 ees' } \repeat tremolo 4 { d,64 d' } \repeat tremolo 4 { ees,64 ees' } \repeat tremolo 4 { c,64 c' } \repeat tremolo 4 { ees64 ees' } \repeat tremolo 4 { d,64 d' } \repeat tremolo 4 { c,64 c' } |
+\repeat tremolo 4 { e,,64 e' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { fis,64 fis' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { e,64 e' } \repeat tremolo 4 { g,64 g' } \repeat tremolo 4 { bes,64 bes' } \repeat tremolo 4 { cis,64 cis' } |
+\repeat tremolo 4 { <fis,, d'>64 <fis' d'> } \repeat tremolo 8 { <fis, d'>64 <fis' d'> } \repeat tremolo 8 { <g, ees'>64 <g' ees'> } \repeat tremolo 8 { <fis, d'>64 <fis' d'> } \repeat tremolo 4 { <ees, c'>64 <ees' c'> } |
+\repeat tremolo 8 { <d, d'>64 <d' d'> } r4 r2 |
+
+\key des \major
+R1 |
+r2 r4 ees'16\f f ges f |
+ges16 f ees8 ~ ees16 r r8 r2 |
+R1 |
+\key d \major
+R1 |
+r2 r4 e16\f fis g fis |
+g16 fis e8 ~ e16 r r8 r2 |
+R1 |
+\key c \major
+R1*8
+\key g \minor
+\repeat tremolo 4 { fis,,64 fis' } \repeat tremolo 8 { fis,64 fis' } \repeat tremolo 8 { g,64 g' } \repeat tremolo 8 { fis,64 fis' } \repeat tremolo 4 { ees,64 ees' } |
+\repeat tremolo 8 { d,64 d' } r4 r2 |
                     }
 
                     \new Staff \relative c''' {

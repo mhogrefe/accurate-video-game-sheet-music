@@ -327,5 +327,8 @@ snes/super-mario-world-2-yoshis-island/06-world-map-1
 snes/super-mario-world-2-yoshis-island/07-world-map-2
 snes/super-mario-world-2-yoshis-island/08-world-map-3
 snes/super-mario-world-2-yoshis-island/09-world-map-4
+snes/super-mario-world-2-yoshis-island/10-world-map-5
+snes/super-mario-world-2-yoshis-island/11-world-map-6
+snes/super-mario-world-2-yoshis-island/12-world-map-postgame
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-main-theme
