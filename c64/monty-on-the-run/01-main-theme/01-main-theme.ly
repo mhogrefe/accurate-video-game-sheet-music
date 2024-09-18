@@ -64,6 +64,7 @@ R1*8
 <g bes>1\glissando |
 \set glissandoMap = #'((0 . 0) (1 . 0))
 <ees, bes'>2.\glissando \clef bass ees,,,4 |
+\unset glissandoMap
 R1 |
 \clef treble
 g'''8 d'16 d cis8 d g d cis d |
@@ -108,6 +109,111 @@ bes8 bes16 c des8 c bes a bes c |
 \key g \minor
 d8 d4 ees d c8 |
 d4 r r2 |
+
+<g,, bes>2. 8 <bes d> ~ |
+<bes d>2. 8 <a cis> ~ |
+<a cis>2. 8 <c e> ~ |
+<c e>2.. r8 |
+<bes d>2. 8 <d f> ~ |
+<d f>2. 8 <cis e> ~ |
+<cis e>2. 8 <e g> ~ |
+<e g>2 ~ 4\glissando <bes, f'>8 r |
+<c' ees>2. 8 <ees g> ~ |
+<ees g>2. 8 <d fis> ~ |
+<d fis>2. 8 <fis a> ~ |
+<fis a>2.. r8 |
+<ees g>2. 8 <g bes> ~ |
+<g bes>2. 8 <fis a> ~ |
+<fis a>2. 8 <a c> ~ |
+<a c>2 ~ 4.\glissando <g' bes>8 |
+
+g,8 d'16 d cis8 d g d cis d |
+g,8 d'16 d cis8 d g fis g a |
+bes8 c16 bes a8 g ees' f16 ees d8 c |
+d1 |
+g,,8 d'16 d cis8 d g d cis d |
+g,8 d'16 d cis8 d g fis g a |
+bes8 c16 bes a8 g ees' f16 ees d8 c |
+bes8 c16 bes a8 d g,2 |
+
+\key f \major
+\clef bass
+d,,,8 d c' d d, d c cis |
+d8 d c' d d, d c cis |
+c8 c bes' c c, c bes b |
+c8 c bes' c c, c bes b |
+g8 g f' g g, g f' fis |
+g,8 g f' g g, g f' fis |
+d8 d c' d d, d c cis |
+d8 d c' d d, d c cis |
+
+\clef treble
+d''1 ~ |
+d2 c\glissando |
+d1 ~ |
+d2 ~ d8 d f g |
+g1 ~ |
+g2 c,\glissando |
+d1 ~ |
+d2 ~ d8 a c d |
+d2 f\glissando |
+g2 g4\glissando f |
+d1 ~ |
+d2 ~ d8 d f\glissando g |
+f2 g4\glissando aes\glissando |
+g2 g4\glissando f |
+d1 ~ |
+d2 ~ d8 a c\glissando d |
+d2 f\glissando |
+g2 g4\glissando f |
+d1 ~ |
+d2 ~ d8 d f\glissando g |
+f2 g4\glissando aes\glissando |
+g2 g4\glissando f |
+d1 ~ |
+d2 ~ d8 a c\glissando d |
+d4 a'8 c ~ c2 |
+g8\glissando aes\glissando g2 f8 d |
+a'8 c2.. |
+g8\glissando aes\glissando g2 f8 d |
+a'8 c d c d4 c8 a |
+g8\glissando aes\glissando g2 f8 d |
+c'2\glissando d ~ |
+d2 r8 d c d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+g2\glissando f ~ |
+f2 r8 d f g |
+g8 g f\glissando g g g f\glissando g |
+a8 c a\glissando g g16 f d8 c d |
+d2 ~ d\glissando |
+e2 r8 d c d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+g2\glissando f ~ |
+f2 r8 d f g |
+g8 g f\glissando g g g f\glissando g |
+a8 c a\glissando g g16 f d8 c d |
+d2 ~ d\glissando |
+e2 r8 d c d |
+d'8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+d8 d c\glissando d d d c\glissando d |
+\ottava #1
+\repeat tremolo 8 { a'16 c } |
+\repeat tremolo 8 { a16 c } |
+\repeat tremolo 8 { a16 c } |
+\repeat tremolo 8 { a16 c } |
+\repeat tremolo 8 { a16 c } |
+\repeat tremolo 8 { a16 c } |
+\ottava #0
+aes16 g f d g f d c d c a g aes g f d |
+g16 f d c d c a g aes g f d g f d c |
                         }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
@@ -224,6 +330,63 @@ bes8 \clef treble bes'''16 c,, cis,8 c''' bes a,, bes'' \clef bass c,,, |
 \key g \minor
 R1*2
 \bar "||"
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+d,4 r d'8 d r4 |
+
+\bar "||"
+g,,8 g g' g g, g g' g |
+g,8 g g' g g, g g' g |
+a,8 a g' a a, a g' a |
+d,8 d e e f f fis fis |
+g,8 g g' g g, g g' g |
+g,8 g g' g g, g g' g |
+a,8 a g' a a, a g' a |
+d,8 d c' d g,, g g'4 |
+\bar "||"
+
+\key f \major
+d8\f d c' d d, d c cis |
+d8 d c' d d, d c cis |
+c8 c bes' c c, c bes b |
+c8 c bes' c c, c bes b |
+g8 g f' g g, g f' fis |
+g,8 g f' g g, g f' fis |
+d8 d c' d d, d c cis |
+d8 d c' d d, d c cis |
+
+d8\ff d c' d d, d c cis |
+d8 d c' d d, d c cis |
+c8 c bes' c c, c bes b |
+c8 c bes' c c, c bes b |
+g8 g f' g g, g f' fis |
+g,8 g f' g g, g f' fis |
+d8 d c' d d, d c cis |
+d8 d c' d d, d c cis |
+
+\repeat unfold 11 {
+d8 d c' d d, d c cis |
+d8 d c' d d, d c cis |
+c8 c bes' c c, c bes b |
+c8 c bes' c c, c bes b |
+g8 g f' g g, g f' fis |
+g,8 g f' g g, g f' fis |
+d8 d c' d d, d c cis |
+d8 d c' d d, d c cis |
+}
                     }
                 >>
 
