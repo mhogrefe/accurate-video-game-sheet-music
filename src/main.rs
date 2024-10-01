@@ -674,6 +674,55 @@ fn convert_m4a(path: &str) {
     }
 }
 
+fn simplify_perm(perm: &str) {
+    let mut max = ' ';
+    for c in perm.chars() {
+        assert!(c == ' ' || c >= '1' && c <= '9');
+        if c > max {
+            max = c;
+        }
+    }
+    let mut cycles = Vec::new();
+    for cs in perm.split(' ') {
+        let cs = cs.as_bytes();
+        let mut cycle = HashMap::new();
+        for i in 0..cs.len() {
+            if i == cs.len() - 1 {
+                cycle.insert(cs[i], cs[0]);
+            } else {
+                cycle.insert(cs[i], cs[i + 1]);
+            }
+        }
+        cycles.push(cycle);
+    }
+    cycles.reverse();
+    let mut remaining_indices = BTreeSet::new();
+    for i in 1..=(max as u8) {
+        remaining_indices.insert(i);
+    }
+    while let Some(mut i) = remaining_indices.pop_first() {
+        let mut out_cycle = vec![i];
+        loop {
+            for cycle in &cycles {
+                i = cycle.get(&i).copied().unwrap_or(i);
+            }
+            if i == out_cycle[0] {
+                break;
+            }
+            remaining_indices.remove(&i);
+            out_cycle.push(i);
+        }
+        if out_cycle.len() > 1 {
+            print!("(");
+            for j in out_cycle {
+                print!("{}", j as char);
+            }
+            print!(")");
+        }
+    }
+    println!();
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() > 1 && args[1] == "recolor_screenshot" {
@@ -682,6 +731,8 @@ fn main() {
         calculate_tempo(&args[2..]);
     } else if args.len() > 1 && args[1] == "convert_m4a" {
         convert_m4a(&args[2]);
+    } else if args.len() > 1 && args[1] == "simplify_perm" {
+        simplify_perm(&args[2]);
     } else if args.len() == 2 {
         assert_eq!(args.len(), 2);
         let dir_path = &args[1];
