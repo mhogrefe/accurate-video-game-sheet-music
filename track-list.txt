@@ -334,5 +334,6 @@ snes/super-mario-world-2-yoshis-island/13-overworld-1
 snes/super-mario-world-2-yoshis-island/14-overworld-2
 snes/super-mario-world-2-yoshis-island/15-overworld-3
 snes/super-mario-world-2-yoshis-island/16-underground
+snes/super-mario-world-2-yoshis-island/17-castle
 c64/lazy-jones/01-all-themes
-c64/monty-on-the-run/01-main-theme
+c64/monty-on-the-run/01-monty-on-the-run
