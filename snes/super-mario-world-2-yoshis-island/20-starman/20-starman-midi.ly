@@ -6,16 +6,16 @@
 }
 
 guitar_a = {
-<d f a c>16\p 16\pp 16\p 16\pp
-16\p 16\pp 16 16\p
-16\pp 16\p 16\pp 16
-16\p <<{<d a'>\p}\\{<f c'>\pp}>> <d f a c>16\p 16\pp |
+<d f a c>16\mf 16\p 16\mf 16\p
+16\mf 16\p 16 16\mf
+16\p 16\mf 16\p 16
+16\mf <<{<d a'>\mf}\\{<f c'>\p}>> <d f a c>16\mf 16\p |
 }
 guitar_b = {
-<c e g b>16\p 16\pp 16\p 16\pp
-16\p 16\pp 16 16\p
-16\pp 16\p 16\pp 16
-16\p <<{<c g'>\p}\\{<e b'>\pp}>> <c e g b>16\p 16\pp |
+<c e g b>16\mf 16\p 16\mf 16\p
+16\mf 16\p 16 16\mf
+16\p 16\mf 16\p 16
+16\mf <<{<c g'>\mf}\\{<e b'>\p}>> <c e g b>16\mf 16\p |
 }
 
 \book {

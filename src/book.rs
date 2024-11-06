@@ -6,7 +6,6 @@ use malachite::num::conversion::traits::{ExactFrom, FromSciString, RoundingFrom}
 use malachite::num::logic::traits::BitBlockAccess;
 use malachite::rounding_modes::RoundingMode::*;
 use malachite::Rational;
-use std::cmp::max;
 use std::fs::{self, File};
 use std::io::{self, BufRead, Write};
 use std::process::Command;
@@ -539,6 +538,7 @@ pub fn generate_page(
                 &format!("../video-game-extracted-music-books/{dir_path}"),
                 track_name,
             );
+            let padding = page_number - 1 >= image_paths.len();
             if *page_number == 0 {
                 add_score_image(
                     &image_paths[0],
@@ -550,25 +550,27 @@ pub fn generate_page(
                     true,
                 );
             } else {
-                add_score_image(
-                    &image_paths[*page_number - 1],
-                    &mut canvas,
-                    &page_width,
-                    &page_height,
-                    &Rational::from_sci_string("0.1875").unwrap(),
-                    &inner_margin,
-                    false,
-                );
-                if *page_number < image_paths.len() {
+                if !padding {
                     add_score_image(
-                        &image_paths[*page_number],
+                        &image_paths[*page_number - 1],
                         &mut canvas,
                         &page_width,
                         &page_height,
                         &Rational::from_sci_string("0.1875").unwrap(),
                         &inner_margin,
-                        true,
+                        false,
                     );
+                    if *page_number < image_paths.len() {
+                        add_score_image(
+                            &image_paths[*page_number],
+                            &mut canvas,
+                            &page_width,
+                            &page_height,
+                            &Rational::from_sci_string("0.1875").unwrap(),
+                            &inner_margin,
+                            true,
+                        );
+                    }
                 }
             }
             let diff = if contents_count.even() { 3 } else { 1 };
@@ -692,11 +694,14 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
 
     \mainmatter";
     writeln!(&mut latex_file, "{more_stuff}").unwrap();
-    for track_name in track_names {
+    let (padding_index, padding) = get_padding(&dir_path);
+    for (i, track_name) in track_names.iter().enumerate() {
+        let i = i + 1;
         let info = read_track_info(dir_path, track_name);
         writeln!(&mut latex_file, "    \\chapter{{{}}}", info.track).unwrap();
         writeln!(&mut latex_file, "    \\thispagestyle{{fancy}}").unwrap();
         writeln!(&mut latex_file).unwrap();
+        let pad = if padding_index == i { padding } else { 0 };
         let image_count = get_page_images(dir_path, track_name).len();
         if image_count > 1 {
             let mut first = true;
@@ -704,6 +709,7 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
                 .round_to_multiple_of_power_of_2(1, Ceiling)
                 .0
                 + 1
+                + pad
             {
                 if first {
                     first = false;
@@ -812,7 +818,7 @@ struct CoverDimensions {
 
 fn get_dimensions(page_count: usize) -> CoverDimensions {
     match page_count.round_to_multiple_of_power_of_2(1, Ceiling).0 {
-        0..=17 => panic!("Too few pages :("),
+        0..=17 => panic!("Too few pages: {page_count}"),
         18..=55 => CoverDimensions {
             spine_width_in: Rational::from_sci_string("0.25").unwrap(),
             cover_width_px: 10283,
@@ -978,7 +984,7 @@ fn create_cover_text_image(
 const DESCENDING_TEXT_SIZES: [&str; 5] = ["Huge", "huge", "LARGE", "Large", "large"];
 
 fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
-    let dimensions = get_dimensions(max(page_count, MIN_PAGES));
+    let dimensions = get_dimensions(page_count);
     let left_margin_in = Rational::from_sci_string("0.75").unwrap();
     let right_margin_in = Rational::from_sci_string("1.375").unwrap();
     let bottom_margin_in = Rational::from_sci_string("1.625").unwrap();
@@ -1257,7 +1263,14 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         .expect("failed to delete file");
 }
 
-const MIN_PAGES: usize = 18;
+// padded page count must be at least 17
+pub fn get_padding(path: &str) -> (usize, usize) {
+    if path.contains("c64/lazy-jones") {
+        (1, 6)
+    } else {
+        (0, 0)
+    }
+}
 
 pub fn generate_book(dir_path: &str) {
     let mut track_names = Vec::new();
@@ -1357,10 +1370,13 @@ pub fn generate_book(dir_path: &str) {
     println!("Generating book layout...");
     let mut pages = Vec::new();
     let mut images_for_track = Vec::new();
-    for track_name in &track_names {
+    let (padding_track, padding) = get_padding(&dir_path);
+    for (i, track_name) in track_names.iter().enumerate() {
+        let i = i + 1;
         let images = get_page_images(dir_path, &track_name);
         images_for_track.push(images.clone());
-        let image_count = images.len();
+        let pad = if padding_track == i { padding } else { 0 };
+        let image_count = images.len() + pad;
         let page_count = (image_count + 2) >> 1;
         for j in 0..page_count {
             pages.push(BookPage {
