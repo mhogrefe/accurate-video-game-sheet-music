@@ -210,11 +210,11 @@ g2 g4\glissando f |
 d1 ~ |
 d2 ~ d8 a c\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) d |
 d4 a'8 c ~ c2 |
-g8\glissando \once \override NoteColumn.X-offset = #2.5 aes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) g2 f8 d |
+\once \override NoteHead.extra-spacing-width = #'(-2 . 2) g8\glissando aes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) g2 f8 d |
 a'8 c2.. |
-g8\glissando \once \override NoteColumn.X-offset = #2.5 aes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) g2 f8 d |
+\once \override NoteHead.extra-spacing-width = #'(-2 . 2) g8\glissando aes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) g2 f8 d |
 a'8 c d c d4 c8 a |
-g8\glissando \once \override NoteColumn.X-offset = #2.5 aes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) g2 f8 d |
+\once \override NoteHead.extra-spacing-width = #'(-2 . 2) g8\glissando aes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) g2 f8 d |
 c'2\glissando d ~ |
 d2 r8 d c d |
 d8 d c\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) d d d c\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) d |

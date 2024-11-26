@@ -422,43 +422,43 @@ R1*8
                     \drummode {
                         \set Staff.instrumentName="Drumset"
                         \set Staff.shortInstrumentName="D. Set"
-sne4\ppp r \tuplet 3/2 { r4 sne8 } 4 |
-sne4 r \tuplet 3/2 { r4 sne8 4 8 } |
-sne4 r \tuplet 3/2 { r4 sne8 } 4 |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4\f r \tuplet 3/2 { r4 sn8 } 4 |
+sn4 r \tuplet 3/2 { r4 sn8 4 8 } |
+sn4 r \tuplet 3/2 { r4 sn8 } 4 |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 
 \repeat unfold 11 {
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 }
-sne4 \tuplet 3/2 { sne8 8 8 } \tuplet 3/2 { sne4 8 4 8 } |
-sne4 4 \tuplet 3/2 { 4 8 4 8 } |
-\tuplet 3/2 { r4 sne8 4 8 } 4 4 |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4 \tuplet 3/2 { sn8 8 8 } \tuplet 3/2 { sn4 8 4 8 } |
+sn4 4 \tuplet 3/2 { 4 8 4 8 } |
+\tuplet 3/2 { r4 sn8 4 8 } 4 4 |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 \repeat unfold 4 {
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 }
 
 \repeat unfold 11 {
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 }
-sne4 \tuplet 3/2 { sne8 8 8 } \tuplet 3/2 { sne4 8 4 8 } |
-sne4 4 \tuplet 3/2 { 4 8 4 8 } |
-\tuplet 3/2 { r4 sne8 4 8 } 4 4 |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4 \tuplet 3/2 { sn8 8 8 } \tuplet 3/2 { sn4 8 4 8 } |
+sn4 4 \tuplet 3/2 { 4 8 4 8 } |
+\tuplet 3/2 { r4 sn8 4 8 } 4 4 |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 \repeat unfold 4 {
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
-sne4 \tuplet 3/2 { 4 8 4 8 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 } 4 \tuplet 3/2 { 4 8 } |
+sn4 \tuplet 3/2 { 4 8 4 8 4 8 } |
 }
                     }
                 }
