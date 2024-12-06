@@ -344,6 +344,7 @@ snes/super-mario-world-2-yoshis-island/23-bonus-fanfare
 snes/super-mario-world-2-yoshis-island/24-bonus-game
 snes/super-mario-world-2-yoshis-island/25-room-before-boss
 snes/super-mario-world-2-yoshis-island/26-kameks-theme
+snes/super-mario-world-2-yoshis-island/27-miniboss-battle
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
