@@ -144,17 +144,17 @@ R1*8
 }
                 }
 
-                \new Staff \relative c'' {  
+                \new Staff \relative c' {  
                     \set Staff.instrumentName = "Rotary Organ 1"
                     \set Staff.shortInstrumentName = "Rot. Org. 1"  
 \key c \major
-<c f b>4\f \tempo 4=121 <b e bes'> \tempo 4=130 <bes ees a> \tempo 4=152 <a d aes'> \tempo 4=182 <aes des g> \tempo 4=226 <g c ges'> |
-<ges b f'>8 ~ |
-<ges b f'>1 ~ 2 r4 |
+<f b>4\f \tempo 4=121 <e bes'> \tempo 4=130 <ees a> \tempo 4=152 <d aes'> \tempo 4=182 <des g> \tempo 4=226 <c ges'> |
+<b f'>8 ~ |
+<b f'>1 ~ 2 r4 |
 R1*4
 
 \repeat unfold 2 {
-r4 \acciaccatura dis'8 <e g>8\f 8-. <e a> g-. e c-. |
+r4 \acciaccatura dis8 <e g>8\f 8-. <e a> g-. e c-. |
 \acciaccatura cis8 <a d>8 c-. c a-. <a c> <a ees'> r4 |
 r4 \acciaccatura dis8 <e g>8 8-. <e a> g-. e c-. |
 \acciaccatura cis8 <a d>4. <f a>8 \tuplet 6/4 { f16 a f a f a } \tuplet 3/2 { f16 a f } r8 |
@@ -174,26 +174,31 @@ R1*8
 }
                 }
 
-                \new Staff \relative c''' {  
+                \new Staff \relative c' {  
                     \set Staff.instrumentName = "Rotary Organ 2"
                     \set Staff.shortInstrumentName = "Rot. Org. 2"  
 \key c \major
-R1*6/4
-R1*1/8
-R1*7/4
+\clef bass
+<ges c>4\f <f b> <e bes'> <ees a> <d aes'> <des g> |
+<c ges'>8 ~ |
+<c ges'>1 ~ 2 r4 |
 R1*4
 
 \repeat unfold 2 {
 R1
-r2 r4 \tuplet 5/4 { g32\mp f e d c } r8 |
+\clef treble
+r2 r4 \tuplet 5/4 { g''32\mp f e d c } r8 |
 R1*3
 r2 r4 \tuplet 5/4 { g'32 f e d c } r8 |
+\clef bass
 r4 c8\f c b-. a f e ~ |
 e4. \tuplet 7/4 { b'32\mp a g f e d c } r2 |
 R1
+\clef treble
 r2 r4 \tuplet 5/4 { g''32 f e d c } r8 |
 R1*3
 r2 r4 \tuplet 5/4 { g'32 f e d c } r8 |
+\clef bass
 r4 c8\f c b-. a f e ~ |
 e4. \tuplet 7/4 { b'32\mp a g f e d c } r2 |
 R1*8
