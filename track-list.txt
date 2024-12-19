@@ -349,6 +349,8 @@ snes/super-mario-world-2-yoshis-island/28-boss-battle
 snes/super-mario-world-2-yoshis-island/29-boss-battle-no-intro
 snes/super-mario-world-2-yoshis-island/30-boss-defeated
 snes/super-mario-world-2-yoshis-island/31-world-cleared
+snes/super-mario-world-2-yoshis-island/32-death
+snes/super-mario-world-2-yoshis-island/33-game-over
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

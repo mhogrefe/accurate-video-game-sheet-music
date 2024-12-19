@@ -317,7 +317,7 @@ c4-. r r2 |
 \tuplet 3/2 { <bes d bes' bes'>4-. r8 } <bes d bes' bes'>4 \tuplet 3/2 { r4 <bes d bes' bes'>8 } r4 |
 \tuplet 3/2 { <a c a' a'>4-. r8 } <a c a' a'>4 \tuplet 3/2 { r4 <a c a' a'>8 } r4 |
 \tuplet 3/2 { <g bes g' g'>4-. r8 } <c, e c' c'>4 r2 |
-<gis' gis'>4\mf <a a'>-. <c c'>-. <d d'>-. |
+<gis' gis'>4\ff <a a'>-. <c c'>-. <d d'>-. |
 <f f'>4-. 2 <a a'>4-. |
 <bes bes'>4 <a a'>-. <fis fis'>-. <d' d'>-. |
 <a a'>2. 4-. |
