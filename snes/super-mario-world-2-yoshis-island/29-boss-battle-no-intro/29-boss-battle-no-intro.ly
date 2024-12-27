@@ -36,6 +36,8 @@ R1*6
                             \repeat volta 2 {
 R1*24
                             }
+\once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+\mark \markup { \fontsize #-2 "Loop forever" }
                         }
                     }
 
