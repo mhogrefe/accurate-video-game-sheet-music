@@ -621,14 +621,15 @@ fn calculate_tempo(args: &[String]) {
             let new_timestamp = Rational::from_sci_string(arg).unwrap();
             if let Some(ts) = timestamp {
                 println!(
-                    "{}",
+                    "{} {}",
                     NiceFloat(
                         f64::rounding_from(
                             SIXTY / ((&new_timestamp - ts) / &duration),
                             RoundingMode::Nearest
                         )
                         .0
-                    )
+                    ),
+                    duration
                 );
             }
             timestamp = Some(new_timestamp);

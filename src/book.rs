@@ -317,6 +317,7 @@ fn get_high_res_page_images(dir_path: &str, track_name: &str) -> Vec<String> {
 }
 
 fn get_color_helper(color_path: &str) -> (Rgba<u8>, bool) {
+    println!("Getting color from {color_path}");
     let file = File::open(color_path).unwrap();
     for mut line in io::BufReader::new(file).lines().flatten() {
         let flag = line.ends_with('!');
@@ -878,6 +879,9 @@ fn map_game_name_for_title(game_name: &str) -> String {
         }
         "The Legend of Zelda: Link’s Awakening" => {
             "The Legend of Zelda: \\\\ \\vspace{-0.3cm} Link’s Awakening"
+        }
+        "Super Mario World 2: Yoshi’s Island" => {
+            "Super Mario World 2: \\\\ \\vspace{-0.3cm} Yoshi’s Island"
         }
         s => s,
     }

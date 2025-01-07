@@ -131,7 +131,7 @@ c8. g16 ~ g8 c g'16-. g g-. g g, g a32\glissando g'' g,,16 |
                             \set Staff.shortInstrumentName = "Vln. 1"  
 \key d \dorian
 R1*3
-r2 r4 g8\f^\markup{Echo} gis |
+r2 r4 g8\ff^\markup{Echo} gis |
 a2. e'4 |
 b2. g4 |
 a2. e'4 |

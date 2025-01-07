@@ -1,0 +1,38 @@
+00:00:00 Prologue
+00:01:28 Title Screen
+00:03:01 Introduction
+00:03:53 Level Start
+00:04:01 Welcome to Yoshi’s Island
+00:04:25 World Map 1
+00:04:47 World Map 2
+00:05:09 World Map 3
+00:05:30 World Map 4
+00:05:53 World Map 5
+00:06:15 World Map 6
+00:06:37 World Map (Postgame)
+00:06:59 Overworld 1
+00:08:35 Overworld 2
+00:09:52 Overworld 3
+00:10:39 Underground
+00:11:39 Castle
+00:12:59 Pause
+00:13:05 Transformation
+00:13:16 Starman
+00:14:02 Level Cleared
+00:14:14 Score
+00:14:53 Bonus Fanfare
+00:15:02 Bonus Game
+00:15:54 Room Before Boss
+00:16:30 Kamek’s Theme
+00:16:56 Miniboss Battle
+00:17:59 Boss Battle
+00:19:24 Boss Battle (No Intro)
+00:20:30 Boss Defeated
+00:20:44 World Cleared
+00:20:54 Death
+00:21:04 Game Over
+00:21:20 Bowser Battle
+00:23:05 Bowser Defeated
+00:23:20 Luigi Rescued
+00:24:15 Credits
+00:27:27 Epilogue

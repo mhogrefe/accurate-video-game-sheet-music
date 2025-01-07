@@ -116,7 +116,7 @@ f8\< 8 8 8 8 8 8 8\mf |
                         \set Staff.shortInstrumentName = "Vc."  
 \key g \major
 \clef bass
-g4\ff^\markup{\italic "pizz."} r8 d'8 ~ d r g4 |
+g4\ff^\markup{"pizz."} r8 d'8 ~ d r g4 |
 r4 g, d' g |
 g,4 r8 d'8 ~ d r g4 |
 r4 g, d' g |
