@@ -27,8 +27,8 @@ b8. a16 ~ a r r8 |
 R2 |
 b8. c16 ~ c r r8 |
 R2 |
-b8. a16 r8 g ~ |
-g4 r |
+b8. a16 r8 g |
+R2 |
 
 R2 |
 b8.\f c16 ~ c r r8 |
@@ -37,8 +37,8 @@ b8. a16 ~ a r r8 |
 R2 |
 b8. c16 ~ c r r8 |
 R2 |
-b8. a16 r8 g ~ |
-g4 r |
+b8. a16 r8 g |
+R2 |
                 }
 
                 \new Staff \relative c'' {  
@@ -53,7 +53,7 @@ d16-. d-. e-. r g8-. e16-. r |
 g8. b16 r4 |
 c16 c b-. r g r e r |
 g8. g16 r8 g ~ |
-g4 r |
+g2 |
 
 d16-.\mf d-. e-. r g8-. e16-. r |
 g8. b16 r4 |
@@ -63,7 +63,7 @@ d16-. d-. e-. r g8-. e16-. r |
 g8. b16 r4 |
 c16 c b-. r g r e r |
 g8. g16 r8 g ~ |
-g4 r |
+g2 |
                 }
 
                 \new Staff \relative c' {  
@@ -78,7 +78,7 @@ d16-. d-. e-. r g8-. e16-. r |
 g8. b16 r4 |
 c16 c b-. r g r e r |
 g8. g16 r8 g ~ |
-g4 r |
+g2 |
 
 d16-.\mf d-. e-. r g8-. e16-. r |
 g8. b16 r4 |
@@ -88,7 +88,7 @@ d16-. d-. e-. r g8-. e16-. r |
 g8. b16 r4 |
 c16 c b-. r g r e r |
 g8. g16 r8 g ~ |
-g4 r |
+g2 |
                 }
 
                 \new StaffGroup <<

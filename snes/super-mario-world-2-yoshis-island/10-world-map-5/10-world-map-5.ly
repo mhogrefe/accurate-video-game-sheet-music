@@ -28,7 +28,7 @@ R2 |
 <d b'>8. <e c'>16 ~ 16 r r8 |
 R2 |
 <d b'>8. <c a'>16 r8 <b g'> ~ |
-<b g'>4 r |
+<b g'>2 |
                 }
 
                 \new DrumStaff \with{
@@ -98,7 +98,7 @@ g4-. a8-. r |
 b8. c16 r4 |
 d4-. c8-. r |
 bes8. aes16 r8 g ~ |
-g4 r |
+g2 |
                 }
             >>
         }

@@ -31,8 +31,8 @@
 00:20:44 World Cleared
 00:20:54 Death
 00:21:04 Game Over
-00:21:20 Bowser Battle
-00:23:05 Bowser Defeated
-00:23:20 Luigi Rescued
-00:24:15 Credits
-00:27:27 Epilogue
+00:21:18 Bowser Battle
+00:23:03 Bowser Defeated
+00:23:18 Luigi Rescued
+00:24:13 Credits
+00:27:26 Epilogue

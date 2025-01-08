@@ -22,9 +22,9 @@
 \key c \minor
 \tempo 4=148
 \partial 4 r4^\markup{\italic rubato} |
-c4.\f^\markup{Echo} des16 ees c8 des \once \override NoteColumn.X-offset = #0.5 \tuplet 3/2 { e8 g bes } |
+c4.\f^\markup{Echo} des16 ees c8 \once \override NoteHead.extra-spacing-width = #'(-0.4 . 0.4) des \tuplet 3/2 { e8 g bes } |
 c4 ~ c16 des \acciaccatura ees8 c16 b c2 ~ |
-c16 e g \acciaccatura e8 des16 c \once \override NoteColumn.X-offset = #0.5 \parenthesize bes \once \override NoteColumn.X-offset = #0.6 c des c bes g e ~ e32 des16. bes8 |
+c16 e g \acciaccatura e8 des16 c \once \override NoteHead.extra-spacing-width = #'(-0.5 . 0.5) \parenthesize bes c des c bes g e ~ e32 des16. bes8 |
 \acciaccatura c8 des16 c4.. ~ c4 r4 |
 \bar "||"
 \time 3/4
@@ -164,7 +164,7 @@ R2.*17
 \clef bass
 r4 |
 R1*4
-r4 <ees g>4-.\ff 4-. |
+r4 <ees g>4-.\ff^\markup{Echo} 4-. |
 r4 <fis a>2 |
 r4 <g bes>-. 4-. |
 r4 <fis a>2 |
@@ -173,7 +173,7 @@ r4 <fis a>2 |
 r4 <g bes>-. 4-. |
 r4 <fis a>2 |
 
-r4 <ees g>4-. 4-. |
+r4 <ees g>4-.^\markup{"No echo"} 4-. |
 r4 <fis a>2 |
 r4 <g bes>-. 4-. |
 r4 <fis a>2 |

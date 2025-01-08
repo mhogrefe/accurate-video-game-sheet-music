@@ -123,7 +123,7 @@ R1 |
 r4 r8 g8-.\ff^\markup{Echo} a-. d-. cis4 ~ |
 \tuplet 3/2 { cis4 a8 } \tuplet 3/2 { g8\> r a } \tuplet 3/2 { g8 r a } \tuplet 3/2 { g8\p r r  } |
 r4 r8 g-.\ff a-. d-. cis4 ~ |
-\tuplet 3/2 { cis8 a g } \tuplet 3/2 { g'8\glissando \once \override NoteColumn.X-offset = #1.5 a\> r } \tuplet 3/2 { g8\glissando \once \override NoteColumn.X-offset = #1.5 a r } \tuplet 3/2 { g8\glissando\p \once \override NoteColumn.X-offset = #1.5 a r } |
+\tuplet 3/2 { cis8 a g } \tuplet 3/2 { g'8\glissando \once \override NoteHead.extra-spacing-width = #'(-2.5 . 2.5) a\> r } \tuplet 3/2 { g8\glissando \once \override NoteHead.extra-spacing-width = #'(-2.5 . 2.5)a r } \tuplet 3/2 { g8\glissando\p \once \override NoteHead.extra-spacing-width = #'(-2.5 . 2.5) a r } |
 r4 r8 g,8-.\ff^\markup{Echo} a-. d-. cis4 ~ |
 \tuplet 3/2 { cis4 a8 } \tuplet 3/2 { g8\> r a } \tuplet 3/2 { g8 r a } \tuplet 3/2 { g8\p r r  } |
 R1*9/16
@@ -149,8 +149,8 @@ g8. ges16 ~ ges8 f d8. c16 ~ c8 cis |
 d'16 f8\glissando d16 f8 d16( c) \tuplet 6/4 { aes'8 g16 f d c } \tuplet 6/4 { <f aes>8 <d g>16 <c f> <a d> <gis c> } |
 \tuplet 6/4 { aes'8 g16 f d c } \tuplet 6/4 { f8 d16 c a gis } \tuplet 6/4 { f'8 d16 c a gis } g32 f g \set stemRightBeamCount = 1 gis \set stemLeftBeamCount = 1 a c d f |
 \tuplet 6/4 { a16 c cis d f g } \tuplet 6/4 { gis16 a d, f g gis } \tuplet 6/4 { a16 f g gis a c } \tuplet 6/4 { f,16 g gis a c8 ~ } |
-c16\glissando \once \override NoteColumn.X-offset = #1.5 e ~ \tuplet 3/2 { e16[ r c] } \tuplet 6/4 { cis16 d f e d f } \tuplet 6/4 { e16 d f e d f } \tuplet 6/4 { e16 d f e d f } |
-\tuplet 6/4 { e16 d f e d f } \tuplet 6/4 { e16 d e d c e } \tuplet 12/8 { d16 c d \set stemRightBeamCount = 1 c \override TupletBracket.bracket-visibility = ##t \tupletUp \tuplet 4/6 { \set stemLeftBeamCount = 1 a16 aes g \set stemRightBeamCount = 1 f } \set stemLeftBeamCount = 1 d\glissando \once \override NoteColumn.X-offset = #1.5 c } |
+c16\glissando \once \override NoteHead.extra-spacing-width = #'(-1.5 . 1.5) e ~ \tuplet 3/2 { e16[ r c] } \tuplet 6/4 { cis16 d f e d f } \tuplet 6/4 { e16 d f e d f } \tuplet 6/4 { e16 d f e d f } |
+\tuplet 6/4 { e16 d f e d f } \tuplet 6/4 { e16 d e d c e } \tuplet 12/8 { d16 c d \set stemRightBeamCount = 1 c \override TupletBracket.bracket-visibility = ##t \tupletUp \tuplet 4/6 { \set stemLeftBeamCount = 1 a16 aes g \set stemRightBeamCount = 1 f } \set stemLeftBeamCount = 1 d\glissando \once \override NoteHead.extra-spacing-width = #'(-2.0 . 2.0) c } |
 g8. ges16 ~ ges8 f ~ f16 e8. ees8 d |
 b'8. bes16 ~ bes8 a ~ a16 aes8. g8-. ges-. |
 b8. bes16 ~ bes8 a ~ a16 aes8. g8-. ges-. |

@@ -199,7 +199,7 @@ R1
 R1*5/4
 R1*20
 \override Glissando.style = #'trill
-r2 r4 g8\glissando d |
+r2 r4 g8\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 2) d |
 g,4. d'8-. d-. d-. f4 |
 g4. d8-. d-. d-. f4 |
 g,4. d'8-. d-. d-. f4 |

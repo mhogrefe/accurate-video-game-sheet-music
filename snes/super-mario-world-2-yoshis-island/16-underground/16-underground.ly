@@ -194,7 +194,7 @@ a2 r4 a |
 d4 r d8. d16 r8 d |
 e2 ~ e8 r e4 |
 f4 r f8. f16 r8 f |
-g2 a4. a'16\glissando \once \override NoteColumn.X-offset = #2.5 aes |
+g2 a4. a'16\glissando \once \override NoteHead.extra-spacing-width = #'(-3.0 . 3.0) aes |
                 }
             >>
         }

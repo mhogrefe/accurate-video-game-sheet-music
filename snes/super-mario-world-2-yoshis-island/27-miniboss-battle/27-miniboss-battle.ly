@@ -26,7 +26,7 @@ R1*7/4
 R1*4
                         \repeat volta 2 {
 R1*16
-r4 r8 <c c'>16 <b b'> <a a'>8-. <b b'>-. <c c'>-. <d d'>-. |
+r4 r8 <c c'>16^\markup{Echo} <b b'> <a a'>8-. <b b'>-. <c c'>-. <d d'>-. |
 <e c' e>4-. r8 <c a' c>8 ~ 4. r8 |
 r4 r8 <e e'>16 <d d'> <c c'>8-. <b b'>-. <c c'>-. <d d'>-. |
 <e a e'>4-. r8 <a, e' a>8 ~ 4. r8 |
@@ -138,9 +138,10 @@ r8 <e c'>16-! 16-! 8-! <e g>-! <e bes'>-! <e c'>4 r8 |
 R1*8
                 }
 
-                \new Staff \relative c' {  
-                    \set Staff.instrumentName = "Rotary Organ 1"
-                    \set Staff.shortInstrumentName = "Rot. Org. 1"  
+                \new StaffGroup <<
+                    \new Staff \relative c' {  
+                        \set Staff.instrumentName = "Rotary Organ 1"
+                        \set Staff.shortInstrumentName = "Rot. Org. 1"  
 \key c \major
 <f b>4\f <e bes'> <ees a> <d aes'> <des g> \tempo 4=226 <c ges'> |
 <b f'>8 ~ |
@@ -164,11 +165,11 @@ r4 \acciaccatura dis'8 <e g>8 8-. <e a> g-. e c-. |
 r4 e'8 e-. d c-. b c ~ |
 c2 r |
 R1*8
-                }
+                    }
 
-                \new Staff \relative c' {  
-                    \set Staff.instrumentName = "Rotary Organ 2"
-                    \set Staff.shortInstrumentName = "Rot. Org. 2"  
+                    \new Staff \relative c' {  
+                        \set Staff.instrumentName = "Rotary Organ 2"
+                        \set Staff.shortInstrumentName = "Rot. Org. 2"  
 \key c \major
 \clef bass
 <ges c>4\f <f b> <e bes'> <ees a> <d aes'> <des g> |
@@ -193,7 +194,8 @@ r2 r4 \tuplet 5/4 { g'32 f e d c } r8 |
 r4 c8\f c b-. a f e ~ |
 e4. \tuplet 7/4 { b'32\mp a g f e d c } r2 |
 R1*8
-                }
+                    }
+                >>
 
                 \new Staff \relative c, {  
                     \set Staff.instrumentName = "Bass Guitar"

@@ -17,8 +17,8 @@
         {
             <<
                 \new Staff \relative c' {  
-                    \set Staff.instrumentName = "Violoncello"
-                    \set Staff.shortInstrumentName = "Vc."  
+                    \set Staff.instrumentName = "Trumpet"
+                    \set Staff.shortInstrumentName = "Tpt."  
 \key g \major
 R2 |
 <d b'>8.\mf <e c'>16 ~ 16 r r8 |
@@ -28,7 +28,7 @@ R2 |
 <d b'>8. <e c'>16 ~ 16 r r8 |
 R2 |
 <d b'>8. <c a'>16 r8 <b g'> ~ |
-<b g'>4 r |
+<b g'>2 |
 
 R2 |
 <d b'>8.\f <e c'>16 ~ 16 r r8 |
@@ -38,7 +38,7 @@ R2 |
 <d b'>8. <e c'>16 ~ 16 r r8 |
 R2 |
 <d b'>8. <c a'>16 r8 <b g'> ~ |
-<b g'>4 r |
+<b g'>2 |
                 }
 
                 \new DrumStaff \with{
@@ -160,7 +160,7 @@ g4-. a8-. r |
 b8. c16 r4 |
 d4-. c8-. r |
 bes8. aes16 r8 g ~ |
-g4 r |
+g2 |
 
 g4-.\mf a8-. r |
 b8. c16 r4 |
@@ -170,7 +170,7 @@ g4-. a8-. r |
 b8. c16 r4 |
 d4-. c8-. r |
 bes8. aes16 r8 g ~ |
-g4 r |
+g2 |
                 }
             >>
         }

@@ -28,7 +28,7 @@
 00:17:59 Boss Battle
 00:19:24 Boss Battle (No Intro)
 00:20:30 Boss Defeated
-00:20:45 World Cleared
+00:20:44 World Cleared
 00:20:55 Death
 00:21:05 Game Over
 00:21:21 Bowser Battle

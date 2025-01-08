@@ -28,7 +28,7 @@ R2 |
 b8. c16 ~ c r r8 |
 R2 |
 b8. a16 r8 g ~ |
-g4 r |
+g2 |
                 }
 
                 \new Staff \relative c' {  
@@ -43,7 +43,7 @@ d16-. d-. e-. r g8-. e16-. r |
 <d g>8. <e b'>16 ~ e r r8 |
 c'16 c b-. r g r e r |
 <d g>8. <c g'>16 r8 <b g'> ~ |
-<b g'>4 r |
+<b g'>2 |
                 }
 
                 \new DrumStaff \with{
@@ -113,7 +113,7 @@ g4-. a8-. r |
 b8. c16 r4 |
 d4-. c8-. r |
 bes8. aes16 r8 g ~ |
-g4 r |
+g2 |
                 }
             >>
         }
