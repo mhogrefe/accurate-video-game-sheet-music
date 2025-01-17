@@ -1267,10 +1267,10 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         .expect("failed to delete file");
 }
 
-// padded page count must be at least 17
+// padded page count must be at least 18
 pub fn get_padding(path: &str) -> (usize, usize) {
     if path.contains("c64/lazy-jones") {
-        (1, 6)
+        (1, 8)
     } else {
         (0, 0)
     }
