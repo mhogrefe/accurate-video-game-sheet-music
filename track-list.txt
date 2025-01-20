@@ -357,6 +357,7 @@ snes/super-mario-world-2-yoshis-island/36-luigi-rescued
 snes/super-mario-world-2-yoshis-island/37-credits
 snes/super-mario-world-2-yoshis-island/38-epilogue
 snes/the-legend-of-zelda-a-link-to-the-past/01-title-screen
+snes/the-legend-of-zelda-a-link-to-the-past/02-introduction
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

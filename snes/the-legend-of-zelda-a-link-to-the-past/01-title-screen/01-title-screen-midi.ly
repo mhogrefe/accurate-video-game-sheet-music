@@ -22,7 +22,13 @@
                         \set Staff.shortInstrumentName = "Hn."  
 \clef bass
 \key aes \major
-R1*3
+\tempo 4=118
+r4 \tempo 4=126 r \tempo 4=136 r \tempo 4=145 r |
+\tempo 4=155
+r4 \tempo 4=161 r \tempo 4=155 r \tempo 4=137 r |
+\tempo 4=133
+\tuplet 5/4 { r16 \tempo 4=114 r \tempo 4=132 r \tempo 4=124 r \tempo 4=112 r } \tuplet 5/4 { r16 \tempo 4=100 r \tempo 4=109 r \tempo 4=106 r \tempo 4=94 r } \tuplet 5/4 { r16 \tempo 4=73 r4 } r4 |
+\tempo 4=105
 <aes ees'>4.\f 32 32 32 32 4 8-. 8-. |
 <ces ges'>4. 32 32 32 32 4 8-. 8-. |
 <des aes'>4. 32 32 32 32 4 8-. 8-. |
@@ -60,14 +66,56 @@ sn4\p r r2 |
                     \set Staff.instrumentName = "Harp"
                     \set Staff.shortInstrumentName = "Hrp."  
 \key aes \major
-\tempo 4=118
-\tuplet 5/4 { ees16^\markup{Echo} des bes g f } \tempo 4=126 \tuplet 5/4 { des'16 bes g f ees } \tempo 4=136 \tuplet 5/4 { bes'16 g f ees des } \tempo 4=145 \tuplet 5/4 { g16 f ees des bes } |
-\tempo 4=155
-\tuplet 5/4 { f'16 ees des bes g } \tempo 4=161 \tuplet 5/4 { ees'16 des bes g f } \tempo 4=155 \tuplet 5/4 { des'16 bes g f ees } \tempo 4=137 \tuplet 5/4 { bes'16 g f ees des } |
-\tempo 4=133
-\tuplet 5/4 { bes16 \tempo 4=114 g \tempo 4=132 f' \tempo 4=124 g \tempo 4=112 bes } \tuplet 5/4 { des16 \tempo 4=100 f \tempo 4=109 g \tempo 4=106 bes \tempo 4=94 des } \tuplet 5/4 { f16 \tempo 4=73 g4 ~ } g4 |
+\tuplet 5/4 { r16 des\f bes g8 ~ } \tuplet 5/4 { g16 bes g f8 ~ } \tuplet 5/4 { f16 g f ees8 ~ } \tuplet 5/4 { ees16 f ees des8 ~ } |
+\tuplet 5/4 { des16 ees des bes8 ~ } \tuplet 5/4 { bes16 des bes g8 ~ } \tuplet 5/4 { g16 bes g f8 ~ } \tuplet 5/4 { f16 g f ees8 } |
+bes4 des' f'2 |
 \bar "||"
-\tempo 4=105
+R1*5
+\bar "|."
+                }
+
+                \new Staff \relative c''' {  
+                    \set Staff.instrumentName = "Harp"
+                    \set Staff.shortInstrumentName = "Hrp."  
+\key aes \major
+ees4\f des bes g |
+f4 ees des bes ~ |
+\tuplet 5/4 { bes16 g,4 ~ } \tuplet 5/4 { g16 f''4 ~ } \tuplet 5/4 { f16 g'4 ~ } g4 | 
+\bar "||"
+R1*5
+\bar "|."
+                }
+
+                \new Staff \relative c'' {  
+                    \set Staff.instrumentName = "Harp"
+                    \set Staff.shortInstrumentName = "Hrp."  
+\key aes \major
+\tuplet 5/4 { r4 f16\f ~ } \tuplet 5/4 { f4 ees16 ~ } \tuplet 5/4 { ees4 des16 ~ } \tuplet 5/4 { des4 bes16 ~ } |
+\tuplet 5/4 { bes4 g16 ~ } \tuplet 5/4 { g4 f16 ~ } \tuplet 5/4 { f4 ees16 ~ } \tuplet 5/4 { ees4 des16 ~ } |
+\tuplet 5/4 { des8 f8. ~ } \tuplet 5/4 { f8 g'8. ~ } g2 |
+\bar "||"
+R1*5
+\bar "|."
+                }
+
+                \new Staff \relative c'' {  
+                    \set Staff.instrumentName = "Harp"
+                    \set Staff.shortInstrumentName = "Hrp."  
+\key aes \major
+R1*2
+\tuplet 5/4 { r16 r8 g\f ~ } \tuplet 5/4 { g8. bes'8 ~ } bes2 |
+\bar "||"
+R1*5
+\bar "|."
+                }
+
+                \new Staff \relative c'' {  
+                    \set Staff.instrumentName = "Harp"
+                    \set Staff.shortInstrumentName = "Hrp."  
+\key aes \major
+R1*2
+\tuplet 5/4 { r4 bes16\f ~ } \tuplet 5/4 { bes4 des'16 ~ } des2 |
+\bar "||"
 R1*5
 \bar "|."
                 }
