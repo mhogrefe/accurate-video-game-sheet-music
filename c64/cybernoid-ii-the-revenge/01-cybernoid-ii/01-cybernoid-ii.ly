@@ -22,7 +22,26 @@
                         \drummode {
                             \set Staff.instrumentName="Drumset 1"
                             \set Staff.shortInstrumentName="D. Set 1"
-
+\repeat percent 15 { bd4\ff bd bd bd | }
+<toml sn>8\fff 8 8 8 16 8 16 ~ 16 16 16 16 |
+\repeat percent 39 { bd4\ff sn bd sn | }
+bd4 sn bd <toml sn>16 16 16 16 |
+\repeat percent 7 { bd4 sn bd sn | }
+bd4 sn bd <toml sn>16 16 16 16 |
+\repeat percent 16 { bd4 sn bd sn | }
+R1*15
+r2 <cymca cymcb>4.:16\f r8 |
+\repeat percent 16 { bd4\ff sn bd sn | }
+bd4 bd bd bd |
+<toml sn>8\fff 8 8 8 16 8 16 ~ 16 16 16 16 |
+\repeat percent 24 { bd4\ff sn bd sn | }
+bd4 bd bd bd |
+<toml sn>8\fff 8 8 8 16 8 16 ~ 16 16 16 16 |
+\repeat percent 32 { bd4\ff sn bd sn | }
+\repeat percent 4 {
+hh8 hh16 hh sn8 hh16 hh r hh hh hh sn8 hh16 hh |
+hh8 hh16 16 sn8 hh hh16 hh8 hh16 sn8 hh16 hh |
+}
                         }
                     }
 
@@ -30,7 +49,20 @@
                         \drummode {
                             \set Staff.instrumentName="Drumset 2"
                             \set Staff.shortInstrumentName="D. Set 2"
-
+\repeat percent 8 {
+bd4\f r r2 |
+R1 |
+}
+\repeat percent 64 { sn8\ff sn sn16 sn sn sn r sn sn8 sn16 sn sn sn | }
+\repeat percent 16 { sn8 sn sn sn sn sn sn sn | }
+\repeat percent 16 { sn8\f sn sn sn sn sn sn16 sn8 sn16 | }
+R1*2
+\repeat percent 16 { sn8 sn sn sn sn sn sn sn | }
+\repeat percent 8 { sn8 sn sn sn sn sn sn16 sn8 sn16 | }
+R1*2
+\repeat percent 31 { sn8 sn sn sn sn sn sn16 sn8 sn16 | }
+hh8\ff hh16 hh sn8 hh16 hh r hh hh hh sn8 hh16 hh |
+R1*8
                         }
                     }
                 >>
@@ -455,6 +487,158 @@ R1*8
 R1*16
 r8 <g c ees>16\mp 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
+r8 <g c ees>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
+r8 <c' ees g>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 |
+r8 <bes d f>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 |
+r8 <ees, aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <c' ees aes>16 16 r8 <ees aes c>16 16 |
+r8 <d f bes>16 16 r8 <f, bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <bes, f' bes>16 16 r8 <bes f' bes>16 16 r8 <bes f' bes>16 16 r8 <bes f' bes>16 16 |
+R1
+r8 <g' c ees>16\mp 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <c f aes>16 16 r8 <c f aes>16 16 r8 <c f aes>16 16 r8 <c f aes>16 16 |
+r8 <b d g>16 16 r8 <b d g>16 16 r8 <b d g>16 16 r8 <b d g>16 16 |
+
+r8 <ees, aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 r8 <aes c ees>16 16 |
+r8 <c f aes>16 16 r8 <c f aes>16 16 r8 <c f aes>16 16 r8 <c f aes>16 16 |
+r8 <b d g>16 16 r8 <b d g>16 16 r8 <b d g>16 16 r8 <b d g>16 16 |
+
+r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
+r8 <g c ees>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
+r8 <c' ees g>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 |
+r8 <bes d f>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 r8 <bes d f>16 16 |
+r8 <ees, aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <c' ees aes>16 16 r8 <ees aes c>16 16 |
+r8 <d f bes>16 16 r8 <f, bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 r8 <f bes d>16 16 |
+r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <f bes d>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <f bes d>16 16 |
+r8 <bes, f' bes>16 16 r8 <bes f' bes>16 16 r8 <bes f' bes>16 16 r8 <bes f' bes>16 16 |
+R1
+
+R1*16
+
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+R1*2
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+R1*2
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <ees aes c>8 16 r8 <ees aes c>16 16 r <ees aes c>16 8 r <ees aes c>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <f bes d>8 16 r8 <f bes d>16 16 r <f bes d>16 8 r <f bes d>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <c f aes>8 16 r8 <c f aes>16 16 r <c f aes>16 8 r <c f aes>16 16 |
+r16 <g' c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+r16 <g c ees>8 16 r8 <g c ees>16 16 r <g c ees>16 8 r <g c ees>16 16 |
+
+R1*8
                     }
 
                     \new Staff \relative c''' {
