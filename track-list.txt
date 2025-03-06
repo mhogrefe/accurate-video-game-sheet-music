@@ -361,6 +361,8 @@ snes/the-legend-of-zelda-a-link-to-the-past/02-introduction
 snes/the-legend-of-zelda-a-link-to-the-past/03-file-selection
 snes/the-legend-of-zelda-a-link-to-the-past/04-rain
 snes/the-legend-of-zelda-a-link-to-the-past/05-hyrule-castle
+snes/the-legend-of-zelda-a-link-to-the-past/06-zeldas-lullaby
+snes/the-legend-of-zelda-a-link-to-the-past/07-sanctuary
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
