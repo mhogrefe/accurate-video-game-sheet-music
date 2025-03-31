@@ -114,7 +114,7 @@ fis16 g ais fis g bes c bes ~ bes4 ~ bes8\glissando \clef bass g,,,, |
 \clef treble
 c''''8 bes c bes16 ees ~ ees8 d bes16 c8 \acciaccatura a8 bes16 ~ |
 bes16 g ges f ees f g, bes c ees8 c16 ~ c4 |
-ees8 f16 ees eis fis eis fis \acciaccatura fis8 g8 aes16 fis g bes c8 |
+ees8 f16 ees eis fis eis fis \acciaccatura fis8 g8 bes16 fis g bes c8 |
 \acciaccatura b8 c2.. r8 |
                 }
 

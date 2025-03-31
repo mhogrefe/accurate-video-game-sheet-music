@@ -287,15 +287,5 @@ g2 aes4 fis |
             >>
         }
         \midi {}
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
     }
 }

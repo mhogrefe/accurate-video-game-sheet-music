@@ -769,6 +769,54 @@ fn write_cover_latex_file(dir_path: &str, info: &TrackInfo, text_size: &str) {
     writeln!(&mut latex_file, "{ending}").unwrap();
 }
 
+fn _write_cover_latex_file_2(dir_path: &str, text_size: &str) {
+    let out_path = format!("../video-game-extracted-music-books/{dir_path}/cover.tex");
+    println!("out_path: {out_path}");
+    let mut latex_file = File::create(out_path).unwrap();
+    let title = "Deep Learning";
+    let author = "Ian Goodfellow, Yoshua Bengio, and Aaron Courville";
+    let preamble = r#"\documentclass{book}
+\usepackage[paperheight=9.25in,paperwidth=7.5in,margin=1in,heightrounded]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tocloft}
+\usepackage{babel}
+\usepackage{ifpdf}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{psvectorian}
+\pagestyle{fancy}
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Color=909090,Mapping=tex-text]{Hoefler Text}
+\defaultfontfeatures[\rmfamily,\sffamily]{Ligatures={TeX,Common,Rare}}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+"#;
+    write!(&mut latex_file, "{preamble}").unwrap();
+    write!(
+        &mut latex_file,
+        "\\title{{\\{text_size} \\textbf{{{title}}}\\vspace{{-1.0cm}}}}",
+    )
+    .unwrap();
+    write!(
+        &mut latex_file,
+        "\\author{{\\normalsize {}}}",
+        author
+    )
+    .unwrap();
+    let more_stuff = r"\date{}
+\begin{document}
+    \maketitle";
+    writeln!(&mut latex_file, "{more_stuff}").unwrap();
+    let ending = r"\backmatter
+\end{document}";
+    writeln!(&mut latex_file, "{ending}").unwrap();
+}
+
 fn write_spine_latex_file(dir_path: &str, page_count: usize, info: &TrackInfo) {
     let out_path = format!("../video-game-extracted-music-books/{dir_path}/spine.tex");
     let mut latex_file = File::create(out_path).unwrap();
@@ -804,6 +852,34 @@ fn write_spine_latex_file(dir_path: &str, page_count: usize, info: &TrackInfo) {
         )
     }
     .unwrap();
+    let ending = r"\backmatter
+\end{document}";
+    writeln!(&mut latex_file, "{ending}").unwrap();
+}
+
+fn _write_spine_latex_file_2(dir_path: &str) {
+    let title = "Deep Learning";
+    let author = "Ian Goodfellow, Yoshua Bengio, and Aaron Courville";
+    let out_path = format!("../video-game-extracted-music-books/{dir_path}/spine.tex");
+    let mut latex_file = File::create(out_path).unwrap();
+    let preamble = r#"\documentclass{book}
+\usepackage[paperheight=9.25in,paperwidth=24in,margin=1in,heightrounded]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tocloft}
+\usepackage{babel}
+\usepackage{ifpdf}
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text}
+\setsansfont[Color=909090,Mapping=tex-text]{Hoefler Text}
+\defaultfontfeatures[\rmfamily,\sffamily]{Ligatures={TeX,Common,Rare}}
+\begin{document}
+"#;
+    write!(&mut latex_file, "{preamble}").unwrap();
+    writeln!(&mut latex_file, "{}", title).unwrap();
+    writeln!(&mut latex_file).unwrap();
+    writeln!(&mut latex_file, "{{\\tiny {}}}", author).unwrap();
     let ending = r"\backmatter
 \end{document}";
     writeln!(&mut latex_file, "{ending}").unwrap();
@@ -905,6 +981,92 @@ fn create_cover_text_image(
     text_size: &str,
 ) -> DynamicImage {
     write_cover_latex_file(dir_path, &info, text_size);
+    Command::new("xelatex")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.tex"
+        ))
+        .output()
+        .expect("failed to run XeLaTeX");
+    Command::new("xelatex")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.tex"
+        ))
+        .output()
+        .expect("failed to run XeLaTeX");
+    for suffix in ["aux", "log", "toc"] {
+        Command::new("rm")
+            .arg(&format!("cover.{suffix}"))
+            .output()
+            .expect("failed to delete auxiliary TeX file");
+    }
+    Command::new("mv")
+        .arg(&format!("cover.pdf"))
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover-text.pdf"
+        ))
+        .output()
+        .expect("failed to delete auxiliary TeX file");
+
+    Command::new("convert")
+        .arg("-density")
+        .arg("600")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover-text.pdf"
+        ))
+        .arg("-quality")
+        .arg("90")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover-text.png"
+        ))
+        .output()
+        .expect("failed to convert template book pdf to png");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.tex"
+        ))
+        .output()
+        .expect("failed to delete file");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover-text.pdf"
+        ))
+        .output()
+        .expect("failed to delete file");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover-text-1.png"
+        ))
+        .output()
+        .expect("failed to delete file");
+    let mut cover_text_img = image::open(&format!(
+        "../video-game-extracted-music-books/{dir_path}/cover-text-0.png"
+    ))
+    .expect("File not found");
+    crop_to_non_trans(&mut cover_text_img);
+    recolor(&mut cover_text_img, foreground_color);
+    let cover_text_scale = Rational::from_sci_string("1.8").unwrap();
+    cover_text_img = cover_text_img.resize(
+        u32::rounding_from(
+            &(Rational::from(cover_text_img.width()) * &cover_text_scale),
+            Nearest,
+        )
+        .0,
+        u32::rounding_from(
+            &(Rational::from(cover_text_img.height()) * &cover_text_scale),
+            Nearest,
+        )
+        .0,
+        FilterType::CatmullRom,
+    );
+    cover_text_img
+}
+
+fn _create_cover_text_image_2(
+    dir_path: &str,
+    foreground_color: Rgba<u8>,
+    text_size: &str,
+) -> DynamicImage {
+    _write_cover_latex_file_2(dir_path, text_size);
     Command::new("xelatex")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover.tex"
@@ -1267,6 +1429,283 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
         .expect("failed to delete file");
 }
 
+fn _generate_cover_2(dir_path: &str) {
+    let dimensions = CoverDimensions {
+        spine_width_in: Rational::from_sci_string("2.17").unwrap(),
+        cover_width_px: 11354,
+        cover_height_px: 6750,
+    };
+    let left_margin_in = Rational::from_sci_string("0.75").unwrap();
+    let right_margin_in = Rational::from_sci_string("1.375").unwrap();
+    let bottom_margin_in = Rational::from_sci_string("1.625").unwrap();
+    let top_margin_in = Rational::from_sci_string("0.875").unwrap();
+    let background_color = get_background_color_2(dir_path);
+    let foreground_color = get_foreground_color_2(dir_path);
+
+    let mut canvas = DynamicImage::new_rgb8(dimensions.cover_width_px, dimensions.cover_height_px);
+    draw_rectangle(
+        &mut canvas,
+        background_color,
+        0,
+        0,
+        dimensions.cover_width_px - 1,
+        dimensions.cover_height_px - 1,
+    );
+
+    let big_box_top = u32::rounding_from(&(&top_margin_in * DPI), Nearest).0;
+    let big_box_bottom =
+        dimensions.cover_height_px - u32::rounding_from(&(&bottom_margin_in * DPI), Nearest).0;
+    let big_box_right =
+        dimensions.cover_width_px - u32::rounding_from(&(right_margin_in * DPI), Nearest).0;
+    let big_box_left = (dimensions.cover_width_px
+        + u32::rounding_from(&(&dimensions.spine_width_in * DPI), Nearest).0)
+        .shr_round(1, Nearest)
+        .0
+        + u32::rounding_from(&(left_margin_in * DPI), Nearest).0;
+
+    let title_ratio = Rational::from_sci_string("0.45").unwrap();
+    let title_box_top = big_box_top;
+    let title_box_left = big_box_left;
+    let title_box_right = big_box_right;
+    let border = u32::rounding_from(
+        &(Rational::from(big_box_bottom - big_box_top) * title_ratio),
+        Nearest,
+    )
+    .0 + big_box_top;
+    let title_box_bottom = border;
+
+    let sprite_box_top = border + u32::rounding_from(&DPI, Nearest).0 / 2;
+    let sprite_box_left = big_box_left;
+    let sprite_box_right = big_box_right;
+    let sprite_box_bottom = big_box_bottom;
+
+    let sprite_box_ratio = Rational::from_unsigneds(
+        sprite_box_right - sprite_box_left,
+        sprite_box_bottom - sprite_box_top,
+    );
+    let mut sprite_img = image::open(&format!("{dir_path}/sprite.png")).expect("File not found");
+    let sprite_ratio = Rational::from_unsigneds(sprite_img.width(), sprite_img.height());
+    let target_sprite_height_px;
+    let target_sprite_width_px;
+    if sprite_box_ratio > sprite_ratio {
+        target_sprite_height_px = sprite_box_bottom - sprite_box_top;
+        target_sprite_width_px = u32::rounding_from(
+            &(Rational::from_unsigneds(sprite_img.width(), sprite_img.height())
+                * Rational::from(target_sprite_height_px)),
+            Nearest,
+        )
+        .0;
+    } else {
+        target_sprite_width_px = sprite_box_right - sprite_box_left;
+        target_sprite_height_px = u32::rounding_from(
+            &(Rational::from_unsigneds(sprite_img.height(), sprite_img.width())
+                * Rational::from(target_sprite_width_px)),
+            Nearest,
+        )
+        .0;
+    }
+    sprite_img = sprite_img.resize(
+        target_sprite_width_px,
+        target_sprite_height_px,
+        FilterType::Nearest,
+    );
+    copy_from_with_trans(
+        &mut canvas,
+        &sprite_img,
+        (sprite_box_left + sprite_box_right - target_sprite_width_px) >> 1,
+        (sprite_box_top + sprite_box_bottom - target_sprite_height_px) >> 1,
+    );
+
+    let mut cover_text_img = None;
+    let mut too_big = false;
+    for size in DESCENDING_TEXT_SIZES {
+        cover_text_img = Some(_create_cover_text_image_2(dir_path, foreground_color, size));
+        let cti = cover_text_img.as_ref().unwrap();
+        too_big = cti.width() > title_box_right - title_box_left
+            || cti.height() > title_box_bottom - title_box_top;
+        if too_big {
+            println!("Cover text image too big with size `{size}`. Trying smaller size");
+        } else {
+            break;
+        }
+    }
+    if too_big {
+        panic!("Cover text image still too big in spite of efforts to reduce");
+    }
+    let cover_text_img = cover_text_img.unwrap();
+
+    let x: u32 = title_box_left + title_box_right - cover_text_img.width();
+    let y: u32 = title_box_top + title_box_bottom - cover_text_img.height();
+    copy_from_with_trans_3(
+        &mut canvas,
+        &cover_text_img,
+        x.shr_round(1u32, Nearest).0,
+        y.shr_round(1u32, Nearest).0,
+    );
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover-text-0.png"
+        ))
+        .output()
+        .expect("failed to delete file");
+
+    _write_spine_latex_file_2(dir_path);
+    Command::new("xelatex")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.tex"
+        ))
+        .output()
+        .expect("failed to run XeLaTeX");
+    Command::new("xelatex")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.tex"
+        ))
+        .output()
+        .expect("failed to run XeLaTeX");
+    for suffix in ["aux", "log", "toc"] {
+        Command::new("rm")
+            .arg(&format!("spine.{suffix}"))
+            .output()
+            .expect("failed to delete auxiliary TeX file");
+    }
+    Command::new("mv")
+        .arg(&format!("spine.pdf"))
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.pdf"
+        ))
+        .output()
+        .expect("failed to delete auxiliary TeX file");
+
+    Command::new("convert")
+        .arg("-density")
+        .arg("600")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.pdf"
+        ))
+        .arg("-quality")
+        .arg("90")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.png"
+        ))
+        .output()
+        .expect("failed to convert template book pdf to png");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.tex"
+        ))
+        .output()
+        .expect("failed to delete file");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine.pdf"
+        ))
+        .output()
+        .expect("failed to delete file");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine-1.png"
+        ))
+        .output()
+        .expect("failed to delete file");
+    let mut spine_img = image::open(&format!(
+        "../video-game-extracted-music-books/{dir_path}/spine-0.png"
+    ))
+    .expect("File not found");
+    spine_img = spine_img.crop(
+        0,
+        0,
+        u32::rounding_from(&(Rational::from(18) * DPI), Nearest).0,
+        spine_img.height(),
+    );
+    crop_to_non_trans(&mut spine_img);
+    recolor(&mut spine_img, foreground_color);
+    spine_img = spine_img.rotate90();
+    // 1 mm
+    let spine_margin_in = Rational::ONE / Rational::from_sci_string("25.4").unwrap();
+    let spine_width = dimensions.spine_width_in - (spine_margin_in << 1);
+    let spine_box_top = u32::rounding_from(&(top_margin_in * DPI), Nearest).0;
+    let spine_box_bottom =
+        dimensions.cover_height_px - u32::rounding_from(&(bottom_margin_in * DPI), Nearest).0;
+    let spine_box_left = (dimensions.cover_width_px
+        - u32::rounding_from(&(&spine_width * DPI), Nearest).0)
+        .shr_round(1u32, Nearest)
+        .0;
+    let spine_box_right = (dimensions.cover_width_px
+        + u32::rounding_from(&(spine_width * DPI), Nearest).0)
+        .shr_round(1u32, Nearest)
+        .0;
+    let spine_ratio = Rational::from_unsigneds(spine_img.width(), spine_img.height());
+    let spine_box_ratio = Rational::from_unsigneds(
+        spine_box_right - spine_box_left,
+        spine_box_bottom - spine_box_top,
+    );
+    let target_spine_height;
+    let target_spine_width;
+    if spine_box_ratio >= spine_ratio {
+        target_spine_height = spine_box_bottom - spine_box_top;
+        target_spine_width = u32::rounding_from(
+            &(Rational::from(target_spine_height) * spine_ratio),
+            Nearest,
+        )
+        .0;
+    } else {
+        target_spine_width = spine_box_right - spine_box_left;
+        target_spine_height =
+            u32::rounding_from(&(Rational::from(target_spine_width) / spine_ratio), Nearest).0;
+    }
+    spine_img = spine_img.resize(
+        target_spine_width,
+        target_spine_height,
+        FilterType::CatmullRom,
+    );
+    copy_from_with_trans_3(
+        &mut canvas,
+        &spine_img,
+        (dimensions.cover_width_px - target_spine_width)
+            .shr_round(1u32, Nearest)
+            .0,
+        spine_box_top,
+    );
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/spine-0.png"
+        ))
+        .output()
+        .expect("failed to delete file");
+
+    canvas
+        .save(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.png"
+        ))
+        .unwrap();
+    Command::new("img2pdf")
+        .arg(format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.png"
+        ))
+        .arg("-S")
+        .arg(&format!(
+            "{}",
+            u32::rounding_from(
+                &(Rational::from(dimensions.cover_width_px) / DPI
+                    * Rational::const_from_unsigned(72)),
+                Nearest
+            )
+            .0
+        ))
+        .arg("--output")
+        .arg(format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.pdf"
+        ))
+        .output()
+        .expect("failed to create PDF");
+    Command::new("rm")
+        .arg(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.png"
+        ))
+        .output()
+        .expect("failed to delete file");
+}
+
 // padded page count must be at least 18
 pub fn get_padding(path: &str) -> (usize, usize) {
     if path.contains("c64/lazy-jones") {
@@ -1460,4 +1899,5 @@ pub fn generate_book(dir_path: &str) {
     println!("Generating cover...");
     let info = read_track_info(dir_path, &track_names[0]);
     generate_cover(dir_path, &info, page_count);
+    // _generate_cover_2("extra-cover");
 }
