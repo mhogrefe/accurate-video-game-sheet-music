@@ -802,12 +802,7 @@ fn _write_cover_latex_file_2(dir_path: &str, text_size: &str) {
         "\\title{{\\{text_size} \\textbf{{{title}}}\\vspace{{-1.0cm}}}}",
     )
     .unwrap();
-    write!(
-        &mut latex_file,
-        "\\author{{\\normalsize {}}}",
-        author
-    )
-    .unwrap();
+    write!(&mut latex_file, "\\author{{\\normalsize {}}}", author).unwrap();
     let more_stuff = r"\date{}
 \begin{document}
     \maketitle";

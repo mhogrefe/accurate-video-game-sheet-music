@@ -6,6 +6,33 @@
   left-margin = 0.75\in
 }
 
+arp = \markup {
+  \bold Arpeggiate
+  \hspace #-10
+  \score {
+    \layout {
+      #(layout-set-staff-size 12)
+    }
+    \new Staff \with {
+      \remove "Time_signature_engraver"
+      \remove "Clef_engraver"
+      fontSize = #-2
+    }
+    \relative {
+        \stemUp
+        \override Score.Clef.stencil = ##f
+        \once \override Staff.StaffSymbol.transparent = ##t
+        <a' c e>4
+        \once \override NoteColumn.X-offset = #-2.5
+        \tuplet 3/2 {c64[ a e']} \tuplet 3/2 {c64[ a e']}
+    }
+  }
+  \hspace #-16
+  =
+  \hspace #14
+  ⋯
+}
+
 \book {
     \header {
         title = "Cybernoid II"
@@ -17,11 +44,11 @@
     \score {
         {
             <<
-                \new StaffGroup <<
-                    \new DrumStaff {
-                        \drummode {
-                            \set Staff.instrumentName="Drumset 1"
-                            \set Staff.shortInstrumentName="D. Set 1"
+                \new DrumStaff {
+                    \drummode {
+                        \set Staff.instrumentName="Drumset"
+                        \set Staff.shortInstrumentName="D. Set"
+\grace s8
 \repeat percent 15 { bd4\ff bd bd bd | }
 <toml sn>8\fff 8 8 8 16 8 16 ~ 16 16 16 16 |
 \repeat percent 39 { bd4\ff sn bd sn | }
@@ -42,35 +69,14 @@ bd4 bd bd bd |
 hh8 hh16 hh sn8 hh16 hh r hh hh hh sn8 hh16 hh |
 hh8 hh16 16 sn8 hh hh16 hh8 hh16 sn8 hh16 hh |
 }
-                        }
                     }
-
-                    \new DrumStaff {
-                        \drummode {
-                            \set Staff.instrumentName="Drumset 2"
-                            \set Staff.shortInstrumentName="D. Set 2"
-\repeat percent 8 {
-bd4\f r r2 |
-R1 |
-}
-\repeat percent 64 { sn8\ff sn sn16 sn sn sn r sn sn8 sn16 sn sn sn | }
-\repeat percent 16 { sn8 sn sn sn sn sn sn sn | }
-\repeat percent 16 { sn8\f sn sn sn sn sn sn16 sn8 sn16 | }
-R1*2
-\repeat percent 16 { sn8 sn sn sn sn sn sn sn | }
-\repeat percent 8 { sn8 sn sn sn sn sn sn16 sn8 sn16 | }
-R1*2
-\repeat percent 31 { sn8 sn sn sn sn sn sn16 sn8 sn16 | }
-hh8\ff hh16 hh sn8 hh16 hh r hh hh hh sn8 hh16 hh |
-R1*8
-                        }
-                    }
-                >>
+                }
 
                 \new Staff \relative c'' {
                     \set Staff.instrumentName = "Poly Synthesizer"
                     \set Staff.shortInstrumentName = "Poly"
 \key ees \major
+\grace s8
 R1*48
 c8\fff bes aes ees ~ ees4 c'8 bes |
 aes8 ees4. c'8 d ees f |
@@ -110,8 +116,7 @@ bes'2^\markup{Echo} ~ bes8 g bes g |
 bes8 c4 \acciaccatura d8 ees8 ~ ees4 f,16 fis g8 |
 bes8 \acciaccatura f8 ges8 f ees bes c ees f |
 \override Glissando.style = #'trill
-fis16 g ais fis g bes c bes ~ bes4 ~ bes8\glissando \clef bass g,,,, |
-\clef treble
+fis16 g ais fis g bes c bes ~ bes4 ~ bes8\glissando \ottava #-2 g,,,, \ottava #0 |
 c''''8 bes c bes16 ees ~ ees8 d bes16 c8 \acciaccatura a8 bes16 ~ |
 bes16 g ges f ees f g, bes c ees8 c16 ~ c4 |
 ees8 f16 ees eis fis eis fis \acciaccatura fis8 g8 bes16 fis g bes c8 |
@@ -125,7 +130,8 @@ ees8 f16 ees eis fis eis fis \acciaccatura fis8 g8 bes16 fis g bes c8 |
 \key ees \major
 \tempo 4=126
                         \repeat volta 2 {
-<g c ees>1\ff |
+\grace s8
+<g c ees>1\ff^\arp |
 <ees aes c>1 |
 <g c ees>4 <f bes d>8 8 ~ 2 ~ |
 <f bes d>1 |
@@ -156,7 +162,7 @@ R1 |
 <ees aes c>4. <aes c ees>8 ~ 4 <f bes d> |
 <aes c ees>8 <f bes d>4 <ees aes c>8 ~ 4 <d f bes> |
 <bes ees g>8 <bes d f> <aes c ees> <bes d f>8 ~ 2 |
-r8 <aes'' aes'>16\p <ges ges'> r8 <ges ges'>16 <ees ees'> r8 <ees ees'>16 <des des'> r8 <des des'>16 <a a'> |
+r8 <aes'' aes'>16\p^\markup{\bold "No arpeggiation"} <ges ges'> r8 <ges ges'>16 <ees ees'> r8 <ees ees'>16 <des des'> r8 <des des'>16 <a a'> |
 c,2\ff ~ c8 c d \acciaccatura d8 ees ~ |
 ees8 d c g ~ g c4 c8( |
 bes8) bes4 bes8 ~ bes2 ~ |
@@ -181,7 +187,7 @@ R1*7
 \ottava #2
 g'8 ges f16 fes ees d ~ d des c8 ces16 bes beses aes |
 \ottava #0
-<g,, c ees>1\ff |
+<g,, c ees>1\ff^\arp |
 <ees aes c>1 |
 <g c ees>4 <f bes d>8 8 ~ 2 ~ |
 <f bes d>1 |
@@ -196,7 +202,7 @@ g'8 ges f16 fes ees d ~ d des c8 ces16 bes beses aes |
 <ees aes c>4. <aes c ees>8 ~ 4 <f bes d> |
 <aes c ees>8 <f bes d>4 <ees aes c>8 ~ 4 <d f bes> |
 <bes ees g>8 <bes d f> <aes c ees> <bes d f>8 ~ 2 |
-r8 <aes'' aes'>16\p <ges ges'> r8 <ges ges'>16 <ees ees'> r8 <ees ees'>16 <des des'> r8 <des des'>16 <a a'> |
+r8 <aes'' aes'>16\p^\markup{\bold "No arpeggiation"} <ges ges'> r8 <ges ges'>16 <ees ees'> r8 <ees ees'>16 <des des'> r8 <des des'>16 <a a'> |
 g'16\f c, g g' c, g g' c, g g' c, g g' c, g g' |
 f16 c g f' c g f' c g f' c g f' c g f' |
 ees16 c g ees' c g ees' c g ees' c g ees' c g ees' |
@@ -303,26 +309,26 @@ bes8 b16 c r8 bes bes'16 b,8 b'16 r8 c,,16 g' |
 \mark \markup { \fontsize #-2 "Loop forever" }
                     }
 
-                    \new Staff \relative c {
+                    \new Staff \relative c, {
                         \set Staff.instrumentName = "Saw Synthesizer 2"
                         \set Staff.shortInstrumentName = "Saw 2"
 \clef bass
 \key ees \major
-c1\f ~ |
+\acciaccatura f8\f c'1 ~ |
 c1 |
-bes1 ~ |
+\acciaccatura f,8 bes1 ~ |
 bes1 |
-c1 ~ |
+\acciaccatura f8 c'1 ~ |
 c1 |
-bes1 ~ |
+\acciaccatura f,8 bes1 ~ |
 bes1 |
-aes1 ~ |
+\acciaccatura des,8 aes'1 ~ |
 aes1 |
-bes1 ~ |
+\acciaccatura des,8 bes'1 ~ |
 bes1 |
-aes1 ~ |
+\acciaccatura des,8 aes'1 ~ |
 aes1 |
-bes1 ~ |
+\acciaccatura des,8 bes'1 ~ |
 bes1 |
 \ottava #-1
 c,8\ff c c'16 ais, b c ~ c c c8 c'16 g, bes g |
@@ -484,6 +490,7 @@ R1*8
                         \set Staff.instrumentName = "Square Synthesizer 1"
                         \set Staff.shortInstrumentName = "Square 1"
 \key ees \major
+\grace s8
 R1*16
 r8 <g c ees>16\mp 16 r8 <g c ees>16 16 r8 <g c ees>16 16 r8 <g c ees>16 16 |
 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 r8 <ees aes c>16 16 |
@@ -645,11 +652,12 @@ R1*8
                         \set Staff.instrumentName = "Square Synthesizer 2"
                         \set Staff.shortInstrumentName = "Square 2"
 \key ees \major
+\grace s8
 R1*15
 \override Glissando.style = #'trill
-c8\glissando ges bes\glissando b, a'\glissando aes, ges'\glissando des, |
+c8\glissando \once \override NoteHead.extra-spacing-width = #'(-2.5 . 0) ges bes\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) b, a'\glissando aes, ges'\glissando des, |
 R1*15
-c''16->\glissando beses aes->\glissando ges bes32->\glissando aes aes->\glissando \set stemRightBeamCount = 1 ges \set stemLeftBeamCount = 1 ges->\glissando fes ees->\glissando d aes'->\glissando ges f->\glissando e ees16->\glissando b f'32->\glissando fes ees->\glissando \set stemRightBeamCount = 1 d \set stemLeftBeamCount = 1 des->\glissando b a->\glissando g |
+c''16->\glissando \once \override NoteHead.extra-spacing-width = #'(-4 . 0) beses aes->\glissando \once \override NoteHead.extra-spacing-width = #'(-3.5 . 0) ges bes32->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) aes aes->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) \set stemRightBeamCount = 1 ges \set stemLeftBeamCount = 1 ges->\glissando \once \override NoteHead.extra-spacing-width = #'(-3 . 0) fes ees->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) d aes'->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) ges f->\glissando \once \override NoteHead.extra-spacing-width = #'(-3 . 0) e ees16->\glissando \once \override NoteHead.extra-spacing-width = #'(-3 . 0) b f'32->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) fes ees->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) \set stemRightBeamCount = 1 d \set stemLeftBeamCount = 1 des->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) b a->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) g |
 R1*23
 \ottava #2
 g'''2\glissando aes, |
@@ -659,7 +667,7 @@ R1*7
 g'2\glissando aes, |
 \ottava #0
 R1*15
-c,16->\glissando beses aes->\glissando ges bes32->\glissando aes aes->\glissando \set stemRightBeamCount = 1 ges \set stemLeftBeamCount = 1 ges->\glissando fes ees->\glissando d aes'->\glissando ges f->\glissando e ees16->\glissando b f'32->\glissando fes ees->\glissando \set stemRightBeamCount = 1 d \set stemLeftBeamCount = 1 des->\glissando b a->\glissando g |
+c,16->\glissando \once \override NoteHead.extra-spacing-width = #'(-4 . 0) beses aes->\glissando \once \override NoteHead.extra-spacing-width = #'(-3.5 . 0) ges bes32->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) aes aes->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) \set stemRightBeamCount = 1 ges \set stemLeftBeamCount = 1 ges->\glissando \once \override NoteHead.extra-spacing-width = #'(-3 . 0) fes ees->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) d aes'->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) ges f->\glissando \once \override NoteHead.extra-spacing-width = #'(-3 . 0) e ees16->\glissando \once \override NoteHead.extra-spacing-width = #'(-3 . 0) b f'32->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) fes ees->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) \set stemRightBeamCount = 1 d \set stemLeftBeamCount = 1 des->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) b a->\glissando \once \override NoteHead.extra-spacing-width = #'(-2 . 0) g |
 R1*15
 aes''4\glissando b, r2 |
 R1*84
@@ -667,7 +675,6 @@ R1*84
                 >>
             >>
         }
-        \midi {}
         \layout {
             \context {
                 \Staff

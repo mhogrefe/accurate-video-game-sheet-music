@@ -316,7 +316,7 @@ fn process_track(dir_path: &str) {
             }
         }
         if is_multiple {
-            image_names.sort();
+            image_names.sort_by(|s, t| s.len().cmp(&t.len()).then_with(|| s.cmp(&t)));
             for (i, n) in (1..).zip(image_names.iter()) {
                 assert_eq!(*n, format!("{path}-page{i}.png"));
             }
