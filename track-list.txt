@@ -367,6 +367,7 @@ snes/the-legend-of-zelda-a-link-to-the-past/08-overworld
 snes/the-legend-of-zelda-a-link-to-the-past/09-got-item
 snes/the-legend-of-zelda-a-link-to-the-past/10-found-secret
 snes/the-legend-of-zelda-a-link-to-the-past/11-kakariko-village
+snes/the-legend-of-zelda-a-link-to-the-past/12-minigame
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

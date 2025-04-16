@@ -93,7 +93,7 @@ c8\ff g' c2. |
 }
                 }
             >>
-        }
+        }path = "../malachite-base"
         \midi {}
     }
 }
