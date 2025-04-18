@@ -373,3 +373,4 @@ c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
 c64/monty-on-the-run/03-high-score
 c64/cybernoid-ii-the-revenge/01-cybernoid-ii
+c64/cybernoid-ii-the-revenge/02-game-over
