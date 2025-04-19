@@ -94,6 +94,7 @@ nes/zelda-ii-the-adventure-of-link/12-dark-link-battle
 nes/zelda-ii-the-adventure-of-link/13-got-triforce
 nes/zelda-ii-the-adventure-of-link/14-zelda-rescued
 nes/zelda-ii-the-adventure-of-link/15-credits
+nes/mario-bros/01-introduction
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -368,6 +369,7 @@ snes/the-legend-of-zelda-a-link-to-the-past/09-got-item
 snes/the-legend-of-zelda-a-link-to-the-past/10-found-secret
 snes/the-legend-of-zelda-a-link-to-the-past/11-kakariko-village
 snes/the-legend-of-zelda-a-link-to-the-past/12-minigame
+snes/the-legend-of-zelda-a-link-to-the-past/13-fortune-teller
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
