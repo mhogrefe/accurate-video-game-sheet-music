@@ -954,6 +954,9 @@ fn map_game_name_for_title(game_name: &str) -> String {
         "Super Mario World 2: Yoshi’s Island" => {
             "Super Mario World 2: \\\\ \\vspace{-0.3cm} Yoshi’s Island"
         }
+        "Cybernoid II: The Revenge" => {
+            "Cybernoid II: \\\\ \\vspace{-0.1cm} The Revenge"
+        }
         s => s,
     }
     .to_string()
