@@ -23,7 +23,7 @@
 \key c \major
                     \repeat unfold 2 {
 R1 |
-r2 r8 \ottava #1 b16 a b4 \ottava #0 |
+r2 r8 \ottava #1 b16\mp a b4 \ottava #0 |
 R1 |
 r2 r8 \ottava #1 b16 a b4 |
 r8 b-. b-. b-. b-. f4 f8 ~ |
@@ -48,7 +48,7 @@ g1 |
                             \set Staff.shortInstrumentName = "Vln. 1"  
 \key c \major
 \repeat unfold 2 {
-r8 <e gis b>8-.^\markup{Echo} 8-. 8 ~ 8 8-. 8-. 8-. |
+r8 <e gis b>8-.\mp^\markup{Echo} 8-. 8 ~ 8 8-. 8-. 8-. |
 r8 <f a b>8-. 8-. 8 ~ 4 r4 |
 r8 <e gis b>8-. 8-. 8 ~ 8 8-. 8-. 8-. |
 r8 <f a b>8-. 8-. 8 ~ 4 r4 |
@@ -69,7 +69,7 @@ g1 |
 \key c \major
 \repeat unfold 2 {
 R1*4
-r8 <d g>8-.\mp 8-. 8-. 8 8-. 8-. 8-. |
+r8 <d g>8-.\pp 8-. 8-. 8 8-. 8-. 8-. |
 r8 <c g'>8-. 8-. 8-. 8 8-. 8-. 8-. |
 r8 <c f>8-. 8-. 8-. 8 8-. 8-. 8-. |
 r8 <bes f'>8-. 8-. 8-. 8 8-. 8-. 8-. |
@@ -87,7 +87,7 @@ r8 <c g'>8-. 8-. 8-. 8 8-. 8-. 8-. |
 \key c \major
 \clef bass
 \repeat unfold 2 {
-e2. b4 |
+e2.\mp b4 |
 f'2 c |
 e2. b4 |
 f'2 c |
