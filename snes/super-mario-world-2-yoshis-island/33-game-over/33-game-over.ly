@@ -32,7 +32,7 @@ R1 |
 \key c \major
 \clef bass
 \grace s8 bes8 a aes g ~ g r ges4 |
-<f, f' a>8 <ees ees g'> <des des' f> <c g' c e g> \tuplet 12/16 { e'32 e e e e e <c e> c e <c, c' e>32 32 <c e' c e> } |
+<f, f' a>8 <ees ees' g> <des des' f> <c g' c e g> \tuplet 12/16 { e'32 e e e e e <c e> c e <c, c' e>32 32 <c e' c e> } |
 <bes'' d>32 <bes c>32 32 <g c> <c, ges' c> <c f c'> <c ees c'> <f c'> <c ees c'>32 32 <bes c>32 32 32 <g c> <ges c>32 32 <f c'> ees r16 r8 r4 |
                 }
             >>

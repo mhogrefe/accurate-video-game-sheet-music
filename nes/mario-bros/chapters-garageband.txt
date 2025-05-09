@@ -1,0 +1,7 @@
+00:00:00 Introduction
+00:00:19 Game Start
+00:00:33 Level Start
+00:00:42 Bonus Fanfare
+00:00:52 Restart
+00:01:00 Pause
+00:01:08 Game Over

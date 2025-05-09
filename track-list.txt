@@ -99,6 +99,8 @@ nes/mario-bros/02-game-start
 nes/mario-bros/03-level-start
 nes/mario-bros/04-bonus-fanfare
 nes/mario-bros/05-restart
+nes/mario-bros/06-pause
+nes/mario-bros/07-game-over
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -379,6 +381,8 @@ snes/the-legend-of-zelda-a-link-to-the-past/15-kakariko-village
 snes/the-legend-of-zelda-a-link-to-the-past/16-fortune-teller
 snes/the-legend-of-zelda-a-link-to-the-past/17-kakariko-village-soldiers
 snes/the-legend-of-zelda-a-link-to-the-past/18-palace
+snes/the-legend-of-zelda-a-link-to-the-past/19-treasure-chest-appears
+snes/the-legend-of-zelda-a-link-to-the-past/20-boss-battle
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
