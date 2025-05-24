@@ -20,7 +20,7 @@
                     \set GrandStaff.instrumentName = "Hammond Organ"
                     \set GrandStaff.shortInstrumentName = "Hm. Org."  
                     \new Staff \relative c' {                 
-\key g \minor
+\key c \minor
 \time 3/4
 \tempo 4=60
 \partial 4 ees8 f |
@@ -51,11 +51,11 @@ d8 f aes g ~ g f d b |
                     }
 
                     \new Staff \relative c {                 
-\key g \minor
+\key c \minor
 \clef bass
 <aes c'>4 |
 <g b'>2 <aes c'>4 |
-<g b'>2 <aes ges' c>4 |
+<g b'>2 <aes fis' c'>4 |
 <g f' b>2. |
 R1
 
@@ -70,7 +70,7 @@ R1
                     }
 
                     \new Staff \relative c'' {                 
-\key g \minor
+\key c \minor
 r4 |
 R2.*3
 r8 ees4 c' g b,8 |
@@ -86,7 +86,7 @@ g1 |
                     }
 
                     \new Staff \relative c''' {                 
-\key g \minor
+\key c \minor
 r4 |
 R2.*3
 g4 c, b' d, |

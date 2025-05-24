@@ -102,6 +102,8 @@ nes/mario-bros/05-restart
 nes/mario-bros/06-pause
 nes/mario-bros/07-game-over
 nes/earthbound-beginnings/01-introduction
+nes/earthbound-beginnings/02-house
+nes/earthbound-beginnings/03-poltergeist
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -386,6 +388,8 @@ snes/the-legend-of-zelda-a-link-to-the-past/19-treasure-chest-appears
 snes/the-legend-of-zelda-a-link-to-the-past/20-boss-battle
 snes/the-legend-of-zelda-a-link-to-the-past/21-got-heart-container
 snes/the-legend-of-zelda-a-link-to-the-past/22-boss-defeated
+snes/the-legend-of-zelda-a-link-to-the-past/23-underground
+snes/the-legend-of-zelda-a-link-to-the-past/24-opening-the-desert-palace
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
