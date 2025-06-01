@@ -1,0 +1,12 @@
+# fragment_index page_index starting_height ending_height measure_number
+1 1 0 1771 1
+2 1 1771 end 7
+3 2 0 1864 15
+4 2 1831 end 22
+
+# time time_gb measure_number
+0:00 0:00 1
+0:11.379 0:11.452 7
+0:26.288 0:26.45 15
+0:39.334 0:39.577 22
+0:50.516 0:50.828 1
