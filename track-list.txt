@@ -106,6 +106,7 @@ nes/earthbound-beginnings/02-house
 nes/earthbound-beginnings/03-poltergeist
 nes/earthbound-beginnings/04-battle-1
 nes/earthbound-beginnings/05-battle-2
+nes/earthbound-beginnings/06-battle-3
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -395,6 +396,7 @@ snes/the-legend-of-zelda-a-link-to-the-past/24-opening-the-desert-palace
 snes/the-legend-of-zelda-a-link-to-the-past/25-pink-rabbit
 snes/the-legend-of-zelda-a-link-to-the-past/26-master-sword
 snes/the-legend-of-zelda-a-link-to-the-past/27-agahnim
+snes/the-legend-of-zelda-a-link-to-the-past/28-dark-world
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
