@@ -17,8 +17,8 @@
         {
             <<
                 \new Staff \relative c'''' {                 
-                    \set Staff.instrumentName = "Harp 1"
-                    \set Staff.shortInstrumentName = "Hrp. 1"  
+                    \set Staff.instrumentName = "Celesta"
+                    \set Staff.shortInstrumentName = "Cel."  
 \tempo 4 = 80
 \key ges \major
                     \repeat volta 2 {
@@ -38,8 +38,8 @@ bes'16 ces, aes f aes' ces, aes f ges' ces, aes f f' ces aes f |
                 }
                 
                 \new GrandStaff <<              
-                    \set GrandStaff.instrumentName = "Harp 2"
-                    \set GrandStaff.shortInstrumentName = "Hrp. 2"
+                    \set GrandStaff.instrumentName = "Harp"
+                    \set GrandStaff.shortInstrumentName = "Hrp."
                     \new Staff = "up" \with {
                         \consists "Span_arpeggio_engraver"
                     } \relative c' {  

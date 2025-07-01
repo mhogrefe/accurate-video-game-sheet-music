@@ -152,7 +152,7 @@ e4. e8 ~ e2 |
                         \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1"
-                            \set Staff.shortInstrumentName = "Vlc. 1"  
+                            \set Staff.shortInstrumentName = "Vc. 1"  
 \clef bass
 \key c \major
 R1*15
@@ -170,7 +170,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1a"
-                            \set Staff.shortInstrumentName = "Vlc. 1a"  
+                            \set Staff.shortInstrumentName = "Vc. 1a"  
 \clef bass
 \key c \major
 cis1 ~ |
@@ -199,7 +199,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1b"
-                            \set Staff.shortInstrumentName = "Vlc. 1b"  
+                            \set Staff.shortInstrumentName = "Vc. 1b"  
 \clef bass
 \key c \major
 r4 g2. ~ |
@@ -228,7 +228,7 @@ R1*24
 
                         \new Staff \relative c, {                 
                             \set Staff.instrumentName = "Violoncello 1c"
-                            \set Staff.shortInstrumentName = "Vlc. 1c"  
+                            \set Staff.shortInstrumentName = "Vc. 1c"  
 \clef bass
 \key c \major
 r2 fis ~ |
@@ -257,7 +257,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1d"
-                            \set Staff.shortInstrumentName = "Vlc. 1d"  
+                            \set Staff.shortInstrumentName = "Vc. 1d"  
 \clef bass
 \key c \major
 r2 r4 fis ~ |
@@ -286,7 +286,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1e"
-                            \set Staff.shortInstrumentName = "Vlc. 1e"  
+                            \set Staff.shortInstrumentName = "Vc. 1e"  
 \clef bass
 \key c \major
 R1 |
@@ -315,7 +315,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1f"
-                            \set Staff.shortInstrumentName = "Vlc. 1f"  
+                            \set Staff.shortInstrumentName = "Vc. 1f"  
 \clef bass
 \key c \major
 R1*5
@@ -341,7 +341,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 2"
-                            \set Staff.shortInstrumentName = "Vlc. 2"  
+                            \set Staff.shortInstrumentName = "Vc. 2"  
 \clef bass
 \key c \major
 R1*18

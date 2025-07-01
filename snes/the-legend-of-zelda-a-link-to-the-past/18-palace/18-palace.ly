@@ -82,7 +82,7 @@ e8 gis, a e' ~ e2 |
                         \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 1"
-                            \set Staff.shortInstrumentName = "Vlc. 1"  
+                            \set Staff.shortInstrumentName = "Vc. 1"  
 \clef bass
 \key c \major
 cis4\mf\>^\markup{Echo} g fis fis' |
@@ -112,7 +112,7 @@ R1*24
 
                         \new Staff \relative c {                 
                             \set Staff.instrumentName = "Violoncello 2"
-                            \set Staff.shortInstrumentName = "Vlc. 2"  
+                            \set Staff.shortInstrumentName = "Vc. 2"  
 \clef bass
 \key c \major
 R1*18

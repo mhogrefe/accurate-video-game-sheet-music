@@ -55,7 +55,7 @@
                         \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
                         \new Staff \relative c, {                 
                             \set Staff.instrumentName = "Violoncello 1"
-                            \set Staff.shortInstrumentName = "Vlc. 1"  
+                            \set Staff.shortInstrumentName = "Vc. 1"  
 \clef bass
 R1*4
 
@@ -89,7 +89,7 @@ c1 |
 
                         \new Staff \relative c, {                 
                             \set Staff.instrumentName = "Violoncello 2"
-                            \set Staff.shortInstrumentName = "Vlc. 2"  
+                            \set Staff.shortInstrumentName = "Vc. 2"  
 \clef bass
 R1*4
 
@@ -108,7 +108,7 @@ R1*4
 
                         \new Staff \relative c' {                 
                             \set Staff.instrumentName = "Violoncello 3"
-                            \set Staff.shortInstrumentName = "Vlc. 3"  
+                            \set Staff.shortInstrumentName = "Vc. 3"  
 \clef bass
 R1*4
 
