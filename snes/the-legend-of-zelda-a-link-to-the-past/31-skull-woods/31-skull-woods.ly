@@ -108,7 +108,7 @@ c4-. c-. c-. \tuplet 3/2 { ees8 ees ees } |
 
                 \new Staff \relative c {                 
                     \set Staff.instrumentName = "Timpani"
-                    \set Staff.shortInstrumentName = "Timp"  
+                    \set Staff.shortInstrumentName = "Timp."  
 \key c \minor
 \clef bass
 \repeat unfold 2 {
