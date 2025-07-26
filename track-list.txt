@@ -114,11 +114,13 @@ nes/earthbound-beginnings/10-pollyanna-i-believe-in-you
 nes/earthbound-beginnings/11-underground
 nes/earthbound-beginnings/12-got-item
 nes/earthbound-beginnings/13-got-psi-power
-nes/earthbound-beginnings/14-rest
+nes/earthbound-beginnings/14-rested
 nes/earthbound-beginnings/15-store
 nes/earthbound-beginnings/16-melody-2-canary
 nes/earthbound-beginnings/17-spooky-place
 nes/earthbound-beginnings/18-revived
+nes/earthbound-beginnings/19-friend-joined
+nes/earthbound-beginnings/20-bein-friends
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -418,6 +420,7 @@ snes/the-legend-of-zelda-a-link-to-the-past/34-flute-short
 snes/the-legend-of-zelda-a-link-to-the-past/35-quit-game
 snes/the-legend-of-zelda-a-link-to-the-past/36-ganon-released
 snes/the-legend-of-zelda-a-link-to-the-past/37-ganons-message
+snes/the-legend-of-zelda-a-link-to-the-past/38-ganon-battle
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
