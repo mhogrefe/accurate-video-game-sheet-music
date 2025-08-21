@@ -47,9 +47,9 @@ g1 |
                             \set Staff.instrumentName = "Violin 1"
                             \set Staff.shortInstrumentName = "Vln. 1"  
 \key c \major
-r8 <e gis b>8-.^\markup{Echo} 8-. 8 ~ 8 8-. 8-. 8-. |
+r8 <e gis b>8-.^\markup{Echo} 8-. 8 ~ \once \override NoteHead.extra-spacing-width = #'(-1.5 . 0) 8 8-. 8-. 8-. |
 r8 <f a b>8-. 8-. 8 ~ 4 r4 |
-r8 <e gis b>8-. 8-. 8 ~ 8 8-. 8-. 8-. |
+r8 <e gis b>8-. 8-. 8 ~ \once \override NoteHead.extra-spacing-width = #'(-1.5 . 0) 8 8-. 8-. 8-. |
 r8 <f a b>8-. 8-. 8 ~ 4 r4 |
 r8 b-. b-. b-. b-. f r f |
 r8 e-. e-. e ~ e r r4 |

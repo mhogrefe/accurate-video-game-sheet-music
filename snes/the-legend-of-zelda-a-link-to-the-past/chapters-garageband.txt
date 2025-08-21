@@ -1,0 +1,41 @@
+00:00:00 Title Screen
+00:00:23 Introduction
+00:01:37 File Selection
+00:02:17 Rain
+00:02:57 Got Item
+00:03:05 Found Secret
+00:03:13 Hyrule Castle
+00:04:58 Got Key
+00:05:07 Zelda’s Lullaby
+00:06:10 Sanctuary
+00:07:02 Overworld
+00:07:59 Lost Woods
+00:08:32 Got Piece of Heart
+00:08:41 Minigame
+00:09:16 Kakariko Village
+00:11:06 Fortune Teller
+00:11:38 Kakariko Village Soldiers
+00:12:01 Palace
+00:13:28 Treasure Chest Appears
+00:13:36 Boss Battle
+00:14:04 Got Heart Container
+00:14:13 Boss Defeated
+00:14:30 Underground
+00:15:07 Opening the Desert Palace
+00:15:20 Pink Rabbit
+00:16:00 Master Sword
+00:16:17 Agahnim
+00:16:58 Dark World
+00:18:13 Dark World Palace
+00:19:17 Meeting the Maidens
+00:20:04 Skull Woods
+00:21:11 Fairy Fountain
+00:21:51 Flute
+00:22:16 Flute (Short)
+00:22:28 Quit Game
+00:22:37 Ganon Released
+00:22:47 Ganon’s Message
+00:22:58 Ganon Battle
+00:23:45 Triforce Recovered
+00:24:44 Ending
+00:28:40 Credits

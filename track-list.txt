@@ -121,6 +121,8 @@ nes/earthbound-beginnings/17-spooky-place
 nes/earthbound-beginnings/18-revived
 nes/earthbound-beginnings/19-friend-joined
 nes/earthbound-beginnings/20-bein-friends
+nes/earthbound-beginnings/21-melody-3-monkey
+nes/earthbound-beginnings/22-cave
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -421,6 +423,9 @@ snes/the-legend-of-zelda-a-link-to-the-past/35-quit-game
 snes/the-legend-of-zelda-a-link-to-the-past/36-ganon-released
 snes/the-legend-of-zelda-a-link-to-the-past/37-ganons-message
 snes/the-legend-of-zelda-a-link-to-the-past/38-ganon-battle
+snes/the-legend-of-zelda-a-link-to-the-past/39-triforce-recovered
+snes/the-legend-of-zelda-a-link-to-the-past/40-ending
+snes/the-legend-of-zelda-a-link-to-the-past/41-credits
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

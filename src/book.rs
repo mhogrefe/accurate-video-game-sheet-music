@@ -650,6 +650,7 @@ fn get_contents_page_count(track_count: usize) -> usize {
 fn map_game_name_for_inner_title(game_name: &str) -> String {
     match game_name {
         "The Legend of Zelda: Link’s Awakening" => "The Legend of Zelda: \\\\ Link’s Awakening",
+        "The Legend of Zelda: A Link to the Past" => "The Legend of Zelda: \\\\ A Link to the Past",
         s => s,
     }
     .to_string()
@@ -704,13 +705,13 @@ fn write_latex_file(dir_path: &str, track_names: &[String]) {
         writeln!(&mut latex_file).unwrap();
         let pad = if padding_index == i { padding } else { 0 };
         let image_count = get_page_images(dir_path, track_name).len();
-        if image_count > 1 {
+        if image_count + pad > 1 {
             let mut first = true;
             for _ in 0..(image_count - 1)
                 .round_to_multiple_of_power_of_2(1, Ceiling)
                 .0
-                + 1
                 + pad
+                + 1
             {
                 if first {
                     first = false;
@@ -954,8 +955,9 @@ fn map_game_name_for_title(game_name: &str) -> String {
         "Super Mario World 2: Yoshi’s Island" => {
             "Super Mario World 2: \\\\ \\vspace{-0.3cm} Yoshi’s Island"
         }
-        "Cybernoid II: The Revenge" => {
-            "Cybernoid II: \\\\ \\vspace{-0.1cm} The Revenge"
+        "Cybernoid II: The Revenge" => "Cybernoid II: \\\\ \\vspace{-0.1cm} The Revenge",
+        "The Legend of Zelda: A Link to the Past" => {
+            "The Legend of Zelda: \\\\ \\vspace{-0.1cm} A Link to the Past"
         }
         s => s,
     }
@@ -1708,6 +1710,8 @@ fn _generate_cover_2(dir_path: &str) {
 pub fn get_padding(path: &str) -> (usize, usize) {
     if path.contains("c64/lazy-jones") {
         (1, 8)
+    } else if path.contains("nes/mario-bros") {
+        (7, 2)
     } else {
         (0, 0)
     }

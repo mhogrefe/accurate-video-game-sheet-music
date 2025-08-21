@@ -110,7 +110,7 @@ f1 |
 
                 \new Staff \relative c, {                 
                     \set Staff.instrumentName = "Bass Guitar"
-                    \set Staff.shortInstrumentName = "B. Guit"  
+                    \set Staff.shortInstrumentName = "B. Guit."  
 \key c \dorian
 \clef bass
 c4-.\f c-. c-. r8 c |

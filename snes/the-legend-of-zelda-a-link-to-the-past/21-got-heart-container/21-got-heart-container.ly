@@ -20,7 +20,7 @@
                 \set Staff.shortInstrumentName = "Tpt."  
 \time 6/8
 \tempo 4. = 138
-b8 fis' e a d c |
+b8^\markup{Echo} fis' e a d c |
 <c d g>2. |
 \bar "|."
             }
