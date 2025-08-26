@@ -283,11 +283,14 @@ fn process_track(dir_path: &str) {
         let source_screenshot_name = format!("{dir_path}/screenshot.png");
         let target_screenshot_name = format!("{dir_path}/video/screenshot.png");
         let mut img = image::open(&source_screenshot_name).expect("File not found");
-        let ratio = Rational::from_unsigneds(img.width(), img.height());
+        let mut ratio = Rational::from_unsigneds(img.width(), img.height());
+        if dir_path.starts_with("snes/") {
+            ratio = Rational::from_unsigneds(512u16, 448);
+        }
         let new_height = 1080u32.div_round(img.height(), RoundingMode::Ceiling).0 * img.height();
         let new_width =
             u32::rounding_from(&(Rational::from(new_height) * ratio), RoundingMode::Nearest).0;
-        img = img.resize(new_width, new_height, FilterType::Nearest);
+        img = img.resize_exact(new_width, new_height, FilterType::Nearest);
         let adjusted = adjust_image(img);
         adjusted
             .save(&target_screenshot_name)
@@ -741,20 +744,20 @@ fn main() {
         if slash_count == 2 {
             process_track(dir_path);
         } else if slash_count == 1 {
-            //#[allow(unused_must_use)]
-            //{
-            //    Command::new("rm")
-            //        .arg(&format!("{dir_path}/video.mp4"))
-            //        .output();
-            //    create_video(dir_path, false);
-            //}
-            //#[allow(unused_must_use)]
-            //{
-            //    Command::new("rm")
-            //        .arg(&format!("{dir_path}/video-garageband.mp4"))
-            //        .output();
-            //    create_video(dir_path, true);
-            //}
+            #[allow(unused_must_use)]
+            {
+                Command::new("rm")
+                    .arg(&format!("{dir_path}/video.mp4"))
+                    .output();
+                create_video(dir_path, false);
+            }
+            #[allow(unused_must_use)]
+            {
+                Command::new("rm")
+                    .arg(&format!("{dir_path}/video-garageband.mp4"))
+                    .output();
+                create_video(dir_path, true);
+            }
             generate_book(&dir_path);
         } else {
             panic!();

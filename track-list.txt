@@ -426,6 +426,7 @@ snes/the-legend-of-zelda-a-link-to-the-past/38-ganon-battle
 snes/the-legend-of-zelda-a-link-to-the-past/39-triforce-recovered
 snes/the-legend-of-zelda-a-link-to-the-past/40-ending
 snes/the-legend-of-zelda-a-link-to-the-past/41-credits
+snes/super-mario-all-stars/01-title-screen
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
