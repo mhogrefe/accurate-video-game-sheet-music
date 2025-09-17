@@ -126,6 +126,7 @@ nes/earthbound-beginnings/22-cave
 nes/earthbound-beginnings/23-magicant
 nes/earthbound-beginnings/24-queen-marys-castle
 nes/earthbound-beginnings/25-factory
+nes/earthbound-beginnings/26-twinkle-elementary-school
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -434,6 +435,7 @@ snes/super-mario-all-stars/02-menu-fade-out
 snes/super-mario-all-stars/03-menu-fade-in
 snes/super-mario-all-stars/04-game-selection
 snes/super-mario-all-stars/05-super-mario-bros-title-screen
+snes/super-mario-all-stars/06-super-mario-bros-title-overworld
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
