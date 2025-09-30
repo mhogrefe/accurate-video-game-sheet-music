@@ -13,7 +13,7 @@
             \new Staff \relative c''' {
                 \set Staff.instrumentName = "Pulse"
                 \set Staff.shortInstrumentName = "P."
-\tempo 4 = 130
+\tempo 4 = 128
 \key d \major
 d4^\markup{Echo} cis b fis |
 a1 |
