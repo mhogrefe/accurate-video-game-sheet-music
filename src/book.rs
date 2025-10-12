@@ -316,7 +316,7 @@ fn get_high_res_page_images(dir_path: &str, track_name: &str) -> Vec<String> {
     }
 }
 
-fn get_color_helper(color_path: &str) -> (Rgba<u8>, bool) {
+pub fn get_color_helper(color_path: &str) -> (Rgba<u8>, bool) {
     println!("Getting color from {color_path}");
     let file = File::open(color_path).unwrap();
     for mut line in io::BufReader::new(file).lines().flatten() {

@@ -1,4 +1,7 @@
-use crate::book::generate_book;
+use crate::book::{generate_book, get_color_helper};
+use crate::color::raw_rgb_to_srgb;
+use crate::color::ColorDifference;
+use core::f64;
 use image::imageops::FilterType;
 use image::{DynamicImage, GenericImage, GenericImageView, Rgba};
 use malachite::num::arithmetic::traits::DivRound;
@@ -8,8 +11,9 @@ use malachite::num::float::NiceFloat;
 use malachite::num::logic::traits::NotAssign;
 use malachite::rounding_modes::RoundingMode;
 use malachite::Rational;
+use palette::Lab;
 use std::cmp::Ordering;
-use std::collections::{BTreeMap, BTreeSet, HashMap};
+use std::collections::{BTreeMap, BTreeSet, HashMap, HashSet};
 use std::env;
 use std::fs::{self, File};
 use std::io::{self, BufRead, Write};
@@ -18,6 +22,7 @@ use std::str::FromStr;
 use walkdir::WalkDir;
 
 pub mod book;
+pub mod color;
 
 fn print_output(o: Output) {
     println!("{}", std::str::from_utf8(&o.stdout).unwrap());
@@ -678,53 +683,53 @@ fn convert_m4a(path: &str) {
     }
 }
 
-fn simplify_perm(perm: &str) {
-    let mut max = ' ';
-    for c in perm.chars() {
-        assert!(c == ' ' || c >= '1' && c <= '9');
-        if c > max {
-            max = c;
+fn find_most_distinct_color(target_path: &str) {
+    let mut existing_colors = HashSet::new();
+    for entry in WalkDir::new(".")
+        .into_iter()
+        .filter_map(Result::ok)
+        .filter(|e| !e.file_type().is_dir())
+    {
+        let file_name = String::from(entry.path().to_string_lossy());
+        if file_name.chars().filter(|&c| c == '/').count() == 3
+            && file_name.ends_with("/background-color.txt")
+        {
+            let color = get_color_helper(&file_name).0;
+            existing_colors.insert(color);
         }
     }
-    let mut cycles = Vec::new();
-    for cs in perm.split(' ') {
-        let cs = cs.as_bytes();
-        let mut cycle = HashMap::new();
-        for i in 0..cs.len() {
-            if i == cs.len() - 1 {
-                cycle.insert(cs[i], cs[0]);
-            } else {
-                cycle.insert(cs[i], cs[i + 1]);
+    let mut color_map = BTreeMap::new();
+    for entry in WalkDir::new(target_path)
+        .into_iter()
+        .filter_map(Result::ok)
+        .filter(|e| !e.file_type().is_dir())
+    {
+        let file_name = String::from(entry.path().to_string_lossy());
+        if file_name.ends_with("/background-color.txt") {
+            let color = get_color_helper(&file_name).0;
+            let srgb = raw_rgb_to_srgb(color);
+            let mut min_difference = f32::INFINITY;
+            for &existing_color in &existing_colors {
+                let difference = Lab::from(srgb)
+                    .get_color_difference(&Lab::from(raw_rgb_to_srgb(existing_color)));
+                if difference < min_difference {
+                    min_difference = difference;
+                }
             }
-        }
-        cycles.push(cycle);
-    }
-    cycles.reverse();
-    let mut remaining_indices = BTreeSet::new();
-    for i in 1..=(max as u8) {
-        remaining_indices.insert(i);
-    }
-    while let Some(mut i) = remaining_indices.pop_first() {
-        let mut out_cycle = vec![i];
-        loop {
-            for cycle in &cycles {
-                i = cycle.get(&i).copied().unwrap_or(i);
-            }
-            if i == out_cycle[0] {
-                break;
-            }
-            remaining_indices.remove(&i);
-            out_cycle.push(i);
-        }
-        if out_cycle.len() > 1 {
-            print!("(");
-            for j in out_cycle {
-                print!("{}", j as char);
-            }
-            print!(")");
+            color_map
+                .entry(NiceFloat(-min_difference))
+                .or_insert(BTreeMap::new())
+                .insert(file_name, color);
         }
     }
-    println!();
+    for (difference, files) in color_map {
+        for (file, color) in files {
+            println!("{file}");
+            println!("{}", NiceFloat(-difference.0));
+            println!("{color:?}");
+            println!();
+        }
+    }
 }
 
 fn main() {
@@ -735,8 +740,9 @@ fn main() {
         calculate_tempo(&args[2..]);
     } else if args.len() > 1 && args[1] == "convert_m4a" {
         convert_m4a(&args[2]);
-    } else if args.len() > 1 && args[1] == "simplify_perm" {
-        simplify_perm(&args[2]);
+    }
+    if args.len() > 1 && args[1] == "find_most_distinct_color" {
+        find_most_distinct_color(&args[2]);
     } else if args.len() == 2 {
         assert_eq!(args.len(), 2);
         let dir_path = &args[1];

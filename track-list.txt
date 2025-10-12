@@ -130,6 +130,8 @@ nes/earthbound-beginnings/26-twinkle-elementary-school
 nes/earthbound-beginnings/27-train-ride
 nes/earthbound-beginnings/28-snowman
 nes/earthbound-beginnings/29-melody-4-piano
+nes/earthbound-beginnings/30-yucca-desert
+nes/earthbound-beginnings/31-melody-5-cactus
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -441,6 +443,7 @@ snes/super-mario-all-stars/05-super-mario-bros-title-screen
 snes/super-mario-all-stars/06-super-mario-bros-overworld
 snes/super-mario-all-stars/07-super-mario-bros-bonus
 snes/super-mario-all-stars/08-super-mario-bros-underground
+snes/super-mario-all-stars/09-super-mario-bros-underwater
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
