@@ -740,8 +740,7 @@ fn main() {
         calculate_tempo(&args[2..]);
     } else if args.len() > 1 && args[1] == "convert_m4a" {
         convert_m4a(&args[2]);
-    }
-    if args.len() > 1 && args[1] == "find_most_distinct_color" {
+    } else if args.len() > 1 && args[1] == "find_most_distinct_color" {
         find_most_distinct_color(&args[2]);
     } else if args.len() == 2 {
         assert_eq!(args.len(), 2);
