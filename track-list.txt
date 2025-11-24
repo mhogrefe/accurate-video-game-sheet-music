@@ -136,6 +136,7 @@ nes/earthbound-beginnings/32-plane-ride
 nes/earthbound-beginnings/33-tank-ride
 nes/earthbound-beginnings/34-monkey-grotto
 nes/earthbound-beginnings/35-melody-6-dragon
+nes/earthbound-beginnings/36-youngtown
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -454,6 +455,8 @@ snes/super-mario-all-stars/12-super-mario-bros-level-cleared
 snes/super-mario-all-stars/13-super-mario-bros-castle-cleared
 snes/super-mario-all-stars/14-super-mario-bros-death
 snes/super-mario-all-stars/15-super-mario-bros-game-over
+snes/super-mario-all-stars/16-super-mario-bros-bowser
+snes/super-mario-all-stars/17-super-mario-bros-final-bowser
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

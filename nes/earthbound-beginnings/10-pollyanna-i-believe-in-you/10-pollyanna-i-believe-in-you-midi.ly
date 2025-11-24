@@ -18,13 +18,13 @@
 \tempo 4 = 112
 \key d \major
 
-g16->\f g\p b\f-> b\p d\f-> d\p cis\f-> cis\p cis cis d\f-> d\p d d d\f-> d\p |
-d16\f-> d\p a\f-> a\p a a b\f-> b\p b b ~ b4 r8 |
-g16\f-> g\p b\f-> b\p d\f-> d\p cis\f-> cis\p cis cis d\f-> d\p d d d\f-> d\p |
-d16 d ~ d4. ~ d r8 |
+g8\f b d cis ~ cis d4 d8 |
+d8 a4 b8 ~ b2 |
+g8 b d cis ~ cis d4 d8 ~ |
+d1 |
                     \repeat unfold 2 {
 \repeat unfold 2 {
-fis,,8\f fis a a e'4 cis8 d ~ |
+fis,,8 fis a a e'4 cis8 d ~ |
 d1 |
 b8 b d d fis4 d8 a ~ |
 a4. g8 g2 |
@@ -45,6 +45,20 @@ d1 |
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
+                    }
+
+                    \new Staff \relative c''' {
+\tempo 4 = 112
+\key d \major
+
+r16 g r b r d r cis cis cis r d d d r d |
+r16 d r a a a r b b b ~ b4 r8 |
+r16 g r b r d r cis cis cis r d d d r d |
+d16 d ~ d4. ~ d r8 |
+
+\repeat unfold 2 {
+R1*21
+}
                     }
 
                     \new Staff \relative c' {

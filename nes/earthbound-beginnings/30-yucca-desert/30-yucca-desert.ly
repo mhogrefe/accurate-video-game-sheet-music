@@ -20,7 +20,8 @@
                     \set GrandStaff.shortInstrumentName = "P."
                     \new Staff \relative c'' {
 \key fis \major
-\tempo 4 = 180
+\time 2/2
+\tempo 2 = 90
 r4 ais b bis |
                     \repeat volta 2 {
 \repeat unfold 2 {

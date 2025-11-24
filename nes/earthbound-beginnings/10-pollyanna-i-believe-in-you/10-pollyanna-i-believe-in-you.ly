@@ -22,13 +22,13 @@
 \tempo 4 = 112
 \key d \major
 
-g16->\f g b-> b d-> d cis-> cis cis cis d-> d d d d-> d |
-d16-> d a-> a a a b-> b b b ~ b4 r8 |
-g16-> g b-> b d-> d cis-> cis cis cis d-> d d d d-> d |
-d16 d ~ d4. ~ d r8 |
+g8\f^\markup{Echo} b d cis ~ cis d4 d8 |
+d8 a4 b8 ~ b2 |
+g8 b d cis ~ cis d4 d8 ~ |
+d1 |
                     \repeat volta 2 {
 \repeat unfold 2 {
-fis,,8 fis a a e'4 cis8 d ~ |
+fis,,8^\markup{"No echo"} fis a a e'4 cis8 d ~ |
 d1 |
 b8 b d d fis4 d8 a ~ |
 a4. g8 g2 |
