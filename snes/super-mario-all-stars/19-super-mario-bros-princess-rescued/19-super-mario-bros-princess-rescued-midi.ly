@@ -28,6 +28,7 @@ e2 b4. d8 |
 d4 ~ \tuplet 3/2 { d8 c b } c4 \tuplet 3/2 { f4 f8 } |
 f2 c4. d8 |
 e2 d4 r |
+R1*4
                     }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
@@ -52,6 +53,10 @@ e2 d4 r |
 <f b d>4 ~ \tuplet 3/2 { <f b d>8 <e b' c> <d f b> } <e a c>4 \tuplet 3/2 { <a c f>4 8 } |
 <a c f>2 <<{ c4. <b d>8 }\\{ gis2 }>> |
 <g c e>2 <f b d>4 <<{ \tuplet 3/2 { g8 fis g } }\\{ b,4 }>> |
+<g b c e>2 <a c d f>4 <ais cis dis fis> |
+<b d e g>2 <e g a c>4 <<{\tuplet 3/2 { e'4 e8 }}\\{ <c, g' b>4 }>> |
+<f a c d>4 <g b c e> <a c d f> <d, f g b> |
+<f g b d>2 <e g c>4 \tuplet 3/2 { g8 fis g } |
 }
                     }
 
@@ -72,6 +77,10 @@ e8 dis e fis gis a b gis |
 a8 e a gis a g f e |
 f8 e d e f g aes f |
 g8 fis g d g f e d |
+c2 d4 dis |
+e4 c a' g |
+f4 e d f |
+g4 g, c r |
 }
                     }
                 >>
