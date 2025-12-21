@@ -139,6 +139,7 @@ nes/earthbound-beginnings/35-melody-6-dragon
 nes/earthbound-beginnings/36-youngtown
 nes/earthbound-beginnings/37-live-house
 nes/earthbound-beginnings/38-all-that-i-needed-was-you
+nes/earthbound-beginnings/39-mt-itoi-cave
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -463,6 +464,7 @@ snes/super-mario-all-stars/18-super-mario-bros-hurry
 snes/super-mario-all-stars/19-super-mario-bros-princess-rescued
 snes/super-mario-all-stars/20-the-lost-levels-title-screen
 snes/super-mario-all-stars/21-the-lost-levels-princess-rescued
+snes/super-mario-all-stars/22-super-mario-bros-2-title-screen
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
