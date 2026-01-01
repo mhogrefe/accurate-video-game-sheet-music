@@ -5,12 +5,6 @@
   left-margin = 0.65\in
 }
 
-swing = \markup {
-  \whiteout \bold "Swing drums only"
-  \hspace #0.4
-  \rhythm { 8[ 8] } = \rhythm { \tuplet 3/2 { 4 8 } }
-}
-
 \book {
     \header {
         title = "Super Mario Bros. 2: Title Screen"
