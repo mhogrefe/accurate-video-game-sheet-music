@@ -145,6 +145,9 @@ nes/earthbound-beginnings/41-fallin-love
 nes/earthbound-beginnings/42-melody-7-eve
 nes/earthbound-beginnings/43-xx-stone
 nes/earthbound-beginnings/44-melody-8-xx-stone
+nes/earthbound-beginnings/45-final-song
+nes/earthbound-beginnings/46-eight-melodies
+nes/earthbound-beginnings/47-game-over
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -474,6 +477,8 @@ snes/super-mario-all-stars/23-super-mario-bros-2-character-selection
 snes/super-mario-all-stars/24-super-mario-bros-2-overworld
 snes/super-mario-all-stars/25-super-mario-bros-2-underground
 snes/super-mario-all-stars/26-super-mario-bros-2-starman
+snes/super-mario-all-stars/27-super-mario-bros-2-subspace
+snes/super-mario-all-stars/28-super-mario-bros-2-birdo
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

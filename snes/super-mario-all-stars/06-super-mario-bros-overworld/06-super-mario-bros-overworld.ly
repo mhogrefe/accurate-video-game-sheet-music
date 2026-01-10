@@ -118,7 +118,7 @@ e8\f e r e r c e4-. |
 g4-. r r2 |
 
 R1*27
-r4 r8 <bes,, c' e>\f r <bes bes' d>8 ~ 4 |
+r4 r8 <bes,, c' e> r <bes bes' d>8 ~ 4 |
 R1*2
 e8 e r e r c e4-. |
 g4-. r r2 |

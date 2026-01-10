@@ -16,8 +16,8 @@
         {
             \new StaffGroup <<
                 \new Staff \relative c' {
-                    \set Staff.instrumentName = "Square"
-                    \set Staff.shortInstrumentName = "S."
+                    \set Staff.instrumentName = "Pulse"
+                    \set Staff.shortInstrumentName = "P."
 \key aes \major
 \time 6/8
 \tempo 4.=100
