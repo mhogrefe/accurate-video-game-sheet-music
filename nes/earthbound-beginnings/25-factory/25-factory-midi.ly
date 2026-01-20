@@ -78,8 +78,9 @@ cyms16 16 16 16 16-> 16-> 16-> 16-> 16 16 16 16 16-> 16-> 16-> 16-> |
 cyms16 16 16 16 16-> 16-> 16-> 16-> 16 16 16 16 16-> 16-> 16-> 16-> |
 cymcb4 cymca cymcb cymca |
 R1*4
-cymcb2 hh8 hh hh hh |
-\repeat unfold 4 { hh8 hh hh hh hh hh hh hh | }
+cymcb2 r2 |
+r2 hh8 hh hh hh |
+\repeat unfold 3 { hh8 hh hh hh hh hh hh hh | }
 }
                         }
                     }

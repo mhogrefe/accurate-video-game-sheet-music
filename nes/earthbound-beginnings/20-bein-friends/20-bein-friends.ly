@@ -33,12 +33,17 @@ c8 g bes a ~ a4. r8 |
 bes8 c bes a r g r bes |
 a8 e g f r2 |
 }
-\repeat unfold 2 {
+
 r4 f8 f a c c c |
 f4 e d e |
 d8 e16 d c2. |
 d'8\mp c c a d4 c |
-}
+
+r4 f,,8\mf f a c c c |
+f4 e d e |
+d8 e16 d c2. |
+d'8\mp c c a d4 c |
+
 d,4\mf f, g c8 bes |
 a4 f c2 |
 d'8 c bes a g4 f8 e |

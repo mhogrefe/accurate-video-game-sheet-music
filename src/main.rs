@@ -495,7 +495,7 @@ pub fn create_video(dir_path: &str, use_gb: bool) -> bool {
             writeln!(
                 &mut ffmpeg_input_file,
                 "file '{}'",
-                previous_fragment_name.unwrap()
+                previous_fragment_name.expect(&format!("{track_name}"))
             )
             .unwrap();
             writeln!(
