@@ -201,10 +201,10 @@ R1*8
 \repeat percent 8 { r4 hh\mf r hh | }
 r4 hh16\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
 hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
+hh16 \override DynamicText.X-offset = #1.5 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
 hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
 hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
-hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
-hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
+hh16 \once \override DynamicText.X-offset = #1.5 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
 hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh hh |
 hh16 hh\ppp r8 hh16\mf\> hh hh hh hh hh\ppp r8 hh16\mf\> hh hh \once \override DynamicText.X-offset = #2 hh\pp |
 R1*4
