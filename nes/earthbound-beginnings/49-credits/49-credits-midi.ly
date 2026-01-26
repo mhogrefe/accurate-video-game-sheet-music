@@ -297,7 +297,7 @@ r2 sn8 bd sn16 bd sn bd |
 bd4 r r2 |
 R1*2
 sn8 bd sn sn bd sn sn bd |
-sn4 r r2 |
+bd4 r r2 |
 R1*2
 sn32 sn sn16 sn sn sn sn sn sn sn8 bd sn sn |
 bd8 bd sn bd bd4 sn8 bd |

@@ -150,6 +150,8 @@ nes/earthbound-beginnings/46-eight-melodies
 nes/earthbound-beginnings/47-game-over
 nes/earthbound-beginnings/48-ending
 nes/earthbound-beginnings/49-credits
+nes/donkey-kong-jr/01-introduction
+nes/donkey-kong-jr/02-game-start
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -483,6 +485,8 @@ snes/super-mario-all-stars/27-super-mario-bros-2-subspace
 snes/super-mario-all-stars/28-super-mario-bros-2-birdo
 snes/super-mario-all-stars/29-super-mario-bros-2-fanfare
 snes/super-mario-all-stars/30-super-mario-bros-2-bonus-game
+snes/super-mario-all-stars/31-super-mario-bros-2-death
+snes/super-mario-all-stars/32-super-mario-bros-2-wart
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
