@@ -11,9 +11,9 @@
     \score {
         {
             \new StaffGroup <<
-                    \set GrandStaff.instrumentName = "Pulse"
-                    \set GrandStaff.shortInstrumentName = "P."
-                    \new Staff \relative c, {
+                \set GrandStaff.instrumentName = "Pulse"
+                \set GrandStaff.shortInstrumentName = "P."
+                \new Staff \relative c, {
 \clef bass
 \key c \major
 \tempo 4 = 150
