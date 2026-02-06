@@ -51,8 +51,8 @@ dis4 e |
                 >>
 
                 \new Staff \relative c'' {                 
-                    \set Staff.instrumentName = "Glockenspiel"
-                    \set Staff.shortInstrumentName = "Glock."  
+                    \set Staff.instrumentName = "Celesta"
+                    \set Staff.shortInstrumentName = "Cel."  
                     \repeat unfold 3 {
 \repeat unfold 2 { fisis32 <bes d> fisis \set stemRightBeamCount = 1 <a cis> \set stemLeftBeamCount = 1 fisis <gis bis> fisis <a cis> fisis <bes d> fisis \set stemRightBeamCount = 1 <ces' ees> \set stemLeftBeamCount = 1 fisis, <bes d> fisis <a cis> | }
 \repeat unfold 2 { fis32 <a cis> fis \set stemRightBeamCount = 1 <gis bis> \set stemLeftBeamCount = 1 fis <a cis> fis <bes d> fis <a cis> fis \set stemRightBeamCount = 1 <gis d'> \set stemLeftBeamCount = 1 fis <a cis> fis <ais bis> | }

@@ -15,7 +15,7 @@
                 \set Staff.shortInstrumentName = "T."
 \tempo 4 = 128
 \key d \major
-                \repeat volta 2 {
+
 d4\f^\markup{Echo} e fis a |
 e1 |
 d'4 cis b fis |
@@ -33,6 +33,7 @@ e'2 cis |
 d2 a4 e' |
 d1 |
 
+\repeat volta 2 {
 d4\p e fis a |
 e1 |
 d'4 cis b fis |

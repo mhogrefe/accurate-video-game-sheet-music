@@ -49,10 +49,26 @@ r4 <a c f>4-. 4-. |
 \mark \markup { \fontsize #-2 "Loop forever" }
                 }
 
-                \new StaffGroup <<
-                    \new Staff \relative c' {                 
-                        \set Staff.instrumentName = "Glockenspiel"
-                        \set Staff.shortInstrumentName = "Glock."  
+                \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Xylophone"
+                    \set Staff.shortInstrumentName = "Xyl."  
+R2.*4
+
+\repeat unfold 2 {
+R2.*16
+r8 g\p b c e g |
+r8 g, b c e g |
+r8 g, ais cis e g |
+r8 g, a cis e g |
+\repeat unfold 3 { r8 a, cis d f a | }
+r8 a, b d f a |
+R2.*4
+}
+                }
+
+                \new Staff \relative c' {                 
+                    \set Staff.instrumentName = "Glockenspiel"
+                    \set Staff.shortInstrumentName = "Glock."  
 \set Timing.beamExceptions = #'()
 \set Timing.beatStructure = 1,1,1
 d4^\markup{"Echo top voice"} <des e> <c fis> |
@@ -90,25 +106,7 @@ a,4 b f' |
 e8 e e4-. r8 b |
 c2. |
 }
-                    }
-
-                    \new Staff \relative c'' {                 
-                        \set Staff.instrumentName = "Xylophone"
-                        \set Staff.shortInstrumentName = "Xyl."  
-R2.*4
-
-\repeat unfold 2 {
-R2.*16
-r8 g\p b c e g |
-r8 g, b c e g |
-r8 g, ais cis e g |
-r8 g, a cis e g |
-\repeat unfold 3 { r8 a, cis d f a | }
-r8 a, b d f a |
-R2.*4
-}
-                    }
-                >>
+                }
 
                 \new StaffGroup <<
                     \new Staff \relative c'' {                 

@@ -62,7 +62,7 @@ a4 r e-. |
 a,2 r4 |
                 }
 
-                \new Staff \relative c''' {                 
+                \new Staff \relative c'' {                 
                     \set Staff.instrumentName = "Glockenspiel"
                     \set Staff.shortInstrumentName = "Glock."  
 \key a \major

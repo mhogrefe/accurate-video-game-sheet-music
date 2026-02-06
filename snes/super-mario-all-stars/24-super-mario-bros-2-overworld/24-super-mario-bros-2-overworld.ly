@@ -23,18 +23,16 @@ swing = \markup {
         {
             <<
                 \new StaffGroup <<
-                    \new StaffGroup <<
-                        \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
-                        \new Staff \relative c''' {                 
-                            \set Staff.instrumentName = "Glockenspiel 1"
-                            \set Staff.shortInstrumentName = "Glock. 1"
+                    \new Staff \relative c''' {                 
+                        \set Staff.instrumentName = "Glockenspiel"
+                        \set Staff.shortInstrumentName = "Glock."
 \time 2/2
 \tempo 2=88
 \key g \major
 \ottava #1
 r8^\swing <fis d'> <f des'>-. <e c'> <c a'>-. <a fis'> <g e'>-. <fis ees'> |
 <fis d'>4-. <fis' d'>-. <fis, d'>-. \ottava #0 r4 |
-                            \repeat volta 2 {
+                        \repeat volta 2 {
 d'8-. g, b-. d ~ d g, b-. d |
 \tuplet 3/2 { fis,8[ ais d] } fis8-. e ~ e2 |
 d8-. f, a-. d ~ d f, a-. d |
@@ -44,27 +42,10 @@ d8-. cis d-. b ~ b gis a-. b |
 c8-. b c-. fis, ~ fis b a-. g ~ |
 g2 r |
 R1*24
-                            }
+                        }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
-                        }
-
-                        \new Staff \relative c'' {                 
-                            \set Staff.instrumentName = "Glockenspiel 2"
-                            \set Staff.shortInstrumentName = "Glock. 2"
-\key g \major
-R1*2
-
-<c e>1 |
-<b dis>1 |
-<ais d>1 |
-<a cis>1 |
-<a eis'>2 <a fis'> |
-\override Glissando.style = #'trill
-<b g'>2 <cis a'>4.\glissando <a f'>8 |
-R1*26
-                        }
-                    >>
+                    }
 
                     \new Staff \relative c'' {                 
                         \set Staff.instrumentName = "Xylophone"
@@ -126,6 +107,22 @@ hh4 ss8. ss16 hh4 ss8. ss16 |
                         }
                     }
                 >>
+
+                \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Celesta"
+                    \set Staff.shortInstrumentName = "Cel."
+\key g \major
+R1*2
+
+<c e>1 |
+<b dis>1 |
+<ais d>1 |
+<a cis>1 |
+<a eis'>2 <a fis'> |
+\override Glissando.style = #'trill
+<b g'>2 <cis a'>4.\glissando <a f'>8 |
+R1*26
+                }
 
                 \new Staff \relative c'' {                 
                     \set Staff.instrumentName = "Electric Piano"

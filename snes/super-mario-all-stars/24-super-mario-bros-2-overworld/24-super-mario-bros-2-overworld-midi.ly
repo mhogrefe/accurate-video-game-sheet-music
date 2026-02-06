@@ -91,6 +91,22 @@ hh4 ss8. ss16 hh4 ss8. ss16 |
                 >>
 
                 \new Staff \relative c'' {                 
+                    \set Staff.instrumentName = "Celesta"
+                    \set Staff.shortInstrumentName = "Cel."
+\key g \major
+R1*2
+
+<c e>1 |
+<b dis>1 |
+<ais d>1 |
+<a cis>1 |
+<a eis'>2 <a fis'> |
+\override Glissando.style = #'trill
+<b g'>2 <cis a'>4.\glissando <a f'>8 |
+R1*26
+                }
+
+                \new Staff \relative c'' {                 
                     \set Staff.instrumentName = "Electric Piano"
                     \set Staff.shortInstrumentName = "El. Pno."  
 R1*2
