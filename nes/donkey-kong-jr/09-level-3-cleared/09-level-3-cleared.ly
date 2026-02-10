@@ -2,7 +2,7 @@
 
 \book {
     \header {
-        title = "Game Start"
+        title = "Level 3 Cleared"
         subtitle = \markup { "from" {\italic "Donkey Kong Jr."} "for the NES (1983)" }
         composer = "Yukio Kaneoka"
         arranger = "trans. Mikhail Hogrefe"
@@ -10,25 +10,26 @@
 
     \score {
         {
-            \new StaffGroup <<
-                \new Staff \relative c, {
-                    \set Staff.instrumentName = "Pulse"
-                    \set Staff.shortInstrumentName = "P."
-\clef bass
-\key c \major
-\tempo 4 = 150
-d8 f gis b d f gis b |
-d16 cis d cis d cis d cis d2 |
+            \new GrandStaff <<
+                \set GrandStaff.instrumentName = "Pulse"
+                \set GrandStaff.shortInstrumentName = "P."
+                \new Staff \relative c' {
+\tempo 4 = 180
+
+e8 gis b d fis, a c e |
+f16 d e c d b c a b g a f g e f d |
+c4. r8 r2 |
+R1 |
+
+\bar "|."
                 }
 
-                \new Staff \relative c, {
-                    \set Staff.instrumentName = "Triangle"
-                    \set Staff.shortInstrumentName = "T."
+                \new Staff \relative c {
 \clef bass
-\key c \major
-r8 d f gis b d f gis |
-b1 |
-\bar "|."
+e4 b fis dis |
+d'4 b g e |
+c8 d e g ~ g a c d |
+c4. r8 r2 |
                 }
             >>
         }

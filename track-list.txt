@@ -157,6 +157,8 @@ nes/donkey-kong-jr/04-hurry
 nes/donkey-kong-jr/05-level-1-cleared
 nes/donkey-kong-jr/06-level-theme-2
 nes/donkey-kong-jr/07-nitpicker-dive
+nes/donkey-kong-jr/08-level-2-cleared
+nes/donkey-kong-jr/09-level-3-cleared
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -492,10 +494,11 @@ snes/super-mario-all-stars/29-super-mario-bros-2-fanfare
 snes/super-mario-all-stars/30-super-mario-bros-2-bonus-game
 snes/super-mario-all-stars/31-super-mario-bros-2-death
 snes/super-mario-all-stars/32-super-mario-bros-2-wart
-snes/super-mario-all-stars/33-boss-victory
-snes/super-mario-all-stars/34-game-over
-snes/super-mario-all-stars/35-warp
-snes/super-mario-all-stars/36-ending
+snes/super-mario-all-stars/33-super-mario-bros-2-boss-victory
+snes/super-mario-all-stars/34-super-mario-bros-2-game-over
+snes/super-mario-all-stars/35-super-mario-bros-2-warp
+snes/super-mario-all-stars/36-super-mario-bros-2-ending
+snes/super-mario-all-stars/37-super-mario-bros-3-title-screen
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
