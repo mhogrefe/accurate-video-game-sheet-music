@@ -1877,7 +1877,7 @@ pub fn generate_book(dir_path: &str) {
     )
     .expect("failed to create PDF");
 
-    /*for i in 1.. {
+    for i in 1.. {
         let path = format!("../video-game-extracted-music-books/{dir_path}/book-page-{i}.png");
         if std::path::Path::new(&path).exists() {
             Command::new("rm")
@@ -1887,7 +1887,7 @@ pub fn generate_book(dir_path: &str) {
         } else {
             break;
         }
-    }*/
+    }
 
     println!("Generating cover...");
     let info = read_track_info(dir_path, &track_names[0]);

@@ -16,22 +16,13 @@
 \time 2/2
 \tempo 2=164
 \key e \major
-                \repeat volta 2 {
+                \repeat unfold 30 {
 \repeat unfold 4 { \tuplet 5/4 { e32 a cis fis b } r8 } |
                 }
 \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
 \mark \markup { \fontsize #-2 "Loop forever" }
             }
         }
-        \layout {
-            \context {
-                \Staff
-                \RemoveEmptyStaves
-            }
-            \context {
-                \DrumStaff
-                \RemoveEmptyStaves
-            }
-        }
+        \midi {}
     }
 }
