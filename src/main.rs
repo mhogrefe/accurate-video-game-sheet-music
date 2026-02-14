@@ -749,7 +749,7 @@ fn main() {
         if slash_count == 2 {
             process_track(dir_path);
         } else if slash_count == 1 {
-            #[allow(unused_must_use)]
+            /*#[allow(unused_must_use)]
             {
                 Command::new("rm")
                     .arg(&format!("{dir_path}/video.mp4"))
@@ -762,7 +762,7 @@ fn main() {
                     .arg(&format!("{dir_path}/video-garageband.mp4"))
                     .output();
                 create_video(dir_path, true);
-            }
+            }*/
             generate_book(&dir_path);
         } else {
             panic!();

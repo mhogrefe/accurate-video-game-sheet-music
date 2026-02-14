@@ -6,8 +6,10 @@ use malachite::num::conversion::traits::{ExactFrom, FromSciString, RoundingFrom}
 use malachite::num::logic::traits::BitBlockAccess;
 use malachite::rounding_modes::RoundingMode::*;
 use malachite::Rational;
+use pdf_to_png::{convert_pdf_to_png, create_pdf_from_images};
 use std::fs::{self, File};
 use std::io::{self, BufRead, Write};
+use std::path::{Path, PathBuf};
 use std::process::Command;
 use std::str::FromStr;
 
@@ -1007,19 +1009,15 @@ fn create_cover_text_image(
         .output()
         .expect("failed to delete auxiliary TeX file");
 
-    Command::new("convert")
-        .arg("-density")
-        .arg("600")
-        .arg(&format!(
+    convert_pdf_to_png(
+        Path::new(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover-text.pdf"
-        ))
-        .arg("-quality")
-        .arg("90")
-        .arg(&format!(
-            "../video-game-extracted-music-books/{dir_path}/cover-text.png"
-        ))
-        .output()
-        .expect("failed to convert template book pdf to png");
+        )),
+        Path::new(&format!("../video-game-extracted-music-books/{dir_path}/")),
+        600.0,
+        90,
+    )
+    .expect("failed to convert template book pdf to png");
     Command::new("rm")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover.tex"
@@ -1093,19 +1091,15 @@ fn _create_cover_text_image_2(
         .output()
         .expect("failed to delete auxiliary TeX file");
 
-    Command::new("convert")
-        .arg("-density")
-        .arg("600")
-        .arg(&format!(
+    convert_pdf_to_png(
+        Path::new(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover-text.pdf"
-        ))
-        .arg("-quality")
-        .arg("90")
-        .arg(&format!(
-            "../video-game-extracted-music-books/{dir_path}/cover-text.png"
-        ))
-        .output()
-        .expect("failed to convert template book pdf to png");
+        )),
+        Path::new(&format!("../video-game-extracted-music-books/{dir_path}/")),
+        600.0,
+        90,
+    )
+    .expect("failed to convert template book pdf to png");
     Command::new("rm")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover.tex"
@@ -1298,19 +1292,15 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
             .output()
             .expect("failed to delete auxiliary TeX file");
 
-        Command::new("convert")
-            .arg("-density")
-            .arg("600")
-            .arg(&format!(
+        convert_pdf_to_png(
+            Path::new(&format!(
                 "../video-game-extracted-music-books/{dir_path}/spine.pdf"
-            ))
-            .arg("-quality")
-            .arg("90")
-            .arg(&format!(
-                "../video-game-extracted-music-books/{dir_path}/spine.png"
-            ))
-            .output()
-            .expect("failed to convert template book pdf to png");
+            )),
+            Path::new(&format!("../video-game-extracted-music-books/{dir_path}/")),
+            600.0,
+            90,
+        )
+        .expect("failed to convert template book pdf to png");
         Command::new("rm")
             .arg(&format!(
                 "../video-game-extracted-music-books/{dir_path}/spine.tex"
@@ -1401,26 +1391,30 @@ fn generate_cover(dir_path: &str, info: &TrackInfo, page_count: usize) {
             "../video-game-extracted-music-books/{dir_path}/cover.png"
         ))
         .unwrap();
-    Command::new("img2pdf")
-        .arg(format!(
+    create_pdf_from_images(
+        &[PathBuf::from(format!(
             "../video-game-extracted-music-books/{dir_path}/cover.png"
-        ))
-        .arg("-S")
-        .arg(&format!(
-            "{}",
+        ))],
+        Path::new(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.pdf"
+        )),
+        Some(format!(
+            "{}x{}",
             u32::rounding_from(
                 &(Rational::from(dimensions.cover_width_px) / DPI
                     * Rational::const_from_unsigned(72)),
                 Nearest
             )
+            .0,
+            u32::rounding_from(
+                &(Rational::from(dimensions.cover_height_px) / DPI
+                    * Rational::const_from_unsigned(72)),
+                Nearest
+            )
             .0
-        ))
-        .arg("--output")
-        .arg(format!(
-            "../video-game-extracted-music-books/{dir_path}/cover.pdf"
-        ))
-        .output()
-        .expect("failed to create PDF");
+        )),
+    )
+    .expect("failed to create PDF");
     Command::new("rm")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover.png"
@@ -1576,19 +1570,15 @@ fn _generate_cover_2(dir_path: &str) {
         .output()
         .expect("failed to delete auxiliary TeX file");
 
-    Command::new("convert")
-        .arg("-density")
-        .arg("600")
-        .arg(&format!(
+    convert_pdf_to_png(
+        Path::new(&format!(
             "../video-game-extracted-music-books/{dir_path}/spine.pdf"
-        ))
-        .arg("-quality")
-        .arg("90")
-        .arg(&format!(
-            "../video-game-extracted-music-books/{dir_path}/spine.png"
-        ))
-        .output()
-        .expect("failed to convert template book pdf to png");
+        )),
+        Path::new(&format!("../video-game-extracted-music-books/{dir_path}/")),
+        600.0,
+        90,
+    )
+    .expect("failed to convert template book pdf to png");
     Command::new("rm")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/spine.tex"
@@ -1678,26 +1668,30 @@ fn _generate_cover_2(dir_path: &str) {
             "../video-game-extracted-music-books/{dir_path}/cover.png"
         ))
         .unwrap();
-    Command::new("img2pdf")
-        .arg(format!(
+    create_pdf_from_images(
+        &[PathBuf::from(format!(
             "../video-game-extracted-music-books/{dir_path}/cover.png"
-        ))
-        .arg("-S")
-        .arg(&format!(
-            "{}",
+        ))],
+        Path::new(&format!(
+            "../video-game-extracted-music-books/{dir_path}/cover.pdf"
+        )),
+        Some(format!(
+            "{}x{}",
             u32::rounding_from(
                 &(Rational::from(dimensions.cover_width_px) / DPI
                     * Rational::const_from_unsigned(72)),
                 Nearest
             )
+            .0,
+            u32::rounding_from(
+                &(Rational::from(dimensions.cover_height_px) / DPI
+                    * Rational::const_from_unsigned(72)),
+                Nearest
+            )
             .0
-        ))
-        .arg("--output")
-        .arg(format!(
-            "../video-game-extracted-music-books/{dir_path}/cover.pdf"
-        ))
-        .output()
-        .expect("failed to create PDF");
+        )),
+    )
+    .expect("failed to create PDF");
     Command::new("rm")
         .arg(&format!(
             "../video-game-extracted-music-books/{dir_path}/cover.png"
@@ -1762,19 +1756,15 @@ pub fn generate_book(dir_path: &str) {
         .output()
         .expect("failed to delete auxiliary TeX file");
     println!("Converting template LaTeX file to pngs...");
-    Command::new("convert")
-        .arg("-density")
-        .arg("600")
-        .arg(&format!(
+    convert_pdf_to_png(
+        Path::new(&format!(
             "../video-game-extracted-music-books/{dir_path}/book.pdf"
-        ))
-        .arg("-quality")
-        .arg("90")
-        .arg(&format!(
-            "../video-game-extracted-music-books/{dir_path}/book.png"
-        ))
-        .output()
-        .expect("failed to convert template book pdf to png");
+        )),
+        Path::new(&format!("../video-game-extracted-music-books/{dir_path}/")),
+        600.0,
+        90,
+    )
+    .expect("failed to convert template book pdf to png");
     trans_to_white(
         &format!("../video-game-extracted-music-books/{dir_path}/book-0.png"),
         &format!("../video-game-extracted-music-books/{dir_path}/book-page-1.png"),
@@ -1863,30 +1853,31 @@ pub fn generate_book(dir_path: &str) {
 
     println!("Combining pages...");
     let mut page_count = 0;
-    let mut command = Command::new("img2pdf");
+    let mut inputs = Vec::new();
     for i in 1.. {
         let path = format!("../video-game-extracted-music-books/{dir_path}/book-page-{i}.png");
         if std::path::Path::new(&path).exists() {
             page_count += 1;
-            command.arg(path);
+            inputs.push(PathBuf::from(path));
         } else {
             break;
         }
     }
     println!("PAGE COUNT: {page_count}");
-    command
-        .arg("-S")
-        .arg(&format!(
-            "{}",
-            u32::rounding_from(&(page_width * Rational::const_from_unsigned(72)), Nearest).0
-        ))
-        .arg("--output")
-        .arg(format!(
+    create_pdf_from_images(
+        &inputs,
+        Path::new(&format!(
             "../video-game-extracted-music-books/{dir_path}/book.pdf"
-        ));
-    command.output().expect("failed to create PDF");
+        )),
+        Some(format!(
+            "{}x{}",
+            u32::rounding_from(&(page_width * Rational::const_from_unsigned(72)), Nearest).0,
+            u32::rounding_from(&(page_height * Rational::const_from_unsigned(72)), Nearest).0
+        )),
+    )
+    .expect("failed to create PDF");
 
-    for i in 1.. {
+    /*for i in 1.. {
         let path = format!("../video-game-extracted-music-books/{dir_path}/book-page-{i}.png");
         if std::path::Path::new(&path).exists() {
             Command::new("rm")
@@ -1896,7 +1887,7 @@ pub fn generate_book(dir_path: &str) {
         } else {
             break;
         }
-    }
+    }*/
 
     println!("Generating cover...");
     let info = read_track_info(dir_path, &track_names[0]);
