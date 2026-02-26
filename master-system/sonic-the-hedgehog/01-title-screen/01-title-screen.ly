@@ -22,10 +22,10 @@
 R1 |
 r4 <a cis>2 4 |
 \override Glissando.style = #'trill
-<b d>4. <g b>8 ~ \once \override NoteHead.extra-spacing-width = #'(-1.5 . 0) 2\glissando |
+<b d>4. <g b>8 ~ \once \override NoteHead.extra-spacing-width = #'(-1.25 . 0) 2\glissando |
 <a cis>4-. 4-. 4-. <e a>-. |
-<d g>4. <g b>8 ~ 2 |
-<cis, a'>4-. <a' cis>-. <e' a>-. <a, e'>-. 
+<d g>4. <g b>8 ~ \once \override NoteHead.extra-spacing-width = #'(-1.25 . 0) 2 |
+<cis, a'>4-. <a' cis>-. <e' a>-. <a, e'>-. |
 r8 <d gis>4. <cis a'>4 a'4\> |
 a4 a\! r2 |
                     }

@@ -646,9 +646,9 @@ fn calculate_tempo(args: &[String]) {
     }
 }
 
-const M4A_SUFFIX: &str = ".m4a";
+const WAV_SUFFIX: &str = ".wav";
 
-fn convert_m4a(path: &str) {
+fn convert_wav(path: &str) {
     let mut input_files = BTreeSet::new();
     for entry in WalkDir::new(path)
         .into_iter()
@@ -656,12 +656,12 @@ fn convert_m4a(path: &str) {
         .filter(|e| !e.file_type().is_dir())
     {
         let file_name = String::from(entry.path().to_string_lossy());
-        if file_name.ends_with(M4A_SUFFIX) {
+        if file_name.ends_with(WAV_SUFFIX) {
             input_files.insert(file_name);
         }
     }
     for input_file in input_files {
-        let output_file = format!("{}.flac", input_file.strip_suffix(M4A_SUFFIX).unwrap());
+        let output_file = format!("{}.flac", input_file.strip_suffix(WAV_SUFFIX).unwrap());
         print_output(
             Command::new("ffmpeg")
                 .arg("-i")
@@ -738,8 +738,8 @@ fn main() {
         recolor_screenshot(&args[2]);
     } else if args.len() > 1 && args[1] == "calculate_tempo" {
         calculate_tempo(&args[2..]);
-    } else if args.len() > 1 && args[1] == "convert_m4a" {
-        convert_m4a(&args[2]);
+    } else if args.len() > 1 && args[1] == "convert_wav" {
+        convert_wav(&args[2]);
     } else if args.len() > 1 && args[1] == "find_most_distinct_color" {
         find_most_distinct_color(&args[2]);
     } else if args.len() == 2 {
