@@ -507,6 +507,8 @@ snes/super-mario-all-stars/40-super-mario-bros-3-world-map-3-sea-side
 snes/super-mario-all-stars/41-super-mario-bros-3-world-map-4-big-island
 snes/super-mario-all-stars/42-super-mario-bros-3-world-map-5-the-sky
 snes/super-mario-all-stars/43-super-mario-bros-3-world-map-6-iced-land
+snes/super-mario-all-stars/44-super-mario-bros-3-world-map-7-pipe-maze
+snes/super-mario-all-stars/45-super-mario-bros-3-world-map-8-dark-land
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -516,3 +518,4 @@ c64/cybernoid-ii-the-revenge/02-game-over
 master-system/sonic-the-hedgehog/01-title-screen
 master-system/sonic-the-hedgehog/02-act-start
 master-system/sonic-the-hedgehog/03-green-hill-zone
+master-system/sonic-the-hedgehog/04-bridge-zone

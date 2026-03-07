@@ -23,8 +23,8 @@ swing = \markup {
         {
             <<
                 \new Staff \relative c, {                 
-                    \set Staff.instrumentName = "Bassoon"
-                    \set Staff.shortInstrumentName = "Bsn."  
+                    \set Staff.instrumentName = "Baritone Saxophone"
+                    \set Staff.shortInstrumentName = "Bar. Sax."  
 \clef bass
 \tempo 4=65
 <<{f2.\f}\\{d''2.\p}>> \tempo 4=114 r4 |

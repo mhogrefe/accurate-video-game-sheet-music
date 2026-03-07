@@ -2,7 +2,7 @@
 #(set-global-staff-size 16)
 
 \paper {
-  left-margin = 0.6\in
+  left-margin = 0.7\in
 }
 
 swing = \markup {
@@ -23,8 +23,8 @@ swing = \markup {
         {
             <<
                 \new Staff \relative c {                 
-                    \set Staff.instrumentName = "Bassoon"
-                    \set Staff.shortInstrumentName = "Bsn."  
+                    \set Staff.instrumentName = "Baritone Saxophone"
+                    \set Staff.shortInstrumentName = "Bar. Sax."  
 \clef bass
 \tempo 4=142
 <<{\override MultiMeasureRest.staff-position = 0 R1}\\{s4^\swing s s s}>> |

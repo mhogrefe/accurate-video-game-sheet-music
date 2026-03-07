@@ -17,8 +17,8 @@
         {
             <<
                 \new Staff \relative c {                 
-                    \set Staff.instrumentName = "Bassoon"
-                    \set Staff.shortInstrumentName = "Bsn."
+                    \set Staff.instrumentName = "Baritone Saxophone"
+                    \set Staff.shortInstrumentName = "Bar. Sax."
                     \repeat volta 2 {
 \tempo 4=138
 \clef bass
