@@ -511,6 +511,8 @@ snes/super-mario-all-stars/44-super-mario-bros-3-world-map-7-pipe-maze
 snes/super-mario-all-stars/45-super-mario-bros-3-world-map-8-dark-land
 snes/super-mario-all-stars/46-super-mario-bros-3-overworld-1
 snes/super-mario-all-stars/47-super-mario-bros-3-overworld-2
+snes/super-mario-all-stars/48-super-mario-bros-3-underwater
+snes/super-mario-all-stars/49-super-mario-bros-3-underground
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -523,3 +525,4 @@ master-system/sonic-the-hedgehog/03-green-hill-zone
 master-system/sonic-the-hedgehog/04-bridge-zone
 master-system/sonic-the-hedgehog/05-jungle-zone
 master-system/sonic-the-hedgehog/06-labyrinth-zone
+master-system/sonic-the-hedgehog/07-scrap-brain-zone
