@@ -71,8 +71,8 @@ g4\mf a ais b |
                 >>
 
                 \new Staff \relative c' {                 
-                    \set Staff.instrumentName = "Violin 1"
-                    \set Staff.shortInstrumentName = "Vln. 1"  
+                    \set Staff.instrumentName = "Violin"
+                    \set Staff.shortInstrumentName = "Vln."  
 \key c \lydian
 <b g'>8\mf^\markup{"Echo top voice"} <b' g'> <a f'> <f d'> ~ 8 <b, g'> <c a'> <cis ais'> |
 \after 2.. \p <d b'>1\> |
