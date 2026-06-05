@@ -519,6 +519,7 @@ snes/super-mario-all-stars/52-super-mario-bros-3-warp-whistle
 snes/super-mario-all-stars/53-super-mario-bros-3-music-box
 snes/super-mario-all-stars/54-super-mario-bros-3-minigame
 snes/super-mario-all-stars/55-super-mario-bros-3-toads-house
+snes/super-mario-all-stars/56-super-mario-bros-3-fortress
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -536,3 +537,5 @@ master-system/sonic-the-hedgehog/08-sky-base-zone
 master-system/sonic-the-hedgehog/09-special-stage
 master-system/sonic-the-hedgehog/10-got-emerald
 master-system/sonic-the-hedgehog/11-invincibility
+master-system/sonic-the-hedgehog/12-level-cleared
+master-system/sonic-the-hedgehog/13-death
