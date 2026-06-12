@@ -43,6 +43,20 @@ a'4 a, a' a, |
                     }
 
                     \new Staff \relative c'' {
+\repeat unfold 2 {
+\repeat unfold 2 {
+r4 \tuplet 3/2 { r8 f r } \tuplet 3/2 { r4 f8 } \tuplet 3/2 { r4 d8 } |
+r2 \tuplet 3/2 { d4 r8 } r4 |
+}
+\repeat unfold 2 {
+r4 \tuplet 3/2 { r8 bes' r } \tuplet 3/2 { r4 bes8 } \tuplet 3/2 { r4 g8 } |
+r2 \tuplet 3/2 { g4 r8 } r4 |
+}
+R1*4
+}
+                    }
+
+                    \new Staff \relative c'' {
 \key d \minor
 \repeat unfold 2 {
 \repeat unfold 2 {

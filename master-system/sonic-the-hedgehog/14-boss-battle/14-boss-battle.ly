@@ -25,7 +25,7 @@ swing = \markup {
 \time 2/2
                     \repeat volta 2 {
 \key d \minor
-r8^\swing f r4 f-. d-. |
+r8^\markup{Echo}^\swing f r4 f-. d-. |
 f8 d c d r a4. |
 r8 f' r4 f-. d-. |
 f8 d c d r a'4. |
