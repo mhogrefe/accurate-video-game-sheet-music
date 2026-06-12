@@ -19,9 +19,11 @@
 \time 2/2
 \key d \minor
                     \repeat unfold 2 {
-\repeat unfold 4 {
+\repeat unfold 2 {
 d8 c d c f d f f ~ |
 f8 f4 d8 f a, g f |
+d'8 c d c f d f f ~ |
+f8 f4 d8 f aes, g f |
 }
 \repeat unfold 2 {
 a8 a4 g8 a f g e |

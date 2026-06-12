@@ -21,7 +21,8 @@ swing = \markup {
                     \set GrandStaff.instrumentName = "Tone"
                     \set GrandStaff.shortInstrumentName = "T."
                     \new Staff \relative c'' {
-\tempo 4 = 200
+\time 2/2
+\tempo 2 = 100
                     \repeat volta 2 {
 \key d \major
 r4^\swing <fis a>8-.\f r <d fis> <fis a> r <fis b> |

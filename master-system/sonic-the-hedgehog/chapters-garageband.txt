@@ -1,0 +1,15 @@
+00:00:00 Title Screen
+00:00:15 Act Start
+00:00:25 Green Hill Zone
+00:01:31 Bridge Zone
+00:02:11 Jungle Zone
+00:02:53 Labyrinth Zone
+00:03:35 Scrap Brain Zone
+00:04:40 Sky Base Zone
+00:05:08 Special Stage
+00:06:21 Got Emerald
+00:06:33 Invincibility
+00:06:55 Level Cleared
+00:07:07 Death
+00:07:18 Boss Battle
+00:07:42 Credits

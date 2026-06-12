@@ -21,7 +21,8 @@ swing = \markup {
                     \set GrandStaff.instrumentName = "Tone"
                     \set GrandStaff.shortInstrumentName = "T."
                     \new Staff \relative c'' {
-\tempo 4 = 200
+\time 2/2
+\tempo 2 = 100
                     \repeat unfold 2 {
 \key d \major
 r4^\swing \tuplet 3/2 { <fis a>4-.\f r8 <d fis>4 <fis a>8 r4 <fis b>8 } |
