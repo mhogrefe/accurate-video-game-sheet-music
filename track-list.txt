@@ -163,6 +163,10 @@ nes/donkey-kong-jr/10-level-theme-4
 nes/donkey-kong-jr/11-level-4-cleared
 nes/balloon-fight/01-game-start
 nes/balloon-fight/02-dropping-enemy
+nes/balloon-fight/03-eaten
+nes/balloon-fight/04-restart
+nes/balloon-fight/05-level-cleared
+nes/balloon-fight/06-balloon-trip
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -528,6 +532,10 @@ snes/super-mario-all-stars/59-super-mario-bros-3-the-king-has-been-transformed
 snes/super-mario-all-stars/60-super-mario-bros-3-airship
 snes/super-mario-all-stars/61-super-mario-bros-3-boss-battle
 snes/super-mario-all-stars/62-super-mario-bros-3-battle-victory
+snes/super-mario-all-stars/63-super-mario-bros-3-king-restored
+snes/super-mario-all-stars/64-super-mario-bros-3-level-cleared
+snes/super-mario-all-stars/65-super-mario-bros-3-death
+snes/super-mario-all-stars/66-super-mario-bros-3-game-over
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over

@@ -18,7 +18,7 @@
             <<
                 \new Staff \relative c'' {                 
                     \set Staff.instrumentName = "Trumpet"
-                    \set Staff.shortInstrumentName = "Hn."  
+                    \set Staff.shortInstrumentName = "Tpt."  
 \key e \minor
 \tempo 4=185
 a8 aes g fis ~ |
