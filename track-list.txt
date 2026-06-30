@@ -167,6 +167,8 @@ nes/balloon-fight/03-eaten
 nes/balloon-fight/04-restart
 nes/balloon-fight/05-level-cleared
 nes/balloon-fight/06-balloon-trip
+nes/balloon-fight/07-game-over
+nes/balloon-fight/08-got-bubble
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -536,6 +538,8 @@ snes/super-mario-all-stars/63-super-mario-bros-3-king-restored
 snes/super-mario-all-stars/64-super-mario-bros-3-level-cleared
 snes/super-mario-all-stars/65-super-mario-bros-3-death
 snes/super-mario-all-stars/66-super-mario-bros-3-game-over
+snes/super-mario-all-stars/67-super-mario-bros-3-bonus-win
+snes/super-mario-all-stars/68-super-mario-bros-3-princesss-message
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
