@@ -1,0 +1,10 @@
+00:00:00 Game Start
+00:00:15 Dropping Enemy
+00:00:28 Eaten
+00:00:36 Restart
+00:00:44 Level Cleared
+00:00:53 Balloon Trip
+00:01:58 Game Over
+00:02:12 Got Bubble
+00:02:19 Pause
+00:02:27 Perfect Clear
