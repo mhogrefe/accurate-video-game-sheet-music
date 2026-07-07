@@ -36,10 +36,10 @@ r8 <d fis> r <d fis> r <a e'> <a d>-. r |
 <g b>8-. r <g d'>-. d' <b e>-. <b fis'> r <<{ e8 ~ | e2. r4 | }\\{ a,8 | r a e-. cis a'-. a b-. a | }>>
 r4 <g b> <b d> <d b'> |
 <fis a>4 <a, fis'>8 <a d> r <b e> <b fis'>-. r |
-<b e>8-. r <b e>-. e <<{ <e, a>8 <e b'> cis' d ~ | d2. r4 | }\\{ s4 e,8-. a ~ | a2 \tuplet 3/2 { d,,8 e fis } \tuplet 3/2 { a8 d fis } | }>>
+<b e>8-. r <b e>-. e <<{ <e, a>8 <e b'> cis' d ~ | d2. r4 | }\\{ s4 e,8-. a ~ | a2 \tuplet 3/2 { d,,8[ e fis] } \tuplet 3/2 { a8 d fis } | }>>
 r4 \repeat unfold 2 { \acciaccatura b'8 g8-. r } \acciaccatura a8 d,8-. \acciaccatura a'8 <b, d>8-. |
 r8 \acciaccatura g'8 <g b>8 r \acciaccatura g8 <g b>8 <b d>-. r \acciaccatura g8 <g b>8-. r |
-r8 \acciaccatura fis8 <fis a>8 r \acciaccatura fis <fis a>8 <a d>8-. r <<{ \tuplet 3/2 { \stemDown \acciaccatura d,8 <d fis>8 r \stemUp fis16 a}  | \repeat unfold 4 { \tuplet 6/4 { \repeat unfold 3 { fis16 a } } } | }\\{ \once\omit TupletNumber \tuplet 3/2 { s8 s fis ~ } | fis4 d, e fis | }>>
+r8 \acciaccatura fis8 <fis a>8 r \acciaccatura fis <fis a>8 <a d>8-. r <<{ \tuplet 3/2 { \stemDown \acciaccatura d,8 <d fis>8 r \stemUp fis16 a}  | \repeat unfold 4 { \tuplet 6/4 { fis16[ a fis a fis a] } } | }\\{ \once\omit TupletNumber \tuplet 3/2 { s8 s fis ~ } | fis4 d, e fis | }>>
 g4 \repeat unfold 2 { \acciaccatura b'8 g8-. r } \acciaccatura a8 d,8-. \acciaccatura a'8 <b, d>8-. |
 r <d g> r <d g> <d a'>-. r <<{ b'8-. }\\{ d,8 }>> r8 |
 <e a>8-.\> r a-. r a-. r a-.\! r |
@@ -85,10 +85,10 @@ a'8-. a, r a b-. r cis-. r |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 \repeat percent 15 { bd8\f bd sn bd bd bd sn bd | }
-bd8 bd sn bd bd bd \tuplet 3/2 { sn8 sn sn } |
+bd8 bd sn bd bd bd \tuplet 3/2 { sn8[ sn sn] } |
 \repeat percent 6 { bd8 bd sn bd bd bd sn bd | }
 bd4 bd bd bd |
-\repeat unfold 4 { \tuplet 3/2 { sn8 sn sn } } |
+\repeat unfold 4 { \tuplet 3/2 { sn8[ sn sn] } } |
                     }
                 }
             >>

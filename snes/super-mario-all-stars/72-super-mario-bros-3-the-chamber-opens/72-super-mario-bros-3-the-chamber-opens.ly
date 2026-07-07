@@ -7,7 +7,7 @@
 
 \book {
     \header {
-        title = "Super Mario Bros. 3: Hurry"
+        title = "Super Mario Bros. 3: The Chamber Opens"
         subtitle = \markup { "from" {\italic "Super Mario All-Stars"} "for the SNES (1993)" }
         composer = "Koji Kondo and Soyo Oka"
         arranger = "trans. Mikhail Hogrefe"
@@ -16,15 +16,10 @@
     \score {
         {     
             \new Staff \relative c' {  
-                \set Staff.instrumentName = "Accordion"
-                \set Staff.shortInstrumentName = "Acc."                          
-\time 6/8
-\tempo 4.=182
-
-\partial 8 <f ais>8 |
-<d' gis>8 r <d gis>8 4 <fis, b>8 |
-<dis' a'>8 r <dis a'>8 4 <e ais>8 |
-r8 <e ais>4 ~ 4. |
+                \set Staff.instrumentName = "Harp"
+                \set Staff.shortInstrumentName = "Hrp."                          
+\tempo 4=118
+\tuplet 7/4 { e16 g b d g b d } \tuplet 7/4 { a,16 e' g b d g a ~ } a16 r r8 r4 |
 \bar "|."
             }
         }
