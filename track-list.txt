@@ -546,6 +546,8 @@ snes/super-mario-all-stars/69-super-mario-bros-3-bowsers-message
 snes/super-mario-all-stars/70-super-mario-bros-3-hurry
 snes/super-mario-all-stars/71-super-mario-bros-3-bowser-battle
 snes/super-mario-all-stars/72-super-mario-bros-3-the-chamber-opens
+snes/super-mario-all-stars/73-super-mario-bros-3-princess-rescued
+snes/super-mario-all-stars/74-super-mario-bros-3-credits
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -568,3 +570,4 @@ master-system/sonic-the-hedgehog/13-death
 master-system/sonic-the-hedgehog/14-boss-battle
 master-system/sonic-the-hedgehog/15-credits
 master-system/sonic-the-hedgehog-2/01-title-screen
+master-system/sonic-the-hedgehog-2/02-act-start
