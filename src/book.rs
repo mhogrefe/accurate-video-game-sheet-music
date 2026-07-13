@@ -461,11 +461,17 @@ pub fn generate_page(
             let target_screenshot_width_px = target_screenshot_width * DPI;
             let mut img = image::open(&format!("{dir_path}/{track_name}/screenshot.png"))
                 .expect("File not found");
-            let target_screenshot_height_px =
-                Rational::from_unsigneds(img.height(), img.width()) * &target_screenshot_width_px;
+            // Ares saves SNES screenshots with non-display pixel dimensions; force the
+            // 512:448 display ratio, like the video pipeline does
+            let screenshot_ratio = if dir_path.starts_with("snes/") {
+                Rational::from_unsigneds(448u16, 512)
+            } else {
+                Rational::from_unsigneds(img.height(), img.width())
+            };
+            let target_screenshot_height_px = screenshot_ratio * &target_screenshot_width_px;
             let screenshot_vertical_margin_px =
                 (&page_height * DPI - &target_screenshot_height_px) >> 1;
-            img = img.resize(
+            img = img.resize_exact(
                 u32::rounding_from(&target_screenshot_width_px, Nearest).0,
                 u32::rounding_from(&target_screenshot_height_px, Nearest).0,
                 FilterType::Nearest,

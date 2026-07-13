@@ -93,7 +93,7 @@ hh16 hh hh hh hh hh hh hh r2 |
 \repeat unfold 2 { bd8 sn bd16 bd sn8 bd16 bd sn bd r bd sn8 | }
 sn16 bd bd sn bd bd sn bd sn bd bd sn bd bd sn bd |
 \repeat unfold 2 { sn32 sn sn16 sn sn } sn32 sn sn16 bd bd sn32 sn bd16 bd bd |
-\repeat unfold 15 { bd8 sn bd16 bd sn8 bd16 bd sn bd r bd sn8 | }
+\repeat percent 15 { bd8 sn bd16 bd sn8 bd16 bd sn bd r bd sn8 | }
 bd2:32 bd32 bd sn16 sn sn sn bd bd bd |
 \repeat percent 3 { bd4 r r2 | }
 sn16 bd bd sn bd bd sn bd \repeat unfold 2 { sn32 sn sn16 sn bd } |

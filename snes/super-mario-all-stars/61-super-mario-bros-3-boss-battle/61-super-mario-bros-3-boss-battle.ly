@@ -33,6 +33,7 @@ r4 b'2. ~ |
 b2 bes16 a g8 a e |
 r8 g r d r b d e |
 R1 |
+\bar "||"
 \key f \minor
 r4 c'2. ~ |
 c2 r8 b c f |

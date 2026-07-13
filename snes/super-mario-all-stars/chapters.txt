@@ -1,0 +1,74 @@
+00:00:00 Title Screen
+00:00:31 Menu Fade-Out
+00:00:38 Menu Fade-In
+00:00:45 Game Selection
+00:01:12 Super Mario Bros.: Title Screen
+00:01:59 Super Mario Bros.: Overworld
+00:03:38 Super Mario Bros.: Bonus
+00:04:05 Super Mario Bros.: Underground
+00:04:37 Super Mario Bros.: Underwater
+00:05:21 Super Mario Bros.: Castle
+00:05:43 Super Mario Bros.: Starman
+00:05:58 Super Mario Bros.: Level Cleared
+00:06:12 Super Mario Bros.: Castle Cleared
+00:06:27 Super Mario Bros.: Death
+00:06:36 Super Mario Bros.: Game Over
+00:06:48 Super Mario Bros.: Bowser
+00:07:10 Super Mario Bros.: Final Bowser
+00:07:37 Super Mario Bros.: Hurry
+00:07:46 Super Mario Bros.: Princess Rescued
+00:08:36 The Lost Levels: Title Screen
+00:09:29 The Lost Levels: Princess Rescued
+00:10:57 Super Mario Bros. 2: Title Screen
+00:11:32 Super Mario Bros. 2: Character Selection
+00:12:15 Super Mario Bros. 2: Overworld
+00:13:15 Super Mario Bros. 2: Underground
+00:13:39 Super Mario Bros. 2: Starman
+00:13:54 Super Mario Bros.: Subspace
+00:15:21 Super Mario Bros. 2: Birdo
+00:15:43 Super Mario Bros. 2: Fanfare
+00:15:52 Super Mario Bros. 2: Bonus Game
+00:15:59 Super Mario Bros. 2: Death
+00:16:07 Super Mario Bros. 2: Wart
+00:16:37 Super Mario Bros. 2: Boss Victory
+00:16:48 Super Mario Bros. 2: Game Over
+00:16:56 Super Mario Bros. 2: Warp
+00:17:08 Super Mario Bros. 2: Ending
+00:18:33 Super Mario Bros. 3: Title Screen
+00:19:18 Super Mario Bros. 3: World Map 1 (Grass Land)
+00:19:46 Super Mario Bros. 3: World Map 2 (Koopahari Desert)
+00:20:02 Super Mario Bros. 3: World Map 3 (Sea Side)
+00:20:27 Super Mario Bros. 3: World Map 4 (Big Island)
+00:20:52 Super Mario Bros. 3: World Map 5 (The Sky)
+00:21:12 Super Mario Bros. 3: World Map 6 (Iced Land)
+00:21:30 Super Mario Bros. 3: World Map 7 (Pipe Maze)
+00:21:51 Super Mario Bros. 3: World Map 8 (Dark Land)
+00:22:11 Super Mario Bros. 3: Overworld 1
+00:22:54 Super Mario Bros. 3: Overworld 2
+00:23:41 Super Mario Bros. 3: Underwater
+00:24:24 Super Mario Bros. 3: Underground
+00:24:56 Super Mario Bros. 3: Sky
+00:25:18 Super Mario Bros. 3: Starman
+00:25:33 Super Mario Bros. 3: Warp Whistle
+00:25:43 Super Mario Bros. 3: Music Box
+00:26:15 Super Mario Bros. 3: Minigame
+00:26:29 Super Mario Bros. 3: Toad’s House
+00:26:54 Super Mario Bros. 3: Fortress
+00:27:29 Super Mario Bros. 3: Miniboss Battle
+00:28:01 Super Mario Bros. 3: Battle Mode
+00:28:35 Super Mario Bros. 3: The King Has Been Transformed
+00:28:54 Super Mario Bros. 3: Airship
+00:29:35 Super Mario Bros. 3: Boss Battle
+00:30:11 Super Mario Bros. 3: Battle Victory
+00:30:23 Super Mario Bros. 3: King Restored
+00:30:37 Super Mario Bros. 3: Level Cleared
+00:30:47 Super Mario Bros. 3: Death
+00:30:56 Super Mario Bros. 3: Game Over
+00:31:06 Super Mario Bros. 3: Bonus Win
+00:31:16 Super Mario Bros. 3: Princess’s Message
+00:31:29 Super Mario Bros. 3: Bowser’s Message
+00:31:38 Super Mario Bros. 3: Hurry
+00:31:47 Super Mario Bros. 3: Bowser Battle
+00:32:16 Super Mario Bros. 3: The Chamber Opens
+00:32:24 Super Mario Bros. 3: Princess Rescued
+00:33:09 Super Mario Bros. 3: Credits

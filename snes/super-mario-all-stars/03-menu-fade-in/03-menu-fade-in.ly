@@ -16,8 +16,8 @@
     \score {
         {
             \new Staff \relative c' {                 
-                \set Staff.instrumentName = "Glockenspiel"
-                \set Staff.shortInstrumentName = "Glock." 
+                \set Staff.instrumentName = "Celesta"
+                \set Staff.shortInstrumentName = "Cel." 
 \tempo 4=188 
 e16 f g c e f g c e4 r |
 \bar "|."
