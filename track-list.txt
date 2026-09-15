@@ -560,6 +560,7 @@ snes/super-mario-kart/09-koopa-troopa
 snes/super-mario-kart/10-toad
 snes/super-mario-kart/11-race-start
 snes/super-mario-kart/12-super-mario-circuit
+snes/super-mario-kart/13-donut-hills
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -588,3 +589,4 @@ master-system/sonic-the-hedgehog-2/04-sky-high-zone
 master-system/sonic-the-hedgehog-2/05-aqua-lake-zone
 master-system/sonic-the-hedgehog-2/06-green-hills-zone
 master-system/sonic-the-hedgehog-2/07-gimmick-mountain-zone
+master-system/sonic-the-hedgehog-2/08-scrambled-egg-zone
