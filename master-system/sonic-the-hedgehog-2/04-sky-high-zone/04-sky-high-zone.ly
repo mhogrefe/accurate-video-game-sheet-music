@@ -92,15 +92,15 @@ c4-. r8 c r c' g4-. |
 bd8\f hh bd hh sn\> sn sn sn\p |
 bd8\f sn hh hh sn hh hh hh |
 }
-bd8 sn bd bd sn hh hh sn |
-bd8 sn hh hh \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
+<bd hh>8 <sn hh> <bd hh> <bd hh> <sn hh> hh hh <sn hh> |
+<bd hh>8 <sn hh> hh hh \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
 \repeat unfold 4 {
 \repeat percent 3 {
-bd8 hh bd hh sn\> sn sn sn\p |
-bd8\f sn hh hh sn hh hh hh |
+<bd hh>8 hh <bd hh> hh <sn hh>\> <sn hh> <sn hh> <sn hh>\p |
+<bd hh>8\f <sn hh> hh hh <sn hh> hh hh hh |
 }
-bd8 sn bd bd sn hh hh sn |
-bd8 sn hh hh \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
+<bd hh>8 <sn hh> <bd hh> <bd hh> <sn hh> hh hh <sn hh> |
+<bd hh>8 <sn hh> hh hh \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
 }
                     }
                 }

@@ -160,15 +160,15 @@ sn8\f sn sn sn bd sn sn sn |
 
 \repeat unfold 5 {
 \repeat unfold 3 {
-bd8 hh bd hh sn hh bd sn |
-hh8 sn bd hh sn hh hh hh |
-bd8 hh bd hh sn hh bd sn |
-hh8 sn bd hh sn hh sn hh |
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> <sn hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh hh hh |
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> <sn hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh <sn hh> hh |
 }
-bd8 hh bd hh sn hh bd sn |
-hh8 sn bd hh sn hh hh hh |
-bd8 hh bd hh sn hh bd sn |
-hh8 sn bd hh sn sn sn sn |
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> <sn hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh hh hh |
+<bd hh>8 hh <bd hh> hh <sn hh> hh <bd hh> <sn hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> <sn hh> <sn hh> <sn hh> |
 }
                     }
                 }

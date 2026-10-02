@@ -214,33 +214,33 @@ r2 sn4 r |
 }
 bd4 r sn r |
 bd4 r sn r |
-hh4 bd hh hh8 8 |
-sn8 8 8 8 8 bd sn sn |
+hh4 <bd hh> hh hh8 8 |
+<sn hh>8 8 8 8 8 <bd hh> <sn hh> <sn hh> |
 
 \repeat unfold 3 {
 \repeat unfold 3 {
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn hh hh hh |
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn hh sn hh |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh hh hh |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh <sn hh> hh |
 }
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn hh hh hh |
-sn8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn sn sn sn |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh hh hh |
+<sn hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> <sn hh> <sn hh> <sn hh> |
 }
 \slashedGrace s8
 \repeat unfold 2 {
 \repeat unfold 3 {
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn hh hh hh |
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn hh sn hh |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh hh hh |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh <sn hh> hh |
 }
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn hh hh hh |
-sn8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn sn sn sn |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> hh hh hh |
+<sn hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> <sn hh> <sn hh> <sn hh> |
 }
                     }
                 }

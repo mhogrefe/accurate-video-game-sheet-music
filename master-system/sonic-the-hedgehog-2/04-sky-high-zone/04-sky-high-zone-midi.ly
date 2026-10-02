@@ -98,18 +98,18 @@ c4-. \tuplet 3/2 { r4 c8 r4 c'8 } g4-. |
                         \set Staff.shortInstrumentName="N."
 \repeat unfold 2 {
 \repeat unfold 3 {
-\tuplet 3/2 { bd4\f hh8 bd4 hh8 sn4\> sn8 sn4 sn8\p } |
-\tuplet 3/2 { bd4\f sn8 hh4 hh8 sn4 hh8 hh4 hh8 } |
+\tuplet 3/2 { <bd hh>4\f hh8 <bd hh>4 hh8 <sn hh>4\> <sn hh>8 <sn hh>4 <sn hh>8\p } |
+\tuplet 3/2 { <bd hh>4\f <sn hh>8 hh4 hh8 <sn hh>4 hh8 hh4 hh8 } |
 }
-\tuplet 3/2 { bd4 sn8 bd4 bd8 sn4 hh8 hh4 sn8 } |
-\tuplet 3/2 { bd4 sn8 hh4 hh8 } \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
+\tuplet 3/2 { <bd hh>4 <sn hh>8 <bd hh>4 <bd hh>8 <sn hh>4 hh8 hh4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 <sn hh>8 hh4 hh8 } \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
 \repeat unfold 4 {
 \repeat unfold 3 {
-\tuplet 3/2 { bd4 hh8 bd4 hh8 sn4\> sn8 sn4 sn8\p } |
-\tuplet 3/2 { bd4\f sn8 hh4 hh8 sn4 hh8 hh4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 <bd hh>4 hh8 <sn hh>4\> <sn hh>8 <sn hh>4 <sn hh>8\p } |
+\tuplet 3/2 { <bd hh>4\f <sn hh>8 hh4 hh8 <sn hh>4 hh8 hh4 hh8 } |
 }
-\tuplet 3/2 { bd4 sn8 bd4 bd8 sn4 hh8 hh4 sn8 } |
-\tuplet 3/2 { bd4 sn8 hh4 hh8 } \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
+\tuplet 3/2 { <bd hh>4 <sn hh>8 <bd hh>4 <bd hh>8 <sn hh>4 hh8 hh4 <sn hh>8 } |
+\tuplet 3/2 { <bd hh>4 <sn hh>8 hh4 hh8 } \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |
 }
 }
                     }

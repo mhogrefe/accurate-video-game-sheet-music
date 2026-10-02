@@ -93,13 +93,13 @@ ees8 f4 c8 ees4 f |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-\tuplet 3/2 { sn8\f[ hh hh] } \tuplet 3/2 { sn8 hh hh } sn8[ hh] \tuplet 3/2 { sn8 hh sn } |
+\tuplet 3/2 { <sn hh>8\f[ hh hh] } \tuplet 3/2 { <sn hh>8 hh hh } <sn hh>8[ hh] \tuplet 3/2 { <sn hh>8 hh <sn hh> } |
 
 \repeat unfold 20 {
-bd8 hh hh hh sn hh hh hh |
-bd8 hh hh bd sn hh hh hh |
-bd8 hh hh hh sn hh hh bd |
-hh8 sn bd hh sn bd sn sn |
+<bd hh>8 hh hh hh <sn hh> hh hh hh |
+<bd hh>8 hh hh <bd hh> <sn hh> hh hh hh |
+<bd hh>8 hh hh hh <sn hh> hh hh <bd hh> |
+hh8 <sn hh> <bd hh> hh <sn hh> <bd hh> <sn hh> <sn hh> |
 }
                     }
                 }

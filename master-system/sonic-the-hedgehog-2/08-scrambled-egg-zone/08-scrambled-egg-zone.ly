@@ -154,32 +154,32 @@ sn8 sn sn sn r bd r bd |
 r8 sn r sn sn sn sn sn |
 
 \repeat unfold 5 {
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd hh sn hh |
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd hh sn sn |
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd hh sn hh |
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd sn sn sn |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> hh <sn hh> hh |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> hh <sn hh> <sn hh> |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> hh <sn hh> hh |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> <sn hh> <sn hh> <sn hh> |
 }
 sn8 8 8 8 r sn8 8 8 |
 r8 sn8 8 8 r sn8 8 8 |
-bd8 hh hh bd r4 hh8 hh |
-sn8 sn sn sn toml cymca4. |
+<bd hh>8 hh hh <bd hh> r4 hh8 hh |
+<sn hh>8 <sn hh> <sn hh> <sn hh> <toml hh> cymca4. |
 sn8 8 8 8 r sn8 8 8 |
 r8 sn8 8 8 r8 sn sn bd |
-bd8 hh hh bd r2 |
+<bd hh>8 hh hh <bd hh> r2 |
 r8 sn8 8 8 8 8 8 8 |
 \repeat unfold 2 {
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd hh sn hh |
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd hh sn sn |
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd hh sn hh |
-bd8 hh sn hh bd bd sn hh |
-bd8 bd sn hh bd sn sn sn |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> hh <sn hh> hh |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> hh <sn hh> <sn hh> |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> hh <sn hh> hh |
+<bd hh>8 hh <sn hh> hh <bd hh> <bd hh> <sn hh> hh |
+<bd hh>8 <bd hh> <sn hh> hh <bd hh> <sn hh> <sn hh> <sn hh> |
 }
 R1*6
 sn8 sn sn sn r bd r bd |

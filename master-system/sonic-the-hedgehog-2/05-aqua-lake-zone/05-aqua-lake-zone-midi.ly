@@ -130,14 +130,14 @@ R1 |
                     \drummode {
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
-\tuplet 3/2 { sn8\f[ hh hh] } \tuplet 3/2 { sn8 hh hh } \tuplet 3/2 { sn4 hh8 } \tuplet 3/2 { sn8\f hh sn } |
+\tuplet 3/2 { <sn hh>8\f[ hh hh] } \tuplet 3/2 { <sn hh>8 hh hh } \tuplet 3/2 { <sn hh>4 hh8 } \tuplet 3/2 { <sn hh>8\f hh <sn hh> } |
 
 \repeat unfold 2 {
 \repeat unfold 20 {
-\tuplet 3/2 { bd4 hh8 hh4 hh8 sn4 hh8 hh4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 bd8 sn4 hh8 hh4 hh8 } |
-\tuplet 3/2 { bd4 hh8 hh4 hh8 sn4 hh8 hh4 bd8 } |
-\tuplet 3/2 { hh4 sn8 bd4 hh8 sn4 bd8 sn4 sn8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 hh8 <sn hh>4 hh8 hh4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 <bd hh>8 <sn hh>4 hh8 hh4 hh8 } |
+\tuplet 3/2 { <bd hh>4 hh8 hh4 hh8 <sn hh>4 hh8 hh4 <bd hh>8 } |
+\tuplet 3/2 { hh4 <sn hh>8 <bd hh>4 hh8 <sn hh>4 <bd hh>8 <sn hh>4 <sn hh>8 } |
 }
 }
                     }
