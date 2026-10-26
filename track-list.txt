@@ -595,3 +595,5 @@ master-system/sonic-the-hedgehog-2/08-scrambled-egg-zone
 master-system/sonic-the-hedgehog-2/09-crystal-egg-zone
 master-system/sonic-the-hedgehog-2/10-act-cleared
 master-system/sonic-the-hedgehog-2/11-boss-battle
+master-system/sonic-the-hedgehog-2/12-speed-up
+master-system/sonic-the-hedgehog-2/13-invincibility
