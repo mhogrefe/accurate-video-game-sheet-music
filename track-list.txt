@@ -563,6 +563,8 @@ snes/super-mario-kart/12-super-mario-circuit
 snes/super-mario-kart/13-donut-hills
 snes/super-mario-kart/14-ghost-valley
 snes/super-mario-kart/15-bowsers-castle
+snes/super-mario-kart/16-choco-island
+snes/super-mario-kart/17-koopa-beach
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -597,3 +599,5 @@ master-system/sonic-the-hedgehog-2/10-act-cleared
 master-system/sonic-the-hedgehog-2/11-boss-battle
 master-system/sonic-the-hedgehog-2/12-speed-up
 master-system/sonic-the-hedgehog-2/13-invincibility
+master-system/sonic-the-hedgehog-2/14-death
+master-system/sonic-the-hedgehog-2/15-game-over
