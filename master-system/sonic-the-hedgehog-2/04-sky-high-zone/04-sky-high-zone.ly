@@ -89,8 +89,8 @@ c4-. r8 c r c' g4-. |
                         \set Staff.instrumentName="Noise"
                         \set Staff.shortInstrumentName="N."
 \repeat percent 3 {
-bd8\f hh bd hh sn\> sn sn sn\p |
-bd8\f sn hh hh sn hh hh hh |
+<bd hh>8\f hh <bd hh> hh <sn hh>\> <sn hh> <sn hh> <sn hh>\p |
+<bd hh>8\f <sn hh> hh hh <sn hh> hh hh hh |
 }
 <bd hh>8 <sn hh> <bd hh> <bd hh> <sn hh> hh hh <sn hh> |
 <bd hh>8 <sn hh> hh hh \repeat unfold 2 { \tuplet 3/2 { sn8[ sn sn] } } |

@@ -1,0 +1,16 @@
+00:00:00 Title Screen
+00:00:26 Act Start
+00:00:36 Under Ground Zone
+00:02:20 Sky High Zone
+00:03:21 Aqua Lake Zone
+00:05:12 Green Hills Zone
+00:06:36 Gimmick Mountain Zone
+00:08:12 Scrambled Egg Zone
+00:09:30 Crystal Egg Zone
+00:10:54 Act Cleared
+00:11:04 Boss Battle
+00:12:03 Speed Up
+00:12:34 Invincibility
+00:13:07 Death
+00:13:18 Game Over
+00:13:30 Credits

@@ -977,6 +977,9 @@ fn map_composer_for_title(game_name: &str) -> String {
         "Kazumi Totaka, Minako Hamano, and Kozue Ishikawa" => {
             "Kazumi Totaka, \\\\ \\normalsize Minako Hamano, and Kozue Ishikawa"
         }
+        "Naofumi Hataya, Masafumi Ogata, and Tomonori Sawada" => {
+            "Naofumi Hataya, Masafumi Ogata, \\\\ \\normalsize and Tomonori Sawada"
+        }
         s => s,
     }
     .to_string()

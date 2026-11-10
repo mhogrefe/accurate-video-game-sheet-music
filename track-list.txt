@@ -171,6 +171,11 @@ nes/balloon-fight/07-game-over
 nes/balloon-fight/08-got-bubble
 nes/balloon-fight/09-pause
 nes/balloon-fight/10-perfect-clear
+nes/ice-climber/01-title-screen
+nes/ice-climber/02-game-start
+nes/ice-climber/03-main-theme
+nes/ice-climber/04-pause
+nes/ice-climber/05-grabbed-condor
 gb/tetris/01-introduction
 gb/tetris/02-a-type-music
 gb/tetris/03-b-type-music
@@ -566,6 +571,7 @@ snes/super-mario-kart/15-bowsers-castle
 snes/super-mario-kart/16-choco-island
 snes/super-mario-kart/17-koopa-beach
 snes/super-mario-kart/18-vanilla-lake
+snes/super-mario-kart/19-rainbow-road
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
