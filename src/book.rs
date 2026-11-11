@@ -1715,6 +1715,8 @@ pub fn get_padding(path: &str) -> (usize, usize) {
         (1, 8)
     } else if path.contains("nes/mario-bros") {
         (7, 2)
+    } else if path.contains("nes/ice-climber") {
+        (5, 4)
     } else {
         (0, 0)
     }

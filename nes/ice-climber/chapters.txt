@@ -1,0 +1,5 @@
+00:00:00 Title Screen
+00:00:22 Game Start
+00:00:36 Main Theme
+00:00:59 Pause
+00:01:06 Grabbed Condor
