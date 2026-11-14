@@ -572,6 +572,8 @@ snes/super-mario-kart/16-choco-island
 snes/super-mario-kart/17-koopa-beach
 snes/super-mario-kart/18-vanilla-lake
 snes/super-mario-kart/19-rainbow-road
+snes/super-mario-kart/20-starman
+snes/super-mario-kart/21-final-lap
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -609,3 +611,4 @@ master-system/sonic-the-hedgehog-2/13-invincibility
 master-system/sonic-the-hedgehog-2/14-death
 master-system/sonic-the-hedgehog-2/15-game-over
 master-system/sonic-the-hedgehog-2/16-credits
+pc/undertale/001-once-upon-a-time
