@@ -19,7 +19,7 @@
 \override Glissando.style = #'trill
 \once \override Glissando.minimum-length = #6
 \once \override Glissando.springs-and-rods = #ly:spanner::set-spacing-rods
-<c g''c>8\glissando  <bes ees' f> <c c' e>4 |
+<c g''c>8\glissando <bes ees' f> <c c' e>4 |
 \time 5/8
 \override TextSpanner.bound-details.left.text = "rit."
 <bes bes' d>8 <g g' bes>4\startTextSpan <f' f' bes> |

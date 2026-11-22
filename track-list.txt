@@ -576,6 +576,8 @@ snes/super-mario-kart/20-starman
 snes/super-mario-kart/21-final-lap
 snes/super-mario-kart/22-lost-race
 snes/super-mario-kart/23-no-time-trial-record
+snes/super-mario-kart/24-game-over
+snes/super-mario-kart/25-victory
 c64/lazy-jones/01-all-themes
 c64/monty-on-the-run/01-monty-on-the-run
 c64/monty-on-the-run/02-game-over
@@ -616,3 +618,4 @@ master-system/sonic-the-hedgehog-2/16-credits
 pc/undertale/01-once-upon-a-time
 pc/undertale/02-start-menu
 pc/undertale/03-your-best-friend
+pc/undertale/04-fallen-down
