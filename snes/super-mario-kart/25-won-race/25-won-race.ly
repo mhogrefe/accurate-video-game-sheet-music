@@ -7,7 +7,7 @@
 
 \book {
     \header {
-        title = "Victory"
+        title = "Won Race"
         subtitle = \markup { "from" {\italic "Super Mario Kart"} "for the SNES (1992)" }
         composer = "Soyo Oka"
         arranger = "trans. Mikhail Hogrefe"

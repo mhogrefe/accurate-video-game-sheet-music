@@ -10,7 +10,7 @@
         title = "Fallen Down"
         subtitle = \markup { "from" {\italic "Undertale"} "for the PC (2015)" }
         composer = "Toby Fox"
-        arranger = "trans. Ruffsher and Mikhail Hogrefe"
+        arranger = "trans. stormstudios1 and Mikhail Hogrefe"
     }
 
     \score {
